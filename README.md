@@ -19,5 +19,5 @@ I got the synthetic dataset from Kaggle, which contains the data of 3 categories
 https://github.com/aliiftikhar1/Final-Year-Project/assets/116260556/a33b9f01-9cc3-41a8-be0a-26f999971252
 
 
-## My project in under-development
-# Inshallah, It will complete soon
+#                My project in under-development
+##             Inshallah, It will complete soon
