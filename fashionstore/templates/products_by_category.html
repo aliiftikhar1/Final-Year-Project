@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block title %}Products{% endblock title %}
+<style>
+  .container{
+    background-image: url('static/background/background_banner.png');
+    background-size: cover;
+    background-blend-mode: overlay ;
+  }
+</style>
+{% if user == None%}
+<h2>Please Login to buy products</h2>
+{% endif %}
+{% block content %}
+<div class="container">
+    <h1 class="mb-4  text-center">All Products  :  User : {{user}}</h1>
+    {% if user == None%}
+<h2 class="mb-4  text-center" >Please Login to buy products</h2>
+{% endif %}
+    <div class="row">
+      {% for product in products %}
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="{{ product.image.url}}" class="card-img-top" alt="{{ product.name }}" >
+          <div class="card-body">
+            <h5 class="card-title">{{ product.name }}</h5>
+            <p class="card-text">{{ product.description }}</p>
+            <p class="card-text">Price: {{ product.price }}Rs/-</p>
+            <p class="card-text">Discount Price: {{ product.discount_price }}Rs/-</p>
+            {% if user %}
+            <a href="/add_to_cart?value1={{ product.id }}&value2={{ user }}" class="btn btn-primary">Add to Cart</a>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+{% endblock content %}

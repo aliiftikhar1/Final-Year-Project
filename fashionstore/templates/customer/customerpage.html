@@ -1,0 +1,439 @@
+Copy code
+{% extends "customer/customerbase.html" %}
+
+{% block title %}Customer page{% endblock title %}
+{% block topbar %}
+<style>
+  nav {
+    &.primary-navigation {
+      background-color: black;
+      margin: 0 auto;
+      display: block;
+      padding-top: 20px; 
+      padding-bottom: 10px;
+      text-align: center;
+      font-size: 16px;
+
+      ul li {
+        list-style: none;
+        margin: 0 auto;
+        border-left: 2px solid #ffffff;
+        display: inline-block;
+        padding: 0 30px;
+        position: relative;
+        text-decoration: none;
+        text-align: center;
+        font-family: arvo;
+      }
+
+      li a {
+        color: rgb(255, 255, 255);
+      }
+
+      li a:hover {
+        color: #ffffff;
+      }
+
+      li:hover {
+        cursor: pointer;
+      }
+
+      ul li ul {
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        padding-left: 0;
+        left: 0;
+        display: none;
+        background: rgb(0, 0, 0);
+      }
+
+      ul li:hover > ul,
+      ul li ul:hover {
+        visibility: visible;
+        opacity: 1;
+        display: block;
+        min-width: 250px;
+        text-align: left;
+        padding-top: 20px;
+        box-shadow: 0px 3px 5px -1px #ccc;
+      }
+
+      ul li ul li {
+        clear: both;
+        width: 100%;
+        text-align: left;
+        border-style: none;
+      }
+
+      ul li ul li a:hover {
+        font-weight: bold;
+        color: #000000;
+        padding-left: 10px;
+        border-left: 2px solid #ffffff;
+        transition: all 0.3s ease;
+      }
+    }
+  }
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      color: #000000;
+    }
+  }
+
+  ul li ul li a { transition: all 0.5s ease; }
+</style>
+<nav role="navigation" class="primary-navigation">
+  <ul>
+    <li class="nav-item  dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinkMen" role="button"
+        data-bs-toggle="dropdown" aria-expanded="false">
+        Men
+      </a>
+      <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkMen">
+        <li><a class="dropdown-item" href="{% url 'products_by_category' 'Blouse' %}">Blouse</a></li>
+          <li><a class="dropdown-item" href="{% url 'products_by_category' 'Sweater' %}">Sweater</a></li>
+          <li><a class="dropdown-item" href="{% url 'products_by_category' 'Shirt' %}">Shirt</a></li>
+          <li><a class="dropdown-item" href="{% url 'products_by_category' 'T-Shirt' %}">T-Shirt</a></li>
+          <li><a class="dropdown-item" href="{% url 'products_by_category' 'Coat' %}">Coat</a></li>
+          <li><a class="dropdown-item" href="{% url 'products_by_category' 'Dress' %}">Dress</a></li>
+          <li><a class="dropdown-item" href="{% url 'products_by_category' 'Jacket' %}">Jacket</a></li>
+          <li><a class="dropdown-item" href="{% url 'products_by_category' 'Hoodie' %}">Hoodie</a></li>
+          <li><a class="dropdown-item" href="{% url 'products_by_category' 'Jeans' %}">Jeans</a></li>
+          <li><a class="dropdown-item" href="{% url 'products_by_category' 'Shorts' %}">Shorts</a></li>
+          <li><a class="dropdown-item" href="{% url 'products_by_category' 'Skirt' %}">Skirt</a></li>
+          <li><a class="dropdown-item" href="{% url 'products_by_category' 'Pants' %}">Pants</a></li>
+        </ul>
+      </li>
+      <li class="nav-item  dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinkWomen" role="button"
+          data-bs-toggle="dropdown" aria-expanded="false">
+          Women
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkWomen">
+          <li><a class="dropdown-item" href="#">Blouse</a></li>
+          <li><a class="dropdown-item" href="#">Sweater</a></li>
+          <li><a class="dropdown-item" href="#">Shirt</a></li>
+          <li><a class="dropdown-item" href="#">T-Shirt</a></li>
+          <li><a class="dropdown-item" href="#">Coat</a></li>
+          <li><a class="dropdown-item" href="#">Dress</a></li>
+          <li><a class="dropdown-item" href="#">Jacket</a></li>
+          <li><a class="dropdown-item" href="#">Hoodie</a></li>
+          <li><a class="dropdown-item" href="#">Jeans</a></li>
+          <li><a class="dropdown-item" href="#">Shorts</a></li>
+          <li><a class="dropdown-item" href="#">Skirt</a></li>
+          <li><a class="dropdown-item" href="#">Pants</a></li>
+        </ul>
+      </li>
+      <li class="nav-item  dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinkFootwears" role="button"
+          data-bs-toggle="dropdown" aria-expanded="false">
+          Footwears
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkFootwears">
+          <li><a class="dropdown-item" href="#">Sandals</a></li>
+          <li><a class="dropdown-item" href="#">Sneaker</a></li>
+          <li><a class="dropdown-item" href="#">Shoes</a></li>
+          <li><a class="dropdown-item" href="#">Boots</a></li>
+        </ul>
+      </li>
+      <li class="nav-item  dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinkHeadwear" role="button"
+          data-bs-toggle="dropdown" aria-expanded="false">
+          Headwear
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkHeadwear">
+          <li><a class="dropdown-item" href="#">Scarf</a></li>
+          <li><a class="dropdown-item" href="#">Hat</a></li>
+        </ul>
+      </li>
+      <li class="nav-item  dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinkAccessories" role="button"
+          data-bs-toggle="dropdown" aria-expanded="false">
+          Accessories
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkAccessories">
+          <li><a class="dropdown-item" href="#">Sunglasses</a></li>
+          <li><a class="dropdown-item" href="#">Jewelry</a></li>
+          <li><a class="dropdown-item" href="#">Socks</a></li>
+          <li><a class="dropdown-item" href="#">Backpack</a></li>
+          <li><a class="dropdown-item" href="#">Belt</a></li>
+          <li><a class="dropdown-item" href="#">Gloves</a></li>
+        </ul>
+      </li>
+  </ul>
+</nav>
+{% endblock topbar %}
+{% block content %}
+<div class="text-center pt-3"> <h5>Welcome, {{ user.first_name }} {{ user.last_name }} </h5> </div>
+{% load static %}
+<!--Carousel-->
+<div style="padding: 10px;">
+<div id="carouselExampleAutoplaying" style="height: 80%" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      
+      
+      <img src="{% static 'banner\5092428.jpg' %}"  class="d-block w-100" alt="banner_2">
+    </div>
+  
+  <div class="carousel-item ">
+    <img src="{% static 'banner\banner2.jpg' %}"  class="d-block w-100" alt="banner_2">
+  </div>
+</div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div> 
+
+<div class="mt-4"></div>
+
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-14">
+      <div class="card p-4 shadow">
+        <div class="card-body d-flex align-items-center">
+          
+          <img src="{% static 'suit.jpg' %}" alt="Image" class="img-fluid p-40px me-2" style="max-width: 500px;">
+        
+          <div class="col-6">
+            <span class="fs-3">"Transform your shopping experience with personalized recommendations from our AI."</span>
+            <footer class="blockquote-footer mt-3 fs-6"> Fashion Store</footer>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<section id="sm-banner" class="section-p1 py-5 bg-light">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6 mb-4">
+        <a href="" style="color: black;">
+        <div class="banner-box text-center p-4 position-relative">
+          <img src="{% static 'image1.jpg' %}" alt="Banner Image 1" class="img-fluid" style="max-height: 700px; object-fit: cover;">
+          <div style="width: 420px;" class="position-absolute top-50 start-50 p-2 translate-middle bg-body-secondary">
+            <h4  >Male Collection</h4>
+          
+        </div>
+        </div>
+      </a>
+      </div>
+      <div class="col-md-6 mb-4">
+        <a href="" style="color: black;">
+        <div class="banner-box text-center p-4 position-relative">
+          <img src="{% static 'image.jpg' %}" alt="Banner Image 2" class="img-fluid" style="max-height: 700px; object-fit: cover;">
+          <div style="width: 420px;" class="position-absolute top-50 start-50 p-2 translate-middle  bg-body-secondary">
+            <h4  >Female Collection</h4>
+          
+        </div>
+        </div>
+      </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<div class="mt-4"></div>
+
+<div class="small-container m-auto" style="background: radial-gradient(#7d7f81, #ffffff);">
+  <div class="categories text-center p-4">
+    <div class="row justify-content-center">
+      <div class="col-4 position-relative d-flex flex-column align-items-center">
+        <img src="{% static 'cloths.jpg' %}" alt="Category 1" class="img-fluid m-2 " style="object-fit: cover; height: 300px;">
+        <div style="width: 300px; color: white;" class="position-absolute top-50 start-50 p-2 translate-middle  bg-black">
+          <h4  >Clothes</h4>
+        
+      </div>
+      </div>
+      <div class="col-4 position-relative d-flex flex-column align-items-center bg-white">
+        <img src="{% static 'maksim-larin-ezdrvzA1hZw-unsplash_1.jpg' %}" alt="Category 2" class="img-fluid m-2" style="object-fit: cover; height: 300px;">
+        <div style="width: 300px; color: white; " class="position-absolute top-50 start-50 p-2 translate-middle  bg-black">
+          <h4  >Footwear</h4>
+        
+      </div>
+      </div>
+      <div class="col-4 position-relative d-flex flex-column align-items-center">
+        <img src="{% static 'acess.jpg' %}" alt="Category 3" class="img-fluid m-2" style="object-fit: cover; height: 300px;">
+        <div style="width: 300px; color: white;" class="position-absolute top-50 start-50 p-2 translate-middle  bg-black">
+          <h4  >Accessories</h4>
+        
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class=""></div> 
+
+<div class="offer m-auto p-auto" style="background: radial-gradient(#fff, #ffd6d6); height: 350px; ">
+  <div class="container mt-4 p-4">
+      <div class="row">
+          <div class="col-md-6 ">
+              <img  class="img-fluid offer-img w-75 float-end " src="{% static 'exclusive.png' %}" alt="Exclusive Offer">
+              
+          </div>
+          <div class="col-md-6 p-2 ">
+              <p class="text-center text-light bg-danger">Exclusive Available Store</p>
+              <h1 class="display-4 fw-bold">Smart band 4</h1>
+              <p class="lead">Elevate your fitness with precision tracking, heart rate monitoring, and sleep insights. Stylish, intuitive, and ready for any adventure, it's your perfect health companion.</span>
+              <a href="#" class="btn btn-primary btn-lg ">Buy Now <i class="fas fa-arrow-right"></i></a>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+  
+<div class="testimonial p-4">
+  <h1 class="text-center">Reviews from Customers </h1>
+  <div class="small-container">
+    <div class="row">
+      <div class="col-3 text-center p-4 ">
+        <i class="fa fa-quote-left" style="font-size: 34px; color: #ff523b;"></i>
+        <span class="fs-6 text-dark">Great experience shopping at your store! The products are top-notch and the customer service is exceptional. Will definitely be coming back for more.</span>
+        <div class="ratings">
+          <i class="fa-solid fa-star text-primary"></i>
+          <i class="fa-solid fa-star text-primary"></i>
+          <i class="fa-solid fa-star text-primary"></i>
+          <i class="fa-solid fa-star text-primary"></i>
+          <i class="fa-solid fa-star text-primary"></i>
+        </div>
+        <div class="mt-4">
+        <img src="{% static 'user-1.png' %}" class="mx-auto mt-3 rounded-circle" style="width: 50px;">
+        <h3 class="text-center mt-3">Sean Parker</h3>
+      </div>
+      </div>
+
+      <div class="col-3 text-center p-4">
+        <i class="fa fa-quote-left" style="font-size: 34px; color: #ff523b;"></i>
+        <span class="fs-6 text-dark">"Shopping at your store is like having a personal shopper who knows your tastes perfectly. Recommendations make every purchase an intuitive delight."</span>
+        <div class="ratings">
+          <i class="fa-solid fa-star text-primary"></i>
+          <i class="fa-solid fa-star text-primary"></i>
+          <i class="fa-solid fa-star text-primary"></i>
+          <i class="fa-solid fa-star text-primary"></i>
+          <i class="fa-solid fa-star text-primary"></i>
+        </div>
+        <img src="{% static 'user-4.png' %}" class="mx-auto mt-3 rounded-circle" style="width: 50px;">
+        <h3 class="text-center mt-3">Shazia Khan</h3>
+      </div>
+
+
+      <div class="col-3 text-center p-4">
+        <i class="fa fa-quote-left" style="font-size: 34px; color: #ff523b;"></i>
+        <span class="fs-6 text-dark">Impressed with the variety of products available at your store. From trendy fashion items to essential gadgets, there's something for everyone. Plus, the prices are reasonable!</span>
+        <div class="ratings">
+          <i class="fa-solid fa-star text-primary"></i>
+          <i class="fa-solid fa-star text-primary"></i>
+          <i class="fa-solid fa-star text-primary"></i>
+          <i class="fa-solid fa-star text-primary"></i>
+          <i class="fa-regular fa-star text-primary"></i>
+        </div>
+        <img src="{% static 'user-2.png' %}" class="mx-auto mt-3 rounded-circle" style="width: 50px;">
+        <h3 class="text-center mt-3">Mike Smith</h3>
+      </div>
+      <div class="col-3 text-center p-4 ">
+        <i class="fa fa-quote-left" style="font-size: 34px; color: #ff523b;"></i>
+        <span class="fs-6 text-dark">Superb online shopping experience! The website is easy to navigate, the checkout process is smooth, and delivery is always on time. Keep up the great work!</span>
+        <div class="ratings">
+          <i class="fa-solid fa-star text-primary"></i>
+          <i class="fa-solid fa-star text-primary"></i>
+          <i class="fa-solid fa-star text-primary"></i>
+          <i class="fa fa-star-half text-primary"></i>
+          <i class="fa-regular fa-star text-primary"></i>
+        </div>
+        <div class="mt-4">
+        <img src="{% static 'user-3.png' %}" class="mx-auto mt-3 rounded-circle " style="width: 50px;">
+        <h3 class="text-center mt-3">Mabel Joe</h3>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<footer class="footer bg-dark text-light py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 footer-col">
+                <h5 class="mb-4">Get to Know Us</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-light text-decoration-none ">About Us</a></li>
+                    <li><a href="#" class="text-light text-decoration-none">Careers</a></li>
+                    <li><a href="#" class="text-light text-decoration-none">Press Releases</a></li>
+                    <li><a href="#" class="text-light text-decoration-none">Fashion Store Cares</a></li>
+                    <li><a href="#" class="text-light text-decoration-none">Gift a Smile</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 footer-col">
+                <h5 class="mb-4">Connect with Us</h5>
+                <ul class="list-unstyled">
+                    <li><i class="fab fa-facebook "></i><a href="#" class="text-light text-decoration-none">Facebook</a></li>
+                    <li><i class="fab fa-twitter "></i><a href="#" class="text-light text-decoration-none">Twitter</a></li>
+                    <li><i class="fab fa-instagram "></i><a href="#" class="text-light text-decoration-none">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 footer-col">
+              <h5 class="mb-4">About </h5>
+              <ul class="list-unstyled">
+            
+                  <li><a href="#" class="text-decoration-none text-light">Terms & Conditions</a></li>
+                  <li><a href="#" class="text-decoration-none text-light">Privacy</a></li>
+                  <li><a href="#" class="text-decoration-none text-light">Delivery information</a></li>
+              </ul>
+            </div>
+            <div class="col-md-2 footer-col">
+                <h5 class="mb-4">My Account</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-light text-decoration-none">Sign in</a></li>
+                    <li><a href="#" class="text-light text-decoration-none"> View Cart</a></li>
+                    <li><a href="#" class="text-light text-decoration-none">My wishlist</a></li>
+                    <li><a href="#" class="text-light text-decoration-none">HELP</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 footer-col">
+                <h5 class="mb-4">Payment Methods</h5>
+                <ul class="list-unstyled list-inline text-start">
+                    <li class="list-inline-item">
+                        <img src="{% static 'hbl.JPG' %}" alt="hbl" class="img-fluid d-inline-block" style="width: 40px; height: 40px; transition: box-shadow 0.3s;">
+                    </li>
+                    <li class="list-inline-item">
+                        <img src="{% static 'easypaisa logo.png' %}" alt="EasyPaisa" class="img-fluid d-inline-block" style="width: 40px; height: 40px; transition: box-shadow 0.3s;">
+                    </li>
+                    <li class="list-inline-item">
+                        <img src="{% static 'cashondelivery.JPG' %}" alt="Cash on Delivery" class="img-fluid d-inline-block" style="width: 40px; height: 40px; transition: box-shadow 0.3s;">
+                    </li>
+                    <li class="list-inline-item">
+                        <img src="{% static 'paypal.JPG' %}" alt="PayPal" class="img-fluid d-inline-block" style="width: 40px; height: 40px; transition: box-shadow 0.3s;">
+                    </li>
+                    <li class="list-inline-item bg-white">
+                        <img src="{% static 'mastercard.png' %}" alt="Mastercard" class="img-fluid d-inline-block" style="width: 40px; height: 40px; transition: box-shadow 0.3s;">
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <hr class="my-4">
+        <div class="row">
+            <div class="col-md-8 text-end">
+                <p class="text-white">© 2024 fashionstore.com, Inc. or its affiliates</p>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+{% endblock content %}
+

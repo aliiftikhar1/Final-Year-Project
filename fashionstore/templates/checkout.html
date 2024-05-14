@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title text-center mb-4">Payment Information</h2>
+                        <form action="/orders" method="POST">
+                            {% csrf_token %}
+                            <div class="form-group">
+                                <label for="paymentMethod" class="font-weight-bold">Payment Method</label>
+                                <select class="form-control" id="paymentMethod" name="payment_method">
+                                    <option value="">Choose method</option>
+                                    <option value="creditCard">Credit Card</option>
+                                    <option value="cashOnDelivery">Cash on Delivery</option>
+                                </select>
+                            </div>
+                            <div id="creditCardFields">
+                                <div class="form-group">
+                                    <label for="cardNumber" class="font-weight-bold">Card Number</label>
+                                    <input type="text" class="form-control" id="cardNumber" name="card_number" placeholder="Enter card number">
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="expiryDate" class="font-weight-bold">Expiry Date</label>
+                                        <input type="text" class="form-control" id="expiryDate" name="expiry_date" placeholder="MM/YY">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="cvv" class="font-weight-bold">CVV</label>
+                                        <input type="text" class="form-control" id="cvv" name="cvv" placeholder="Enter CVV">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="cardHolderName" class="font-weight-bold">Card Holder Name</label>
+                                    <input type="text" class="form-control" id="cardHolderName" name="card_holder_name" placeholder="Enter card holder name">
+                                </div>
+                            </div>
+                            <div id="cashOnDeliveryFields" style="display: none;">
+                                <div class="alert alert-info" role="alert">
+                                    Please keep the exact amount ready for cash on delivery.
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="billingAddress" class="font-weight-bold">Billing Address</label>
+                                <input type="hidden" name="value2" value="{{user.id}}">
+                                <textarea class="form-control" id="billingAddress" name="billing_address" rows="3" placeholder="Enter billing address"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-warning btn-block">Place Your Order</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.getElementById('paymentMethod').addEventListener('change', function() {
+            var creditCardFields = document.getElementById('creditCardFields');
+            var cashOnDeliveryFields = document.getElementById('cashOnDeliveryFields');
+            if (this.value === 'creditCard') {
+                creditCardFields.style.display = 'block';
+                cashOnDeliveryFields.style.display = 'none';
+            } else if (this.value === 'cashOnDelivery') {
+                creditCardFields.style.display = 'none';
+                cashOnDeliveryFields.style.display = 'block';
+            }
+        });
+    </script>
+</body>
+</html>

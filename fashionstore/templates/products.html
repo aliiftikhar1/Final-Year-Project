@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block title %}Products{% endblock title %}
+
+{% block content %}
+  <div class="container">
+    {% if user == None %}
+      <div class="alert alert-primary" role="alert">
+        <p class="mb-0">Please <a href="/login">login</a> to buy products</p>
+      </div>
+    {% endif %}
+    <h1 class="mb-4 text-center">All Products: User: {{ user }}</h1>
+    <div class="row">
+      {% for product in products %}
+        <div class="col-md-4 mb-4">
+          <form action="/add_to_cart" method="post">
+            {% csrf_token %}
+            <div class="card">
+              <img src="{{ product.image.url }}" class="card-img-top" alt="{{ product.name }}">
+              <div class="card-body">
+                <h5 class="card-title">{{ product.name }}</h5>
+                <p class="card-text">{{ product.description }}</p>
+                <p class="card-text">Price: <span style="text-decoration: line-through;">{{ product.price }}Rs/-</span></p>
+                <p class="card-text">Discount Price: {{ product.discount_price }}Rs/-</p>
+                <input type="hidden" name="product" value="{{ product.id }}">
+                <button type="submit" class="btn btn-primary">Add to Cart</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+{% endblock content %}

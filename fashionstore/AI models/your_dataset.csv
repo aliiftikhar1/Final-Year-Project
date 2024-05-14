@@ -1,0 +1,3901 @@
+Age,Gender,Item Purchased,Category,Purchase Amount (USD),Location,Season
+55,Male,Blouse,Clothing,53,Kentucky,Winter
+19,Male,Sweater,Clothing,64,Maine,Winter
+50,Male,Jeans,Clothing,73,Massachusetts,Spring
+21,Male,Sandals,Footwear,90,Rhode Island,Spring
+45,Male,Blouse,Clothing,49,Oregon,Spring
+46,Male,Sneakers,Footwear,20,Wyoming,Summer
+63,Male,Shirt,Clothing,85,Montana,Fall
+27,Male,Shorts,Clothing,34,Louisiana,Winter
+26,Male,Coat,Outerwear,97,West Virginia,Summer
+57,Male,Handbag,Accessories,31,Missouri,Spring
+53,Male,Shoes,Footwear,34,Arkansas,Fall
+30,Male,Shorts,Clothing,68,Hawaii,Winter
+61,Male,Coat,Outerwear,72,Delaware,Winter
+65,Male,Dress,Clothing,51,New Hampshire,Spring
+64,Male,Coat,Outerwear,53,New York,Winter
+64,Male,Skirt,Clothing,81,Rhode Island,Winter
+25,Male,Sunglasses,Accessories,36,Alabama,Spring
+53,Male,Dress,Clothing,38,Mississippi,Winter
+52,Male,Sweater,Clothing,48,Montana,Summer
+66,Male,Pants,Clothing,90,Rhode Island,Summer
+21,Male,Pants,Clothing,51,Louisiana,Winter
+31,Male,Pants,Clothing,62,North Carolina,Winter
+56,Male,Pants,Clothing,37,California,Summer
+31,Male,Pants,Clothing,88,Oklahoma,Winter
+18,Male,Jacket,Outerwear,22,Florida,Fall
+18,Male,Hoodie,Clothing,25,Texas,Summer
+38,Male,Jewelry,Accessories,20,Nevada,Spring
+56,Male,Shorts,Clothing,56,Kentucky,Summer
+54,Male,Handbag,Accessories,94,North Carolina,Fall
+31,Male,Dress,Clothing,48,Wyoming,Fall
+57,Male,Jewelry,Accessories,31,North Carolina,Winter
+33,Male,Dress,Clothing,79,West Virginia,Winter
+36,Male,Jacket,Outerwear,67,Kansas,Summer
+54,Male,Pants,Clothing,38,Colorado,Summer
+36,Male,T-shirt,Clothing,91,North Dakota,Spring
+54,Male,Blouse,Clothing,33,Massachusetts,Summer
+35,Male,T-shirt,Clothing,69,Illinois,Winter
+35,Male,Jeans,Clothing,45,Indiana,Summer
+29,Male,Dress,Clothing,37,Florida,Winter
+70,Male,Pants,Clothing,60,Arizona,Summer
+69,Male,Handbag,Accessories,76,Louisiana,Winter
+67,Male,Scarf,Accessories,39,Alaska,Spring
+20,Male,Coat,Outerwear,100,Tennessee,Spring
+25,Male,Scarf,Accessories,69,Ohio,Fall
+39,Male,Hat,Accessories,53,Kentucky,Summer
+50,Male,Socks,Clothing,21,Tennessee,Fall
+57,Male,Shirt,Clothing,43,California,Summer
+55,Male,Jewelry,Accessories,54,Montana,Winter
+42,Male,Shirt,Clothing,55,Nevada,Summer
+68,Male,Hoodie,Clothing,30,New Jersey,Spring
+49,Male,Blouse,Clothing,28,Maryland,Spring
+59,Male,Skirt,Clothing,59,Vermont,Winter
+42,Male,T-shirt,Clothing,20,Alaska,Summer
+29,Male,Skirt,Clothing,24,Mississippi,Winter
+47,Male,Coat,Outerwear,94,New Mexico,Summer
+40,Male,Jacket,Outerwear,28,South Carolina,Winter
+41,Male,Backpack,Accessories,73,Mississippi,Summer
+21,Male,Coat,Outerwear,64,West Virginia,Summer
+69,Male,Hoodie,Clothing,54,Missouri,Summer
+63,Male,Belt,Accessories,79,Louisiana,Spring
+50,Male,Sweater,Clothing,37,Idaho,Summer
+55,Male,Scarf,Accessories,68,Texas,Winter
+30,Male,Sneakers,Footwear,21,Mississippi,Spring
+33,Male,Sunglasses,Accessories,79,Arizona,Winter
+65,Male,Boots,Footwear,83,Alabama,Fall
+65,Male,Backpack,Accessories,36,New Jersey,Spring
+31,Male,Blouse,Clothing,94,Pennsylvania,Winter
+45,Male,Coat,Outerwear,33,Connecticut,Winter
+57,Male,Handbag,Accessories,46,Utah,Summer
+48,Male,Belt,Accessories,70,Tennessee,Summer
+22,Male,Belt,Accessories,29,Alabama,Fall
+36,Male,Dress,Clothing,48,Virginia,Summer
+18,Male,Dress,Clothing,26,Georgia,Winter
+48,Male,Pants,Clothing,85,Hawaii,Spring
+49,Male,Gloves,Accessories,58,Indiana,Spring
+64,Male,Scarf,Accessories,85,Utah,Summer
+50,Male,Hat,Accessories,43,Delaware,Summer
+22,Male,Dress,Clothing,53,Delaware,Summer
+50,Male,Skirt,Clothing,91,Nebraska,Spring
+38,Male,Jacket,Outerwear,96,Iowa,Winter
+19,Male,Sandals,Footwear,72,New York,Summer
+67,Male,Shoes,Footwear,96,Virginia,Summer
+19,Male,Pants,Clothing,28,Georgia,Spring
+36,Male,Dress,Clothing,40,Texas,Summer
+52,Male,Coat,Outerwear,32,Arizona,Spring
+53,Male,Sunglasses,Accessories,95,New Mexico,Winter
+24,Male,Hoodie,Clothing,41,Nevada,Spring
+52,Male,Shoes,Footwear,53,Ohio,Fall
+33,Male,T-shirt,Clothing,47,Wyoming,Fall
+47,Male,Jacket,Outerwear,83,California,Fall
+25,Male,Hat,Accessories,48,South Carolina,Summer
+44,Male,Scarf,Accessories,99,South Carolina,Winter
+61,Male,Jacket,Outerwear,87,Texas,Winter
+37,Male,Sweater,Clothing,62,Florida,Fall
+58,Male,Skirt,Clothing,76,Nevada,Spring
+37,Male,Sneakers,Footwear,100,Missouri,Fall
+32,Male,Gloves,Accessories,73,Delaware,Spring
+21,Male,Shoes,Footwear,92,Virginia,Winter
+20,Male,Jeans,Clothing,67,New York,Spring
+26,Male,Hoodie,Clothing,40,Missouri,Summer
+62,Male,Sunglasses,Accessories,98,South Dakota,Fall
+27,Male,Coat,Outerwear,85,North Dakota,Spring
+51,Male,Socks,Clothing,67,Oklahoma,Winter
+54,Male,Boots,Footwear,89,West Virginia,Winter
+55,Male,Sunglasses,Accessories,24,New Hampshire,Spring
+69,Male,Backpack,Accessories,96,New York,Fall
+64,Male,Jacket,Outerwear,35,Minnesota,Summer
+28,Male,Sneakers,Footwear,67,Maryland,Winter
+70,Male,Socks,Clothing,79,Montana,Spring
+58,Male,T-shirt,Clothing,85,Alabama,Spring
+56,Male,Backpack,Accessories,26,New York,Summer
+26,Male,Belt,Accessories,75,Massachusetts,Summer
+37,Male,Gloves,Accessories,65,Florida,Spring
+44,Male,Hat,Accessories,54,New Jersey,Winter
+70,Male,Coat,Outerwear,95,Massachusetts,Summer
+53,Male,Skirt,Clothing,94,Wyoming,Spring
+55,Male,Shoes,Footwear,86,Virginia,Spring
+50,Male,Sandals,Footwear,32,South Dakota,Summer
+50,Male,Sweater,Clothing,45,Kentucky,Fall
+38,Male,Coat,Outerwear,76,Wyoming,Fall
+64,Male,Hat,Accessories,84,West Virginia,Summer
+19,Male,Shorts,Clothing,72,Virginia,Winter
+40,Male,Backpack,Accessories,40,Washington,Spring
+57,Male,Sweater,Clothing,89,Louisiana,Fall
+44,Male,Sweater,Clothing,86,Nevada,Spring
+49,Male,Shorts,Clothing,54,California,Winter
+43,Male,Shorts,Clothing,36,Mississippi,Spring
+24,Male,Sweater,Clothing,89,Mississippi,Winter
+20,Male,Scarf,Accessories,32,California,Spring
+24,Male,Dress,Clothing,67,Pennsylvania,Summer
+44,Male,Scarf,Accessories,39,Kentucky,Fall
+28,Male,Skirt,Clothing,29,Maine,Summer
+30,Male,Backpack,Accessories,58,New Mexico,Fall
+52,Male,Sweater,Clothing,65,Montana,Winter
+43,Male,Hat,Accessories,94,Texas,Fall
+43,Male,Sandals,Footwear,81,Kansas,Fall
+39,Male,Blouse,Clothing,86,South Carolina,Winter
+68,Male,Sneakers,Footwear,43,Colorado,Spring
+68,Male,Skirt,Clothing,29,Georgia,Winter
+49,Male,Coat,Outerwear,95,Florida,Fall
+63,Male,Shirt,Clothing,28,North Carolina,Fall
+56,Male,Gloves,Accessories,46,Virginia,Fall
+37,Male,Jacket,Outerwear,58,Nebraska,Fall
+30,Male,Coat,Outerwear,48,Missouri,Fall
+19,Male,Shoes,Footwear,43,New Jersey,Fall
+24,Male,Jewelry,Accessories,95,Missouri,Fall
+52,Male,Skirt,Clothing,30,Colorado,Fall
+63,Male,Shoes,Footwear,64,Idaho,Summer
+37,Male,Gloves,Accessories,90,Wyoming,Fall
+38,Male,Pants,Clothing,76,Delaware,Summer
+35,Male,Boots,Footwear,96,California,Fall
+28,Male,Sunglasses,Accessories,47,North Dakota,Fall
+30,Male,Shirt,Clothing,85,South Carolina,Summer
+69,Male,Hoodie,Clothing,55,North Carolina,Winter
+41,Male,Dress,Clothing,98,Oklahoma,Fall
+63,Male,Socks,Clothing,77,Maine,Spring
+35,Male,Shorts,Clothing,26,Missouri,Fall
+36,Male,Hat,Accessories,68,Vermont,Fall
+25,Male,Shirt,Clothing,73,Connecticut,Fall
+58,Male,Gloves,Accessories,27,New Hampshire,Fall
+27,Male,Gloves,Accessories,23,Texas,Summer
+65,Male,Backpack,Accessories,49,North Dakota,Fall
+54,Male,Sunglasses,Accessories,74,California,Summer
+54,Male,Skirt,Clothing,67,Virginia,Summer
+59,Male,Handbag,Accessories,65,Delaware,Spring
+42,Male,Handbag,Accessories,60,Kentucky,Winter
+46,Male,Sneakers,Footwear,31,Delaware,Fall
+33,Male,Gloves,Accessories,27,Arkansas,Fall
+34,Male,Shoes,Footwear,80,Louisiana,Summer
+27,Male,Jacket,Outerwear,30,Nevada,Summer
+52,Male,Shirt,Clothing,25,Wyoming,Fall
+29,Male,Shorts,Clothing,35,Virginia,Summer
+54,Male,Jewelry,Accessories,67,Nebraska,Summer
+25,Male,Hat,Accessories,46,Hawaii,Fall
+41,Male,Shoes,Footwear,35,Vermont,Winter
+53,Male,Coat,Outerwear,86,Oklahoma,Fall
+53,Male,Backpack,Accessories,81,New Hampshire,Spring
+21,Male,Hoodie,Clothing,42,Kansas,Fall
+61,Male,Skirt,Clothing,43,Idaho,Fall
+64,Male,Boots,Footwear,31,Illinois,Fall
+51,Male,Sandals,Footwear,81,South Dakota,Fall
+32,Male,Pants,Clothing,61,Massachusetts,Summer
+38,Male,Gloves,Accessories,96,Alabama,Summer
+58,Male,Skirt,Clothing,29,Ohio,Spring
+32,Male,Sneakers,Footwear,33,Hawaii,Spring
+46,Male,T-shirt,Clothing,32,Wisconsin,Summer
+39,Male,Backpack,Accessories,56,Minnesota,Summer
+19,Male,Shoes,Footwear,94,Georgia,Spring
+50,Male,Hoodie,Clothing,53,Arkansas,Spring
+36,Male,Blouse,Clothing,82,West Virginia,Fall
+65,Male,Coat,Outerwear,70,Indiana,Fall
+64,Male,Hat,Accessories,76,Utah,Fall
+46,Male,Shoes,Footwear,29,Nebraska,Summer
+36,Male,Belt,Accessories,100,North Dakota,Fall
+51,Male,Backpack,Accessories,94,Missouri,Spring
+51,Male,Jacket,Outerwear,25,New York,Fall
+38,Male,Boots,Footwear,88,Washington,Summer
+59,Male,Scarf,Accessories,78,South Carolina,Fall
+57,Male,Jewelry,Accessories,45,Utah,Winter
+54,Male,Hat,Accessories,73,Idaho,Summer
+25,Male,Dress,Clothing,61,Pennsylvania,Summer
+69,Male,Blouse,Clothing,22,Missouri,Fall
+57,Male,Hat,Accessories,38,Nebraska,Spring
+70,Male,Scarf,Accessories,38,Indiana,Fall
+24,Male,Sneakers,Footwear,100,Arizona,Fall
+67,Male,Shirt,Clothing,64,Hawaii,Winter
+24,Male,T-shirt,Clothing,55,Wisconsin,Summer
+62,Male,Gloves,Accessories,91,Rhode Island,Summer
+57,Male,Skirt,Clothing,38,Wisconsin,Spring
+55,Male,Sandals,Footwear,97,Minnesota,Winter
+45,Male,Jacket,Outerwear,22,Vermont,Fall
+69,Male,Skirt,Clothing,92,South Dakota,Fall
+67,Male,Handbag,Accessories,84,Virginia,Fall
+30,Male,Handbag,Accessories,93,Nevada,Fall
+24,Male,Jacket,Outerwear,50,Hawaii,Summer
+62,Male,Scarf,Accessories,64,New Jersey,Spring
+43,Male,Shorts,Clothing,61,Massachusetts,Spring
+35,Male,Sunglasses,Accessories,48,Oklahoma,Winter
+28,Male,T-shirt,Clothing,45,California,Spring
+32,Male,Belt,Accessories,88,Nevada,Spring
+39,Male,Sneakers,Footwear,57,Arizona,Spring
+28,Male,Hat,Accessories,68,North Carolina,Summer
+47,Male,Gloves,Accessories,94,New York,Spring
+20,Male,Pants,Clothing,41,Wyoming,Spring
+63,Male,Socks,Clothing,83,South Dakota,Summer
+25,Male,Jacket,Outerwear,22,Arkansas,Spring
+29,Male,Shoes,Footwear,74,Texas,Spring
+50,Male,Jeans,Clothing,90,Rhode Island,Winter
+18,Male,Socks,Clothing,79,New Hampshire,Spring
+70,Male,Sandals,Footwear,28,Ohio,Spring
+66,Male,Scarf,Accessories,88,Utah,Fall
+28,Male,Blouse,Clothing,26,Tennessee,Spring
+54,Male,Jewelry,Accessories,27,Hawaii,Winter
+19,Male,Sweater,Clothing,83,Arizona,Fall
+20,Male,Gloves,Accessories,39,South Dakota,Summer
+43,Male,Sunglasses,Accessories,89,New Jersey,Winter
+38,Male,Coat,Outerwear,68,North Dakota,Winter
+50,Male,Dress,Clothing,90,Iowa,Summer
+64,Male,Skirt,Clothing,34,Ohio,Fall
+49,Male,Pants,Clothing,51,Vermont,Summer
+47,Male,Sweater,Clothing,45,Montana,Winter
+36,Male,Hoodie,Clothing,88,Delaware,Winter
+55,Male,Coat,Outerwear,85,New York,Summer
+25,Male,Jewelry,Accessories,100,Kentucky,Winter
+53,Male,Belt,Accessories,42,Oregon,Spring
+49,Male,Sandals,Footwear,53,Rhode Island,Summer
+35,Male,Sunglasses,Accessories,86,Nevada,Spring
+29,Male,Sweater,Clothing,66,Montana,Spring
+47,Male,Belt,Accessories,100,Pennsylvania,Winter
+53,Male,Handbag,Accessories,47,Alaska,Fall
+33,Male,Skirt,Clothing,25,Mississippi,Fall
+21,Male,Handbag,Accessories,51,Wyoming,Winter
+32,Male,Shorts,Clothing,41,Delaware,Summer
+52,Male,Boots,Footwear,73,Oklahoma,Winter
+67,Male,Sunglasses,Accessories,42,Indiana,Winter
+43,Male,Scarf,Accessories,20,Maryland,Spring
+58,Male,Jewelry,Accessories,30,South Dakota,Spring
+20,Male,Handbag,Accessories,53,West Virginia,Summer
+61,Male,Gloves,Accessories,74,Alabama,Spring
+32,Male,Jeans,Clothing,57,Louisiana,Fall
+38,Male,Hat,Accessories,57,Montana,Winter
+21,Male,Jeans,Clothing,77,California,Winter
+37,Male,Pants,Clothing,40,Hawaii,Summer
+27,Male,Shorts,Clothing,46,Iowa,Summer
+36,Male,Pants,Clothing,78,Colorado,Fall
+32,Male,Backpack,Accessories,59,Michigan,Spring
+51,Male,Jewelry,Accessories,75,Louisiana,Summer
+64,Male,Sweater,Clothing,54,Maryland,Spring
+68,Male,Shoes,Footwear,42,Georgia,Spring
+68,Male,Blouse,Clothing,44,Georgia,Winter
+33,Male,Jeans,Clothing,52,North Dakota,Fall
+65,Male,Sunglasses,Accessories,69,Maryland,Summer
+48,Male,Jewelry,Accessories,26,Oregon,Summer
+69,Male,Coat,Outerwear,33,North Dakota,Spring
+59,Male,Jewelry,Accessories,32,Maryland,Spring
+48,Male,Backpack,Accessories,85,Virginia,Winter
+25,Male,Skirt,Clothing,30,South Dakota,Fall
+29,Male,Shirt,Clothing,29,Georgia,Winter
+57,Male,Sweater,Clothing,95,Hawaii,Spring
+23,Male,Sneakers,Footwear,69,Arkansas,Summer
+45,Male,Sandals,Footwear,69,Montana,Fall
+38,Male,Belt,Accessories,61,Oklahoma,Spring
+21,Male,Skirt,Clothing,94,Minnesota,Summer
+32,Male,Sweater,Clothing,30,Montana,Fall
+63,Male,Skirt,Clothing,45,Ohio,Summer
+29,Male,Handbag,Accessories,39,Kentucky,Summer
+27,Male,Jewelry,Accessories,51,Nebraska,Summer
+56,Male,Scarf,Accessories,37,Delaware,Spring
+30,Male,T-shirt,Clothing,62,North Carolina,Winter
+49,Male,Coat,Outerwear,85,New York,Fall
+58,Male,T-shirt,Clothing,33,Colorado,Winter
+57,Male,Dress,Clothing,26,Delaware,Fall
+60,Male,Shoes,Footwear,99,Utah,Spring
+69,Male,Handbag,Accessories,39,Connecticut,Spring
+70,Male,Skirt,Clothing,20,New Jersey,Spring
+53,Male,Sunglasses,Accessories,42,West Virginia,Winter
+25,Male,Sandals,Footwear,74,Indiana,Spring
+48,Male,Shoes,Footwear,26,Delaware,Summer
+69,Male,T-shirt,Clothing,53,Maryland,Winter
+25,Male,Sneakers,Footwear,80,Pennsylvania,Summer
+29,Male,Hat,Accessories,98,Iowa,Spring
+46,Male,Skirt,Clothing,95,Pennsylvania,Spring
+37,Male,Sweater,Clothing,44,Delaware,Summer
+20,Male,Sandals,Footwear,60,Oregon,Summer
+40,Male,Dress,Clothing,84,Oregon,Winter
+60,Male,Sweater,Clothing,59,Utah,Fall
+26,Male,Jacket,Outerwear,49,North Dakota,Summer
+29,Male,Gloves,Accessories,32,Florida,Winter
+66,Male,Handbag,Accessories,29,Maryland,Fall
+66,Male,Dress,Clothing,22,Minnesota,Spring
+56,Male,Pants,Clothing,85,Montana,Winter
+69,Male,Jeans,Clothing,52,Rhode Island,Winter
+38,Male,Pants,Clothing,89,Massachusetts,Spring
+42,Male,Dress,Clothing,77,Vermont,Spring
+30,Male,Pants,Clothing,24,New Jersey,Summer
+66,Male,Jewelry,Accessories,24,Wisconsin,Spring
+36,Male,Handbag,Accessories,22,California,Fall
+58,Male,Sweater,Clothing,82,West Virginia,Fall
+45,Male,Backpack,Accessories,67,South Dakota,Winter
+47,Male,Shorts,Clothing,74,Maine,Spring
+66,Male,Jewelry,Accessories,72,Kansas,Summer
+41,Male,Sneakers,Footwear,36,Vermont,Summer
+41,Male,Belt,Accessories,95,Tennessee,Winter
+66,Male,Hoodie,Clothing,78,Tennessee,Winter
+37,Male,Shirt,Clothing,82,Wyoming,Summer
+70,Male,Pants,Clothing,70,Vermont,Winter
+62,Male,Scarf,Accessories,41,New Jersey,Fall
+61,Male,Coat,Outerwear,42,Iowa,Summer
+48,Male,Coat,Outerwear,50,Florida,Fall
+70,Male,Socks,Clothing,31,Nevada,Summer
+46,Male,Sweater,Clothing,51,North Dakota,Winter
+31,Male,Shirt,Clothing,98,Florida,Fall
+19,Male,Shirt,Clothing,86,New York,Winter
+39,Male,Sweater,Clothing,64,Alaska,Winter
+41,Male,Blouse,Clothing,46,Kansas,Fall
+20,Male,Sweater,Clothing,85,Oregon,Spring
+36,Male,Hat,Accessories,81,Rhode Island,Fall
+32,Male,Sweater,Clothing,59,New Mexico,Winter
+69,Male,Hoodie,Clothing,79,Massachusetts,Winter
+40,Male,Shorts,Clothing,33,Pennsylvania,Spring
+40,Male,Shorts,Clothing,47,New Jersey,Summer
+20,Male,Hat,Accessories,20,Utah,Summer
+64,Male,Coat,Outerwear,36,Kentucky,Spring
+27,Male,Sandals,Footwear,39,Nebraska,Summer
+24,Male,Skirt,Clothing,71,Virginia,Winter
+48,Male,Shoes,Footwear,59,Wyoming,Winter
+49,Male,Jeans,Clothing,50,New Mexico,Spring
+36,Male,Sandals,Footwear,41,Oregon,Fall
+56,Male,Blouse,Clothing,59,South Carolina,Fall
+37,Male,Hat,Accessories,87,Arizona,Winter
+42,Male,Sweater,Clothing,68,Kentucky,Spring
+28,Male,Skirt,Clothing,90,New York,Winter
+27,Male,Jeans,Clothing,71,Texas,Fall
+63,Male,Sneakers,Footwear,64,Missouri,Fall
+58,Male,Jewelry,Accessories,76,Pennsylvania,Fall
+37,Male,Jewelry,Accessories,42,Oregon,Fall
+56,Male,Pants,Clothing,80,Nevada,Spring
+18,Male,Belt,Accessories,56,Arkansas,Spring
+48,Male,Hat,Accessories,25,Minnesota,Summer
+31,Male,Sneakers,Footwear,74,Georgia,Winter
+51,Male,Pants,Clothing,30,Rhode Island,Summer
+65,Male,T-shirt,Clothing,96,Nevada,Spring
+53,Male,Sneakers,Footwear,64,Texas,Fall
+55,Male,Shorts,Clothing,88,Florida,Winter
+62,Male,Shoes,Footwear,88,North Dakota,Summer
+55,Male,Gloves,Accessories,88,West Virginia,Summer
+64,Male,Socks,Clothing,36,Nebraska,Spring
+52,Male,Dress,Clothing,40,Tennessee,Spring
+24,Male,Handbag,Accessories,39,Oklahoma,Spring
+38,Male,Belt,Accessories,40,Wisconsin,Summer
+59,Male,Scarf,Accessories,34,Oregon,Winter
+27,Male,Sneakers,Footwear,83,North Carolina,Winter
+24,Male,Sweater,Clothing,85,Pennsylvania,Summer
+23,Male,Coat,Outerwear,27,North Dakota,Summer
+69,Male,Jewelry,Accessories,78,Ohio,Spring
+59,Male,Sunglasses,Accessories,32,Oklahoma,Summer
+51,Male,Shoes,Footwear,51,South Carolina,Fall
+63,Male,Scarf,Accessories,32,Maine,Spring
+54,Male,Dress,Clothing,62,Nevada,Winter
+32,Male,T-shirt,Clothing,29,Montana,Fall
+39,Male,Backpack,Accessories,69,New Hampshire,Fall
+66,Male,Jewelry,Accessories,25,Maine,Winter
+28,Male,Jeans,Clothing,76,California,Winter
+50,Male,Sunglasses,Accessories,77,West Virginia,Fall
+70,Male,Sweater,Clothing,33,California,Fall
+67,Male,Shorts,Clothing,93,West Virginia,Fall
+64,Male,Jewelry,Accessories,39,Louisiana,Spring
+45,Male,Coat,Outerwear,93,Georgia,Summer
+22,Male,Handbag,Accessories,82,Washington,Summer
+27,Male,Boots,Footwear,42,Virginia,Spring
+25,Male,Gloves,Accessories,71,Indiana,Winter
+37,Male,Sweater,Clothing,86,Minnesota,Spring
+26,Male,T-shirt,Clothing,82,Idaho,Spring
+33,Male,Shoes,Footwear,65,Vermont,Fall
+43,Male,Scarf,Accessories,29,North Dakota,Spring
+37,Male,Sneakers,Footwear,65,Rhode Island,Winter
+46,Male,Dress,Clothing,88,South Carolina,Fall
+22,Male,Belt,Accessories,46,Mississippi,Fall
+20,Male,Boots,Footwear,67,Montana,Winter
+60,Male,Scarf,Accessories,35,Idaho,Fall
+39,Male,Boots,Footwear,66,Utah,Winter
+43,Male,T-shirt,Clothing,91,Oklahoma,Fall
+31,Male,Backpack,Accessories,78,California,Fall
+19,Male,Sneakers,Footwear,45,Nevada,Winter
+35,Male,T-shirt,Clothing,93,Delaware,Spring
+41,Male,Jeans,Clothing,74,South Carolina,Summer
+52,Male,Gloves,Accessories,55,Maryland,Spring
+45,Male,Hoodie,Clothing,76,North Carolina,Spring
+34,Male,Sneakers,Footwear,66,Alabama,Spring
+35,Male,Shorts,Clothing,51,Minnesota,Winter
+29,Male,Sweater,Clothing,26,Virginia,Spring
+59,Male,Jeans,Clothing,29,Michigan,Summer
+24,Male,Jacket,Outerwear,74,Maine,Summer
+70,Male,Jewelry,Accessories,99,Nevada,Summer
+29,Male,Backpack,Accessories,88,Wyoming,Winter
+67,Male,Coat,Outerwear,31,Connecticut,Winter
+36,Male,Belt,Accessories,55,Oregon,Spring
+23,Male,Sandals,Footwear,81,Mississippi,Fall
+18,Male,Sweater,Clothing,73,Illinois,Spring
+53,Male,Shorts,Clothing,91,Utah,Winter
+32,Male,Socks,Clothing,54,North Carolina,Spring
+38,Male,Shirt,Clothing,40,Kentucky,Winter
+47,Male,Pants,Clothing,59,Minnesota,Fall
+46,Male,Scarf,Accessories,26,New York,Spring
+66,Male,Sweater,Clothing,23,Illinois,Winter
+40,Male,Jeans,Clothing,87,North Dakota,Winter
+43,Male,Pants,Clothing,71,Louisiana,Winter
+58,Male,Backpack,Accessories,91,Illinois,Winter
+21,Male,Coat,Outerwear,64,Wyoming,Winter
+42,Male,Sandals,Footwear,94,Washington,Winter
+24,Male,Shirt,Clothing,40,Texas,Summer
+43,Male,Hat,Accessories,76,New Hampshire,Winter
+47,Male,Shirt,Clothing,86,Indiana,Fall
+49,Male,Skirt,Clothing,92,Alabama,Fall
+50,Male,Shoes,Footwear,52,Oklahoma,Spring
+51,Male,Coat,Outerwear,28,Montana,Winter
+40,Male,Pants,Clothing,46,Tennessee,Summer
+45,Male,Jewelry,Accessories,50,New Mexico,Summer
+52,Male,Belt,Accessories,23,Iowa,Winter
+62,Male,Jacket,Outerwear,50,Idaho,Summer
+20,Male,Shirt,Clothing,89,Oklahoma,Winter
+43,Male,Hoodie,Clothing,81,Florida,Winter
+29,Male,Sunglasses,Accessories,69,Michigan,Fall
+22,Male,Sunglasses,Accessories,67,Hawaii,Summer
+48,Male,Dress,Clothing,20,California,Summer
+42,Male,Boots,Footwear,29,Iowa,Fall
+19,Male,Shirt,Clothing,74,West Virginia,Summer
+60,Male,Shorts,Clothing,82,Washington,Spring
+32,Male,Gloves,Accessories,23,Missouri,Summer
+26,Male,Jewelry,Accessories,45,New York,Summer
+25,Male,Boots,Footwear,21,Connecticut,Summer
+66,Male,Jewelry,Accessories,31,Virginia,Summer
+45,Male,Pants,Clothing,45,Missouri,Summer
+54,Male,Jewelry,Accessories,56,Nebraska,Winter
+37,Male,Jacket,Outerwear,97,New Jersey,Summer
+54,Male,Blouse,Clothing,100,Utah,Fall
+50,Male,Blouse,Clothing,96,North Carolina,Fall
+25,Male,Gloves,Accessories,99,Rhode Island,Spring
+47,Male,Shorts,Clothing,91,Arkansas,Winter
+63,Male,Hat,Accessories,30,Maryland,Winter
+64,Male,Shoes,Footwear,65,South Carolina,Summer
+18,Male,Boots,Footwear,93,Ohio,Winter
+59,Male,Jacket,Outerwear,81,Illinois,Fall
+37,Male,Jewelry,Accessories,81,Georgia,Summer
+23,Male,Sunglasses,Accessories,52,Alabama,Winter
+54,Male,Skirt,Clothing,88,Oklahoma,Summer
+38,Male,Jeans,Clothing,24,Vermont,Winter
+19,Male,Backpack,Accessories,51,Nebraska,Spring
+34,Male,Backpack,Accessories,38,Georgia,Fall
+21,Male,Shorts,Clothing,46,Alabama,Fall
+50,Male,Dress,Clothing,63,Minnesota,Summer
+55,Male,Scarf,Accessories,72,Missouri,Winter
+20,Male,Jeans,Clothing,39,Georgia,Winter
+34,Male,Coat,Outerwear,42,West Virginia,Spring
+62,Male,Sweater,Clothing,76,Arkansas,Summer
+21,Male,Sneakers,Footwear,66,Ohio,Summer
+21,Male,Scarf,Accessories,90,Connecticut,Spring
+42,Male,Sweater,Clothing,56,North Dakota,Summer
+35,Male,Jewelry,Accessories,43,Kansas,Winter
+39,Male,Handbag,Accessories,84,Iowa,Winter
+68,Male,Hoodie,Clothing,88,Vermont,Summer
+46,Male,Hat,Accessories,88,Wisconsin,Fall
+41,Male,Belt,Accessories,42,Connecticut,Winter
+23,Male,Hoodie,Clothing,73,Oklahoma,Fall
+68,Male,Hat,Accessories,73,Missouri,Summer
+48,Male,Shoes,Footwear,44,Tennessee,Spring
+38,Male,Sandals,Footwear,63,New Mexico,Fall
+41,Male,Jacket,Outerwear,68,Iowa,Winter
+58,Male,Sweater,Clothing,29,Maine,Spring
+49,Male,Socks,Clothing,85,South Dakota,Summer
+57,Male,Sneakers,Footwear,42,Colorado,Winter
+49,Male,Coat,Outerwear,69,Vermont,Summer
+50,Male,Shirt,Clothing,62,Michigan,Fall
+28,Male,Backpack,Accessories,48,Nevada,Summer
+38,Male,Boots,Footwear,68,Indiana,Winter
+33,Male,Handbag,Accessories,36,Michigan,Fall
+30,Male,Dress,Clothing,63,California,Fall
+43,Male,Sneakers,Footwear,39,Oklahoma,Winter
+43,Male,Boots,Footwear,78,Iowa,Spring
+36,Male,Shoes,Footwear,99,Rhode Island,Winter
+36,Male,T-shirt,Clothing,31,Washington,Fall
+64,Male,Boots,Footwear,45,Florida,Spring
+59,Male,Pants,Clothing,30,South Carolina,Fall
+55,Male,Shoes,Footwear,24,West Virginia,Summer
+42,Male,Shoes,Footwear,22,Missouri,Winter
+61,Male,T-shirt,Clothing,63,Maine,Spring
+28,Male,Scarf,Accessories,40,Georgia,Fall
+65,Male,Shorts,Clothing,20,Maine,Spring
+27,Male,Jewelry,Accessories,20,Illinois,Winter
+41,Male,T-shirt,Clothing,80,Delaware,Summer
+21,Male,Shirt,Clothing,87,West Virginia,Fall
+61,Male,Shirt,Clothing,46,Hawaii,Fall
+19,Male,Gloves,Accessories,49,New York,Winter
+22,Male,Scarf,Accessories,65,New Mexico,Fall
+64,Male,Skirt,Clothing,62,Indiana,Winter
+28,Male,Hat,Accessories,67,Kentucky,Spring
+34,Male,Hoodie,Clothing,41,West Virginia,Fall
+61,Male,Boots,Footwear,49,North Dakota,Fall
+24,Male,Blouse,Clothing,100,Oregon,Fall
+19,Male,Belt,Accessories,54,Minnesota,Summer
+51,Male,Sunglasses,Accessories,84,South Carolina,Spring
+36,Male,Shorts,Clothing,41,Vermont,Winter
+65,Male,Gloves,Accessories,88,Minnesota,Spring
+46,Male,Sandals,Footwear,40,Delaware,Spring
+59,Male,Shirt,Clothing,39,Pennsylvania,Summer
+51,Male,Coat,Outerwear,37,Iowa,Spring
+51,Male,Pants,Clothing,52,New Jersey,Winter
+21,Male,T-shirt,Clothing,23,South Carolina,Winter
+34,Male,Sneakers,Footwear,88,Maryland,Winter
+32,Male,Shorts,Clothing,84,California,Fall
+48,Male,Coat,Outerwear,37,Montana,Winter
+50,Male,Sandals,Footwear,51,Vermont,Fall
+26,Male,Pants,Clothing,76,Texas,Winter
+57,Male,Sandals,Footwear,60,North Carolina,Spring
+65,Male,Gloves,Accessories,72,Florida,Fall
+56,Male,T-shirt,Clothing,45,West Virginia,Spring
+44,Male,Jacket,Outerwear,84,Illinois,Fall
+50,Male,Blouse,Clothing,49,Virginia,Summer
+27,Male,Socks,Clothing,22,Virginia,Spring
+49,Male,Coat,Outerwear,48,Wyoming,Winter
+49,Male,Dress,Clothing,37,South Carolina,Spring
+52,Male,Jacket,Outerwear,27,Connecticut,Fall
+27,Male,Boots,Footwear,79,Illinois,Spring
+53,Male,Skirt,Clothing,98,Alabama,Spring
+34,Male,Sandals,Footwear,64,Washington,Summer
+33,Male,Coat,Outerwear,32,Alabama,Summer
+62,Male,Hoodie,Clothing,74,New Mexico,Winter
+38,Male,Jacket,Outerwear,50,Nevada,Winter
+36,Male,Backpack,Accessories,64,Nebraska,Winter
+31,Male,Backpack,Accessories,29,Arizona,Fall
+62,Male,Belt,Accessories,62,Georgia,Summer
+29,Male,Coat,Outerwear,78,Idaho,Fall
+24,Male,T-shirt,Clothing,94,Missouri,Fall
+63,Male,Sunglasses,Accessories,59,Florida,Winter
+56,Male,Sneakers,Footwear,47,Minnesota,Summer
+63,Male,Gloves,Accessories,57,Maine,Fall
+40,Male,Coat,Outerwear,90,Montana,Winter
+18,Male,Shirt,Clothing,60,Alaska,Spring
+50,Male,Sneakers,Footwear,77,Iowa,Fall
+66,Male,Scarf,Accessories,41,Arizona,Fall
+25,Male,Jewelry,Accessories,48,Louisiana,Fall
+65,Male,Jacket,Outerwear,65,Alabama,Fall
+53,Male,Jeans,Clothing,62,Missouri,Summer
+61,Male,Shoes,Footwear,99,Idaho,Fall
+67,Male,Hoodie,Clothing,58,Florida,Winter
+59,Male,Backpack,Accessories,43,Idaho,Fall
+55,Male,Sneakers,Footwear,93,Alabama,Spring
+21,Male,Blouse,Clothing,50,New Hampshire,Winter
+44,Male,Pants,Clothing,88,Utah,Summer
+65,Male,Skirt,Clothing,33,Alabama,Fall
+65,Male,T-shirt,Clothing,99,Iowa,Fall
+54,Male,Jacket,Outerwear,76,Kentucky,Spring
+56,Male,Scarf,Accessories,97,South Carolina,Summer
+58,Male,Pants,Clothing,68,California,Summer
+54,Male,Sneakers,Footwear,79,Maine,Fall
+58,Male,Jeans,Clothing,86,Nebraska,Fall
+48,Male,Hat,Accessories,68,Washington,Winter
+19,Male,Skirt,Clothing,52,Alabama,Fall
+69,Male,Sandals,Footwear,90,Maine,Fall
+58,Male,Sandals,Footwear,41,California,Winter
+49,Male,Sweater,Clothing,80,Iowa,Spring
+32,Male,Sweater,Clothing,100,Iowa,Winter
+40,Male,Jacket,Outerwear,77,Colorado,Spring
+25,Male,Shorts,Clothing,78,California,Spring
+70,Male,Socks,Clothing,94,Indiana,Spring
+69,Male,Socks,Clothing,23,South Carolina,Fall
+45,Male,Hoodie,Clothing,20,Wisconsin,Winter
+29,Male,Socks,Clothing,86,Washington,Fall
+47,Male,Boots,Footwear,60,South Dakota,Fall
+28,Male,Shirt,Clothing,70,Minnesota,Fall
+64,Male,Belt,Accessories,39,Alaska,Fall
+47,Male,Backpack,Accessories,37,Kentucky,Fall
+60,Male,Boots,Footwear,29,North Dakota,Fall
+67,Male,Coat,Outerwear,35,Alaska,Winter
+35,Male,Hoodie,Clothing,83,Oklahoma,Winter
+30,Male,Shoes,Footwear,77,Delaware,Summer
+23,Male,Shoes,Footwear,37,Montana,Summer
+70,Male,Jewelry,Accessories,69,Alaska,Summer
+21,Male,Dress,Clothing,66,California,Winter
+51,Male,Boots,Footwear,26,Massachusetts,Spring
+22,Male,Hat,Accessories,63,South Carolina,Spring
+32,Male,Backpack,Accessories,38,West Virginia,Summer
+37,Male,Shoes,Footwear,58,Oregon,Summer
+31,Male,Handbag,Accessories,46,Massachusetts,Winter
+44,Male,Sunglasses,Accessories,92,West Virginia,Fall
+40,Male,Hat,Accessories,32,California,Winter
+27,Male,Scarf,Accessories,90,Colorado,Spring
+47,Male,Hoodie,Clothing,23,Indiana,Fall
+41,Male,Backpack,Accessories,25,Delaware,Fall
+51,Male,Sweater,Clothing,54,Ohio,Fall
+53,Male,Shorts,Clothing,72,Oklahoma,Summer
+43,Male,Scarf,Accessories,33,California,Winter
+67,Male,Hat,Accessories,43,New Hampshire,Fall
+61,Male,Coat,Outerwear,51,Pennsylvania,Fall
+68,Male,Jewelry,Accessories,85,Idaho,Winter
+67,Male,Sandals,Footwear,100,Maryland,Summer
+29,Male,Gloves,Accessories,72,Pennsylvania,Spring
+50,Male,Backpack,Accessories,57,Colorado,Fall
+61,Male,Jacket,Outerwear,94,Indiana,Spring
+19,Male,Backpack,Accessories,34,Nebraska,Summer
+33,Male,Backpack,Accessories,89,Rhode Island,Fall
+51,Male,Sunglasses,Accessories,27,Kansas,Fall
+69,Male,Socks,Clothing,63,Georgia,Spring
+19,Male,Shoes,Footwear,70,Nevada,Fall
+55,Male,Pants,Clothing,87,South Carolina,Fall
+49,Male,Jewelry,Accessories,79,Delaware,Fall
+31,Male,Sunglasses,Accessories,79,New Hampshire,Spring
+42,Male,Sandals,Footwear,44,Oregon,Winter
+69,Male,Sweater,Clothing,85,Massachusetts,Fall
+26,Male,Shoes,Footwear,90,Vermont,Spring
+41,Male,Jewelry,Accessories,94,Mississippi,Fall
+55,Male,Boots,Footwear,68,Washington,Summer
+35,Male,Backpack,Accessories,51,Wyoming,Winter
+66,Male,Sandals,Footwear,33,Minnesota,Spring
+36,Male,Sneakers,Footwear,60,Ohio,Summer
+27,Male,Hoodie,Clothing,59,South Carolina,Fall
+41,Male,Handbag,Accessories,30,Wisconsin,Summer
+21,Male,Sweater,Clothing,20,Tennessee,Winter
+53,Male,Sandals,Footwear,20,Maryland,Summer
+54,Male,Dress,Clothing,24,Mississippi,Spring
+53,Male,Skirt,Clothing,88,Minnesota,Summer
+47,Male,Blouse,Clothing,78,Alaska,Winter
+64,Male,Skirt,Clothing,25,Arkansas,Spring
+18,Male,Sweater,Clothing,57,Oregon,Winter
+68,Male,Backpack,Accessories,93,Louisiana,Summer
+62,Male,Hoodie,Clothing,42,Oklahoma,Summer
+51,Male,Boots,Footwear,54,Indiana,Spring
+54,Male,Blouse,Clothing,70,Mississippi,Summer
+22,Male,Hoodie,Clothing,31,Michigan,Winter
+53,Male,Pants,Clothing,93,Delaware,Spring
+34,Male,Gloves,Accessories,40,Florida,Spring
+32,Male,Hat,Accessories,32,Arkansas,Summer
+64,Male,Sunglasses,Accessories,27,Minnesota,Winter
+20,Male,Scarf,Accessories,68,North Dakota,Winter
+24,Male,Handbag,Accessories,59,California,Summer
+20,Male,Handbag,Accessories,36,Mississippi,Fall
+42,Male,Jeans,Clothing,23,Pennsylvania,Summer
+48,Male,Jacket,Outerwear,80,Arizona,Winter
+62,Male,Backpack,Accessories,37,Louisiana,Fall
+62,Male,Shorts,Clothing,52,Virginia,Spring
+50,Male,Coat,Outerwear,79,Montana,Fall
+57,Male,Shirt,Clothing,68,Iowa,Fall
+24,Male,Gloves,Accessories,98,Illinois,Fall
+59,Male,Dress,Clothing,83,Alaska,Fall
+63,Male,Pants,Clothing,83,Colorado,Winter
+41,Male,Pants,Clothing,55,New Mexico,Spring
+35,Male,Hoodie,Clothing,26,Colorado,Winter
+34,Male,Sunglasses,Accessories,76,Arizona,Winter
+49,Male,T-shirt,Clothing,85,Hawaii,Fall
+43,Male,Jacket,Outerwear,89,Illinois,Spring
+63,Male,Sweater,Clothing,41,Louisiana,Spring
+38,Male,Jacket,Outerwear,30,Iowa,Winter
+59,Male,Socks,Clothing,53,Washington,Winter
+35,Male,Shirt,Clothing,66,Oklahoma,Spring
+48,Male,Jewelry,Accessories,33,Washington,Winter
+64,Male,Sunglasses,Accessories,86,Arkansas,Spring
+28,Male,Pants,Clothing,60,Connecticut,Winter
+60,Male,Socks,Clothing,62,Washington,Summer
+27,Male,Blouse,Clothing,74,Maine,Fall
+56,Male,Sandals,Footwear,95,Michigan,Fall
+58,Male,Sneakers,Footwear,25,Tennessee,Spring
+30,Male,Shirt,Clothing,59,Louisiana,Winter
+23,Male,Jacket,Outerwear,29,Missouri,Summer
+33,Male,Sandals,Footwear,36,Michigan,Winter
+63,Male,Hat,Accessories,82,Alabama,Summer
+70,Male,Blouse,Clothing,71,Massachusetts,Winter
+70,Male,Sweater,Clothing,35,Indiana,Fall
+19,Male,Gloves,Accessories,38,West Virginia,Winter
+25,Male,Scarf,Accessories,59,Michigan,Summer
+19,Male,Hoodie,Clothing,91,Pennsylvania,Summer
+25,Male,Shorts,Clothing,68,Alaska,Spring
+60,Male,Backpack,Accessories,21,Massachusetts,Summer
+35,Male,Sunglasses,Accessories,95,North Dakota,Spring
+46,Male,Shorts,Clothing,52,Vermont,Spring
+41,Male,Dress,Clothing,21,Kentucky,Fall
+30,Male,Shorts,Clothing,67,Nevada,Summer
+44,Male,Belt,Accessories,42,Utah,Fall
+61,Male,Scarf,Accessories,63,North Dakota,Summer
+55,Male,Boots,Footwear,41,Iowa,Winter
+50,Male,Handbag,Accessories,46,Connecticut,Fall
+57,Male,Pants,Clothing,79,Wisconsin,Winter
+51,Male,Boots,Footwear,90,Idaho,Fall
+18,Male,Shirt,Clothing,71,Montana,Winter
+63,Male,Dress,Clothing,87,Connecticut,Summer
+34,Male,Hoodie,Clothing,66,Idaho,Spring
+25,Male,Pants,Clothing,90,Arkansas,Summer
+46,Male,Jeans,Clothing,47,Iowa,Summer
+59,Male,Shirt,Clothing,38,Louisiana,Spring
+37,Male,Backpack,Accessories,50,Kentucky,Summer
+49,Male,Jacket,Outerwear,79,Massachusetts,Summer
+22,Male,Scarf,Accessories,91,Virginia,Spring
+64,Male,Boots,Footwear,60,New Hampshire,Spring
+42,Male,Blouse,Clothing,81,New Hampshire,Summer
+37,Male,Hoodie,Clothing,90,Oregon,Summer
+26,Male,Jacket,Outerwear,70,South Dakota,Fall
+33,Male,Jeans,Clothing,63,Delaware,Spring
+30,Male,Jewelry,Accessories,29,Missouri,Spring
+21,Male,Socks,Clothing,90,Alaska,Spring
+22,Male,Shirt,Clothing,22,Florida,Summer
+63,Male,Shorts,Clothing,22,Mississippi,Summer
+33,Male,Jewelry,Accessories,62,New Mexico,Fall
+43,Male,Blouse,Clothing,57,California,Summer
+27,Male,Sweater,Clothing,32,Wyoming,Summer
+35,Male,Jewelry,Accessories,53,Missouri,Fall
+37,Male,T-shirt,Clothing,79,New Hampshire,Fall
+61,Male,Hat,Accessories,61,Texas,Winter
+32,Male,Shorts,Clothing,78,North Dakota,Summer
+62,Male,Sweater,Clothing,97,Arkansas,Winter
+29,Male,Jeans,Clothing,78,Nebraska,Winter
+41,Male,Sunglasses,Accessories,56,Minnesota,Summer
+48,Male,Boots,Footwear,25,Massachusetts,Summer
+43,Male,Coat,Outerwear,28,Arkansas,Spring
+34,Male,Shirt,Clothing,57,New Hampshire,Spring
+45,Male,Dress,Clothing,36,Rhode Island,Fall
+65,Male,Shirt,Clothing,69,New Jersey,Winter
+61,Male,Sunglasses,Accessories,48,Montana,Fall
+18,Male,Dress,Clothing,58,Colorado,Spring
+47,Male,Sunglasses,Accessories,24,Nebraska,Spring
+56,Male,Sunglasses,Accessories,31,Minnesota,Winter
+64,Male,Shorts,Clothing,29,Minnesota,Summer
+26,Male,Jeans,Clothing,69,South Dakota,Summer
+22,Male,T-shirt,Clothing,79,West Virginia,Summer
+64,Male,Pants,Clothing,39,Nevada,Summer
+21,Male,Sunglasses,Accessories,84,North Carolina,Fall
+67,Male,Boots,Footwear,66,Illinois,Spring
+46,Male,T-shirt,Clothing,92,Michigan,Fall
+40,Male,Sandals,Footwear,45,Michigan,Winter
+51,Male,Shorts,Clothing,74,Oklahoma,Spring
+35,Male,Hat,Accessories,39,South Dakota,Fall
+56,Male,Scarf,Accessories,71,Oklahoma,Winter
+25,Male,T-shirt,Clothing,95,Maryland,Fall
+65,Male,Gloves,Accessories,72,Ohio,Fall
+39,Male,Scarf,Accessories,85,Ohio,Fall
+47,Male,Boots,Footwear,54,Massachusetts,Fall
+36,Male,Gloves,Accessories,41,North Carolina,Spring
+66,Male,Coat,Outerwear,24,Florida,Spring
+62,Male,Belt,Accessories,99,Montana,Summer
+41,Male,Hoodie,Clothing,32,Minnesota,Fall
+66,Male,Shoes,Footwear,71,Massachusetts,Summer
+51,Male,Dress,Clothing,49,Rhode Island,Winter
+33,Male,Gloves,Accessories,50,Minnesota,Fall
+57,Male,Jewelry,Accessories,91,Nevada,Fall
+45,Male,Belt,Accessories,46,New Mexico,Fall
+61,Male,Sweater,Clothing,50,North Carolina,Spring
+55,Male,Skirt,Clothing,39,Virginia,Fall
+54,Male,Sneakers,Footwear,99,Alaska,Summer
+57,Male,Gloves,Accessories,48,Nevada,Winter
+27,Male,Coat,Outerwear,77,Pennsylvania,Fall
+64,Male,Backpack,Accessories,95,Illinois,Spring
+52,Male,Socks,Clothing,100,Delaware,Spring
+19,Male,Sneakers,Footwear,54,Vermont,Spring
+22,Male,Sweater,Clothing,68,Hawaii,Fall
+18,Male,Jeans,Clothing,22,Illinois,Fall
+29,Male,Hat,Accessories,84,California,Winter
+42,Male,Hat,Accessories,46,Nevada,Summer
+49,Male,Handbag,Accessories,53,Kentucky,Winter
+49,Male,Shirt,Clothing,60,Alabama,Spring
+55,Male,Socks,Clothing,32,Wyoming,Spring
+29,Male,Socks,Clothing,50,Massachusetts,Summer
+60,Male,Dress,Clothing,94,Utah,Spring
+34,Male,Shoes,Footwear,26,New York,Spring
+30,Male,Scarf,Accessories,44,Vermont,Winter
+28,Male,Hoodie,Clothing,57,Hawaii,Summer
+63,Male,T-shirt,Clothing,65,Louisiana,Winter
+31,Male,Jeans,Clothing,72,Alabama,Winter
+46,Male,Shorts,Clothing,62,Louisiana,Spring
+70,Male,Hat,Accessories,21,Indiana,Winter
+53,Male,Handbag,Accessories,85,Michigan,Spring
+50,Male,Pants,Clothing,51,Rhode Island,Summer
+33,Male,Handbag,Accessories,84,Idaho,Fall
+22,Male,Sweater,Clothing,37,Louisiana,Summer
+50,Male,Scarf,Accessories,44,North Carolina,Summer
+34,Male,Sneakers,Footwear,45,New Jersey,Spring
+24,Male,Pants,Clothing,35,Alabama,Summer
+69,Male,Backpack,Accessories,50,Kentucky,Winter
+39,Male,Sandals,Footwear,26,New York,Summer
+42,Male,Socks,Clothing,78,Arizona,Fall
+42,Male,Coat,Outerwear,82,Maryland,Fall
+29,Male,Socks,Clothing,39,Alaska,Spring
+55,Male,Belt,Accessories,55,Nevada,Summer
+32,Male,Socks,Clothing,20,Utah,Summer
+25,Male,Belt,Accessories,29,New Mexico,Fall
+38,Male,Pants,Clothing,41,Delaware,Winter
+32,Male,Shorts,Clothing,38,Connecticut,Winter
+43,Male,Boots,Footwear,47,Mississippi,Summer
+41,Male,Dress,Clothing,30,Connecticut,Summer
+56,Male,Jeans,Clothing,56,Florida,Summer
+27,Male,T-shirt,Clothing,89,New York,Winter
+46,Male,Shoes,Footwear,96,Wisconsin,Fall
+48,Male,Boots,Footwear,81,South Carolina,Fall
+52,Male,Scarf,Accessories,83,South Dakota,Fall
+18,Male,Sneakers,Footwear,35,Illinois,Winter
+64,Male,Boots,Footwear,56,Alaska,Summer
+54,Male,Handbag,Accessories,45,Montana,Summer
+31,Male,Shirt,Clothing,62,Minnesota,Winter
+30,Male,Hat,Accessories,84,West Virginia,Spring
+26,Male,Sweater,Clothing,24,Illinois,Summer
+25,Male,Handbag,Accessories,21,Nevada,Spring
+59,Male,Shirt,Clothing,91,Idaho,Winter
+55,Male,Sunglasses,Accessories,36,Colorado,Winter
+56,Male,Sneakers,Footwear,39,Louisiana,Spring
+62,Male,Hoodie,Clothing,39,Vermont,Spring
+35,Male,Shirt,Clothing,59,Mississippi,Winter
+51,Male,Sunglasses,Accessories,27,Georgia,Winter
+61,Male,Blouse,Clothing,94,Georgia,Spring
+27,Male,Belt,Accessories,94,Nebraska,Fall
+54,Male,Dress,Clothing,94,Massachusetts,Winter
+31,Male,Shoes,Footwear,51,Colorado,Fall
+24,Male,Socks,Clothing,62,Nevada,Fall
+42,Male,Socks,Clothing,57,Idaho,Spring
+41,Male,Shorts,Clothing,76,Wyoming,Fall
+66,Male,Gloves,Accessories,63,Washington,Summer
+58,Male,Jacket,Outerwear,80,California,Fall
+43,Male,Handbag,Accessories,68,Oklahoma,Fall
+52,Male,Backpack,Accessories,89,Nevada,Summer
+35,Male,Boots,Footwear,26,Maryland,Summer
+23,Male,Gloves,Accessories,90,West Virginia,Winter
+25,Male,Hoodie,Clothing,28,Illinois,Spring
+33,Male,Coat,Outerwear,29,Kentucky,Spring
+48,Male,Shirt,Clothing,31,Illinois,Spring
+42,Male,Shirt,Clothing,24,Alabama,Summer
+55,Male,Sweater,Clothing,88,Texas,Summer
+59,Male,Shirt,Clothing,87,Missouri,Spring
+65,Male,Hoodie,Clothing,80,Pennsylvania,Summer
+59,Male,Sandals,Footwear,48,Missouri,Winter
+31,Male,Belt,Accessories,21,Michigan,Winter
+49,Male,Boots,Footwear,72,Kentucky,Spring
+53,Male,Hoodie,Clothing,44,New Jersey,Fall
+48,Male,Sandals,Footwear,73,Delaware,Fall
+23,Male,Jeans,Clothing,61,Missouri,Spring
+68,Male,Shoes,Footwear,20,Connecticut,Winter
+35,Male,Sandals,Footwear,86,Massachusetts,Summer
+34,Male,Dress,Clothing,60,Florida,Spring
+62,Male,Hat,Accessories,43,Delaware,Winter
+21,Male,Pants,Clothing,44,California,Spring
+70,Male,Socks,Clothing,76,Oregon,Spring
+55,Male,Shirt,Clothing,33,Alaska,Summer
+43,Male,Shorts,Clothing,60,Missouri,Fall
+19,Male,Jacket,Outerwear,26,Oklahoma,Fall
+47,Male,Hoodie,Clothing,73,Wisconsin,Winter
+26,Male,Shoes,Footwear,87,South Carolina,Spring
+46,Male,Skirt,Clothing,100,Virginia,Spring
+19,Male,Coat,Outerwear,84,Arkansas,Winter
+49,Male,Sneakers,Footwear,41,Vermont,Summer
+51,Male,Jeans,Clothing,59,Kentucky,Winter
+64,Male,Blouse,Clothing,26,Colorado,Winter
+67,Male,Sunglasses,Accessories,69,New Mexico,Summer
+37,Male,Jacket,Outerwear,20,Colorado,Spring
+40,Male,Dress,Clothing,83,North Carolina,Summer
+38,Male,Hat,Accessories,54,New Hampshire,Spring
+66,Male,Hoodie,Clothing,66,West Virginia,Fall
+47,Male,Handbag,Accessories,42,Hawaii,Spring
+56,Male,Jeans,Clothing,33,North Dakota,Spring
+51,Male,Boots,Footwear,77,Mississippi,Summer
+25,Male,Jacket,Outerwear,65,Maine,Fall
+37,Male,Sandals,Footwear,39,North Dakota,Summer
+41,Male,Belt,Accessories,51,Nebraska,Summer
+64,Male,Handbag,Accessories,65,Nebraska,Winter
+23,Male,Sunglasses,Accessories,89,Tennessee,Summer
+62,Male,Skirt,Clothing,76,Wyoming,Spring
+39,Male,Backpack,Accessories,75,Nevada,Spring
+52,Male,Sandals,Footwear,61,South Carolina,Summer
+50,Male,Boots,Footwear,35,Virginia,Fall
+28,Male,Sneakers,Footwear,37,Pennsylvania,Fall
+67,Male,Skirt,Clothing,91,Hawaii,Winter
+41,Male,Dress,Clothing,99,Ohio,Fall
+19,Male,Shorts,Clothing,54,Utah,Summer
+70,Male,Handbag,Accessories,47,Minnesota,Winter
+49,Male,Scarf,Accessories,77,New Hampshire,Spring
+59,Male,Belt,Accessories,84,Arizona,Fall
+52,Male,Gloves,Accessories,51,New York,Spring
+20,Male,Skirt,Clothing,26,Pennsylvania,Summer
+31,Male,Shorts,Clothing,64,New Mexico,Summer
+33,Male,Backpack,Accessories,51,Nebraska,Spring
+44,Male,Hoodie,Clothing,60,Wyoming,Spring
+40,Male,Hat,Accessories,69,Mississippi,Spring
+69,Male,Jewelry,Accessories,29,Arkansas,Spring
+29,Male,Shirt,Clothing,91,Illinois,Spring
+54,Male,Belt,Accessories,70,Nevada,Spring
+65,Male,Sweater,Clothing,58,Rhode Island,Summer
+54,Male,Hat,Accessories,98,West Virginia,Fall
+60,Male,Scarf,Accessories,68,Missouri,Summer
+43,Male,Hat,Accessories,44,Kentucky,Summer
+44,Male,Jacket,Outerwear,45,Washington,Winter
+69,Male,T-shirt,Clothing,99,Alaska,Spring
+46,Male,Dress,Clothing,68,Mississippi,Spring
+41,Male,Pants,Clothing,56,South Carolina,Spring
+32,Male,Sweater,Clothing,43,Missouri,Winter
+26,Male,Sunglasses,Accessories,99,New Jersey,Winter
+61,Male,Belt,Accessories,56,Louisiana,Fall
+49,Male,Hoodie,Clothing,25,South Carolina,Spring
+53,Male,Pants,Clothing,74,Vermont,Winter
+24,Male,Hoodie,Clothing,56,Arkansas,Winter
+37,Male,Sneakers,Footwear,47,Utah,Fall
+43,Male,Dress,Clothing,67,Washington,Summer
+31,Male,Dress,Clothing,22,Rhode Island,Winter
+49,Male,Jeans,Clothing,34,Illinois,Spring
+69,Male,Sweater,Clothing,64,Missouri,Spring
+65,Male,Shorts,Clothing,42,North Carolina,Spring
+41,Male,Shirt,Clothing,82,Massachusetts,Winter
+37,Male,Belt,Accessories,81,Arkansas,Summer
+70,Male,Coat,Outerwear,24,South Dakota,Summer
+63,Male,Sneakers,Footwear,60,Georgia,Fall
+55,Male,Shirt,Clothing,24,Arkansas,Spring
+52,Male,Socks,Clothing,78,Kansas,Winter
+22,Male,Jeans,Clothing,88,Arizona,Winter
+54,Male,Jeans,Clothing,63,Massachusetts,Spring
+28,Male,Sneakers,Footwear,78,New Mexico,Summer
+67,Male,Dress,Clothing,37,Arkansas,Winter
+59,Male,Boots,Footwear,94,Nebraska,Fall
+26,Male,T-shirt,Clothing,78,Hawaii,Fall
+24,Male,Coat,Outerwear,36,Nebraska,Winter
+62,Male,Skirt,Clothing,24,Indiana,Winter
+70,Male,Sneakers,Footwear,84,Colorado,Spring
+45,Male,Jeans,Clothing,47,Oregon,Spring
+58,Male,Hoodie,Clothing,51,Ohio,Fall
+31,Male,Shoes,Footwear,84,Maine,Summer
+32,Male,Shorts,Clothing,24,Iowa,Summer
+36,Male,Blouse,Clothing,97,Wisconsin,Fall
+25,Male,T-shirt,Clothing,89,New York,Winter
+48,Male,Belt,Accessories,44,Colorado,Spring
+39,Male,Handbag,Accessories,35,Illinois,Winter
+26,Male,Dress,Clothing,91,Arizona,Winter
+32,Male,Hat,Accessories,63,Oklahoma,Winter
+54,Male,Belt,Accessories,97,Indiana,Spring
+38,Male,Boots,Footwear,38,Minnesota,Summer
+46,Male,Coat,Outerwear,24,Pennsylvania,Spring
+57,Male,Blouse,Clothing,32,Indiana,Winter
+49,Male,Hat,Accessories,90,Alabama,Summer
+33,Male,Jeans,Clothing,36,Montana,Summer
+54,Male,Backpack,Accessories,37,New Mexico,Winter
+47,Male,Dress,Clothing,51,Alaska,Summer
+36,Male,Hat,Accessories,71,Idaho,Fall
+68,Male,Sunglasses,Accessories,50,Utah,Spring
+60,Male,Hat,Accessories,74,Louisiana,Fall
+55,Male,Dress,Clothing,75,Mississippi,Summer
+29,Male,Shirt,Clothing,99,Mississippi,Spring
+38,Male,Scarf,Accessories,23,Indiana,Spring
+70,Male,Sneakers,Footwear,53,Washington,Winter
+36,Male,Skirt,Clothing,99,Nevada,Spring
+18,Male,Jewelry,Accessories,48,Louisiana,Spring
+62,Male,Boots,Footwear,72,Pennsylvania,Fall
+29,Male,Sunglasses,Accessories,64,Michigan,Spring
+21,Male,Boots,Footwear,63,South Carolina,Spring
+42,Male,Sandals,Footwear,51,Arizona,Spring
+43,Male,Boots,Footwear,55,Delaware,Spring
+58,Male,Dress,Clothing,55,Kentucky,Spring
+27,Male,Hoodie,Clothing,26,Georgia,Summer
+57,Male,Shorts,Clothing,67,North Carolina,Summer
+40,Male,Coat,Outerwear,31,California,Fall
+45,Male,Jeans,Clothing,66,California,Winter
+47,Male,Sunglasses,Accessories,67,Indiana,Summer
+61,Male,Sneakers,Footwear,61,Colorado,Winter
+60,Male,Jacket,Outerwear,75,Colorado,Fall
+69,Male,Skirt,Clothing,90,North Carolina,Spring
+58,Male,Sweater,Clothing,40,Washington,Summer
+34,Male,T-shirt,Clothing,90,Florida,Fall
+20,Male,Belt,Accessories,20,Washington,Spring
+56,Male,Gloves,Accessories,40,Colorado,Summer
+64,Male,Hat,Accessories,33,New Hampshire,Fall
+56,Male,Boots,Footwear,98,Maryland,Spring
+27,Male,Belt,Accessories,42,Maryland,Spring
+35,Male,Coat,Outerwear,62,Texas,Summer
+24,Male,Hat,Accessories,45,New Mexico,Winter
+26,Male,Shoes,Footwear,78,Utah,Summer
+32,Male,Handbag,Accessories,80,West Virginia,Fall
+54,Male,Scarf,Accessories,96,Connecticut,Spring
+62,Male,Handbag,Accessories,47,West Virginia,Summer
+50,Male,Pants,Clothing,84,Ohio,Winter
+70,Male,Shoes,Footwear,31,Texas,Spring
+48,Male,Sunglasses,Accessories,63,Washington,Spring
+20,Male,Shorts,Clothing,97,Wisconsin,Spring
+46,Male,Jacket,Outerwear,99,Louisiana,Winter
+51,Male,Sandals,Footwear,90,Iowa,Winter
+53,Male,Shoes,Footwear,68,New York,Fall
+44,Male,Jewelry,Accessories,80,Idaho,Spring
+29,Male,Sandals,Footwear,91,Delaware,Summer
+64,Male,Pants,Clothing,30,Kentucky,Spring
+51,Male,Shoes,Footwear,90,Connecticut,Spring
+50,Male,Socks,Clothing,28,New Mexico,Spring
+43,Male,Socks,Clothing,46,Georgia,Winter
+61,Male,Dress,Clothing,60,Washington,Fall
+55,Male,Shoes,Footwear,59,North Dakota,Spring
+56,Male,Hat,Accessories,68,Ohio,Fall
+33,Male,Backpack,Accessories,79,Tennessee,Summer
+43,Male,Backpack,Accessories,94,New York,Winter
+21,Male,Pants,Clothing,83,Michigan,Summer
+58,Male,Gloves,Accessories,62,Georgia,Spring
+41,Male,Scarf,Accessories,85,New Mexico,Spring
+39,Male,Hoodie,Clothing,30,Louisiana,Summer
+54,Male,Jeans,Clothing,24,South Dakota,Spring
+43,Male,Backpack,Accessories,25,Montana,Spring
+28,Male,Sandals,Footwear,37,New Mexico,Summer
+59,Male,Belt,Accessories,69,South Carolina,Summer
+28,Male,Shoes,Footwear,97,Ohio,Summer
+68,Male,Gloves,Accessories,24,North Carolina,Summer
+20,Male,Belt,Accessories,30,Idaho,Summer
+21,Male,Jacket,Outerwear,53,Oklahoma,Fall
+50,Male,Dress,Clothing,70,Georgia,Spring
+32,Male,Shirt,Clothing,76,Kentucky,Winter
+24,Male,Scarf,Accessories,95,Delaware,Fall
+55,Male,Coat,Outerwear,51,Massachusetts,Winter
+61,Male,Handbag,Accessories,41,Nebraska,Winter
+61,Male,Sunglasses,Accessories,71,Maine,Winter
+28,Male,T-shirt,Clothing,66,Pennsylvania,Summer
+60,Male,Shirt,Clothing,84,Nebraska,Winter
+49,Male,Handbag,Accessories,95,Virginia,Winter
+33,Male,Jewelry,Accessories,90,Ohio,Summer
+45,Male,Hoodie,Clothing,36,Nebraska,Summer
+29,Male,Gloves,Accessories,22,Ohio,Spring
+58,Male,Coat,Outerwear,89,Kentucky,Winter
+22,Male,Sandals,Footwear,50,Tennessee,Spring
+55,Male,Boots,Footwear,36,Maine,Fall
+19,Male,Pants,Clothing,52,Montana,Spring
+68,Male,Socks,Clothing,29,Maryland,Fall
+61,Male,Blouse,Clothing,89,Georgia,Fall
+68,Male,Handbag,Accessories,47,Hawaii,Fall
+52,Male,Jewelry,Accessories,25,Rhode Island,Spring
+41,Male,Pants,Clothing,74,Nebraska,Fall
+29,Male,Belt,Accessories,46,Michigan,Fall
+68,Male,Jeans,Clothing,22,North Carolina,Fall
+36,Male,Shirt,Clothing,25,Minnesota,Summer
+55,Male,Belt,Accessories,80,Maryland,Spring
+28,Male,Jeans,Clothing,76,Hawaii,Spring
+39,Male,Jeans,Clothing,30,Oregon,Summer
+54,Male,Sweater,Clothing,79,New Mexico,Fall
+40,Male,Sneakers,Footwear,22,Illinois,Winter
+31,Male,Socks,Clothing,36,Utah,Fall
+30,Male,Socks,Clothing,77,Maine,Fall
+45,Male,Sunglasses,Accessories,33,Virginia,Fall
+48,Male,Sneakers,Footwear,64,Florida,Winter
+45,Male,Socks,Clothing,53,Ohio,Fall
+60,Male,Shoes,Footwear,36,Virginia,Fall
+59,Male,Blouse,Clothing,70,Kansas,Spring
+18,Male,Shorts,Clothing,96,Arkansas,Winter
+70,Male,Jacket,Outerwear,27,Massachusetts,Spring
+20,Male,Sweater,Clothing,64,Idaho,Winter
+65,Male,Jacket,Outerwear,23,Wisconsin,Spring
+29,Male,Scarf,Accessories,33,New Mexico,Summer
+22,Male,Jacket,Outerwear,34,North Carolina,Winter
+27,Male,Sweater,Clothing,35,Iowa,Summer
+36,Male,Coat,Outerwear,62,Idaho,Summer
+59,Male,Boots,Footwear,75,Ohio,Fall
+62,Male,Hoodie,Clothing,29,Alabama,Summer
+34,Male,Hat,Accessories,28,Wyoming,Spring
+59,Male,T-shirt,Clothing,20,Alabama,Spring
+49,Male,Coat,Outerwear,96,Mississippi,Winter
+18,Male,Dress,Clothing,43,Pennsylvania,Summer
+55,Male,Shirt,Clothing,94,Wyoming,Fall
+38,Male,Skirt,Clothing,81,Maryland,Fall
+50,Male,Jewelry,Accessories,75,North Carolina,Summer
+61,Male,Hat,Accessories,81,Pennsylvania,Summer
+48,Male,Shorts,Clothing,92,Idaho,Fall
+22,Male,Scarf,Accessories,96,California,Spring
+48,Male,Jewelry,Accessories,71,Tennessee,Fall
+57,Male,Sunglasses,Accessories,50,Missouri,Summer
+33,Male,Coat,Outerwear,72,North Dakota,Spring
+58,Male,Jacket,Outerwear,28,West Virginia,Winter
+37,Male,Sweater,Clothing,59,Arizona,Fall
+18,Male,Coat,Outerwear,33,Oklahoma,Summer
+65,Male,Scarf,Accessories,59,Pennsylvania,Fall
+62,Male,Belt,Accessories,30,Idaho,Spring
+54,Male,Hat,Accessories,85,South Carolina,Winter
+35,Male,Backpack,Accessories,97,Washington,Summer
+34,Male,T-shirt,Clothing,36,Arkansas,Fall
+25,Male,Jewelry,Accessories,85,Utah,Winter
+53,Male,Sunglasses,Accessories,62,Alaska,Winter
+45,Male,Jeans,Clothing,71,West Virginia,Winter
+49,Male,Pants,Clothing,21,Louisiana,Winter
+40,Male,Backpack,Accessories,61,Arizona,Spring
+38,Male,Scarf,Accessories,58,Connecticut,Spring
+44,Male,Sweater,Clothing,80,North Carolina,Spring
+68,Male,Jewelry,Accessories,50,South Dakota,Spring
+60,Male,Sneakers,Footwear,48,Delaware,Winter
+25,Male,Jewelry,Accessories,40,Connecticut,Winter
+19,Male,Coat,Outerwear,34,Tennessee,Summer
+57,Male,Coat,Outerwear,46,New Hampshire,Fall
+58,Male,Sunglasses,Accessories,27,Vermont,Summer
+49,Male,Handbag,Accessories,98,Idaho,Spring
+19,Male,Sweater,Clothing,73,North Carolina,Fall
+50,Male,Pants,Clothing,28,Nevada,Spring
+30,Male,Gloves,Accessories,76,Delaware,Fall
+52,Male,Sweater,Clothing,83,Texas,Fall
+35,Male,Hoodie,Clothing,23,Tennessee,Spring
+35,Male,Hat,Accessories,28,Delaware,Fall
+33,Male,T-shirt,Clothing,83,Massachusetts,Spring
+52,Male,Skirt,Clothing,96,Minnesota,Winter
+69,Male,Sneakers,Footwear,62,Texas,Fall
+27,Male,Shorts,Clothing,25,Nebraska,Fall
+66,Male,Hoodie,Clothing,97,Oklahoma,Winter
+28,Male,Hoodie,Clothing,61,Texas,Fall
+22,Male,Shoes,Footwear,66,New York,Summer
+69,Male,Hoodie,Clothing,67,Washington,Spring
+28,Male,Sunglasses,Accessories,80,Maryland,Summer
+55,Male,Skirt,Clothing,25,New Hampshire,Fall
+30,Male,Hat,Accessories,58,New York,Fall
+67,Male,Backpack,Accessories,96,Hawaii,Winter
+25,Male,Sunglasses,Accessories,77,California,Spring
+49,Male,Belt,Accessories,65,Indiana,Summer
+34,Male,Jewelry,Accessories,36,Louisiana,Spring
+22,Male,Sneakers,Footwear,84,Pennsylvania,Winter
+63,Male,T-shirt,Clothing,58,Florida,Fall
+70,Male,Handbag,Accessories,62,North Carolina,Spring
+36,Male,Hat,Accessories,67,Massachusetts,Fall
+42,Male,Sweater,Clothing,20,Iowa,Spring
+27,Male,Sandals,Footwear,90,North Dakota,Summer
+23,Male,Scarf,Accessories,58,Iowa,Winter
+50,Male,Shirt,Clothing,53,Delaware,Spring
+56,Male,Gloves,Accessories,30,New York,Winter
+37,Male,Hoodie,Clothing,65,New Hampshire,Winter
+67,Male,Jewelry,Accessories,41,Kentucky,Summer
+67,Male,Shirt,Clothing,73,Illinois,Spring
+50,Male,Hoodie,Clothing,98,North Carolina,Spring
+36,Male,Shoes,Footwear,36,Connecticut,Winter
+62,Male,T-shirt,Clothing,81,Wisconsin,Summer
+65,Male,Skirt,Clothing,90,Massachusetts,Winter
+23,Male,Handbag,Accessories,83,Illinois,Summer
+46,Male,Shirt,Clothing,91,New Mexico,Winter
+18,Male,Pants,Clothing,36,Iowa,Summer
+58,Male,Coat,Outerwear,53,Alabama,Spring
+31,Male,Jeans,Clothing,39,Maryland,Winter
+39,Male,Gloves,Accessories,33,Ohio,Winter
+69,Male,T-shirt,Clothing,76,Ohio,Spring
+68,Male,Boots,Footwear,23,Nevada,Winter
+41,Male,Jeans,Clothing,54,South Carolina,Fall
+31,Male,Sneakers,Footwear,89,Nevada,Summer
+48,Male,Sneakers,Footwear,38,Wisconsin,Summer
+59,Male,Hat,Accessories,36,Tennessee,Winter
+34,Male,Pants,Clothing,66,Florida,Spring
+21,Male,Jewelry,Accessories,42,Georgia,Spring
+29,Male,Jewelry,Accessories,36,Kentucky,Winter
+41,Male,Blouse,Clothing,86,Ohio,Spring
+62,Male,Handbag,Accessories,49,Connecticut,Fall
+27,Male,Shirt,Clothing,41,Idaho,Summer
+49,Male,Dress,Clothing,82,Georgia,Spring
+67,Male,T-shirt,Clothing,53,Tennessee,Fall
+20,Male,Shoes,Footwear,21,Hawaii,Summer
+37,Male,Belt,Accessories,66,Maryland,Fall
+69,Male,Belt,Accessories,89,Nevada,Summer
+66,Male,Handbag,Accessories,55,New Hampshire,Fall
+37,Male,Scarf,Accessories,42,North Dakota,Summer
+63,Male,Shorts,Clothing,52,Oklahoma,Fall
+47,Male,Sandals,Footwear,92,North Carolina,Winter
+26,Male,Pants,Clothing,56,Tennessee,Summer
+68,Male,Dress,Clothing,96,Montana,Winter
+51,Male,T-shirt,Clothing,64,Wisconsin,Winter
+48,Male,Dress,Clothing,48,Connecticut,Winter
+60,Male,Socks,Clothing,83,New Jersey,Summer
+68,Male,Scarf,Accessories,91,Mississippi,Summer
+25,Male,Backpack,Accessories,94,Wyoming,Fall
+57,Male,Skirt,Clothing,62,Illinois,Spring
+41,Male,Socks,Clothing,55,Louisiana,Spring
+59,Male,Coat,Outerwear,68,Oregon,Spring
+44,Male,Jewelry,Accessories,76,South Dakota,Winter
+42,Male,Backpack,Accessories,31,Michigan,Winter
+35,Male,Belt,Accessories,81,New Jersey,Spring
+36,Male,Dress,Clothing,83,Oregon,Winter
+54,Male,Skirt,Clothing,21,Iowa,Spring
+37,Male,Dress,Clothing,22,South Carolina,Spring
+20,Male,T-shirt,Clothing,33,Indiana,Summer
+23,Male,Skirt,Clothing,23,Oregon,Spring
+61,Male,Shorts,Clothing,96,New York,Summer
+37,Male,Jewelry,Accessories,21,New Mexico,Spring
+23,Male,Pants,Clothing,39,Louisiana,Spring
+63,Male,Belt,Accessories,73,South Carolina,Fall
+47,Male,Jeans,Clothing,64,Maine,Spring
+63,Male,Jeans,Clothing,68,Indiana,Summer
+56,Male,Hat,Accessories,89,Iowa,Fall
+68,Male,Blouse,Clothing,29,Mississippi,Summer
+64,Male,Shirt,Clothing,97,Arkansas,Summer
+62,Male,Shirt,Clothing,45,South Carolina,Winter
+34,Male,T-shirt,Clothing,70,Indiana,Winter
+49,Male,Coat,Outerwear,56,Florida,Summer
+40,Male,Jacket,Outerwear,55,Alaska,Fall
+50,Male,Hoodie,Clothing,46,New York,Winter
+25,Male,Scarf,Accessories,95,Texas,Winter
+30,Male,Belt,Accessories,88,North Dakota,Winter
+54,Male,Sneakers,Footwear,92,Vermont,Fall
+40,Male,Socks,Clothing,49,New Jersey,Summer
+49,Male,Sandals,Footwear,89,Maryland,Fall
+27,Male,Coat,Outerwear,22,Connecticut,Winter
+27,Male,Shoes,Footwear,61,Illinois,Summer
+48,Male,Scarf,Accessories,29,Maryland,Spring
+40,Male,Sneakers,Footwear,82,Minnesota,Winter
+67,Male,Belt,Accessories,94,Florida,Spring
+52,Male,Handbag,Accessories,99,California,Spring
+22,Male,Handbag,Accessories,59,Mississippi,Fall
+62,Male,Boots,Footwear,90,Washington,Summer
+20,Male,Boots,Footwear,100,Wisconsin,Winter
+41,Male,Pants,Clothing,62,Pennsylvania,Winter
+34,Male,Sunglasses,Accessories,78,Missouri,Fall
+23,Male,Hoodie,Clothing,94,Oklahoma,Spring
+32,Male,Shoes,Footwear,74,Pennsylvania,Summer
+68,Male,Handbag,Accessories,52,Kentucky,Spring
+30,Male,Jacket,Outerwear,81,Vermont,Fall
+66,Male,Blouse,Clothing,20,Oregon,Winter
+62,Male,Pants,Clothing,32,Utah,Summer
+50,Male,Boots,Footwear,63,Nebraska,Fall
+55,Male,Boots,Footwear,79,Pennsylvania,Spring
+19,Male,Sweater,Clothing,23,Vermont,Winter
+67,Male,Gloves,Accessories,64,Kentucky,Winter
+18,Male,Socks,Clothing,69,Iowa,Winter
+58,Male,Jeans,Clothing,69,Indiana,Fall
+69,Male,Pants,Clothing,24,Kansas,Winter
+62,Male,Shorts,Clothing,50,Illinois,Summer
+28,Male,Gloves,Accessories,97,North Carolina,Fall
+53,Male,Sandals,Footwear,91,Ohio,Fall
+27,Male,Blouse,Clothing,37,Illinois,Spring
+55,Male,Jacket,Outerwear,55,Indiana,Winter
+34,Male,Jewelry,Accessories,52,Kansas,Winter
+25,Male,Hat,Accessories,80,Illinois,Spring
+66,Male,Socks,Clothing,79,Pennsylvania,Spring
+57,Male,Handbag,Accessories,23,New York,Summer
+46,Male,Pants,Clothing,73,Utah,Winter
+38,Male,Gloves,Accessories,99,New Jersey,Fall
+23,Male,Sweater,Clothing,22,Idaho,Spring
+42,Male,Hat,Accessories,68,New Mexico,Summer
+25,Male,Dress,Clothing,92,Michigan,Spring
+55,Male,Pants,Clothing,77,Wyoming,Winter
+62,Male,Coat,Outerwear,37,New Jersey,Spring
+41,Male,Scarf,Accessories,79,New Jersey,Winter
+58,Male,Hoodie,Clothing,51,Hawaii,Winter
+56,Male,Socks,Clothing,27,Nevada,Summer
+25,Male,Blouse,Clothing,23,New Hampshire,Spring
+70,Male,Socks,Clothing,76,Indiana,Summer
+42,Male,Dress,Clothing,31,New York,Fall
+27,Male,Hoodie,Clothing,60,Louisiana,Winter
+65,Male,T-shirt,Clothing,99,Virginia,Spring
+62,Male,Hat,Accessories,37,Wisconsin,Winter
+62,Male,Boots,Footwear,50,Oregon,Winter
+52,Male,Jeans,Clothing,26,New Hampshire,Winter
+56,Male,Shorts,Clothing,86,Indiana,Spring
+28,Male,Sandals,Footwear,41,Massachusetts,Fall
+39,Male,Sandals,Footwear,23,Montana,Winter
+54,Male,Sneakers,Footwear,56,California,Spring
+30,Male,Hat,Accessories,68,Indiana,Fall
+45,Male,Coat,Outerwear,48,West Virginia,Winter
+68,Male,Dress,Clothing,67,Minnesota,Spring
+47,Male,Boots,Footwear,87,Ohio,Spring
+68,Male,Skirt,Clothing,64,Minnesota,Fall
+63,Male,Shirt,Clothing,93,Virginia,Spring
+20,Male,Shirt,Clothing,29,Connecticut,Summer
+29,Male,Boots,Footwear,62,Tennessee,Winter
+41,Male,Hoodie,Clothing,70,Delaware,Winter
+52,Male,Sweater,Clothing,92,Vermont,Winter
+32,Male,Shirt,Clothing,79,Louisiana,Spring
+20,Male,Blouse,Clothing,31,North Dakota,Fall
+47,Male,T-shirt,Clothing,83,Oregon,Spring
+23,Male,Jacket,Outerwear,88,Idaho,Winter
+43,Male,Jewelry,Accessories,53,Vermont,Spring
+67,Male,Hoodie,Clothing,98,West Virginia,Fall
+70,Male,Jewelry,Accessories,57,Kentucky,Spring
+35,Male,Sandals,Footwear,80,Wisconsin,Winter
+41,Male,Jeans,Clothing,29,Mississippi,Spring
+54,Male,Hat,Accessories,73,Missouri,Spring
+55,Male,Sweater,Clothing,32,Arkansas,Fall
+51,Male,Boots,Footwear,68,Wyoming,Spring
+19,Male,Blouse,Clothing,97,Rhode Island,Spring
+28,Male,Shorts,Clothing,98,Utah,Fall
+63,Male,Hoodie,Clothing,56,Maryland,Fall
+30,Male,Pants,Clothing,78,Georgia,Winter
+29,Male,Belt,Accessories,81,New Jersey,Spring
+24,Male,Shirt,Clothing,68,New Hampshire,Winter
+69,Male,Shirt,Clothing,94,Oregon,Winter
+65,Male,Dress,Clothing,93,Arkansas,Spring
+64,Male,Gloves,Accessories,99,North Carolina,Fall
+40,Male,Gloves,Accessories,49,West Virginia,Winter
+24,Male,Jeans,Clothing,28,Utah,Winter
+66,Male,Belt,Accessories,93,South Dakota,Winter
+35,Male,Jacket,Outerwear,24,New Hampshire,Fall
+67,Male,Skirt,Clothing,35,Maryland,Spring
+69,Male,Sandals,Footwear,68,South Dakota,Spring
+26,Male,Belt,Accessories,61,Kentucky,Summer
+23,Male,Sweater,Clothing,74,Florida,Fall
+27,Male,Shirt,Clothing,64,Texas,Summer
+30,Male,Sneakers,Footwear,60,New Mexico,Fall
+48,Male,Jeans,Clothing,29,South Dakota,Spring
+44,Male,Sandals,Footwear,85,New Jersey,Summer
+29,Male,Pants,Clothing,81,Indiana,Summer
+29,Male,Belt,Accessories,23,Louisiana,Fall
+67,Male,T-shirt,Clothing,100,West Virginia,Spring
+42,Male,Shirt,Clothing,54,Maine,Fall
+23,Male,Sneakers,Footwear,25,Idaho,Fall
+34,Male,Blouse,Clothing,32,New York,Summer
+64,Male,Backpack,Accessories,63,Montana,Spring
+31,Male,Pants,Clothing,56,Mississippi,Spring
+54,Male,Sweater,Clothing,33,Alaska,Winter
+23,Male,Coat,Outerwear,32,Missouri,Summer
+59,Male,Dress,Clothing,38,Rhode Island,Summer
+32,Male,Blouse,Clothing,21,Hawaii,Summer
+43,Male,Hoodie,Clothing,59,South Carolina,Winter
+32,Male,Shoes,Footwear,87,Tennessee,Fall
+66,Male,T-shirt,Clothing,79,Missouri,Winter
+70,Male,Shoes,Footwear,28,Missouri,Summer
+42,Male,Boots,Footwear,67,Missouri,Summer
+56,Male,Shorts,Clothing,75,Mississippi,Spring
+28,Male,Belt,Accessories,32,Arkansas,Spring
+28,Male,Pants,Clothing,43,Kentucky,Spring
+52,Male,Shorts,Clothing,93,Connecticut,Spring
+65,Male,Sunglasses,Accessories,24,Oklahoma,Spring
+56,Male,Hat,Accessories,31,California,Fall
+59,Male,T-shirt,Clothing,84,Missouri,Winter
+23,Male,Pants,Clothing,74,Washington,Winter
+58,Male,Shorts,Clothing,62,New York,Spring
+39,Male,Jewelry,Accessories,77,Indiana,Summer
+28,Male,Backpack,Accessories,73,Oregon,Summer
+40,Male,Shoes,Footwear,50,Texas,Spring
+52,Male,Coat,Outerwear,40,Florida,Winter
+37,Male,Sweater,Clothing,97,Rhode Island,Winter
+70,Male,Gloves,Accessories,63,Texas,Fall
+30,Male,Handbag,Accessories,65,Vermont,Fall
+38,Male,Socks,Clothing,91,Maryland,Spring
+66,Male,Hoodie,Clothing,60,Alaska,Spring
+29,Male,Pants,Clothing,69,Idaho,Winter
+46,Male,Coat,Outerwear,52,West Virginia,Spring
+56,Male,Boots,Footwear,49,Nevada,Fall
+23,Male,Sneakers,Footwear,85,Oregon,Spring
+37,Male,Sweater,Clothing,86,Tennessee,Spring
+56,Male,Handbag,Accessories,51,Alabama,Winter
+36,Male,Belt,Accessories,56,Indiana,Winter
+40,Male,Belt,Accessories,72,Idaho,Fall
+26,Male,Hoodie,Clothing,27,Rhode Island,Fall
+57,Male,Sunglasses,Accessories,43,Arizona,Summer
+68,Male,Sneakers,Footwear,56,Florida,Spring
+56,Male,T-shirt,Clothing,37,New York,Fall
+40,Male,Dress,Clothing,21,Nebraska,Fall
+44,Male,Hoodie,Clothing,91,Mississippi,Winter
+44,Male,Sweater,Clothing,95,Vermont,Summer
+19,Male,Belt,Accessories,54,Nebraska,Spring
+21,Male,Socks,Clothing,36,South Carolina,Spring
+31,Male,Sunglasses,Accessories,71,Delaware,Fall
+30,Male,Coat,Outerwear,31,Vermont,Summer
+65,Male,Hat,Accessories,89,Indiana,Spring
+39,Male,Pants,Clothing,83,Oregon,Winter
+64,Male,Backpack,Accessories,42,Maryland,Spring
+59,Male,Shorts,Clothing,91,Florida,Summer
+49,Male,Jacket,Outerwear,61,Indiana,Spring
+24,Male,Backpack,Accessories,66,Texas,Summer
+19,Male,Scarf,Accessories,22,Nebraska,Spring
+27,Male,Hoodie,Clothing,68,North Carolina,Winter
+56,Male,Skirt,Clothing,43,Alabama,Fall
+49,Male,Dress,Clothing,32,Alabama,Fall
+41,Male,Coat,Outerwear,46,Colorado,Fall
+36,Male,Blouse,Clothing,90,Wisconsin,Summer
+68,Male,Hat,Accessories,75,Delaware,Fall
+28,Male,Handbag,Accessories,69,Indiana,Winter
+45,Male,Belt,Accessories,40,Iowa,Fall
+60,Male,Belt,Accessories,63,Iowa,Fall
+21,Male,Shirt,Clothing,36,Wisconsin,Summer
+32,Male,Shoes,Footwear,75,Iowa,Winter
+27,Male,Scarf,Accessories,67,Montana,Summer
+40,Male,Pants,Clothing,64,Mississippi,Spring
+64,Male,Blouse,Clothing,61,Michigan,Fall
+18,Male,Gloves,Accessories,40,Virginia,Winter
+22,Male,Handbag,Accessories,97,New York,Fall
+42,Male,Sneakers,Footwear,31,Maine,Spring
+57,Male,Sandals,Footwear,65,New Jersey,Spring
+33,Male,Sunglasses,Accessories,54,Maryland,Spring
+37,Male,Jacket,Outerwear,49,Kentucky,Fall
+21,Male,T-shirt,Clothing,64,Minnesota,Fall
+51,Male,Sneakers,Footwear,35,Massachusetts,Winter
+30,Male,Shoes,Footwear,86,Illinois,Winter
+68,Male,Jacket,Outerwear,55,Michigan,Winter
+36,Male,Scarf,Accessories,58,Wisconsin,Spring
+46,Male,Sneakers,Footwear,96,Alaska,Fall
+41,Male,Jewelry,Accessories,64,Mississippi,Fall
+68,Male,Jacket,Outerwear,56,Oregon,Fall
+21,Male,Blouse,Clothing,85,Maryland,Winter
+62,Male,Dress,Clothing,23,Arkansas,Spring
+59,Male,Scarf,Accessories,72,Illinois,Fall
+25,Male,Hat,Accessories,38,Arkansas,Summer
+53,Male,Blouse,Clothing,29,Mississippi,Winter
+31,Male,Gloves,Accessories,46,Arkansas,Spring
+46,Male,Gloves,Accessories,58,Idaho,Spring
+26,Male,Coat,Outerwear,43,Iowa,Fall
+47,Male,Scarf,Accessories,32,West Virginia,Spring
+37,Male,Pants,Clothing,30,Wisconsin,Winter
+55,Male,Sunglasses,Accessories,67,Massachusetts,Summer
+30,Male,Dress,Clothing,45,Texas,Summer
+19,Male,Hat,Accessories,81,Nebraska,Winter
+36,Male,Backpack,Accessories,23,Nevada,Fall
+23,Male,Sandals,Footwear,59,Indiana,Fall
+62,Male,Sunglasses,Accessories,21,North Dakota,Summer
+26,Male,Backpack,Accessories,20,Georgia,Spring
+36,Male,Jewelry,Accessories,28,New Mexico,Winter
+33,Male,Socks,Clothing,100,New Hampshire,Winter
+32,Male,Shirt,Clothing,46,Washington,Spring
+56,Male,Handbag,Accessories,61,Nevada,Spring
+58,Male,Blouse,Clothing,58,Maine,Winter
+34,Male,Backpack,Accessories,50,Idaho,Spring
+61,Male,Hat,Accessories,93,Tennessee,Summer
+48,Male,Skirt,Clothing,24,Louisiana,Summer
+25,Male,Shorts,Clothing,100,Michigan,Summer
+51,Male,Blouse,Clothing,79,New Hampshire,Fall
+29,Male,Socks,Clothing,51,Minnesota,Summer
+54,Male,Belt,Accessories,90,Illinois,Winter
+48,Male,Boots,Footwear,56,Idaho,Summer
+62,Male,Shorts,Clothing,25,Montana,Spring
+18,Male,Shirt,Clothing,75,Alabama,Summer
+43,Male,Handbag,Accessories,75,Montana,Summer
+22,Male,Jeans,Clothing,53,California,Summer
+68,Male,Dress,Clothing,100,Pennsylvania,Spring
+44,Male,Dress,Clothing,27,Texas,Fall
+51,Male,Sandals,Footwear,60,Michigan,Fall
+66,Male,Jacket,Outerwear,23,Connecticut,Fall
+59,Male,Coat,Outerwear,40,Wyoming,Winter
+60,Male,Pants,Clothing,38,Michigan,Summer
+31,Male,Backpack,Accessories,90,South Dakota,Summer
+20,Male,Blouse,Clothing,97,North Dakota,Summer
+24,Male,Skirt,Clothing,38,Maryland,Fall
+48,Male,Sandals,Footwear,30,Michigan,Summer
+39,Male,Pants,Clothing,88,South Dakota,Fall
+34,Male,Hat,Accessories,33,Florida,Winter
+70,Male,Hoodie,Clothing,60,Minnesota,Winter
+59,Male,Sweater,Clothing,64,New York,Summer
+45,Male,Scarf,Accessories,95,Oregon,Fall
+35,Male,Sneakers,Footwear,83,Minnesota,Winter
+69,Male,Boots,Footwear,97,Montana,Winter
+58,Male,Coat,Outerwear,38,Washington,Spring
+25,Male,Boots,Footwear,48,New Mexico,Summer
+27,Male,Sandals,Footwear,76,Arizona,Spring
+34,Male,Pants,Clothing,25,Nebraska,Summer
+53,Male,Hoodie,Clothing,92,Idaho,Spring
+58,Male,Sandals,Footwear,47,Idaho,Fall
+32,Male,Sweater,Clothing,36,Vermont,Fall
+64,Male,Belt,Accessories,51,Arkansas,Fall
+63,Male,Jeans,Clothing,35,Wyoming,Summer
+23,Male,Hoodie,Clothing,57,New Mexico,Summer
+64,Male,Boots,Footwear,95,West Virginia,Summer
+18,Male,Socks,Clothing,41,New York,Winter
+25,Male,Dress,Clothing,44,Illinois,Winter
+54,Male,Jacket,Outerwear,34,Utah,Fall
+60,Male,Jacket,Outerwear,25,Colorado,Spring
+36,Male,Boots,Footwear,93,Virginia,Winter
+66,Male,Sneakers,Footwear,50,Georgia,Winter
+60,Male,Pants,Clothing,79,Alabama,Fall
+59,Male,Coat,Outerwear,100,Montana,Spring
+58,Male,Shirt,Clothing,57,Pennsylvania,Spring
+35,Male,Sweater,Clothing,28,Missouri,Spring
+20,Male,Shoes,Footwear,35,Maine,Winter
+70,Male,Boots,Footwear,85,Pennsylvania,Fall
+54,Male,Sunglasses,Accessories,95,Oregon,Summer
+38,Male,Sneakers,Footwear,90,Utah,Summer
+54,Male,Jewelry,Accessories,49,Oklahoma,Summer
+33,Male,Belt,Accessories,92,Montana,Winter
+46,Male,Gloves,Accessories,72,Nebraska,Winter
+58,Male,Shorts,Clothing,71,Alabama,Summer
+30,Male,Jewelry,Accessories,27,Ohio,Winter
+42,Male,Gloves,Accessories,39,Arkansas,Fall
+28,Male,Jewelry,Accessories,98,Mississippi,Winter
+43,Male,Sandals,Footwear,27,California,Spring
+31,Male,Jewelry,Accessories,71,Alaska,Spring
+39,Male,Hat,Accessories,24,Indiana,Spring
+69,Male,Shorts,Clothing,63,Wisconsin,Fall
+31,Male,Sweater,Clothing,72,New Jersey,Fall
+44,Male,Blouse,Clothing,61,Rhode Island,Spring
+39,Male,Hat,Accessories,56,Wyoming,Fall
+24,Male,Belt,Accessories,32,Oregon,Summer
+28,Male,Gloves,Accessories,23,Washington,Summer
+48,Male,Coat,Outerwear,100,Washington,Spring
+39,Male,Jewelry,Accessories,74,New Hampshire,Fall
+64,Male,Skirt,Clothing,33,Maryland,Spring
+28,Male,Gloves,Accessories,67,Wisconsin,Spring
+39,Male,Jewelry,Accessories,61,Massachusetts,Summer
+49,Male,Shorts,Clothing,46,Nebraska,Summer
+22,Male,Gloves,Accessories,56,Nebraska,Spring
+25,Male,Sneakers,Footwear,73,Idaho,Spring
+40,Male,Skirt,Clothing,44,Arizona,Summer
+23,Male,Hat,Accessories,44,Hawaii,Winter
+24,Male,Jewelry,Accessories,26,Missouri,Summer
+66,Male,Sneakers,Footwear,52,Louisiana,Spring
+27,Male,Shirt,Clothing,54,Arkansas,Summer
+62,Male,Jacket,Outerwear,38,North Carolina,Summer
+70,Male,Belt,Accessories,44,North Dakota,Fall
+43,Male,T-shirt,Clothing,76,Montana,Spring
+45,Male,Jewelry,Accessories,23,Rhode Island,Winter
+63,Male,T-shirt,Clothing,98,Idaho,Winter
+69,Male,Jacket,Outerwear,33,Michigan,Spring
+59,Male,Sweater,Clothing,32,Illinois,Summer
+19,Male,Boots,Footwear,85,Georgia,Fall
+63,Male,Jeans,Clothing,69,Alabama,Summer
+37,Male,Jeans,Clothing,55,Alaska,Spring
+37,Male,Pants,Clothing,66,Massachusetts,Summer
+50,Male,Jacket,Outerwear,30,Michigan,Fall
+60,Male,Jacket,Outerwear,80,Alaska,Winter
+46,Male,Belt,Accessories,20,North Dakota,Summer
+35,Male,Shirt,Clothing,30,South Carolina,Fall
+66,Male,Dress,Clothing,86,Pennsylvania,Winter
+35,Male,Blouse,Clothing,84,Colorado,Spring
+20,Male,Dress,Clothing,54,New Hampshire,Summer
+55,Male,Blouse,Clothing,30,Maryland,Fall
+34,Male,Dress,Clothing,91,Georgia,Winter
+60,Male,Sneakers,Footwear,23,Wisconsin,Winter
+22,Male,Socks,Clothing,35,Texas,Spring
+26,Male,Shoes,Footwear,90,Utah,Winter
+39,Male,Jeans,Clothing,93,Indiana,Fall
+20,Male,Jeans,Clothing,68,Nevada,Winter
+57,Male,Gloves,Accessories,41,New Hampshire,Spring
+68,Male,Belt,Accessories,73,New York,Winter
+50,Male,Sunglasses,Accessories,73,Texas,Fall
+21,Male,Hat,Accessories,66,Iowa,Summer
+29,Male,Backpack,Accessories,59,Washington,Summer
+38,Male,Shorts,Clothing,72,Tennessee,Spring
+54,Male,Socks,Clothing,88,Georgia,Summer
+22,Male,Socks,Clothing,76,Massachusetts,Summer
+29,Male,Belt,Accessories,31,Oregon,Winter
+41,Male,Jacket,Outerwear,22,Oklahoma,Summer
+26,Male,Hat,Accessories,75,Wisconsin,Fall
+69,Male,T-shirt,Clothing,75,Oregon,Spring
+20,Male,Backpack,Accessories,63,Georgia,Winter
+59,Male,Coat,Outerwear,21,New Mexico,Spring
+63,Male,Backpack,Accessories,83,Mississippi,Spring
+68,Male,Jacket,Outerwear,46,Wisconsin,Winter
+50,Male,Shoes,Footwear,59,New Hampshire,Summer
+55,Male,Blouse,Clothing,66,Wyoming,Summer
+36,Male,Sandals,Footwear,74,West Virginia,Fall
+18,Male,Sunglasses,Accessories,82,Michigan,Summer
+68,Male,Shoes,Footwear,89,Alaska,Spring
+56,Male,Dress,Clothing,65,Illinois,Fall
+32,Male,Belt,Accessories,55,Hawaii,Spring
+28,Male,Shorts,Clothing,95,Colorado,Winter
+24,Male,Handbag,Accessories,77,Illinois,Winter
+59,Male,Blouse,Clothing,44,Hawaii,Winter
+56,Male,Jeans,Clothing,89,Wisconsin,Fall
+30,Male,Jewelry,Accessories,24,Arkansas,Spring
+48,Male,Belt,Accessories,43,Delaware,Winter
+60,Male,Sneakers,Footwear,51,Oregon,Summer
+46,Male,Hat,Accessories,46,South Carolina,Summer
+69,Male,Dress,Clothing,32,Maryland,Summer
+19,Male,Sneakers,Footwear,55,Kansas,Spring
+66,Male,Sunglasses,Accessories,26,Arkansas,Summer
+64,Male,Handbag,Accessories,29,Minnesota,Summer
+54,Male,Blouse,Clothing,49,New Mexico,Spring
+27,Male,Blouse,Clothing,45,Delaware,Spring
+64,Male,Shorts,Clothing,48,Utah,Winter
+43,Male,Shorts,Clothing,47,Ohio,Winter
+43,Male,Hoodie,Clothing,57,Alabama,Fall
+27,Male,Backpack,Accessories,34,South Dakota,Fall
+35,Male,Sunglasses,Accessories,75,New Mexico,Fall
+43,Male,Scarf,Accessories,94,Oregon,Fall
+57,Male,Hat,Accessories,84,Oregon,Winter
+50,Male,Scarf,Accessories,38,Mississippi,Summer
+37,Male,Scarf,Accessories,75,Alabama,Winter
+68,Male,Pants,Clothing,44,Kansas,Fall
+22,Male,Backpack,Accessories,33,California,Summer
+58,Male,Sunglasses,Accessories,93,Idaho,Fall
+48,Male,Sneakers,Footwear,99,Wyoming,Winter
+30,Male,Backpack,Accessories,33,Minnesota,Spring
+51,Male,Sneakers,Footwear,76,Washington,Spring
+20,Male,Skirt,Clothing,63,Hawaii,Summer
+30,Male,Pants,Clothing,41,Missouri,Winter
+28,Male,Jewelry,Accessories,88,Colorado,Winter
+37,Male,Skirt,Clothing,92,Washington,Summer
+36,Male,T-shirt,Clothing,31,North Dakota,Summer
+18,Male,Skirt,Clothing,25,Minnesota,Spring
+52,Male,Shirt,Clothing,28,California,Spring
+56,Male,Dress,Clothing,75,Michigan,Spring
+68,Male,Boots,Footwear,34,Delaware,Spring
+62,Male,Pants,Clothing,97,California,Winter
+35,Male,Jacket,Outerwear,80,Oklahoma,Summer
+65,Male,Sneakers,Footwear,71,North Dakota,Summer
+69,Male,Jewelry,Accessories,77,Ohio,Fall
+28,Male,Belt,Accessories,41,Hawaii,Spring
+37,Male,Scarf,Accessories,92,Maryland,Summer
+41,Male,Blouse,Clothing,95,Hawaii,Spring
+37,Male,Sweater,Clothing,25,Alabama,Fall
+25,Male,Boots,Footwear,77,Oklahoma,Fall
+41,Male,Socks,Clothing,99,Alabama,Summer
+48,Male,Belt,Accessories,24,Vermont,Winter
+42,Male,Sneakers,Footwear,72,Ohio,Summer
+54,Male,Jeans,Clothing,80,Wisconsin,Winter
+18,Male,Skirt,Clothing,100,South Dakota,Winter
+56,Male,Shoes,Footwear,83,Iowa,Summer
+61,Male,Dress,Clothing,95,Maryland,Spring
+40,Male,Handbag,Accessories,41,Colorado,Summer
+34,Male,Backpack,Accessories,35,Wisconsin,Spring
+42,Male,Jewelry,Accessories,30,Mississippi,Fall
+43,Male,Hat,Accessories,21,Mississippi,Winter
+47,Male,Jewelry,Accessories,85,California,Fall
+48,Male,Shirt,Clothing,54,Delaware,Winter
+20,Male,Boots,Footwear,26,Montana,Spring
+65,Male,Shirt,Clothing,59,Indiana,Spring
+54,Male,Sunglasses,Accessories,48,West Virginia,Winter
+23,Male,Shorts,Clothing,98,Iowa,Summer
+18,Male,Sweater,Clothing,92,Maine,Summer
+70,Male,Belt,Accessories,46,Connecticut,Winter
+55,Male,T-shirt,Clothing,21,Kansas,Spring
+49,Male,Shorts,Clothing,72,Vermont,Fall
+26,Male,Sandals,Footwear,58,Nebraska,Fall
+33,Male,Shirt,Clothing,93,Nevada,Fall
+20,Male,Socks,Clothing,31,Tennessee,Spring
+41,Male,Pants,Clothing,26,Arkansas,Winter
+18,Male,Skirt,Clothing,68,Wisconsin,Summer
+26,Male,Jewelry,Accessories,31,Illinois,Summer
+30,Male,T-shirt,Clothing,41,Kansas,Summer
+64,Male,Jewelry,Accessories,62,New York,Fall
+26,Male,Hat,Accessories,41,Colorado,Spring
+43,Male,Blouse,Clothing,64,Wisconsin,Winter
+63,Male,Sandals,Footwear,72,Michigan,Summer
+57,Male,Handbag,Accessories,78,Hawaii,Winter
+25,Male,Hat,Accessories,47,Virginia,Winter
+68,Male,Scarf,Accessories,46,Ohio,Summer
+31,Male,Shorts,Clothing,43,Missouri,Winter
+64,Male,Backpack,Accessories,58,Indiana,Summer
+38,Male,Sweater,Clothing,32,Florida,Winter
+34,Male,Skirt,Clothing,45,Minnesota,Winter
+32,Male,Sneakers,Footwear,35,Nevada,Summer
+69,Male,Sunglasses,Accessories,21,Maine,Winter
+45,Male,Dress,Clothing,64,Massachusetts,Winter
+35,Male,Blouse,Clothing,88,North Dakota,Spring
+63,Male,Shoes,Footwear,48,New Jersey,Summer
+65,Male,Sweater,Clothing,36,Indiana,Summer
+35,Male,Gloves,Accessories,28,Oregon,Summer
+54,Male,Socks,Clothing,80,North Dakota,Spring
+28,Male,Coat,Outerwear,23,South Carolina,Summer
+68,Male,Sunglasses,Accessories,24,North Carolina,Summer
+58,Male,Boots,Footwear,22,North Dakota,Fall
+35,Male,Dress,Clothing,21,Massachusetts,Spring
+68,Male,Jacket,Outerwear,51,Tennessee,Spring
+41,Male,Gloves,Accessories,65,Missouri,Summer
+65,Male,Scarf,Accessories,51,Tennessee,Spring
+50,Male,Hoodie,Clothing,32,Colorado,Summer
+18,Male,Coat,Outerwear,70,Mississippi,Spring
+38,Male,Scarf,Accessories,77,Ohio,Summer
+68,Male,Coat,Outerwear,90,North Carolina,Summer
+53,Male,Scarf,Accessories,36,Ohio,Summer
+58,Male,Handbag,Accessories,77,Nebraska,Summer
+34,Male,Boots,Footwear,78,Hawaii,Summer
+36,Male,Pants,Clothing,69,Oklahoma,Summer
+58,Male,T-shirt,Clothing,63,Wisconsin,Summer
+60,Male,Scarf,Accessories,36,Arkansas,Winter
+59,Male,Coat,Outerwear,80,Texas,Winter
+65,Male,Sweater,Clothing,35,New Mexico,Summer
+31,Male,Belt,Accessories,93,Colorado,Winter
+43,Male,Belt,Accessories,25,Indiana,Spring
+37,Male,Sweater,Clothing,81,Arizona,Spring
+21,Male,Blouse,Clothing,42,Indiana,Spring
+69,Male,Skirt,Clothing,36,Indiana,Spring
+32,Male,Jewelry,Accessories,66,Alaska,Spring
+53,Male,Gloves,Accessories,37,Utah,Fall
+59,Male,T-shirt,Clothing,45,Louisiana,Winter
+64,Male,Gloves,Accessories,86,Iowa,Summer
+63,Male,Sunglasses,Accessories,24,New Mexico,Winter
+43,Male,Shirt,Clothing,22,Maine,Summer
+19,Male,Handbag,Accessories,53,Minnesota,Spring
+40,Male,Jacket,Outerwear,41,New Mexico,Fall
+51,Male,Skirt,Clothing,64,Arkansas,Summer
+51,Male,Handbag,Accessories,40,Oklahoma,Winter
+66,Male,Blouse,Clothing,33,Utah,Summer
+42,Male,T-shirt,Clothing,59,Wisconsin,Winter
+22,Male,Pants,Clothing,73,Utah,Fall
+31,Male,Hoodie,Clothing,22,Utah,Winter
+18,Male,Boots,Footwear,73,South Carolina,Fall
+21,Male,Blouse,Clothing,62,Hawaii,Fall
+35,Male,Coat,Outerwear,56,Alaska,Winter
+35,Male,Pants,Clothing,90,Colorado,Spring
+27,Male,Sunglasses,Accessories,44,West Virginia,Winter
+65,Male,Jeans,Clothing,35,Oregon,Summer
+41,Male,Pants,Clothing,71,Ohio,Summer
+60,Male,Dress,Clothing,52,Massachusetts,Fall
+61,Male,Shoes,Footwear,37,Louisiana,Summer
+24,Male,Sneakers,Footwear,95,Virginia,Winter
+65,Male,Socks,Clothing,97,New York,Fall
+23,Male,Coat,Outerwear,57,Arkansas,Spring
+30,Male,Shirt,Clothing,93,New Mexico,Spring
+33,Male,Blouse,Clothing,48,Minnesota,Winter
+22,Male,Gloves,Accessories,75,Illinois,Fall
+67,Male,Skirt,Clothing,70,Georgia,Winter
+28,Male,Handbag,Accessories,26,Mississippi,Winter
+32,Male,Shirt,Clothing,73,North Carolina,Winter
+40,Male,Coat,Outerwear,30,Nevada,Summer
+64,Male,Shoes,Footwear,61,Connecticut,Summer
+56,Male,Handbag,Accessories,75,Utah,Winter
+63,Male,Jacket,Outerwear,88,Tennessee,Fall
+20,Male,Shirt,Clothing,67,Mississippi,Summer
+54,Male,Hat,Accessories,95,Nebraska,Fall
+31,Male,Sunglasses,Accessories,69,West Virginia,Spring
+36,Male,Shirt,Clothing,87,South Carolina,Fall
+25,Male,Belt,Accessories,41,Iowa,Winter
+20,Male,Sweater,Clothing,67,North Dakota,Spring
+62,Male,Hoodie,Clothing,70,West Virginia,Fall
+69,Male,Handbag,Accessories,41,Mississippi,Winter
+54,Male,Jeans,Clothing,83,Alabama,Summer
+39,Male,Backpack,Accessories,22,California,Spring
+56,Male,Sneakers,Footwear,20,Idaho,Summer
+39,Male,Jewelry,Accessories,29,South Dakota,Summer
+37,Male,Sunglasses,Accessories,87,North Dakota,Spring
+25,Male,Shorts,Clothing,81,Nevada,Fall
+35,Male,Boots,Footwear,58,Florida,Spring
+45,Male,Skirt,Clothing,83,Indiana,Winter
+19,Male,Pants,Clothing,59,Arkansas,Fall
+21,Male,T-shirt,Clothing,93,North Carolina,Spring
+65,Male,T-shirt,Clothing,87,Illinois,Fall
+49,Male,Jacket,Outerwear,22,Missouri,Winter
+30,Male,Jeans,Clothing,71,South Dakota,Summer
+23,Male,Dress,Clothing,69,Idaho,Spring
+69,Male,Blouse,Clothing,47,Connecticut,Winter
+29,Male,Hoodie,Clothing,50,Hawaii,Summer
+54,Male,T-shirt,Clothing,96,Maryland,Winter
+45,Male,Sweater,Clothing,39,Maryland,Winter
+25,Male,Shorts,Clothing,84,Massachusetts,Winter
+34,Male,Jewelry,Accessories,28,Delaware,Spring
+46,Male,T-shirt,Clothing,51,Massachusetts,Summer
+70,Male,Scarf,Accessories,20,New York,Spring
+42,Male,Shoes,Footwear,72,Delaware,Winter
+45,Male,Sunglasses,Accessories,33,Massachusetts,Spring
+57,Male,Coat,Outerwear,28,Indiana,Summer
+49,Male,Blouse,Clothing,53,Virginia,Spring
+23,Male,Jeans,Clothing,48,Wyoming,Fall
+47,Male,Shorts,Clothing,21,Illinois,Winter
+23,Male,Shirt,Clothing,22,Alabama,Fall
+21,Male,Backpack,Accessories,87,Idaho,Fall
+45,Male,Belt,Accessories,50,Rhode Island,Winter
+67,Male,Blouse,Clothing,85,New York,Summer
+31,Male,Jeans,Clothing,98,Missouri,Spring
+58,Male,Dress,Clothing,34,Texas,Winter
+57,Male,Shorts,Clothing,61,Tennessee,Summer
+42,Male,Jewelry,Accessories,98,Ohio,Summer
+60,Male,Handbag,Accessories,61,Tennessee,Spring
+21,Male,Jewelry,Accessories,98,Minnesota,Winter
+69,Male,Pants,Clothing,21,Wisconsin,Fall
+41,Male,Pants,Clothing,51,Delaware,Winter
+51,Male,Sandals,Footwear,80,Kansas,Spring
+23,Male,Skirt,Clothing,72,Missouri,Winter
+57,Male,Sunglasses,Accessories,63,Michigan,Winter
+40,Male,Skirt,Clothing,27,West Virginia,Winter
+65,Male,Handbag,Accessories,44,Alabama,Summer
+61,Male,Coat,Outerwear,23,New Hampshire,Winter
+34,Male,Skirt,Clothing,93,Montana,Winter
+43,Male,Hoodie,Clothing,70,Wyoming,Fall
+31,Male,Sunglasses,Accessories,85,Missouri,Fall
+57,Male,Sweater,Clothing,40,Ohio,Winter
+34,Male,Boots,Footwear,29,South Dakota,Winter
+25,Male,Skirt,Clothing,27,Colorado,Fall
+66,Male,Dress,Clothing,93,Massachusetts,Fall
+56,Male,Belt,Accessories,20,Delaware,Spring
+49,Male,Jewelry,Accessories,55,New Hampshire,Fall
+19,Male,Dress,Clothing,94,Michigan,Fall
+27,Male,Hat,Accessories,56,Pennsylvania,Winter
+68,Male,Sweater,Clothing,58,Louisiana,Spring
+20,Male,Skirt,Clothing,44,Minnesota,Spring
+21,Male,Hoodie,Clothing,95,Hawaii,Fall
+36,Male,Sandals,Footwear,42,Idaho,Summer
+37,Male,Jewelry,Accessories,93,Vermont,Winter
+61,Male,Dress,Clothing,56,Delaware,Summer
+68,Male,Hoodie,Clothing,88,New Mexico,Spring
+60,Male,Sweater,Clothing,54,Alaska,Winter
+69,Male,Jewelry,Accessories,89,Minnesota,Fall
+25,Male,Sandals,Footwear,45,Nebraska,Summer
+32,Male,Socks,Clothing,75,Alaska,Winter
+53,Male,Backpack,Accessories,22,Michigan,Fall
+46,Male,Shirt,Clothing,82,Indiana,Fall
+58,Male,Shoes,Footwear,34,Hawaii,Summer
+21,Male,Coat,Outerwear,92,West Virginia,Summer
+46,Male,Sweater,Clothing,78,New York,Spring
+18,Male,Jacket,Outerwear,47,Iowa,Spring
+56,Male,Jacket,Outerwear,64,Arizona,Summer
+18,Male,Sneakers,Footwear,44,Minnesota,Winter
+49,Male,Belt,Accessories,94,Texas,Winter
+29,Male,Scarf,Accessories,62,Virginia,Winter
+67,Male,Jewelry,Accessories,81,North Dakota,Summer
+31,Male,T-shirt,Clothing,33,Iowa,Fall
+52,Male,Pants,Clothing,88,Utah,Fall
+42,Male,Handbag,Accessories,49,Ohio,Winter
+32,Male,Backpack,Accessories,31,Louisiana,Summer
+47,Male,Gloves,Accessories,29,Iowa,Fall
+45,Male,Jacket,Outerwear,34,Maryland,Spring
+20,Male,Sweater,Clothing,38,Montana,Fall
+66,Male,Blouse,Clothing,41,Illinois,Summer
+52,Male,Blouse,Clothing,34,Arizona,Spring
+50,Male,Gloves,Accessories,26,North Carolina,Summer
+62,Male,Jeans,Clothing,98,Montana,Winter
+38,Male,Sneakers,Footwear,59,Iowa,Fall
+65,Male,Hat,Accessories,92,Iowa,Fall
+60,Male,Backpack,Accessories,40,Ohio,Spring
+68,Male,Jeans,Clothing,20,Wisconsin,Fall
+62,Male,Skirt,Clothing,35,South Carolina,Spring
+62,Male,Belt,Accessories,35,Oregon,Spring
+40,Male,Dress,Clothing,82,North Dakota,Winter
+32,Male,Hoodie,Clothing,48,California,Fall
+22,Male,Coat,Outerwear,58,Mississippi,Winter
+33,Male,Sweater,Clothing,57,New Jersey,Spring
+57,Male,Shorts,Clothing,96,Rhode Island,Winter
+60,Male,Sneakers,Footwear,97,New Hampshire,Summer
+30,Male,Sweater,Clothing,42,Louisiana,Winter
+41,Male,T-shirt,Clothing,62,Arizona,Spring
+58,Male,Handbag,Accessories,67,Rhode Island,Fall
+34,Male,Sneakers,Footwear,46,Vermont,Summer
+67,Male,Jacket,Outerwear,71,Tennessee,Spring
+58,Male,Backpack,Accessories,99,Alaska,Fall
+41,Male,Jeans,Clothing,28,Maryland,Fall
+42,Male,Belt,Accessories,77,Wisconsin,Summer
+50,Male,Boots,Footwear,63,Nevada,Summer
+40,Male,Shorts,Clothing,62,Illinois,Spring
+32,Male,Jeans,Clothing,92,Montana,Summer
+51,Male,Shoes,Footwear,72,New Mexico,Winter
+26,Male,Hat,Accessories,79,Virginia,Summer
+32,Male,T-shirt,Clothing,27,Delaware,Summer
+58,Male,Sunglasses,Accessories,39,North Carolina,Fall
+51,Male,Socks,Clothing,86,Nevada,Spring
+19,Male,Shirt,Clothing,94,Washington,Fall
+57,Male,Shorts,Clothing,53,Maine,Spring
+66,Male,Shirt,Clothing,85,Connecticut,Summer
+62,Male,Socks,Clothing,50,Louisiana,Fall
+58,Male,Pants,Clothing,47,Illinois,Winter
+23,Male,Boots,Footwear,75,South Dakota,Winter
+45,Male,T-shirt,Clothing,60,Indiana,Winter
+20,Male,T-shirt,Clothing,36,Vermont,Spring
+33,Male,Coat,Outerwear,80,New Hampshire,Spring
+30,Male,Hat,Accessories,96,Oregon,Spring
+50,Male,Sunglasses,Accessories,80,Kansas,Winter
+62,Male,Blouse,Clothing,71,Maine,Summer
+69,Male,Jewelry,Accessories,29,Louisiana,Fall
+34,Male,Jewelry,Accessories,53,Louisiana,Spring
+49,Male,Skirt,Clothing,35,Indiana,Summer
+65,Male,Scarf,Accessories,75,Kentucky,Fall
+66,Male,Pants,Clothing,52,South Carolina,Fall
+41,Male,Hat,Accessories,77,Montana,Winter
+37,Male,Gloves,Accessories,24,Vermont,Fall
+32,Male,Shirt,Clothing,78,Mississippi,Winter
+42,Male,Sandals,Footwear,98,Wyoming,Winter
+31,Male,Socks,Clothing,57,Vermont,Winter
+61,Male,Handbag,Accessories,78,Alabama,Summer
+36,Male,Jacket,Outerwear,76,Kentucky,Fall
+60,Male,Shorts,Clothing,26,South Dakota,Spring
+51,Male,Sandals,Footwear,78,Delaware,Winter
+68,Male,Scarf,Accessories,53,Wisconsin,Summer
+46,Male,Sandals,Footwear,100,Arizona,Summer
+19,Male,Jeans,Clothing,73,Maine,Winter
+30,Male,Skirt,Clothing,40,New Mexico,Winter
+51,Male,Gloves,Accessories,76,Wyoming,Winter
+28,Male,Skirt,Clothing,80,Delaware,Fall
+41,Male,Sweater,Clothing,80,Pennsylvania,Winter
+29,Male,Blouse,Clothing,67,North Dakota,Spring
+25,Male,Sweater,Clothing,61,Kentucky,Spring
+60,Male,Shirt,Clothing,76,Rhode Island,Spring
+63,Male,Jewelry,Accessories,55,Arizona,Summer
+51,Male,T-shirt,Clothing,85,Colorado,Summer
+22,Male,Scarf,Accessories,69,Maine,Spring
+54,Male,Belt,Accessories,26,New Jersey,Summer
+18,Male,T-shirt,Clothing,64,Kansas,Summer
+29,Male,Sneakers,Footwear,60,South Dakota,Fall
+59,Male,Gloves,Accessories,36,New Hampshire,Winter
+25,Male,Sandals,Footwear,21,Connecticut,Spring
+19,Male,Backpack,Accessories,72,Wyoming,Fall
+56,Male,Pants,Clothing,62,Missouri,Summer
+31,Male,T-shirt,Clothing,44,Alaska,Winter
+45,Male,Skirt,Clothing,52,Delaware,Fall
+23,Male,Gloves,Accessories,58,Indiana,Spring
+18,Male,Blouse,Clothing,77,West Virginia,Spring
+43,Male,Blouse,Clothing,99,Wyoming,Spring
+56,Male,Jeans,Clothing,96,Illinois,Fall
+43,Male,T-shirt,Clothing,64,Alaska,Summer
+64,Male,Sweater,Clothing,44,Wisconsin,Fall
+67,Male,Pants,Clothing,33,Indiana,Fall
+63,Male,Boots,Footwear,71,Tennessee,Winter
+54,Male,Skirt,Clothing,36,Illinois,Fall
+69,Male,Gloves,Accessories,62,Pennsylvania,Fall
+34,Male,Socks,Clothing,29,Oklahoma,Summer
+56,Male,T-shirt,Clothing,33,Tennessee,Spring
+34,Male,Blouse,Clothing,33,New Jersey,Fall
+58,Male,Blouse,Clothing,41,New Jersey,Winter
+44,Male,Scarf,Accessories,54,Tennessee,Winter
+25,Male,Backpack,Accessories,58,Georgia,Spring
+27,Male,Shorts,Clothing,30,Arizona,Summer
+26,Male,Jewelry,Accessories,53,Nevada,Winter
+18,Male,Gloves,Accessories,91,Arkansas,Spring
+64,Male,Hoodie,Clothing,44,North Dakota,Fall
+62,Male,Hoodie,Clothing,89,South Dakota,Winter
+59,Male,Skirt,Clothing,57,North Carolina,Spring
+36,Male,Sunglasses,Accessories,57,Hawaii,Spring
+69,Male,Jewelry,Accessories,74,New Hampshire,Summer
+39,Male,Jacket,Outerwear,30,California,Fall
+28,Male,Dress,Clothing,20,Delaware,Summer
+42,Male,Hoodie,Clothing,90,Arizona,Fall
+31,Male,Jeans,Clothing,61,Washington,Fall
+57,Male,Sandals,Footwear,51,Nevada,Fall
+53,Male,Sunglasses,Accessories,97,Alaska,Winter
+59,Male,Pants,Clothing,97,Texas,Fall
+32,Male,Shorts,Clothing,40,New York,Winter
+65,Male,Jewelry,Accessories,85,Iowa,Summer
+56,Male,Socks,Clothing,76,Arizona,Winter
+31,Male,Sandals,Footwear,22,New Mexico,Spring
+59,Male,Pants,Clothing,63,North Carolina,Summer
+22,Male,T-shirt,Clothing,71,Nevada,Spring
+47,Male,Boots,Footwear,35,Idaho,Summer
+23,Male,Backpack,Accessories,30,Vermont,Spring
+69,Male,Skirt,Clothing,74,New Mexico,Fall
+18,Male,Scarf,Accessories,71,Georgia,Winter
+50,Male,Sweater,Clothing,84,Kentucky,Spring
+29,Male,Sandals,Footwear,38,New York,Fall
+65,Male,Jewelry,Accessories,81,Arizona,Spring
+29,Male,Sweater,Clothing,56,Colorado,Winter
+49,Male,Skirt,Clothing,48,Kentucky,Winter
+28,Male,Shorts,Clothing,97,Alaska,Fall
+51,Male,Backpack,Accessories,74,Alabama,Fall
+26,Male,Hoodie,Clothing,50,Connecticut,Winter
+38,Male,Skirt,Clothing,71,Hawaii,Winter
+35,Male,Skirt,Clothing,33,Idaho,Summer
+34,Male,Backpack,Accessories,56,Virginia,Summer
+51,Male,Blouse,Clothing,84,Connecticut,Spring
+47,Male,Shirt,Clothing,36,Michigan,Fall
+18,Male,Gloves,Accessories,63,Kentucky,Summer
+64,Male,Sandals,Footwear,36,Nebraska,Summer
+30,Male,Jacket,Outerwear,63,Michigan,Fall
+59,Male,Sneakers,Footwear,32,Utah,Winter
+66,Male,Backpack,Accessories,93,New Mexico,Spring
+40,Male,Pants,Clothing,29,Florida,Summer
+25,Male,Sunglasses,Accessories,92,Mississippi,Summer
+59,Male,Jeans,Clothing,33,Hawaii,Fall
+66,Male,Pants,Clothing,52,North Carolina,Spring
+54,Male,Jewelry,Accessories,42,Illinois,Spring
+42,Male,Hoodie,Clothing,36,Maryland,Spring
+48,Male,Sandals,Footwear,67,Montana,Summer
+34,Male,Jacket,Outerwear,43,Michigan,Winter
+19,Male,Blouse,Clothing,68,North Carolina,Spring
+70,Male,Jewelry,Accessories,60,Minnesota,Summer
+43,Male,Socks,Clothing,53,Delaware,Summer
+46,Male,Jeans,Clothing,23,Kentucky,Spring
+66,Male,Gloves,Accessories,57,Ohio,Winter
+50,Male,Hat,Accessories,89,Alaska,Fall
+55,Male,Shoes,Footwear,99,Vermont,Winter
+63,Male,Pants,Clothing,28,Alabama,Fall
+32,Male,Socks,Clothing,53,Wisconsin,Summer
+30,Male,Hoodie,Clothing,45,Arkansas,Winter
+35,Male,Hoodie,Clothing,38,Georgia,Winter
+59,Male,Pants,Clothing,49,Louisiana,Summer
+59,Male,Shirt,Clothing,32,New York,Summer
+54,Male,T-shirt,Clothing,37,Connecticut,Winter
+63,Male,Dress,Clothing,80,Nebraska,Winter
+43,Male,Backpack,Accessories,78,Arkansas,Summer
+33,Male,Gloves,Accessories,53,Connecticut,Summer
+57,Male,Shoes,Footwear,82,Maryland,Summer
+25,Male,Skirt,Clothing,33,Colorado,Spring
+26,Male,Gloves,Accessories,77,Colorado,Winter
+50,Male,Hoodie,Clothing,56,Maine,Winter
+70,Male,Socks,Clothing,37,Oklahoma,Winter
+68,Male,Gloves,Accessories,54,South Carolina,Spring
+39,Male,Shorts,Clothing,67,Nevada,Winter
+46,Male,Shoes,Footwear,90,Colorado,Fall
+57,Male,Jeans,Clothing,72,Massachusetts,Summer
+47,Male,Boots,Footwear,59,Nevada,Summer
+40,Male,Hat,Accessories,45,Iowa,Fall
+52,Male,Shorts,Clothing,30,Michigan,Spring
+40,Male,Pants,Clothing,51,West Virginia,Summer
+67,Male,Sweater,Clothing,90,Indiana,Fall
+67,Male,Jacket,Outerwear,95,Indiana,Winter
+37,Male,Dress,Clothing,81,Georgia,Fall
+67,Male,Shirt,Clothing,70,Minnesota,Spring
+64,Male,Dress,Clothing,32,Louisiana,Winter
+28,Male,Belt,Accessories,94,Maryland,Spring
+54,Male,Hat,Accessories,29,Pennsylvania,Spring
+54,Male,Backpack,Accessories,31,Louisiana,Summer
+24,Male,Skirt,Clothing,20,Maryland,Fall
+27,Male,Gloves,Accessories,44,Tennessee,Winter
+53,Male,Jacket,Outerwear,77,Illinois,Fall
+32,Male,Handbag,Accessories,51,Wyoming,Spring
+24,Male,Sandals,Footwear,49,Florida,Summer
+45,Male,Sunglasses,Accessories,78,Massachusetts,Spring
+49,Male,Jeans,Clothing,98,Tennessee,Spring
+51,Male,Sandals,Footwear,94,Iowa,Winter
+69,Male,Shoes,Footwear,91,Michigan,Summer
+41,Male,Sunglasses,Accessories,77,Kansas,Summer
+59,Male,Scarf,Accessories,97,Georgia,Summer
+26,Male,Skirt,Clothing,58,West Virginia,Summer
+23,Male,Gloves,Accessories,97,Tennessee,Spring
+62,Male,Coat,Outerwear,48,Arkansas,Summer
+69,Male,Belt,Accessories,23,Vermont,Summer
+46,Male,Pants,Clothing,79,Virginia,Winter
+35,Male,Jewelry,Accessories,42,Maryland,Spring
+32,Male,Backpack,Accessories,95,Connecticut,Spring
+46,Male,Sneakers,Footwear,29,Missouri,Summer
+33,Male,Hoodie,Clothing,98,New Jersey,Winter
+32,Male,Blouse,Clothing,96,Arkansas,Spring
+33,Male,Sunglasses,Accessories,66,Nevada,Fall
+67,Male,Boots,Footwear,80,Missouri,Spring
+67,Male,Sneakers,Footwear,27,South Dakota,Summer
+42,Male,Backpack,Accessories,25,Connecticut,Fall
+20,Male,Pants,Clothing,45,Vermont,Fall
+39,Male,Socks,Clothing,89,Tennessee,Winter
+26,Male,Belt,Accessories,27,California,Winter
+51,Male,Sunglasses,Accessories,90,Wyoming,Winter
+31,Male,Shirt,Clothing,65,New York,Summer
+68,Male,Sneakers,Footwear,72,Maine,Spring
+44,Male,Shoes,Footwear,70,Georgia,Fall
+18,Male,Sandals,Footwear,82,Tennessee,Winter
+58,Male,Scarf,Accessories,97,New Mexico,Fall
+26,Male,Shirt,Clothing,25,Virginia,Summer
+57,Male,Skirt,Clothing,48,Florida,Spring
+37,Male,Boots,Footwear,99,Alabama,Summer
+24,Male,Sweater,Clothing,21,Texas,Summer
+57,Male,Sandals,Footwear,94,West Virginia,Spring
+48,Male,Jeans,Clothing,53,Nevada,Fall
+39,Male,Backpack,Accessories,70,Virginia,Winter
+51,Male,Skirt,Clothing,26,Wisconsin,Summer
+57,Male,Belt,Accessories,82,Virginia,Summer
+53,Male,Shoes,Footwear,47,Maine,Winter
+70,Male,Socks,Clothing,32,Massachusetts,Winter
+60,Male,Backpack,Accessories,97,Arkansas,Fall
+31,Male,Shirt,Clothing,68,Idaho,Winter
+41,Male,Sweater,Clothing,23,Pennsylvania,Winter
+62,Male,Handbag,Accessories,33,Maine,Winter
+59,Male,Jewelry,Accessories,38,Alabama,Winter
+46,Male,Socks,Clothing,68,Idaho,Winter
+62,Male,Socks,Clothing,23,Arkansas,Fall
+42,Male,Shirt,Clothing,29,Delaware,Summer
+37,Male,Scarf,Accessories,35,Maine,Winter
+50,Male,Shoes,Footwear,73,Nebraska,Fall
+29,Male,Shoes,Footwear,84,Ohio,Fall
+25,Male,Scarf,Accessories,23,Montana,Spring
+66,Male,Sunglasses,Accessories,67,New Mexico,Summer
+21,Male,Socks,Clothing,51,North Carolina,Spring
+46,Male,Blouse,Clothing,36,South Carolina,Winter
+57,Male,Jeans,Clothing,55,Illinois,Summer
+61,Male,Shorts,Clothing,30,Alabama,Spring
+53,Male,T-shirt,Clothing,70,Oklahoma,Summer
+37,Male,Blouse,Clothing,63,Minnesota,Winter
+39,Male,Belt,Accessories,87,Illinois,Summer
+53,Male,Blouse,Clothing,70,Arkansas,Spring
+35,Male,T-shirt,Clothing,51,Minnesota,Spring
+69,Male,Jewelry,Accessories,25,South Carolina,Spring
+66,Male,Jacket,Outerwear,32,New York,Winter
+19,Male,Shoes,Footwear,52,Alabama,Spring
+47,Male,Gloves,Accessories,33,New York,Summer
+49,Male,Jeans,Clothing,68,Missouri,Spring
+31,Male,Jewelry,Accessories,20,Georgia,Fall
+39,Male,Pants,Clothing,32,Oklahoma,Winter
+58,Male,Jewelry,Accessories,82,Connecticut,Summer
+45,Male,Sneakers,Footwear,64,Michigan,Winter
+68,Male,Boots,Footwear,24,Rhode Island,Fall
+35,Male,Hat,Accessories,96,Mississippi,Summer
+65,Male,T-shirt,Clothing,94,Massachusetts,Spring
+45,Male,Backpack,Accessories,48,New Hampshire,Winter
+19,Male,Sunglasses,Accessories,60,Wyoming,Spring
+65,Male,Sweater,Clothing,56,New Jersey,Spring
+28,Male,Handbag,Accessories,33,Texas,Fall
+55,Male,Backpack,Accessories,46,Minnesota,Spring
+66,Male,Socks,Clothing,37,South Dakota,Spring
+29,Male,Shirt,Clothing,98,Washington,Winter
+56,Male,Shorts,Clothing,50,California,Spring
+21,Male,Belt,Accessories,63,Wisconsin,Fall
+32,Male,Sweater,Clothing,70,Michigan,Summer
+54,Male,Coat,Outerwear,63,South Carolina,Fall
+61,Male,Shorts,Clothing,86,Indiana,Fall
+31,Male,Shoes,Footwear,99,Arkansas,Summer
+27,Male,Sneakers,Footwear,40,Oregon,Spring
+64,Male,Sneakers,Footwear,92,Illinois,Fall
+60,Male,Pants,Clothing,21,Maryland,Fall
+70,Male,Jewelry,Accessories,81,Vermont,Summer
+36,Male,T-shirt,Clothing,82,Texas,Fall
+56,Male,Jewelry,Accessories,88,Nebraska,Spring
+69,Male,Jacket,Outerwear,100,South Carolina,Fall
+39,Male,Backpack,Accessories,66,Massachusetts,Winter
+38,Male,Belt,Accessories,25,Texas,Winter
+36,Male,Scarf,Accessories,53,Florida,Summer
+46,Male,Sweater,Clothing,28,South Carolina,Fall
+59,Male,Gloves,Accessories,23,Florida,Fall
+64,Male,Scarf,Accessories,34,Nebraska,Fall
+49,Male,Dress,Clothing,42,Hawaii,Spring
+32,Male,Jeans,Clothing,24,Montana,Summer
+29,Male,Sunglasses,Accessories,47,South Dakota,Fall
+24,Male,Coat,Outerwear,78,Alabama,Spring
+41,Male,Jeans,Clothing,89,Arkansas,Summer
+41,Male,Scarf,Accessories,59,Mississippi,Fall
+32,Male,Blouse,Clothing,94,Vermont,Summer
+69,Male,Jeans,Clothing,49,New York,Fall
+65,Male,Dress,Clothing,89,North Dakota,Summer
+54,Male,Hat,Accessories,91,Wisconsin,Summer
+39,Male,Sandals,Footwear,89,California,Spring
+37,Male,Jacket,Outerwear,57,Maryland,Spring
+51,Male,Socks,Clothing,71,Massachusetts,Winter
+26,Male,Jeans,Clothing,97,Washington,Fall
+42,Male,Sandals,Footwear,45,Minnesota,Fall
+21,Male,Dress,Clothing,91,Washington,Spring
+53,Male,Socks,Clothing,25,South Carolina,Spring
+36,Male,Hoodie,Clothing,63,New Mexico,Fall
+21,Male,Dress,Clothing,52,North Carolina,Summer
+33,Male,Sneakers,Footwear,43,Iowa,Winter
+49,Male,T-shirt,Clothing,28,Louisiana,Summer
+31,Male,T-shirt,Clothing,78,Oklahoma,Summer
+68,Male,Sweater,Clothing,31,Michigan,Spring
+49,Male,Shirt,Clothing,23,Oregon,Winter
+23,Male,Hat,Accessories,25,Idaho,Spring
+30,Male,Pants,Clothing,86,Indiana,Summer
+53,Male,Shoes,Footwear,88,New Mexico,Spring
+65,Male,Gloves,Accessories,35,South Carolina,Spring
+60,Male,Jewelry,Accessories,34,Vermont,Fall
+46,Male,Pants,Clothing,75,Delaware,Winter
+54,Male,Hoodie,Clothing,46,North Dakota,Winter
+59,Male,Jewelry,Accessories,31,California,Fall
+52,Male,Socks,Clothing,93,Montana,Spring
+41,Male,Sunglasses,Accessories,85,Missouri,Spring
+43,Male,Belt,Accessories,68,Tennessee,Fall
+63,Male,Dress,Clothing,40,Virginia,Spring
+37,Male,Shirt,Clothing,51,Vermont,Winter
+44,Male,Scarf,Accessories,85,Rhode Island,Winter
+67,Male,Jacket,Outerwear,23,Kansas,Summer
+27,Male,Dress,Clothing,28,Colorado,Summer
+60,Male,Socks,Clothing,44,Georgia,Fall
+58,Male,Jewelry,Accessories,57,Nebraska,Spring
+53,Male,Scarf,Accessories,98,Missouri,Fall
+43,Male,Backpack,Accessories,68,Alaska,Winter
+32,Male,Jacket,Outerwear,36,Virginia,Fall
+54,Male,Coat,Outerwear,71,Nebraska,Spring
+47,Male,Skirt,Clothing,60,Rhode Island,Fall
+57,Male,Coat,Outerwear,87,New Hampshire,Fall
+63,Male,Shoes,Footwear,38,Alabama,Winter
+70,Male,Boots,Footwear,45,North Carolina,Spring
+62,Male,Coat,Outerwear,47,New Mexico,Fall
+40,Male,Skirt,Clothing,57,Minnesota,Fall
+25,Male,Backpack,Accessories,68,Arizona,Summer
+19,Male,Shorts,Clothing,52,Montana,Fall
+25,Male,Skirt,Clothing,87,Vermont,Fall
+21,Male,Hat,Accessories,34,Maine,Summer
+55,Male,Sandals,Footwear,41,Virginia,Winter
+34,Male,Sunglasses,Accessories,94,California,Winter
+47,Male,Sunglasses,Accessories,93,New York,Summer
+27,Male,Socks,Clothing,51,Indiana,Winter
+67,Male,Sweater,Clothing,42,Mississippi,Fall
+40,Male,Boots,Footwear,95,New York,Winter
+53,Male,Handbag,Accessories,90,New Mexico,Fall
+24,Male,Dress,Clothing,98,Kentucky,Winter
+47,Male,Hat,Accessories,39,North Dakota,Winter
+53,Male,Sandals,Footwear,66,Arkansas,Fall
+47,Male,Shoes,Footwear,23,Maryland,Winter
+38,Male,Skirt,Clothing,73,Connecticut,Winter
+48,Male,Sunglasses,Accessories,23,Utah,Summer
+47,Male,Skirt,Clothing,43,Missouri,Fall
+19,Male,T-shirt,Clothing,45,Nebraska,Winter
+38,Male,Sandals,Footwear,21,Hawaii,Winter
+57,Male,Shirt,Clothing,40,Illinois,Spring
+70,Male,Jeans,Clothing,58,Vermont,Fall
+38,Male,Shorts,Clothing,48,New Jersey,Summer
+35,Male,Shirt,Clothing,94,Kentucky,Fall
+46,Male,Scarf,Accessories,74,Wyoming,Spring
+32,Male,Handbag,Accessories,51,Hawaii,Fall
+38,Male,Skirt,Clothing,83,Missouri,Winter
+41,Male,Handbag,Accessories,68,Mississippi,Winter
+19,Male,Gloves,Accessories,84,Massachusetts,Spring
+18,Male,Shirt,Clothing,58,Louisiana,Fall
+45,Male,Blouse,Clothing,92,West Virginia,Winter
+23,Male,Dress,Clothing,69,Washington,Summer
+60,Male,Shorts,Clothing,48,Oregon,Summer
+52,Male,Shoes,Footwear,60,New York,Spring
+42,Male,Sandals,Footwear,20,Iowa,Winter
+29,Male,Pants,Clothing,55,Idaho,Summer
+31,Male,Jacket,Outerwear,88,New Jersey,Spring
+30,Male,Skirt,Clothing,48,Ohio,Winter
+23,Male,Handbag,Accessories,74,Connecticut,Spring
+31,Male,Coat,Outerwear,42,Florida,Fall
+40,Male,Sweater,Clothing,32,South Carolina,Fall
+39,Male,Shorts,Clothing,98,Missouri,Summer
+28,Male,Skirt,Clothing,89,Rhode Island,Fall
+23,Male,Gloves,Accessories,97,Delaware,Summer
+42,Male,Backpack,Accessories,49,Colorado,Spring
+68,Male,Dress,Clothing,50,Nebraska,Spring
+24,Male,Belt,Accessories,91,Vermont,Winter
+24,Male,Gloves,Accessories,93,Montana,Winter
+21,Male,Jewelry,Accessories,98,Florida,Summer
+49,Male,Socks,Clothing,82,Delaware,Fall
+41,Male,Coat,Outerwear,37,Connecticut,Summer
+22,Male,Handbag,Accessories,63,Hawaii,Fall
+42,Male,Blouse,Clothing,99,New Mexico,Winter
+30,Male,Shorts,Clothing,37,Kansas,Spring
+38,Male,Shoes,Footwear,34,Nevada,Spring
+40,Male,Shorts,Clothing,32,North Carolina,Winter
+55,Male,Sandals,Footwear,23,New Mexico,Winter
+37,Male,Blouse,Clothing,78,Idaho,Spring
+41,Male,Coat,Outerwear,54,California,Winter
+38,Male,Blouse,Clothing,94,Wisconsin,Fall
+42,Male,Belt,Accessories,75,Alaska,Spring
+26,Male,Blouse,Clothing,69,Pennsylvania,Summer
+41,Male,Scarf,Accessories,35,Virginia,Winter
+27,Male,Shirt,Clothing,78,California,Spring
+61,Male,Socks,Clothing,29,Kentucky,Summer
+58,Male,Jeans,Clothing,62,New York,Fall
+25,Male,Dress,Clothing,58,Vermont,Spring
+33,Male,Boots,Footwear,88,Pennsylvania,Summer
+57,Male,Scarf,Accessories,80,New York,Summer
+39,Male,Scarf,Accessories,47,North Carolina,Summer
+60,Male,Gloves,Accessories,51,Wyoming,Summer
+39,Male,Pants,Clothing,25,Ohio,Spring
+42,Male,Dress,Clothing,36,Alabama,Summer
+53,Male,Dress,Clothing,79,Rhode Island,Winter
+20,Male,Jeans,Clothing,41,Oregon,Winter
+46,Male,Sweater,Clothing,68,North Dakota,Fall
+46,Male,Sandals,Footwear,51,Illinois,Spring
+69,Male,Handbag,Accessories,38,New Mexico,Fall
+28,Male,Scarf,Accessories,46,Colorado,Summer
+42,Male,Sandals,Footwear,20,Utah,Summer
+30,Male,Sunglasses,Accessories,25,Virginia,Summer
+50,Male,Sweater,Clothing,89,Maine,Winter
+59,Male,Pants,Clothing,77,Nebraska,Winter
+54,Male,Hat,Accessories,94,Hawaii,Fall
+50,Male,Belt,Accessories,100,Idaho,Fall
+25,Male,Sandals,Footwear,96,West Virginia,Winter
+41,Male,Pants,Clothing,36,Vermont,Winter
+35,Male,Jewelry,Accessories,27,Indiana,Fall
+67,Male,Sunglasses,Accessories,67,Idaho,Winter
+33,Male,Blouse,Clothing,91,Minnesota,Fall
+19,Male,Belt,Accessories,62,Wyoming,Fall
+25,Male,Shorts,Clothing,88,Kansas,Fall
+32,Male,Pants,Clothing,66,Georgia,Summer
+30,Male,Sandals,Footwear,65,Kansas,Fall
+18,Male,Gloves,Accessories,25,Nebraska,Winter
+38,Male,Belt,Accessories,64,Washington,Spring
+22,Male,Shirt,Clothing,72,Missouri,Spring
+40,Male,Scarf,Accessories,74,Washington,Summer
+54,Male,Gloves,Accessories,50,Kansas,Fall
+70,Male,Pants,Clothing,97,Minnesota,Fall
+52,Male,Sneakers,Footwear,36,Colorado,Spring
+34,Male,Jacket,Outerwear,49,Utah,Fall
+65,Male,Shoes,Footwear,64,North Carolina,Spring
+38,Male,Blouse,Clothing,31,Florida,Summer
+35,Male,Boots,Footwear,66,New Hampshire,Winter
+40,Male,Socks,Clothing,82,Illinois,Spring
+23,Male,T-shirt,Clothing,88,Louisiana,Winter
+45,Male,Sandals,Footwear,34,Alabama,Summer
+40,Male,Sneakers,Footwear,84,Florida,Winter
+42,Male,Jewelry,Accessories,96,Alabama,Summer
+57,Male,Sandals,Footwear,71,California,Winter
+18,Male,Jacket,Outerwear,77,Maryland,Summer
+18,Male,Skirt,Clothing,66,Nevada,Spring
+56,Male,Shirt,Clothing,21,Massachusetts,Winter
+35,Male,Shorts,Clothing,37,South Carolina,Summer
+49,Male,Socks,Clothing,90,Delaware,Fall
+49,Male,Jacket,Outerwear,96,Hawaii,Fall
+34,Male,Jewelry,Accessories,37,Florida,Summer
+63,Male,T-shirt,Clothing,66,Rhode Island,Winter
+42,Male,Gloves,Accessories,45,Wyoming,Spring
+41,Male,Shoes,Footwear,89,Colorado,Summer
+26,Male,Shoes,Footwear,94,Virginia,Fall
+48,Male,Shoes,Footwear,96,Nebraska,Summer
+62,Male,Hoodie,Clothing,31,Oklahoma,Spring
+24,Male,Belt,Accessories,79,North Dakota,Winter
+48,Male,Coat,Outerwear,39,Michigan,Spring
+31,Male,Blouse,Clothing,22,California,Fall
+41,Male,Skirt,Clothing,32,Tennessee,Fall
+24,Male,T-shirt,Clothing,71,Ohio,Winter
+60,Male,Jeans,Clothing,96,Florida,Spring
+38,Male,Scarf,Accessories,82,Missouri,Fall
+58,Male,Backpack,Accessories,76,South Carolina,Spring
+53,Male,Backpack,Accessories,22,Arizona,Winter
+44,Male,Scarf,Accessories,40,Indiana,Winter
+51,Male,Hat,Accessories,92,North Dakota,Summer
+36,Male,Coat,Outerwear,94,Montana,Fall
+20,Male,Dress,Clothing,44,Missouri,Fall
+32,Male,Gloves,Accessories,49,Kentucky,Spring
+66,Male,Sweater,Clothing,26,Georgia,Spring
+49,Male,Skirt,Clothing,38,Kentucky,Fall
+27,Male,Blouse,Clothing,72,Georgia,Spring
+29,Male,Dress,Clothing,99,Alaska,Summer
+29,Male,Jacket,Outerwear,38,Maine,Spring
+55,Male,Coat,Outerwear,96,New Mexico,Winter
+57,Male,Dress,Clothing,27,New York,Spring
+29,Male,Shorts,Clothing,24,Oklahoma,Winter
+31,Male,Jeans,Clothing,82,Wyoming,Summer
+25,Male,Hat,Accessories,56,Alabama,Summer
+61,Male,Gloves,Accessories,25,Maryland,Fall
+53,Male,Sneakers,Footwear,67,West Virginia,Spring
+22,Male,Shoes,Footwear,21,Kentucky,Summer
+28,Male,Hoodie,Clothing,27,Kansas,Summer
+18,Male,Sneakers,Footwear,97,Idaho,Fall
+44,Male,Handbag,Accessories,45,Ohio,Winter
+32,Male,Blouse,Clothing,63,Iowa,Fall
+34,Male,Belt,Accessories,100,Michigan,Summer
+67,Male,Socks,Clothing,38,South Dakota,Spring
+66,Male,Blouse,Clothing,45,Nebraska,Summer
+28,Male,Jewelry,Accessories,91,California,Fall
+70,Male,Shorts,Clothing,82,Nevada,Fall
+37,Male,Boots,Footwear,48,Kansas,Winter
+28,Male,Coat,Outerwear,30,Ohio,Spring
+43,Male,T-shirt,Clothing,34,Vermont,Spring
+37,Male,Sweater,Clothing,68,Georgia,Fall
+54,Male,Sunglasses,Accessories,95,Maryland,Winter
+50,Male,Hat,Accessories,22,Connecticut,Spring
+46,Male,Gloves,Accessories,88,Washington,Fall
+60,Male,Socks,Clothing,83,California,Summer
+40,Male,Handbag,Accessories,87,Montana,Spring
+64,Male,Coat,Outerwear,57,Idaho,Summer
+18,Male,Coat,Outerwear,88,Pennsylvania,Summer
+37,Male,Pants,Clothing,20,Maine,Winter
+36,Male,Belt,Accessories,39,Montana,Summer
+51,Male,Sunglasses,Accessories,71,New Jersey,Spring
+26,Male,Hoodie,Clothing,73,Louisiana,Winter
+68,Male,Handbag,Accessories,63,Maine,Summer
+27,Male,Gloves,Accessories,78,Florida,Winter
+28,Male,Skirt,Clothing,96,Missouri,Fall
+49,Male,Sunglasses,Accessories,81,North Dakota,Winter
+70,Male,Dress,Clothing,95,Connecticut,Fall
+30,Male,Gloves,Accessories,68,Virginia,Spring
+27,Male,Sneakers,Footwear,28,Montana,Spring
+19,Male,T-shirt,Clothing,30,Vermont,Summer
+64,Male,Dress,Clothing,31,Georgia,Summer
+42,Male,Handbag,Accessories,95,Virginia,Winter
+69,Male,Socks,Clothing,79,Vermont,Winter
+28,Male,Sneakers,Footwear,39,Montana,Winter
+47,Male,Jacket,Outerwear,34,New Jersey,Summer
+69,Male,Hoodie,Clothing,28,Wyoming,Spring
+56,Male,Sandals,Footwear,38,Maine,Winter
+28,Male,Shoes,Footwear,55,New Mexico,Spring
+50,Male,Sandals,Footwear,31,Colorado,Winter
+39,Male,Coat,Outerwear,84,Connecticut,Spring
+35,Male,Gloves,Accessories,93,Maryland,Winter
+59,Male,Coat,Outerwear,28,Oregon,Winter
+44,Male,Boots,Footwear,55,New York,Summer
+66,Male,Skirt,Clothing,63,Oklahoma,Winter
+20,Male,Skirt,Clothing,94,Alabama,Winter
+45,Male,Pants,Clothing,36,North Dakota,Fall
+49,Male,Hat,Accessories,97,Nebraska,Spring
+60,Male,Backpack,Accessories,63,Arizona,Summer
+61,Male,Scarf,Accessories,77,Illinois,Spring
+36,Male,Scarf,Accessories,53,South Carolina,Fall
+33,Male,Shirt,Clothing,77,Kansas,Spring
+49,Male,Boots,Footwear,79,Kansas,Summer
+31,Male,Coat,Outerwear,37,Idaho,Summer
+19,Male,Belt,Accessories,94,California,Winter
+39,Male,Boots,Footwear,76,North Dakota,Fall
+66,Male,Sneakers,Footwear,68,Georgia,Fall
+25,Male,Shirt,Clothing,65,Illinois,Spring
+63,Male,Blouse,Clothing,24,Delaware,Summer
+56,Male,Jacket,Outerwear,31,Connecticut,Summer
+20,Male,Skirt,Clothing,89,Tennessee,Fall
+58,Male,Socks,Clothing,49,Maryland,Summer
+34,Male,Sandals,Footwear,92,Rhode Island,Fall
+28,Male,T-shirt,Clothing,32,New York,Winter
+22,Male,Jacket,Outerwear,67,New Mexico,Winter
+37,Male,Belt,Accessories,64,California,Fall
+54,Male,Shoes,Footwear,84,Maine,Spring
+65,Male,Blouse,Clothing,34,New York,Fall
+57,Male,Shoes,Footwear,26,Hawaii,Winter
+38,Male,Sweater,Clothing,50,New Hampshire,Fall
+70,Male,Boots,Footwear,46,Nebraska,Fall
+56,Male,Handbag,Accessories,71,Montana,Fall
+56,Male,Blouse,Clothing,78,Wisconsin,Summer
+22,Male,Skirt,Clothing,35,Tennessee,Winter
+57,Male,Backpack,Accessories,58,Montana,Summer
+53,Male,Shirt,Clothing,67,Michigan,Fall
+53,Male,Sweater,Clothing,93,Texas,Spring
+19,Male,Scarf,Accessories,81,Pennsylvania,Spring
+49,Male,Handbag,Accessories,80,New York,Fall
+44,Male,Scarf,Accessories,64,Alabama,Spring
+27,Male,Jeans,Clothing,41,Virginia,Fall
+60,Male,Socks,Clothing,79,Pennsylvania,Winter
+62,Male,Sunglasses,Accessories,60,Mississippi,Winter
+52,Male,Sneakers,Footwear,91,Wyoming,Winter
+30,Male,Shoes,Footwear,66,New Mexico,Winter
+66,Male,Socks,Clothing,85,North Dakota,Winter
+29,Male,Sunglasses,Accessories,38,New Jersey,Summer
+24,Male,Sweater,Clothing,23,Vermont,Winter
+51,Male,Shoes,Footwear,71,Alaska,Spring
+67,Male,Socks,Clothing,25,Indiana,Winter
+50,Male,Boots,Footwear,39,Alabama,Spring
+37,Male,Hoodie,Clothing,20,Michigan,Spring
+69,Male,Gloves,Accessories,73,Washington,Winter
+60,Male,Backpack,Accessories,63,Virginia,Fall
+21,Male,Gloves,Accessories,94,Tennessee,Spring
+44,Male,Blouse,Clothing,94,South Dakota,Fall
+26,Male,Scarf,Accessories,71,New Hampshire,Summer
+40,Male,Hat,Accessories,77,South Dakota,Spring
+41,Male,Scarf,Accessories,66,Pennsylvania,Fall
+62,Male,Sandals,Footwear,23,Wisconsin,Summer
+39,Male,Sweater,Clothing,60,California,Spring
+53,Male,Backpack,Accessories,72,Rhode Island,Spring
+24,Male,Blouse,Clothing,35,Alabama,Winter
+41,Male,Scarf,Accessories,31,Oklahoma,Fall
+19,Male,Socks,Clothing,33,Illinois,Summer
+36,Male,Hat,Accessories,95,Tennessee,Summer
+21,Male,Dress,Clothing,68,Alabama,Fall
+25,Male,Coat,Outerwear,87,Kansas,Spring
+65,Male,Shirt,Clothing,64,Arizona,Winter
+42,Male,Shirt,Clothing,74,Michigan,Winter
+40,Male,Jeans,Clothing,62,Missouri,Spring
+58,Male,Socks,Clothing,97,Louisiana,Winter
+40,Male,Sandals,Footwear,47,Connecticut,Fall
+62,Male,Blouse,Clothing,83,Connecticut,Winter
+38,Male,Shirt,Clothing,82,Oregon,Spring
+37,Male,Sunglasses,Accessories,26,West Virginia,Fall
+65,Male,Jacket,Outerwear,81,Florida,Winter
+55,Male,Dress,Clothing,44,New Hampshire,Spring
+43,Male,Sunglasses,Accessories,88,Oregon,Winter
+43,Male,Boots,Footwear,76,Oregon,Winter
+45,Male,Scarf,Accessories,89,Utah,Winter
+64,Male,Shorts,Clothing,22,Missouri,Fall
+28,Male,Shorts,Clothing,33,West Virginia,Winter
+69,Male,Jeans,Clothing,97,California,Fall
+54,Male,Scarf,Accessories,57,California,Winter
+52,Male,Shorts,Clothing,38,Illinois,Summer
+23,Male,Sneakers,Footwear,55,Hawaii,Fall
+26,Male,Jewelry,Accessories,37,Washington,Spring
+48,Male,Shoes,Footwear,43,Wisconsin,Summer
+49,Male,Hoodie,Clothing,96,Virginia,Summer
+53,Male,Jacket,Outerwear,51,Oregon,Winter
+69,Male,Shorts,Clothing,95,Pennsylvania,Fall
+26,Male,Socks,Clothing,26,Virginia,Summer
+21,Male,Coat,Outerwear,34,Hawaii,Fall
+59,Male,Sandals,Footwear,83,Nebraska,Summer
+21,Male,Backpack,Accessories,24,Alaska,Fall
+22,Male,Pants,Clothing,69,Michigan,Fall
+26,Male,Sweater,Clothing,40,North Carolina,Fall
+41,Male,Jacket,Outerwear,87,North Carolina,Winter
+37,Male,Sneakers,Footwear,46,Minnesota,Spring
+30,Male,Jewelry,Accessories,82,Georgia,Winter
+49,Male,Backpack,Accessories,81,West Virginia,Summer
+49,Male,Jewelry,Accessories,57,Delaware,Winter
+58,Male,Shoes,Footwear,49,North Dakota,Summer
+70,Male,Jacket,Outerwear,42,Florida,Fall
+27,Male,Jacket,Outerwear,26,Oregon,Spring
+65,Male,T-shirt,Clothing,38,Idaho,Spring
+57,Male,Sneakers,Footwear,57,Virginia,Summer
+20,Male,Jacket,Outerwear,100,North Dakota,Summer
+34,Male,Hoodie,Clothing,73,Alabama,Fall
+59,Male,Jacket,Outerwear,66,Hawaii,Winter
+54,Male,T-shirt,Clothing,73,Oregon,Spring
+36,Male,Gloves,Accessories,45,Utah,Spring
+21,Male,Sneakers,Footwear,27,Hawaii,Fall
+52,Male,T-shirt,Clothing,24,Connecticut,Fall
+43,Male,Sneakers,Footwear,59,Wyoming,Winter
+32,Male,Jeans,Clothing,20,Delaware,Winter
+55,Male,Handbag,Accessories,44,Arkansas,Summer
+31,Male,Socks,Clothing,90,Indiana,Spring
+45,Male,Jewelry,Accessories,36,California,Fall
+53,Male,Blouse,Clothing,95,Wyoming,Winter
+24,Male,Backpack,Accessories,30,South Dakota,Spring
+47,Male,Scarf,Accessories,65,West Virginia,Fall
+63,Male,Scarf,Accessories,96,Tennessee,Summer
+38,Male,Shirt,Clothing,65,Alaska,Spring
+59,Male,Pants,Clothing,47,South Dakota,Fall
+54,Male,Hat,Accessories,25,Tennessee,Fall
+26,Male,Coat,Outerwear,56,Alabama,Fall
+68,Male,T-shirt,Clothing,76,North Carolina,Fall
+41,Male,Socks,Clothing,60,Oklahoma,Fall
+68,Male,Shirt,Clothing,67,New York,Winter
+21,Male,Sweater,Clothing,95,Iowa,Spring
+32,Male,Gloves,Accessories,72,Alaska,Winter
+20,Male,Belt,Accessories,98,Alaska,Spring
+59,Male,Jeans,Clothing,83,Nebraska,Winter
+53,Male,Handbag,Accessories,37,Delaware,Fall
+66,Male,T-shirt,Clothing,85,Texas,Fall
+47,Male,Socks,Clothing,36,Missouri,Fall
+58,Male,Jeans,Clothing,36,Maine,Winter
+28,Male,Scarf,Accessories,86,Pennsylvania,Summer
+68,Male,Pants,Clothing,99,Missouri,Spring
+60,Male,Blouse,Clothing,21,Mississippi,Summer
+47,Male,Jacket,Outerwear,84,Hawaii,Winter
+18,Male,Sandals,Footwear,63,Texas,Spring
+32,Male,Shorts,Clothing,84,South Dakota,Summer
+27,Male,Shorts,Clothing,72,New Jersey,Spring
+65,Male,Skirt,Clothing,21,Connecticut,Winter
+68,Male,Sandals,Footwear,92,Maryland,Fall
+55,Male,Blouse,Clothing,72,Arizona,Fall
+30,Male,Sandals,Footwear,83,Oklahoma,Spring
+24,Male,Shirt,Clothing,73,Utah,Summer
+57,Male,Socks,Clothing,98,Arkansas,Winter
+23,Male,T-shirt,Clothing,76,North Carolina,Fall
+69,Male,Dress,Clothing,43,California,Summer
+60,Male,Hat,Accessories,60,Colorado,Summer
+25,Male,Gloves,Accessories,40,California,Spring
+18,Male,Socks,Clothing,93,Vermont,Winter
+37,Male,Dress,Clothing,98,Kansas,Fall
+61,Male,Socks,Clothing,91,Ohio,Summer
+41,Male,Belt,Accessories,92,New Jersey,Fall
+69,Male,Handbag,Accessories,87,Arizona,Winter
+32,Male,Skirt,Clothing,96,Arizona,Fall
+60,Male,Hoodie,Clothing,97,New Hampshire,Summer
+43,Male,Blouse,Clothing,55,Louisiana,Spring
+61,Male,Jeans,Clothing,58,Texas,Spring
+57,Male,Boots,Footwear,21,Montana,Spring
+56,Male,Handbag,Accessories,82,New Hampshire,Summer
+66,Male,Coat,Outerwear,34,South Dakota,Winter
+52,Male,Blouse,Clothing,78,Montana,Spring
+63,Male,Handbag,Accessories,47,North Carolina,Spring
+50,Male,Sunglasses,Accessories,96,South Dakota,Summer
+21,Male,Socks,Clothing,23,Maine,Fall
+42,Male,Shoes,Footwear,27,Oklahoma,Winter
+40,Male,Backpack,Accessories,37,Nebraska,Spring
+67,Male,Scarf,Accessories,79,Illinois,Summer
+35,Male,Backpack,Accessories,40,Colorado,Summer
+18,Male,Coat,Outerwear,39,Massachusetts,Fall
+52,Male,Hoodie,Clothing,73,Louisiana,Summer
+59,Male,Gloves,Accessories,84,Massachusetts,Fall
+49,Male,Shorts,Clothing,94,West Virginia,Fall
+46,Male,Skirt,Clothing,47,Idaho,Spring
+69,Male,Boots,Footwear,77,Ohio,Summer
+56,Male,Shorts,Clothing,94,Rhode Island,Winter
+27,Male,Handbag,Accessories,75,Illinois,Summer
+57,Male,Dress,Clothing,82,New York,Spring
+58,Male,Shoes,Footwear,36,Louisiana,Fall
+23,Male,Sneakers,Footwear,90,California,Spring
+19,Male,Socks,Clothing,48,Washington,Spring
+40,Male,Jacket,Outerwear,42,South Dakota,Winter
+54,Male,Backpack,Accessories,33,Idaho,Summer
+50,Male,Socks,Clothing,63,North Dakota,Summer
+69,Male,Handbag,Accessories,53,Washington,Winter
+42,Male,Hat,Accessories,37,Alaska,Spring
+37,Male,Blouse,Clothing,92,Kansas,Summer
+46,Male,Shorts,Clothing,73,Utah,Spring
+64,Male,Shirt,Clothing,38,Wyoming,Spring
+20,Male,Boots,Footwear,51,Maine,Fall
+40,Male,Jacket,Outerwear,90,Michigan,Spring
+64,Male,Jacket,Outerwear,56,Illinois,Summer
+29,Male,Handbag,Accessories,33,Minnesota,Fall
+20,Male,Belt,Accessories,53,Massachusetts,Winter
+43,Male,Handbag,Accessories,24,New Jersey,Spring
+60,Male,Coat,Outerwear,59,Kansas,Spring
+39,Male,Sweater,Clothing,72,Kentucky,Winter
+47,Male,Shorts,Clothing,28,Rhode Island,Spring
+19,Male,Pants,Clothing,36,Illinois,Fall
+52,Male,Jewelry,Accessories,47,Alabama,Fall
+34,Male,Gloves,Accessories,62,Tennessee,Spring
+25,Male,Skirt,Clothing,98,Massachusetts,Spring
+43,Male,Sandals,Footwear,28,Texas,Summer
+55,Male,Socks,Clothing,86,Nebraska,Summer
+66,Male,Jewelry,Accessories,46,Pennsylvania,Summer
+41,Male,Sunglasses,Accessories,42,Virginia,Fall
+47,Male,Coat,Outerwear,80,Vermont,Winter
+51,Male,Belt,Accessories,39,Oklahoma,Spring
+44,Male,Coat,Outerwear,49,Maine,Summer
+18,Male,Scarf,Accessories,32,New Jersey,Summer
+33,Male,Sandals,Footwear,73,Massachusetts,Fall
+24,Male,Belt,Accessories,42,New Jersey,Summer
+33,Male,Scarf,Accessories,58,Washington,Spring
+61,Male,Jewelry,Accessories,22,Arkansas,Winter
+27,Male,Scarf,Accessories,56,West Virginia,Spring
+46,Male,Pants,Clothing,70,Delaware,Spring
+38,Male,Shoes,Footwear,50,Texas,Spring
+63,Male,Boots,Footwear,21,Texas,Summer
+47,Male,Jacket,Outerwear,97,Mississippi,Summer
+42,Male,Backpack,Accessories,63,Texas,Winter
+41,Male,Jacket,Outerwear,60,Virginia,Fall
+53,Male,Boots,Footwear,52,New Hampshire,Fall
+29,Male,Shoes,Footwear,32,Minnesota,Winter
+61,Male,Belt,Accessories,48,Maryland,Spring
+69,Male,Jewelry,Accessories,25,Vermont,Summer
+51,Male,Jewelry,Accessories,68,Kansas,Summer
+24,Male,Pants,Clothing,74,Idaho,Fall
+24,Male,T-shirt,Clothing,88,Montana,Fall
+70,Male,Shorts,Clothing,23,Oklahoma,Spring
+49,Male,Hoodie,Clothing,32,California,Fall
+48,Male,Belt,Accessories,71,Mississippi,Winter
+58,Male,Boots,Footwear,62,California,Spring
+32,Male,Hoodie,Clothing,20,New York,Spring
+57,Male,Shorts,Clothing,62,Arizona,Spring
+69,Male,Backpack,Accessories,81,Massachusetts,Winter
+42,Male,Scarf,Accessories,90,Kentucky,Winter
+30,Male,Socks,Clothing,43,Vermont,Fall
+35,Male,Handbag,Accessories,38,Missouri,Fall
+19,Male,Sunglasses,Accessories,25,Michigan,Spring
+52,Male,T-shirt,Clothing,98,Texas,Winter
+42,Male,Dress,Clothing,75,New York,Spring
+36,Male,Sneakers,Footwear,27,New Mexico,Spring
+45,Male,Sunglasses,Accessories,27,Mississippi,Winter
+54,Male,Blouse,Clothing,42,Washington,Fall
+54,Male,T-shirt,Clothing,90,New Mexico,Summer
+27,Male,Hat,Accessories,63,Florida,Summer
+53,Male,Shorts,Clothing,96,Minnesota,Fall
+20,Male,Hoodie,Clothing,40,New Hampshire,Winter
+52,Male,Socks,Clothing,39,Minnesota,Fall
+54,Male,Sunglasses,Accessories,48,Vermont,Fall
+65,Male,Blouse,Clothing,20,Minnesota,Summer
+43,Male,Jeans,Clothing,29,Massachusetts,Summer
+57,Male,Dress,Clothing,81,Wyoming,Winter
+19,Male,Dress,Clothing,98,South Dakota,Fall
+69,Male,Jeans,Clothing,93,Oklahoma,Fall
+26,Male,Socks,Clothing,30,Florida,Summer
+57,Male,Sunglasses,Accessories,37,Wisconsin,Fall
+20,Male,Coat,Outerwear,28,Maine,Winter
+55,Male,Scarf,Accessories,29,Connecticut,Winter
+44,Male,Backpack,Accessories,49,Delaware,Summer
+52,Male,Pants,Clothing,53,North Dakota,Winter
+57,Male,Gloves,Accessories,66,California,Summer
+40,Male,Jacket,Outerwear,61,New Mexico,Spring
+23,Male,Shorts,Clothing,23,Iowa,Summer
+36,Male,Pants,Clothing,36,Colorado,Fall
+59,Male,Skirt,Clothing,81,Montana,Fall
+29,Male,Blouse,Clothing,56,Iowa,Summer
+63,Male,Shirt,Clothing,78,Louisiana,Spring
+60,Male,Jewelry,Accessories,25,Alabama,Summer
+64,Male,Backpack,Accessories,86,Nevada,Fall
+63,Male,Jewelry,Accessories,99,Vermont,Winter
+21,Male,Belt,Accessories,83,New York,Fall
+61,Male,Dress,Clothing,33,Mississippi,Winter
+65,Male,Coat,Outerwear,44,South Carolina,Fall
+69,Male,Dress,Clothing,58,Washington,Spring
+47,Male,Sweater,Clothing,54,Colorado,Spring
+41,Male,Hoodie,Clothing,93,Nevada,Spring
+68,Male,Shoes,Footwear,98,Nevada,Spring
+41,Male,Shoes,Footwear,36,Oklahoma,Spring
+42,Male,Jacket,Outerwear,68,Mississippi,Fall
+66,Male,Backpack,Accessories,95,Arkansas,Summer
+66,Male,Jeans,Clothing,93,West Virginia,Spring
+33,Male,Jacket,Outerwear,99,Michigan,Fall
+55,Male,Sunglasses,Accessories,22,Louisiana,Winter
+58,Male,Gloves,Accessories,88,South Dakota,Fall
+18,Male,Jacket,Outerwear,65,North Dakota,Spring
+49,Male,T-shirt,Clothing,62,Arizona,Fall
+61,Male,Sandals,Footwear,55,Georgia,Spring
+31,Male,Shorts,Clothing,97,Idaho,Spring
+70,Male,Handbag,Accessories,77,Louisiana,Fall
+68,Male,Pants,Clothing,40,Connecticut,Winter
+27,Male,Blouse,Clothing,23,Ohio,Winter
+48,Male,Shoes,Footwear,46,Maine,Winter
+63,Male,Backpack,Accessories,75,New Hampshire,Spring
+49,Male,Shoes,Footwear,76,Massachusetts,Fall
+19,Male,Dress,Clothing,59,South Dakota,Summer
+30,Male,Skirt,Clothing,51,Colorado,Summer
+50,Male,Jacket,Outerwear,46,Rhode Island,Fall
+66,Male,Shirt,Clothing,26,Missouri,Fall
+25,Male,Hoodie,Clothing,51,Wyoming,Summer
+61,Male,Scarf,Accessories,44,New Hampshire,Winter
+29,Male,Skirt,Clothing,82,Maine,Spring
+53,Male,Skirt,Clothing,44,Connecticut,Summer
+24,Male,Scarf,Accessories,27,Alaska,Fall
+51,Male,Sunglasses,Accessories,90,Alaska,Fall
+26,Male,Sandals,Footwear,58,North Carolina,Summer
+59,Male,Hoodie,Clothing,80,Colorado,Spring
+41,Male,Jacket,Outerwear,40,Utah,Winter
+20,Male,Pants,Clothing,23,Alabama,Spring
+22,Male,Shirt,Clothing,34,Hawaii,Spring
+18,Male,Blouse,Clothing,35,New Hampshire,Winter
+30,Male,Skirt,Clothing,75,Indiana,Summer
+25,Male,Sunglasses,Accessories,60,Vermont,Winter
+39,Male,Belt,Accessories,87,Iowa,Summer
+49,Male,Gloves,Accessories,41,Maryland,Spring
+25,Male,Pants,Clothing,83,New Mexico,Spring
+23,Male,Scarf,Accessories,81,Louisiana,Spring
+33,Male,T-shirt,Clothing,56,New Mexico,Summer
+60,Male,Shoes,Footwear,58,South Carolina,Summer
+51,Male,Pants,Clothing,84,Illinois,Spring
+23,Male,Gloves,Accessories,21,Minnesota,Fall
+20,Male,Socks,Clothing,35,Oregon,Summer
+51,Male,Sneakers,Footwear,43,Tennessee,Summer
+23,Female,Shorts,Clothing,20,Maryland,Summer
+67,Female,Blouse,Clothing,36,Wisconsin,Fall
+23,Female,Coat,Outerwear,70,Idaho,Fall
+26,Female,Sunglasses,Accessories,83,Wyoming,Summer
+52,Female,Shorts,Clothing,76,Indiana,Winter
+52,Female,Dress,Clothing,81,Texas,Summer
+52,Female,Handbag,Accessories,47,Ohio,Summer
+35,Female,Boots,Footwear,35,Kansas,Summer
+24,Female,Pants,Clothing,85,South Carolina,Spring
+43,Female,Boots,Footwear,96,Michigan,Fall
+25,Female,Skirt,Clothing,98,Nebraska,Summer
+46,Female,Sneakers,Footwear,52,Wisconsin,Fall
+22,Female,Jewelry,Accessories,84,Illinois,Winter
+70,Female,T-shirt,Clothing,71,Louisiana,Winter
+49,Female,Sandals,Footwear,95,Ohio,Winter
+48,Female,Boots,Footwear,47,Maryland,Summer
+59,Female,Coat,Outerwear,75,Texas,Summer
+39,Female,Belt,Accessories,28,Illinois,Spring
+30,Female,Sunglasses,Accessories,44,Pennsylvania,Fall
+37,Female,Sandals,Footwear,64,Alabama,Winter
+56,Female,Boots,Footwear,28,West Virginia,Spring
+67,Female,Hoodie,Clothing,21,Nevada,Summer
+40,Female,Hat,Accessories,41,Florida,Fall
+24,Female,Shorts,Clothing,38,Virginia,Winter
+43,Female,Backpack,Accessories,77,Kentucky,Spring
+45,Female,Shorts,Clothing,43,Connecticut,Spring
+33,Female,Belt,Accessories,91,Montana,Spring
+53,Female,Shorts,Clothing,68,Montana,Spring
+44,Female,Socks,Clothing,37,Nebraska,Fall
+23,Female,Shoes,Footwear,23,Massachusetts,Summer
+59,Female,Sneakers,Footwear,65,North Carolina,Winter
+68,Female,Backpack,Accessories,30,Montana,Summer
+46,Female,Dress,Clothing,45,Washington,Summer
+56,Female,Boots,Footwear,25,Virginia,Winter
+40,Female,Socks,Clothing,72,Georgia,Winter
+61,Female,Dress,Clothing,75,Delaware,Fall
+53,Female,Handbag,Accessories,63,West Virginia,Spring
+29,Female,Blouse,Clothing,35,Wyoming,Fall
+44,Female,Belt,Accessories,32,New Mexico,Summer
+43,Female,Pants,Clothing,25,Nebraska,Winter
+40,Female,Sneakers,Footwear,90,Washington,Spring
+55,Female,Boots,Footwear,70,Hawaii,Summer
+66,Female,Sunglasses,Accessories,27,Louisiana,Spring
+50,Female,Hat,Accessories,92,Tennessee,Fall
+57,Female,Coat,Outerwear,20,South Dakota,Spring
+42,Female,Jacket,Outerwear,52,Delaware,Winter
+55,Female,Hoodie,Clothing,57,Virginia,Summer
+25,Female,Boots,Footwear,96,Utah,Fall
+22,Female,T-shirt,Clothing,68,California,Winter
+49,Female,Sweater,Clothing,30,Idaho,Summer
+70,Female,Shoes,Footwear,37,Texas,Fall
+56,Female,Scarf,Accessories,42,Tennessee,Winter
+52,Female,Dress,Clothing,54,Tennessee,Spring
+65,Female,Jacket,Outerwear,81,Washington,Spring
+24,Female,Shoes,Footwear,40,Alabama,Spring
+32,Female,Backpack,Accessories,88,Nebraska,Fall
+57,Female,Dress,Clothing,94,Alabama,Summer
+35,Female,Shirt,Clothing,54,Illinois,Winter
+69,Female,Jacket,Outerwear,51,Wisconsin,Summer
+30,Female,Sunglasses,Accessories,22,Nebraska,Spring
+37,Female,Jacket,Outerwear,95,North Dakota,Fall
+19,Female,Coat,Outerwear,57,Mississippi,Fall
+53,Female,Sweater,Clothing,45,Iowa,Winter
+25,Female,Sneakers,Footwear,92,Mississippi,Winter
+47,Female,Shoes,Footwear,40,Colorado,Spring
+18,Female,Sunglasses,Accessories,62,Nebraska,Winter
+22,Female,Shorts,Clothing,90,Virginia,Winter
+69,Female,Hoodie,Clothing,82,Louisiana,Fall
+55,Female,Scarf,Accessories,52,Maryland,Spring
+19,Female,Sandals,Footwear,70,Minnesota,Spring
+23,Female,Hat,Accessories,83,Maine,Spring
+54,Female,Shoes,Footwear,49,Texas,Summer
+52,Female,Sneakers,Footwear,91,Missouri,Spring
+64,Female,Backpack,Accessories,99,Mississippi,Summer
+33,Female,Belt,Accessories,92,Michigan,Winter
+40,Female,Shirt,Clothing,87,Colorado,Winter
+26,Female,Skirt,Clothing,28,Florida,Winter
+31,Female,Gloves,Accessories,71,Montana,Summer
+23,Female,Gloves,Accessories,32,Wisconsin,Winter
+52,Female,Handbag,Accessories,33,Wisconsin,Summer
+21,Female,Socks,Clothing,75,Delaware,Winter
+31,Female,Backpack,Accessories,83,North Carolina,Summer
+63,Female,Jeans,Clothing,93,New York,Summer
+46,Female,Skirt,Clothing,29,California,Spring
+44,Female,Hoodie,Clothing,25,Montana,Spring
+57,Female,Jewelry,Accessories,76,North Carolina,Spring
+50,Female,Sneakers,Footwear,81,Ohio,Summer
+33,Female,Shirt,Clothing,80,Alaska,Winter
+19,Female,Sunglasses,Accessories,70,Pennsylvania,Summer
+68,Female,Dress,Clothing,81,Maine,Fall
+27,Female,Shoes,Footwear,86,Texas,Spring
+61,Female,Belt,Accessories,94,New Jersey,Fall
+38,Female,Shirt,Clothing,66,Wyoming,Winter
+28,Female,Boots,Footwear,98,Michigan,Summer
+39,Female,Hoodie,Clothing,25,Ohio,Fall
+18,Female,Jeans,Clothing,62,West Virginia,Winter
+24,Female,Jacket,Outerwear,98,Virginia,Spring
+64,Female,Jacket,Outerwear,53,Vermont,Spring
+51,Female,Sandals,Footwear,66,Alaska,Spring
+27,Female,Dress,Clothing,52,Minnesota,Fall
+48,Female,Sweater,Clothing,64,Colorado,Winter
+69,Female,Gloves,Accessories,59,Rhode Island,Spring
+59,Female,Sunglasses,Accessories,61,New Jersey,Summer
+59,Female,Belt,Accessories,97,Nevada,Winter
+42,Female,Hat,Accessories,23,Minnesota,Winter
+39,Female,Hat,Accessories,98,Delaware,Fall
+32,Female,Blouse,Clothing,98,Illinois,Summer
+68,Female,Shoes,Footwear,59,Washington,Summer
+41,Female,Skirt,Clothing,82,Alaska,Fall
+31,Female,Sneakers,Footwear,82,Michigan,Fall
+58,Female,T-shirt,Clothing,41,Georgia,Fall
+28,Female,Handbag,Accessories,52,West Virginia,Fall
+63,Female,Sweater,Clothing,41,Arizona,Spring
+64,Female,Gloves,Accessories,70,Colorado,Summer
+66,Female,Dress,Clothing,91,Tennessee,Winter
+31,Female,Dress,Clothing,95,Iowa,Spring
+55,Female,Blouse,Clothing,25,Kansas,Spring
+32,Female,Shirt,Clothing,89,Oklahoma,Fall
+50,Female,Boots,Footwear,44,Nebraska,Fall
+58,Female,Jacket,Outerwear,52,Maryland,Summer
+18,Female,Backpack,Accessories,94,Pennsylvania,Spring
+39,Female,Pants,Clothing,98,Arizona,Spring
+56,Female,Boots,Footwear,40,Oklahoma,Fall
+37,Female,Socks,Clothing,25,Montana,Fall
+46,Female,Scarf,Accessories,62,Wyoming,Fall
+52,Female,Blouse,Clothing,24,Idaho,Fall
+70,Female,Belt,Accessories,57,Pennsylvania,Spring
+61,Female,Sunglasses,Accessories,66,Montana,Winter
+33,Female,Boots,Footwear,70,Ohio,Winter
+65,Female,Sandals,Footwear,39,Mississippi,Spring
+41,Female,Gloves,Accessories,34,Idaho,Spring
+19,Female,Skirt,Clothing,38,Virginia,Spring
+33,Female,Skirt,Clothing,70,Idaho,Winter
+53,Female,Blouse,Clothing,80,Louisiana,Summer
+54,Female,Handbag,Accessories,51,Colorado,Spring
+36,Female,Boots,Footwear,79,West Virginia,Spring
+56,Female,Boots,Footwear,92,Rhode Island,Summer
+28,Female,Sweater,Clothing,85,North Carolina,Fall
+34,Female,Socks,Clothing,63,Maine,Spring
+43,Female,Gloves,Accessories,60,Iowa,Fall
+54,Female,Shorts,Clothing,44,Kentucky,Winter
+37,Female,Boots,Footwear,57,Massachusetts,Spring
+33,Female,Jacket,Outerwear,24,New York,Fall
+33,Female,Scarf,Accessories,35,Nebraska,Winter
+55,Female,Jacket,Outerwear,73,Oklahoma,Winter
+63,Female,Jewelry,Accessories,42,Oklahoma,Winter
+52,Female,Hoodie,Clothing,20,Rhode Island,Winter
+23,Female,T-shirt,Clothing,89,Maine,Spring
+70,Female,Shirt,Clothing,76,Arkansas,Fall
+64,Female,Shirt,Clothing,56,New Mexico,Winter
+22,Female,Coat,Outerwear,100,Hawaii,Fall
+46,Female,T-shirt,Clothing,44,Idaho,Winter
+65,Female,Hoodie,Clothing,76,South Carolina,Spring
+18,Female,Sunglasses,Accessories,97,Nevada,Fall
+45,Female,Blouse,Clothing,39,South Carolina,Spring
+56,Female,Hoodie,Clothing,100,Maryland,Spring
+49,Female,Skirt,Clothing,62,Tennessee,Spring
+66,Female,Shorts,Clothing,98,Arkansas,Summer
+27,Female,Jeans,Clothing,31,Arizona,Summer
+69,Female,Jacket,Outerwear,89,Ohio,Fall
+66,Female,Hoodie,Clothing,91,North Dakota,Fall
+45,Female,Shirt,Clothing,50,Vermont,Summer
+31,Female,T-shirt,Clothing,32,Minnesota,Winter
+33,Female,Blouse,Clothing,67,Idaho,Fall
+43,Female,Skirt,Clothing,28,Maryland,Spring
+25,Female,Backpack,Accessories,65,South Carolina,Winter
+46,Female,Shorts,Clothing,73,California,Fall
+67,Female,Shirt,Clothing,27,Georgia,Spring
+26,Female,Backpack,Accessories,89,Vermont,Summer
+35,Female,Shoes,Footwear,72,Georgia,Summer
+61,Female,Skirt,Clothing,37,New Jersey,Fall
+26,Female,Dress,Clothing,63,Utah,Summer
+39,Female,Hat,Accessories,90,Utah,Fall
+69,Female,Handbag,Accessories,62,North Carolina,Winter
+32,Female,Handbag,Accessories,43,Florida,Fall
+20,Female,Blouse,Clothing,96,Wisconsin,Fall
+25,Female,Scarf,Accessories,83,Tennessee,Fall
+56,Female,Jewelry,Accessories,67,Arizona,Fall
+63,Female,Skirt,Clothing,90,Oregon,Spring
+34,Female,Hoodie,Clothing,53,Virginia,Winter
+29,Female,Scarf,Accessories,37,Maryland,Summer
+43,Female,Jeans,Clothing,56,Arkansas,Fall
+39,Female,Jacket,Outerwear,43,Texas,Fall
+33,Female,T-shirt,Clothing,84,Vermont,Winter
+51,Female,Pants,Clothing,50,Wyoming,Winter
+65,Female,Shoes,Footwear,88,Alabama,Summer
+51,Female,Jacket,Outerwear,50,Maine,Fall
+70,Female,Scarf,Accessories,80,South Dakota,Summer
+40,Female,T-shirt,Clothing,47,West Virginia,Spring
+19,Female,Dress,Clothing,33,Ohio,Winter
+28,Female,Coat,Outerwear,100,Arizona,Fall
+51,Female,Sweater,Clothing,26,Ohio,Summer
+32,Female,Hat,Accessories,79,New Mexico,Summer
+26,Female,Backpack,Accessories,77,South Dakota,Summer
+50,Female,Socks,Clothing,36,Oklahoma,Fall
+68,Female,Jewelry,Accessories,21,Connecticut,Winter
+33,Female,Boots,Footwear,72,Wisconsin,Fall
+56,Female,Coat,Outerwear,25,New Hampshire,Spring
+57,Female,Sweater,Clothing,79,Nebraska,Spring
+58,Female,Blouse,Clothing,73,Nevada,Summer
+40,Female,Belt,Accessories,71,New York,Spring
+37,Female,Hat,Accessories,48,Pennsylvania,Winter
+36,Female,Sandals,Footwear,28,Delaware,Fall
+29,Female,Boots,Footwear,95,Mississippi,Winter
+65,Female,Jacket,Outerwear,48,Iowa,Winter
+44,Female,Dress,Clothing,93,Utah,Spring
+34,Female,Jeans,Clothing,87,Maryland,Summer
+31,Female,Shorts,Clothing,32,Utah,Fall
+28,Female,Shirt,Clothing,38,Rhode Island,Spring
+66,Female,Coat,Outerwear,54,Maryland,Fall
+68,Female,Coat,Outerwear,75,Hawaii,Summer
+37,Female,T-shirt,Clothing,56,Connecticut,Fall
+58,Female,Sweater,Clothing,43,Illinois,Fall
+28,Female,Skirt,Clothing,97,California,Fall
+54,Female,Blouse,Clothing,75,Connecticut,Summer
+21,Female,Sneakers,Footwear,55,Colorado,Summer
+45,Female,Backpack,Accessories,49,Colorado,Winter
+57,Female,Socks,Clothing,58,Georgia,Summer
+47,Female,Jewelry,Accessories,34,North Dakota,Winter
+46,Female,Shorts,Clothing,43,Idaho,Summer
+63,Female,Jewelry,Accessories,48,Connecticut,Fall
+44,Female,Sweater,Clothing,40,Montana,Spring
+36,Female,Shirt,Clothing,29,Colorado,Summer
+24,Female,Pants,Clothing,81,Kentucky,Fall
+65,Female,Hoodie,Clothing,84,New Mexico,Spring
+32,Female,Socks,Clothing,46,New Jersey,Summer
+63,Female,Dress,Clothing,86,California,Summer
+62,Female,Blouse,Clothing,57,North Dakota,Winter
+19,Female,Skirt,Clothing,61,Florida,Winter
+38,Female,Backpack,Accessories,90,Texas,Winter
+59,Female,Blouse,Clothing,51,Oklahoma,Winter
+22,Female,Socks,Clothing,48,Rhode Island,Spring
+55,Female,Boots,Footwear,50,Arkansas,Summer
+29,Female,Backpack,Accessories,82,Nevada,Summer
+42,Female,Hat,Accessories,33,Utah,Spring
+23,Female,Sandals,Footwear,28,Kentucky,Winter
+70,Female,Hoodie,Clothing,42,Wisconsin,Spring
+64,Female,Sunglasses,Accessories,43,Minnesota,Fall
+39,Female,Jeans,Clothing,55,North Dakota,Winter
+47,Female,T-shirt,Clothing,73,Ohio,Winter
+22,Female,Dress,Clothing,39,Nevada,Spring
+69,Female,Belt,Accessories,20,Kentucky,Spring
+35,Female,Jewelry,Accessories,32,Kentucky,Spring
+56,Female,Hoodie,Clothing,86,Montana,Summer
+30,Female,Blouse,Clothing,91,Delaware,Summer
+43,Female,Jacket,Outerwear,59,Montana,Fall
+23,Female,Sneakers,Footwear,33,New Jersey,Summer
+50,Female,Boots,Footwear,64,Nebraska,Spring
+41,Female,Blouse,Clothing,67,Maryland,Winter
+41,Female,Blouse,Clothing,43,Alabama,Winter
+27,Female,Boots,Footwear,32,North Carolina,Spring
+38,Female,Scarf,Accessories,39,Delaware,Spring
+41,Female,Sandals,Footwear,41,Iowa,Spring
+58,Female,Sunglasses,Accessories,53,New York,Winter
+58,Female,Coat,Outerwear,27,Virginia,Spring
+19,Female,Sunglasses,Accessories,82,Maryland,Summer
+43,Female,Blouse,Clothing,87,Texas,Winter
+27,Female,Backpack,Accessories,78,Louisiana,Winter
+32,Female,Belt,Accessories,32,Mississippi,Summer
+28,Female,Socks,Clothing,38,Ohio,Fall
+48,Female,Shoes,Footwear,37,Oregon,Winter
+43,Female,Coat,Outerwear,83,Wyoming,Winter
+45,Female,Sweater,Clothing,72,Pennsylvania,Fall
+26,Female,Shirt,Clothing,30,Oregon,Fall
+62,Female,Shorts,Clothing,66,Oklahoma,Winter
+58,Female,Shirt,Clothing,45,Colorado,Winter
+19,Female,Sunglasses,Accessories,73,New York,Fall
+64,Female,Shoes,Footwear,67,Minnesota,Winter
+33,Female,Sunglasses,Accessories,72,Texas,Spring
+20,Female,Handbag,Accessories,24,Wisconsin,Fall
+45,Female,Sunglasses,Accessories,68,Kentucky,Winter
+28,Female,Shirt,Clothing,70,Pennsylvania,Spring
+47,Female,Shirt,Clothing,64,Rhode Island,Winter
+54,Female,Sweater,Clothing,91,Illinois,Spring
+64,Female,Handbag,Accessories,82,Maryland,Winter
+45,Female,Shirt,Clothing,24,Missouri,Summer
+40,Female,Jewelry,Accessories,80,Alabama,Spring
+31,Female,Socks,Clothing,53,Maine,Winter
+38,Female,T-shirt,Clothing,50,Mississippi,Spring
+36,Female,Jewelry,Accessories,31,Alabama,Fall
+65,Female,Backpack,Accessories,88,Alaska,Spring
+27,Female,Hat,Accessories,52,Illinois,Summer
+38,Female,Gloves,Accessories,22,Idaho,Fall
+58,Female,Sneakers,Footwear,27,North Carolina,Spring
+31,Female,Skirt,Clothing,34,Washington,Spring
+28,Female,Handbag,Accessories,39,West Virginia,Spring
+28,Female,Sunglasses,Accessories,53,Maine,Fall
+32,Female,Sweater,Clothing,46,Kentucky,Winter
+61,Female,Handbag,Accessories,85,Massachusetts,Summer
+38,Female,Skirt,Clothing,86,Pennsylvania,Spring
+54,Female,Socks,Clothing,63,Hawaii,Summer
+29,Female,Shirt,Clothing,44,Virginia,Spring
+50,Female,Sneakers,Footwear,95,New York,Summer
+32,Female,Belt,Accessories,49,Delaware,Summer
+38,Female,Pants,Clothing,77,Hawaii,Spring
+52,Female,Jewelry,Accessories,63,Nebraska,Spring
+61,Female,Pants,Clothing,83,Vermont,Winter
+25,Female,Jewelry,Accessories,93,Iowa,Spring
+22,Female,Jeans,Clothing,91,Iowa,Winter
+47,Female,Scarf,Accessories,99,Arkansas,Fall
+50,Female,Belt,Accessories,24,Alabama,Spring
+45,Female,Dress,Clothing,82,Maryland,Summer
+33,Female,T-shirt,Clothing,28,South Dakota,Winter
+42,Female,Boots,Footwear,67,Vermont,Winter
+52,Female,Dress,Clothing,88,Montana,Fall
+69,Female,Jewelry,Accessories,70,South Dakota,Fall
+55,Female,Skirt,Clothing,100,Ohio,Summer
+38,Female,Handbag,Accessories,28,Texas,Summer
+57,Female,Coat,Outerwear,48,Indiana,Spring
+33,Female,Hoodie,Clothing,43,New Hampshire,Fall
+57,Female,Pants,Clothing,40,California,Fall
+52,Female,Boots,Footwear,97,Maine,Spring
+44,Female,Coat,Outerwear,25,Ohio,Fall
+48,Female,Scarf,Accessories,45,Delaware,Summer
+52,Female,Boots,Footwear,49,Oklahoma,Fall
+34,Female,Sneakers,Footwear,36,Indiana,Summer
+26,Female,Sweater,Clothing,48,South Carolina,Fall
+36,Female,Belt,Accessories,62,Vermont,Fall
+24,Female,Jewelry,Accessories,74,Kansas,Winter
+30,Female,Handbag,Accessories,100,Utah,Fall
+31,Female,Jacket,Outerwear,39,New York,Fall
+25,Female,Boots,Footwear,65,Indiana,Summer
+57,Female,Sneakers,Footwear,99,Tennessee,Summer
+61,Female,Scarf,Accessories,68,Georgia,Winter
+30,Female,Coat,Outerwear,97,Nebraska,Summer
+38,Female,Shorts,Clothing,47,Washington,Winter
+53,Female,Shorts,Clothing,56,Idaho,Spring
+31,Female,Jeans,Clothing,91,Louisiana,Fall
+70,Female,Gloves,Accessories,93,New Jersey,Fall
+21,Female,Pants,Clothing,36,Delaware,Winter
+33,Female,Dress,Clothing,45,Wisconsin,Summer
+60,Female,Pants,Clothing,44,West Virginia,Winter
+45,Female,Gloves,Accessories,32,Texas,Spring
+46,Female,Belt,Accessories,36,Hawaii,Summer
+62,Female,Belt,Accessories,85,Arizona,Summer
+63,Female,Skirt,Clothing,36,Louisiana,Winter
+69,Female,Socks,Clothing,55,Nevada,Spring
+46,Female,Belt,Accessories,20,Rhode Island,Summer
+69,Female,Shirt,Clothing,91,Illinois,Fall
+66,Female,Dress,Clothing,71,Utah,Summer
+41,Female,Socks,Clothing,64,North Dakota,Spring
+32,Female,Jacket,Outerwear,21,Kansas,Spring
+69,Female,Sweater,Clothing,100,Nevada,Winter
+29,Female,Jeans,Clothing,96,Virginia,Summer
+70,Female,Jewelry,Accessories,91,Utah,Spring
+41,Female,Sweater,Clothing,40,Idaho,Spring
+31,Female,Hoodie,Clothing,53,Alaska,Summer
+31,Female,Sunglasses,Accessories,48,New Hampshire,Winter
+57,Female,Sandals,Footwear,70,Ohio,Winter
+29,Female,Coat,Outerwear,29,Montana,Summer
+70,Female,Belt,Accessories,29,Louisiana,Fall
+51,Female,Blouse,Clothing,53,Oregon,Fall
+45,Female,Skirt,Clothing,79,Arizona,Winter
+18,Female,Shorts,Clothing,65,Alaska,Spring
+37,Female,Dress,Clothing,99,Utah,Summer
+23,Female,Sunglasses,Accessories,60,New York,Winter
+39,Female,Shoes,Footwear,86,New Mexico,Winter
+62,Female,Belt,Accessories,73,Louisiana,Winter
+70,Female,Belt,Accessories,45,Ohio,Winter
+20,Female,Belt,Accessories,70,Nevada,Summer
+42,Female,Belt,Accessories,65,Idaho,Fall
+41,Female,Skirt,Clothing,55,Arizona,Summer
+24,Female,T-shirt,Clothing,65,Utah,Spring
+37,Female,Scarf,Accessories,21,Wyoming,Spring
+30,Female,Blouse,Clothing,26,Indiana,Summer
+58,Female,Sunglasses,Accessories,71,Wisconsin,Summer
+43,Female,Boots,Footwear,41,Texas,Summer
+19,Female,Jacket,Outerwear,44,Utah,Winter
+23,Female,Jeans,Clothing,81,Arkansas,Fall
+65,Female,Sunglasses,Accessories,77,Pennsylvania,Summer
+58,Female,Sandals,Footwear,26,Georgia,Fall
+50,Female,Backpack,Accessories,31,Indiana,Summer
+67,Female,Blouse,Clothing,82,Idaho,Spring
+40,Female,Shoes,Footwear,60,Montana,Summer
+55,Female,Shirt,Clothing,70,Tennessee,Fall
+52,Female,Hoodie,Clothing,26,West Virginia,Winter
+62,Female,Dress,Clothing,100,California,Summer
+64,Female,Dress,Clothing,82,Georgia,Summer
+43,Female,Sneakers,Footwear,24,Maryland,Spring
+61,Female,Blouse,Clothing,74,Idaho,Summer
+26,Female,Backpack,Accessories,58,California,Summer
+22,Female,Sweater,Clothing,56,Alabama,Spring
+51,Female,Boots,Footwear,37,Utah,Spring
+69,Female,Handbag,Accessories,64,Kentucky,Spring
+50,Female,Hoodie,Clothing,58,Vermont,Spring
+51,Female,Belt,Accessories,44,Iowa,Summer
+56,Female,Jewelry,Accessories,39,Georgia,Summer
+59,Female,Blouse,Clothing,48,Alabama,Spring
+18,Female,Handbag,Accessories,32,Nebraska,Fall
+48,Female,Handbag,Accessories,79,Rhode Island,Winter
+53,Female,Coat,Outerwear,27,South Dakota,Winter
+45,Female,Belt,Accessories,98,Illinois,Fall
+21,Female,Boots,Footwear,67,North Carolina,Winter
+42,Female,Socks,Clothing,37,Florida,Winter
+60,Female,Shoes,Footwear,49,Pennsylvania,Spring
+21,Female,Sneakers,Footwear,74,Vermont,Fall
+69,Female,Jewelry,Accessories,93,Colorado,Summer
+40,Female,Handbag,Accessories,60,Utah,Summer
+31,Female,Coat,Outerwear,76,Kentucky,Spring
+44,Female,Sunglasses,Accessories,64,Wyoming,Summer
+48,Female,Shoes,Footwear,38,Maine,Spring
+32,Female,Shoes,Footwear,91,Maine,Winter
+42,Female,Boots,Footwear,70,New Hampshire,Summer
+27,Female,Sandals,Footwear,22,Kansas,Fall
+69,Female,Gloves,Accessories,59,New Jersey,Spring
+67,Female,Backpack,Accessories,22,North Carolina,Spring
+41,Female,Handbag,Accessories,74,West Virginia,Winter
+46,Female,Sweater,Clothing,71,Kentucky,Spring
+47,Female,Coat,Outerwear,80,California,Summer
+33,Female,T-shirt,Clothing,59,South Dakota,Fall
+51,Female,Backpack,Accessories,96,California,Fall
+26,Female,Sunglasses,Accessories,43,Connecticut,Winter
+22,Female,Belt,Accessories,76,Idaho,Winter
+49,Female,Jacket,Outerwear,59,North Dakota,Fall
+58,Female,Skirt,Clothing,48,Michigan,Summer
+70,Female,Belt,Accessories,22,Missouri,Spring
+32,Female,Boots,Footwear,40,California,Winter
+62,Female,Jeans,Clothing,73,Delaware,Spring
+52,Female,Shoes,Footwear,26,Alabama,Fall
+23,Female,Sweater,Clothing,41,New Hampshire,Spring
+26,Female,Jewelry,Accessories,98,New York,Spring
+58,Female,Shirt,Clothing,63,Oregon,Winter
+26,Female,Boots,Footwear,55,Massachusetts,Winter
+54,Female,Shorts,Clothing,90,Utah,Winter
+66,Female,Handbag,Accessories,46,New Hampshire,Summer
+60,Female,Sweater,Clothing,88,Illinois,Spring
+32,Female,Belt,Accessories,95,Alaska,Spring
+48,Female,Belt,Accessories,31,Wyoming,Fall
+69,Female,Hoodie,Clothing,42,Colorado,Spring
+64,Female,Sneakers,Footwear,44,Vermont,Winter
+56,Female,T-shirt,Clothing,99,Utah,Spring
+22,Female,Pants,Clothing,20,Illinois,Summer
+46,Female,Scarf,Accessories,37,Idaho,Spring
+24,Female,Sweater,Clothing,50,Nevada,Winter
+47,Female,Handbag,Accessories,73,Utah,Summer
+62,Female,Shirt,Clothing,84,North Carolina,Spring
+34,Female,Dress,Clothing,64,Arkansas,Spring
+50,Female,Sandals,Footwear,21,North Carolina,Fall
+29,Female,Shirt,Clothing,36,Texas,Summer
+68,Female,Dress,Clothing,81,Nevada,Winter
+52,Female,Sunglasses,Accessories,54,Utah,Fall
+29,Female,Socks,Clothing,63,Pennsylvania,Summer
+22,Female,Sandals,Footwear,59,Georgia,Summer
+62,Female,Hat,Accessories,53,Minnesota,Fall
+69,Female,Shirt,Clothing,63,Kansas,Winter
+48,Female,Shoes,Footwear,33,Delaware,Fall
+66,Female,Pants,Clothing,64,New Mexico,Summer
+42,Female,Shirt,Clothing,98,Michigan,Fall
+50,Female,Hat,Accessories,85,Vermont,Winter
+32,Female,Jewelry,Accessories,82,Idaho,Summer
+51,Female,Jacket,Outerwear,85,South Dakota,Summer
+27,Female,Shirt,Clothing,37,Illinois,Winter
+43,Female,Pants,Clothing,56,Georgia,Summer
+48,Female,Skirt,Clothing,33,Oregon,Fall
+62,Female,Sandals,Footwear,57,Alabama,Winter
+65,Female,Blouse,Clothing,31,Hawaii,Winter
+50,Female,Socks,Clothing,69,Oregon,Fall
+60,Female,Jacket,Outerwear,92,Illinois,Winter
+19,Female,Handbag,Accessories,46,Texas,Fall
+21,Female,Belt,Accessories,81,Kansas,Spring
+19,Female,Blouse,Clothing,97,Texas,Fall
+46,Female,Shirt,Clothing,93,Nebraska,Summer
+21,Female,Handbag,Accessories,56,Arkansas,Spring
+26,Female,Scarf,Accessories,53,South Dakota,Fall
+50,Female,Coat,Outerwear,66,Montana,Spring
+43,Female,Hoodie,Clothing,50,Florida,Fall
+61,Female,Shorts,Clothing,97,Virginia,Summer
+63,Female,Sandals,Footwear,79,Louisiana,Winter
+46,Female,Shirt,Clothing,76,Louisiana,Fall
+63,Female,Hoodie,Clothing,38,Louisiana,Fall
+23,Female,Socks,Clothing,45,Georgia,Fall
+57,Female,Handbag,Accessories,77,Iowa,Fall
+57,Female,Jewelry,Accessories,51,California,Summer
+33,Female,Coat,Outerwear,26,Oregon,Spring
+57,Female,Sunglasses,Accessories,76,Maine,Winter
+55,Female,Gloves,Accessories,94,Louisiana,Winter
+65,Female,Jacket,Outerwear,32,Arkansas,Fall
+60,Female,Sandals,Footwear,20,Maryland,Summer
+52,Female,Pants,Clothing,20,Vermont,Summer
+34,Female,Jacket,Outerwear,59,North Dakota,Fall
+33,Female,Sweater,Clothing,97,Michigan,Summer
+58,Female,T-shirt,Clothing,68,Arkansas,Spring
+35,Female,Boots,Footwear,66,Kentucky,Spring
+68,Female,Shoes,Footwear,85,Indiana,Spring
+58,Female,Skirt,Clothing,32,Minnesota,Fall
+34,Female,Coat,Outerwear,44,Louisiana,Spring
+47,Female,Blouse,Clothing,95,Kentucky,Fall
+35,Female,Sunglasses,Accessories,85,Georgia,Winter
+34,Female,Gloves,Accessories,44,Alaska,Summer
+36,Female,Sunglasses,Accessories,30,Mississippi,Winter
+23,Female,Sneakers,Footwear,21,Kansas,Winter
+68,Female,Hoodie,Clothing,22,Arizona,Summer
+23,Female,Boots,Footwear,70,Maine,Spring
+57,Female,Handbag,Accessories,29,Texas,Spring
+21,Female,Shirt,Clothing,83,Virginia,Winter
+45,Female,Sweater,Clothing,99,North Dakota,Winter
+37,Female,Shorts,Clothing,35,West Virginia,Fall
+18,Female,Belt,Accessories,40,North Carolina,Winter
+55,Female,Blouse,Clothing,25,Georgia,Spring
+52,Female,T-shirt,Clothing,64,New Mexico,Fall
+49,Female,Belt,Accessories,90,North Carolina,Fall
+56,Female,Socks,Clothing,88,Alabama,Fall
+27,Female,Belt,Accessories,55,Connecticut,Winter
+22,Female,Handbag,Accessories,90,Montana,Fall
+18,Female,Shirt,Clothing,50,Montana,Winter
+21,Female,Belt,Accessories,34,Maine,Fall
+30,Female,Jewelry,Accessories,77,Mississippi,Winter
+62,Female,Hat,Accessories,89,Louisiana,Winter
+28,Female,Backpack,Accessories,87,Nebraska,Fall
+66,Female,Dress,Clothing,77,Massachusetts,Winter
+66,Female,Shoes,Footwear,85,Wisconsin,Winter
+49,Female,Pants,Clothing,66,Nebraska,Summer
+40,Female,Dress,Clothing,32,Arizona,Winter
+49,Female,Jacket,Outerwear,92,Hawaii,Spring
+19,Female,Shirt,Clothing,80,Georgia,Winter
+24,Female,Dress,Clothing,78,Oregon,Fall
+31,Female,Jeans,Clothing,24,Montana,Spring
+35,Female,T-shirt,Clothing,59,Georgia,Fall
+65,Female,Sunglasses,Accessories,41,Rhode Island,Spring
+68,Female,Jewelry,Accessories,26,Tennessee,Spring
+57,Female,Socks,Clothing,52,Missouri,Fall
+69,Female,Skirt,Clothing,46,Washington,Summer
+45,Female,Pants,Clothing,52,Oklahoma,Winter
+35,Female,Socks,Clothing,42,Connecticut,Fall
+36,Female,Sandals,Footwear,37,Arkansas,Spring
+55,Female,Belt,Accessories,52,Missouri,Fall
+66,Female,Sandals,Footwear,34,Washington,Spring
+57,Female,Shorts,Clothing,88,Idaho,Spring
+18,Female,Handbag,Accessories,88,Montana,Fall
+31,Female,Jacket,Outerwear,51,Montana,Summer
+50,Female,Sunglasses,Accessories,97,Georgia,Fall
+50,Female,Sneakers,Footwear,56,Mississippi,Winter
+61,Female,Sweater,Clothing,53,Hawaii,Spring
+52,Female,Skirt,Clothing,71,Ohio,Fall
+38,Female,Jewelry,Accessories,93,Virginia,Winter
+67,Female,Blouse,Clothing,72,Texas,Winter
+42,Female,Blouse,Clothing,59,Vermont,Winter
+25,Female,Boots,Footwear,87,Kansas,Summer
+41,Female,Jeans,Clothing,78,California,Fall
+62,Female,Hoodie,Clothing,68,Mississippi,Winter
+19,Female,Sweater,Clothing,76,Iowa,Fall
+63,Female,Gloves,Accessories,99,Virginia,Winter
+43,Female,Sneakers,Footwear,52,Maryland,Summer
+68,Female,Sunglasses,Accessories,58,Missouri,Spring
+24,Female,Belt,Accessories,59,Wisconsin,Winter
+27,Female,Sweater,Clothing,71,Maine,Spring
+61,Female,Gloves,Accessories,94,Pennsylvania,Winter
+59,Female,Handbag,Accessories,40,Maine,Winter
+67,Female,Socks,Clothing,24,Missouri,Spring
+46,Female,Pants,Clothing,38,Vermont,Fall
+65,Female,Scarf,Accessories,37,Wisconsin,Fall
+63,Female,Coat,Outerwear,29,New Jersey,Spring
+57,Female,Jacket,Outerwear,92,New Mexico,Fall
+40,Female,Hoodie,Clothing,24,Colorado,Fall
+36,Female,Boots,Footwear,52,California,Winter
+67,Female,Socks,Clothing,29,Arizona,Summer
+61,Female,Jewelry,Accessories,30,Indiana,Winter
+64,Female,Shoes,Footwear,31,Arkansas,Fall
+30,Female,Socks,Clothing,67,Nevada,Summer
+53,Female,Pants,Clothing,65,Rhode Island,Winter
+27,Female,Sneakers,Footwear,22,Wyoming,Winter
+27,Female,Sunglasses,Accessories,56,Texas,Winter
+53,Female,Skirt,Clothing,78,Washington,Spring
+34,Female,Coat,Outerwear,90,Rhode Island,Summer
+39,Female,Hoodie,Clothing,85,Illinois,Winter
+44,Female,Sunglasses,Accessories,58,Oregon,Fall
+37,Female,Skirt,Clothing,34,Florida,Fall
+57,Female,Coat,Outerwear,40,Kansas,Summer
+38,Female,Handbag,Accessories,29,North Dakota,Fall
+21,Female,T-shirt,Clothing,76,New Hampshire,Winter
+45,Female,Sunglasses,Accessories,84,Texas,Fall
+68,Female,Shirt,Clothing,65,Montana,Spring
+37,Female,Hoodie,Clothing,80,Delaware,Winter
+53,Female,Blouse,Clothing,98,New Hampshire,Fall
+57,Female,Sneakers,Footwear,71,Minnesota,Spring
+28,Female,Scarf,Accessories,69,Alaska,Fall
+37,Female,Jewelry,Accessories,95,Connecticut,Spring
+54,Female,Pants,Clothing,67,Connecticut,Fall
+49,Female,Sneakers,Footwear,49,Kansas,Summer
+62,Female,Shoes,Footwear,97,Nevada,Winter
+45,Female,T-shirt,Clothing,34,Massachusetts,Spring
+45,Female,Belt,Accessories,74,Indiana,Fall
+49,Female,Jewelry,Accessories,96,Washington,Winter
+27,Female,Belt,Accessories,68,Kansas,Summer
+63,Female,Belt,Accessories,84,South Carolina,Fall
+61,Female,T-shirt,Clothing,57,Vermont,Summer
+25,Female,Sneakers,Footwear,84,Wyoming,Fall
+33,Female,Sunglasses,Accessories,32,Colorado,Fall
+56,Female,Sandals,Footwear,37,West Virginia,Fall
+50,Female,Handbag,Accessories,58,Connecticut,Summer
+45,Female,Socks,Clothing,74,Oregon,Fall
+45,Female,Hoodie,Clothing,99,Idaho,Summer
+65,Female,Sweater,Clothing,81,Arkansas,Fall
+63,Female,Pants,Clothing,76,Kansas,Fall
+70,Female,Sneakers,Footwear,98,Michigan,Summer
+53,Female,Gloves,Accessories,91,Arkansas,Summer
+22,Female,T-shirt,Clothing,79,Pennsylvania,Summer
+26,Female,Backpack,Accessories,83,Virginia,Summer
+23,Female,Coat,Outerwear,90,Minnesota,Spring
+25,Female,Coat,Outerwear,20,Nevada,Winter
+69,Female,Sandals,Footwear,21,Montana,Spring
+36,Female,Backpack,Accessories,60,Nebraska,Fall
+21,Female,Sweater,Clothing,31,Indiana,Winter
+57,Female,Shorts,Clothing,40,New Jersey,Fall
+60,Female,Sunglasses,Accessories,26,Wisconsin,Winter
+44,Female,Shirt,Clothing,98,Minnesota,Fall
+31,Female,Shoes,Footwear,51,New Jersey,Spring
+57,Female,Hat,Accessories,95,Oklahoma,Fall
+39,Female,Scarf,Accessories,36,Wisconsin,Summer
+48,Female,Belt,Accessories,52,Rhode Island,Winter
+42,Female,T-shirt,Clothing,35,Indiana,Spring
+56,Female,Shorts,Clothing,68,Vermont,Fall
+28,Female,Pants,Clothing,50,Maine,Winter
+40,Female,Sunglasses,Accessories,100,Alabama,Winter
+49,Female,Coat,Outerwear,74,Alabama,Winter
+37,Female,Hoodie,Clothing,45,Idaho,Winter
+22,Female,Dress,Clothing,97,Arkansas,Fall
+27,Female,Blouse,Clothing,60,Ohio,Winter
+59,Female,Socks,Clothing,25,Illinois,Winter
+35,Female,Socks,Clothing,55,Nevada,Spring
+58,Female,Shoes,Footwear,99,Texas,Winter
+58,Female,Belt,Accessories,45,Nevada,Summer
+46,Female,Sweater,Clothing,20,Oklahoma,Spring
+43,Female,Pants,Clothing,88,Alabama,Summer
+39,Female,Scarf,Accessories,99,South Dakota,Summer
+59,Female,Skirt,Clothing,86,Texas,Spring
+59,Female,Dress,Clothing,70,Montana,Summer
+59,Female,Hat,Accessories,50,Wyoming,Fall
+45,Female,Handbag,Accessories,57,New York,Winter
+27,Female,Pants,Clothing,69,Oregon,Winter
+24,Female,T-shirt,Clothing,94,California,Fall
+47,Female,Jacket,Outerwear,24,North Carolina,Spring
+70,Female,Scarf,Accessories,79,Kentucky,Spring
+58,Female,Hat,Accessories,31,Hawaii,Fall
+45,Female,Jacket,Outerwear,67,Illinois,Winter
+24,Female,Skirt,Clothing,63,West Virginia,Spring
+67,Female,Handbag,Accessories,61,South Carolina,Spring
+31,Female,Backpack,Accessories,50,Montana,Summer
+52,Female,Coat,Outerwear,82,North Dakota,Spring
+29,Female,Belt,Accessories,51,New Mexico,Fall
+62,Female,Handbag,Accessories,23,Missouri,Spring
+19,Female,Coat,Outerwear,91,West Virginia,Spring
+62,Female,Sweater,Clothing,60,South Carolina,Spring
+70,Female,Blouse,Clothing,34,West Virginia,Summer
+20,Female,Blouse,Clothing,23,Alaska,Spring
+67,Female,Belt,Accessories,82,West Virginia,Fall
+65,Female,Jacket,Outerwear,73,New Mexico,Fall
+45,Female,Shorts,Clothing,32,South Dakota,Spring
+26,Female,Hat,Accessories,80,Oklahoma,Spring
+36,Female,Pants,Clothing,58,Oklahoma,Summer
+36,Female,Blouse,Clothing,82,Alabama,Winter
+20,Female,Belt,Accessories,60,Mississippi,Summer
+30,Female,Handbag,Accessories,79,Mississippi,Fall
+34,Female,Hoodie,Clothing,41,Nebraska,Summer
+63,Female,Jacket,Outerwear,39,Colorado,Summer
+18,Female,Scarf,Accessories,36,Pennsylvania,Winter
+55,Female,Jeans,Clothing,70,Utah,Fall
+48,Female,Handbag,Accessories,47,Massachusetts,Summer
+45,Female,Jacket,Outerwear,27,Iowa,Winter
+29,Female,Hat,Accessories,52,Florida,Summer
+55,Female,Sneakers,Footwear,75,Louisiana,Summer
+55,Female,Hat,Accessories,30,Kansas,Fall
+55,Female,Socks,Clothing,94,Kansas,Spring
+48,Female,Scarf,Accessories,68,Kentucky,Summer
+42,Female,Socks,Clothing,45,New Mexico,Summer
+21,Female,Hat,Accessories,67,North Carolina,Summer
+45,Female,Jacket,Outerwear,46,North Dakota,Summer
+23,Female,Shorts,Clothing,31,North Dakota,Summer
+66,Female,Blouse,Clothing,44,Illinois,Fall
+32,Female,Coat,Outerwear,100,Maine,Winter
+52,Female,Sweater,Clothing,92,Indiana,Winter
+54,Female,Handbag,Accessories,78,North Dakota,Winter
+37,Female,T-shirt,Clothing,32,Missouri,Fall
+29,Female,Sandals,Footwear,97,Alaska,Fall
+47,Female,Gloves,Accessories,95,North Dakota,Summer
+47,Female,Shorts,Clothing,64,Connecticut,Spring
+42,Female,Sandals,Footwear,35,Wisconsin,Spring
+34,Female,Backpack,Accessories,54,New Jersey,Winter
+38,Female,Sneakers,Footwear,96,Missouri,Spring
+55,Female,Sunglasses,Accessories,58,California,Summer
+27,Female,T-shirt,Clothing,23,Washington,Summer
+55,Female,Jeans,Clothing,35,Minnesota,Spring
+66,Female,Shirt,Clothing,23,California,Summer
+44,Female,Hat,Accessories,94,Texas,Winter
+39,Female,Blouse,Clothing,45,Montana,Fall
+23,Female,Jacket,Outerwear,23,Arizona,Winter
+29,Female,Skirt,Clothing,94,Minnesota,Winter
+20,Female,Gloves,Accessories,99,Nebraska,Fall
+42,Female,T-shirt,Clothing,36,Virginia,Fall
+55,Female,Jacket,Outerwear,50,Connecticut,Summer
+66,Female,Jacket,Outerwear,81,New Jersey,Spring
+24,Female,Shorts,Clothing,31,Kentucky,Winter
+62,Female,Hat,Accessories,48,Washington,Fall
+28,Female,Handbag,Accessories,91,Florida,Summer
+30,Female,Jeans,Clothing,99,Oklahoma,Summer
+22,Female,Shoes,Footwear,70,Iowa,Summer
+28,Female,T-shirt,Clothing,74,New Hampshire,Winter
+35,Female,Jewelry,Accessories,79,Georgia,Fall
+45,Female,Handbag,Accessories,33,Mississippi,Fall
+43,Female,Shirt,Clothing,49,New Hampshire,Spring
+55,Female,Belt,Accessories,96,Washington,Summer
+31,Female,Dress,Clothing,66,Ohio,Fall
+42,Female,Skirt,Clothing,45,Maryland,Fall
+40,Female,Blouse,Clothing,28,Delaware,Spring
+39,Female,Jeans,Clothing,48,Tennessee,Summer
+41,Female,Hoodie,Clothing,67,Arkansas,Winter
+56,Female,T-shirt,Clothing,59,Tennessee,Fall
+43,Female,Sunglasses,Accessories,74,New Hampshire,Fall
+22,Female,Jacket,Outerwear,81,Minnesota,Spring
+47,Female,Shoes,Footwear,26,Florida,Spring
+50,Female,Handbag,Accessories,61,Tennessee,Summer
+58,Female,Sweater,Clothing,23,California,Winter
+50,Female,Scarf,Accessories,33,Oregon,Fall
+43,Female,Skirt,Clothing,58,Tennessee,Fall
+38,Female,Gloves,Accessories,65,North Carolina,Spring
+44,Female,T-shirt,Clothing,48,Tennessee,Summer
+30,Female,Sandals,Footwear,25,Nebraska,Spring
+47,Female,Sweater,Clothing,51,Maine,Winter
+30,Female,Belt,Accessories,31,Illinois,Summer
+49,Female,Hoodie,Clothing,99,Colorado,Winter
+56,Female,Socks,Clothing,25,Pennsylvania,Winter
+70,Female,Sandals,Footwear,52,Minnesota,Spring
+22,Female,Blouse,Clothing,47,Nevada,Spring
+51,Female,Boots,Footwear,98,Connecticut,Fall
+22,Female,Hat,Accessories,46,Ohio,Winter
+37,Female,Shirt,Clothing,32,Kentucky,Winter
+49,Female,Shorts,Clothing,75,Minnesota,Fall
+61,Female,Handbag,Accessories,51,Tennessee,Summer
+41,Female,Dress,Clothing,52,North Dakota,Summer
+57,Female,Hat,Accessories,66,Minnesota,Winter
+34,Female,Sweater,Clothing,35,Nebraska,Spring
+27,Female,Coat,Outerwear,43,Delaware,Fall
+39,Female,Hoodie,Clothing,24,Minnesota,Summer
+62,Female,Jewelry,Accessories,83,Rhode Island,Winter
+34,Female,T-shirt,Clothing,62,Michigan,Fall
+53,Female,Pants,Clothing,78,New Jersey,Spring
+35,Female,Sweater,Clothing,61,South Dakota,Spring
+38,Female,Pants,Clothing,57,North Carolina,Fall
+32,Female,Socks,Clothing,70,Oregon,Summer
+47,Female,Hoodie,Clothing,57,Montana,Fall
+53,Female,Scarf,Accessories,74,New Jersey,Winter
+60,Female,Dress,Clothing,90,Arizona,Fall
+31,Female,Sandals,Footwear,98,Vermont,Spring
+44,Female,Dress,Clothing,43,Colorado,Winter
+29,Female,Pants,Clothing,37,Tennessee,Winter
+19,Female,Blouse,Clothing,38,New Jersey,Summer
+54,Female,Jeans,Clothing,60,Montana,Winter
+40,Female,Pants,Clothing,55,Montana,Winter
+39,Female,Sunglasses,Accessories,51,Nevada,Fall
+44,Female,Backpack,Accessories,71,Nevada,Winter
+22,Female,Hoodie,Clothing,61,Louisiana,Spring
+30,Female,Boots,Footwear,65,Illinois,Summer
+69,Female,Gloves,Accessories,34,South Carolina,Fall
+28,Female,Blouse,Clothing,87,Washington,Summer
+57,Female,Sweater,Clothing,79,Nebraska,Spring
+46,Female,Dress,Clothing,46,Alabama,Spring
+48,Female,Socks,Clothing,72,Montana,Summer
+24,Female,Shirt,Clothing,93,Minnesota,Summer
+50,Female,Sandals,Footwear,76,Ohio,Summer
+29,Female,Shoes,Footwear,56,New York,Winter
+61,Female,Sandals,Footwear,83,Indiana,Fall
+34,Female,Gloves,Accessories,90,Delaware,Winter
+27,Female,Boots,Footwear,94,Connecticut,Spring
+38,Female,Blouse,Clothing,68,New York,Fall
+25,Female,Sandals,Footwear,53,Alabama,Spring
+54,Female,Coat,Outerwear,35,Massachusetts,Summer
+53,Female,Jacket,Outerwear,30,South Carolina,Summer
+23,Female,Jewelry,Accessories,26,West Virginia,Winter
+19,Female,Hat,Accessories,60,Kentucky,Winter
+57,Female,Shoes,Footwear,30,New Jersey,Summer
+19,Female,Coat,Outerwear,91,New York,Winter
+33,Female,Boots,Footwear,71,Massachusetts,Spring
+33,Female,Scarf,Accessories,64,Florida,Summer
+38,Female,Hat,Accessories,54,Michigan,Summer
+47,Female,Socks,Clothing,35,Oregon,Fall
+39,Female,T-shirt,Clothing,38,Michigan,Winter
+32,Female,Jewelry,Accessories,69,Washington,Fall
+27,Female,Skirt,Clothing,96,Alaska,Winter
+67,Female,Socks,Clothing,73,Montana,Winter
+46,Female,Belt,Accessories,49,New Mexico,Summer
+36,Female,Boots,Footwear,44,Connecticut,Summer
+62,Female,Socks,Clothing,93,Alaska,Spring
+31,Female,Pants,Clothing,72,Ohio,Summer
+68,Female,Socks,Clothing,91,Montana,Summer
+57,Female,Belt,Accessories,83,Nebraska,Winter
+22,Female,Jacket,Outerwear,62,Oklahoma,Winter
+26,Female,Shirt,Clothing,71,Kentucky,Fall
+43,Female,Gloves,Accessories,93,Idaho,Summer
+45,Female,Handbag,Accessories,63,Maryland,Fall
+64,Female,Sweater,Clothing,96,Tennessee,Fall
+28,Female,Skirt,Clothing,78,Michigan,Spring
+47,Female,Dress,Clothing,24,Tennessee,Summer
+53,Female,Pants,Clothing,63,Rhode Island,Summer
+42,Female,Hat,Accessories,58,Florida,Fall
+51,Female,Boots,Footwear,55,Louisiana,Spring
+62,Female,Sandals,Footwear,58,Arkansas,Fall
+18,Female,Coat,Outerwear,28,Kentucky,Winter
+48,Female,Blouse,Clothing,37,Kansas,Spring
+20,Female,Shorts,Clothing,78,Vermont,Spring
+32,Female,Blouse,Clothing,73,Nevada,Fall
+26,Female,Jacket,Outerwear,20,Oklahoma,Spring
+31,Female,Shirt,Clothing,60,Alabama,Winter
+55,Female,Handbag,Accessories,71,Louisiana,Fall
+49,Female,T-shirt,Clothing,89,Ohio,Fall
+42,Female,Hoodie,Clothing,53,Texas,Fall
+64,Female,Jewelry,Accessories,87,Maryland,Summer
+68,Female,Jewelry,Accessories,37,West Virginia,Spring
+68,Female,Hoodie,Clothing,37,Ohio,Fall
+41,Female,Scarf,Accessories,78,Indiana,Spring
+51,Female,Shoes,Footwear,23,Wyoming,Spring
+44,Female,Jeans,Clothing,73,Michigan,Spring
+27,Female,Jewelry,Accessories,27,Maine,Fall
+36,Female,Coat,Outerwear,59,Utah,Winter
+19,Female,Backpack,Accessories,53,Iowa,Spring
+49,Female,Socks,Clothing,42,Maryland,Summer
+18,Female,Scarf,Accessories,45,Texas,Fall
+36,Female,Sunglasses,Accessories,89,Ohio,Winter
+36,Female,Socks,Clothing,85,North Dakota,Fall
+19,Female,Coat,Outerwear,69,West Virginia,Summer
+43,Female,Sandals,Footwear,66,North Carolina,Spring
+31,Female,Blouse,Clothing,42,Georgia,Summer
+63,Female,Dress,Clothing,40,Kansas,Spring
+41,Female,Pants,Clothing,82,Maine,Winter
+48,Female,Sneakers,Footwear,88,South Carolina,Spring
+68,Female,Boots,Footwear,99,South Carolina,Summer
+53,Female,Handbag,Accessories,85,Kentucky,Spring
+36,Female,Handbag,Accessories,57,Arizona,Fall
+46,Female,Sweater,Clothing,56,New York,Summer
+21,Female,Sandals,Footwear,79,New Hampshire,Winter
+52,Female,Socks,Clothing,67,Ohio,Summer
+66,Female,Gloves,Accessories,61,Hawaii,Winter
+19,Female,Hoodie,Clothing,37,Texas,Winter
+44,Female,Dress,Clothing,75,Illinois,Fall
+50,Female,Shirt,Clothing,21,Massachusetts,Winter
+51,Female,Shorts,Clothing,89,North Carolina,Winter
+25,Female,Sandals,Footwear,24,West Virginia,Fall
+62,Female,Sweater,Clothing,27,Delaware,Spring
+48,Female,Dress,Clothing,26,Idaho,Summer
+62,Female,Boots,Footwear,82,Oregon,Spring
+22,Female,Pants,Clothing,28,Maine,Winter
+48,Female,Gloves,Accessories,65,South Dakota,Fall
+48,Female,Pants,Clothing,82,New Mexico,Winter
+62,Female,Scarf,Accessories,38,Washington,Winter
+24,Female,Shorts,Clothing,33,Georgia,Spring
+39,Female,Shoes,Footwear,38,Idaho,Summer
+35,Female,Handbag,Accessories,48,Colorado,Spring
+47,Female,Sandals,Footwear,35,Kentucky,Summer
+22,Female,Socks,Clothing,29,New Jersey,Fall
+38,Female,Shirt,Clothing,48,Oregon,Fall
+53,Female,Shoes,Footwear,87,Nebraska,Fall
+31,Female,Backpack,Accessories,62,Massachusetts,Fall
+31,Female,Shirt,Clothing,96,Nebraska,Spring
+65,Female,Handbag,Accessories,41,Hawaii,Fall
+48,Female,Jewelry,Accessories,42,Indiana,Winter
+18,Female,Shirt,Clothing,57,Illinois,Winter
+46,Female,Handbag,Accessories,65,Colorado,Spring
+52,Female,Pants,Clothing,54,Pennsylvania,Fall
+50,Female,T-shirt,Clothing,22,Ohio,Winter
+49,Female,Sneakers,Footwear,96,Pennsylvania,Fall
+69,Female,Jewelry,Accessories,81,Mississippi,Summer
+36,Female,Shirt,Clothing,46,Kentucky,Fall
+30,Female,Blouse,Clothing,74,Alaska,Spring
+25,Female,Sneakers,Footwear,50,Georgia,Winter
+19,Female,Dress,Clothing,80,South Dakota,Winter
+34,Female,Boots,Footwear,56,South Carolina,Summer
+29,Female,Skirt,Clothing,69,Tennessee,Winter
+50,Female,Shirt,Clothing,97,Colorado,Spring
+31,Female,Shorts,Clothing,66,Wisconsin,Winter
+41,Female,Hat,Accessories,70,Georgia,Spring
+52,Female,Shoes,Footwear,50,Maryland,Winter
+27,Female,Pants,Clothing,85,New Jersey,Spring
+49,Female,Backpack,Accessories,59,Nevada,Summer
+69,Female,Pants,Clothing,74,Michigan,Summer
+45,Female,Sunglasses,Accessories,38,Wyoming,Winter
+20,Female,Sweater,Clothing,99,Massachusetts,Spring
+25,Female,Blouse,Clothing,97,Washington,Spring
+38,Female,Scarf,Accessories,67,Maine,Summer
+55,Female,T-shirt,Clothing,20,Montana,Winter
+62,Female,Sunglasses,Accessories,45,Oklahoma,Spring
+54,Female,Shoes,Footwear,52,North Dakota,Winter
+61,Female,Pants,Clothing,68,Connecticut,Fall
+50,Female,Sneakers,Footwear,98,Texas,Fall
+65,Female,Shoes,Footwear,83,Delaware,Fall
+68,Female,Shorts,Clothing,51,Mississippi,Summer
+55,Female,Handbag,Accessories,21,Minnesota,Spring
+57,Female,Handbag,Accessories,92,Georgia,Spring
+56,Female,Shoes,Footwear,63,Iowa,Spring
+29,Female,Jewelry,Accessories,56,New York,Spring
+24,Female,Shorts,Clothing,95,Nevada,Spring
+59,Female,Blouse,Clothing,66,Virginia,Winter
+62,Female,Coat,Outerwear,28,Idaho,Spring
+58,Female,Hat,Accessories,83,Colorado,Winter
+64,Female,Socks,Clothing,55,Wisconsin,Fall
+48,Female,Sandals,Footwear,28,Connecticut,Spring
+60,Female,Scarf,Accessories,79,Kansas,Summer
+52,Female,Scarf,Accessories,31,Pennsylvania,Summer
+63,Female,Blouse,Clothing,37,Utah,Fall
+44,Female,T-shirt,Clothing,34,Oregon,Summer
+63,Female,Shoes,Footwear,74,West Virginia,Winter
+66,Female,Gloves,Accessories,31,Montana,Spring
+22,Female,Sunglasses,Accessories,66,Kentucky,Winter
+62,Female,Shoes,Footwear,99,Minnesota,Spring
+39,Female,Dress,Clothing,55,Louisiana,Spring
+25,Female,Blouse,Clothing,23,Delaware,Spring
+70,Female,Sweater,Clothing,88,Arizona,Fall
+52,Female,Jacket,Outerwear,26,Nevada,Summer
+68,Female,Backpack,Accessories,94,Alaska,Summer
+18,Female,Shorts,Clothing,25,Utah,Fall
+18,Female,Socks,Clothing,96,Kansas,Fall
+63,Female,Sneakers,Footwear,29,North Carolina,Spring
+47,Female,Sneakers,Footwear,36,Maryland,Winter
+43,Female,Blouse,Clothing,90,Maine,Summer
+60,Female,Gloves,Accessories,38,Illinois,Summer
+49,Female,Handbag,Accessories,52,Pennsylvania,Spring
+28,Female,Jeans,Clothing,88,Alaska,Spring
+32,Female,Scarf,Accessories,56,New Mexico,Summer
+29,Female,Sandals,Footwear,71,Arkansas,Spring
+35,Female,Sandals,Footwear,94,Alaska,Fall
+23,Female,Dress,Clothing,97,Louisiana,Winter
+70,Female,Skirt,Clothing,27,North Dakota,Summer
+23,Female,Shorts,Clothing,28,Rhode Island,Spring
+43,Female,Jeans,Clothing,67,Connecticut,Fall
+29,Female,Socks,Clothing,70,New York,Fall
+61,Female,Coat,Outerwear,95,Kentucky,Fall
+29,Female,Boots,Footwear,24,Maine,Spring
+66,Female,Belt,Accessories,35,Missouri,Winter
+46,Female,Shoes,Footwear,22,Georgia,Winter
+34,Female,Scarf,Accessories,66,Arizona,Fall
+51,Female,Blouse,Clothing,83,New Hampshire,Summer
+26,Female,Dress,Clothing,95,Georgia,Fall
+23,Female,Shorts,Clothing,41,California,Summer
+52,Female,Blouse,Clothing,77,Arizona,Summer
+39,Female,Sneakers,Footwear,52,Florida,Fall
+39,Female,Gloves,Accessories,41,New York,Winter
+33,Female,Hoodie,Clothing,28,Idaho,Winter
+33,Female,Sweater,Clothing,90,Virginia,Summer
+23,Female,Sunglasses,Accessories,55,Michigan,Spring
+31,Female,Belt,Accessories,73,New Hampshire,Spring
+27,Female,Dress,Clothing,87,South Dakota,Fall
+48,Female,Jacket,Outerwear,89,South Dakota,Winter
+61,Female,Boots,Footwear,82,New Jersey,Spring
+63,Female,Sandals,Footwear,80,Wyoming,Spring
+19,Female,Scarf,Accessories,87,Alabama,Summer
+21,Female,Blouse,Clothing,41,South Dakota,Spring
+28,Female,Hoodie,Clothing,83,South Carolina,Spring
+29,Female,Sunglasses,Accessories,71,New Mexico,Summer
+23,Female,Hoodie,Clothing,76,Connecticut,Spring
+37,Female,Scarf,Accessories,34,Kansas,Spring
+67,Female,Dress,Clothing,81,South Carolina,Spring
+34,Female,T-shirt,Clothing,47,North Carolina,Summer
+58,Female,Skirt,Clothing,36,Wyoming,Summer
+45,Female,Jeans,Clothing,51,Louisiana,Spring
+63,Female,Hoodie,Clothing,86,Louisiana,Fall
+68,Female,Jeans,Clothing,41,Alabama,Fall
+41,Female,Sandals,Footwear,90,Minnesota,Fall
+50,Female,Hat,Accessories,93,New Mexico,Fall
+24,Female,Gloves,Accessories,56,Tennessee,Fall
+21,Female,Socks,Clothing,39,New Mexico,Summer
+18,Female,Jacket,Outerwear,86,Texas,Fall
+63,Female,T-shirt,Clothing,82,Washington,Spring
+47,Female,Sandals,Footwear,29,Michigan,Summer
+58,Female,Hat,Accessories,27,Minnesota,Fall
+46,Female,Gloves,Accessories,25,Delaware,Spring
+35,Female,Dress,Clothing,31,California,Winter
+42,Female,Hoodie,Clothing,23,Wisconsin,Winter
+48,Female,Belt,Accessories,47,Kentucky,Fall
+28,Female,Gloves,Accessories,67,Nevada,Fall
+44,Female,Scarf,Accessories,75,North Carolina,Winter
+60,Female,Sandals,Footwear,82,Louisiana,Summer
+38,Female,Sneakers,Footwear,32,New Jersey,Summer
+46,Female,Dress,Clothing,41,Wisconsin,Fall
+39,Female,Jewelry,Accessories,89,Arkansas,Winter
+22,Female,Hat,Accessories,82,Texas,Fall
+44,Female,Scarf,Accessories,99,Illinois,Winter
+69,Female,Blouse,Clothing,98,Mississippi,Fall
+39,Female,Belt,Accessories,54,Delaware,Winter
+53,Female,Blouse,Clothing,88,Georgia,Summer
+52,Female,T-shirt,Clothing,43,Kansas,Summer
+65,Female,Hat,Accessories,73,Oklahoma,Winter
+48,Female,Hat,Accessories,50,New Jersey,Fall
+27,Female,Sneakers,Footwear,73,Utah,Spring
+39,Female,Gloves,Accessories,51,Montana,Spring
+59,Female,Socks,Clothing,22,Ohio,Winter
+52,Female,Sandals,Footwear,32,Colorado,Fall
+50,Female,Sandals,Footwear,38,California,Summer
+32,Female,Boots,Footwear,66,Utah,Winter
+40,Female,Backpack,Accessories,20,Kansas,Spring
+26,Female,Coat,Outerwear,44,Illinois,Summer
+47,Female,Sunglasses,Accessories,31,Minnesota,Spring
+51,Female,Jacket,Outerwear,45,New York,Fall
+47,Female,Dress,Clothing,71,Arizona,Summer
+53,Female,Scarf,Accessories,96,Tennessee,Fall
+35,Female,Blouse,Clothing,32,Arkansas,Winter
+38,Female,Backpack,Accessories,90,Colorado,Summer
+69,Female,Jewelry,Accessories,68,Nevada,Spring
+47,Female,Shorts,Clothing,45,Kansas,Winter
+31,Female,Skirt,Clothing,67,New York,Winter
+68,Female,Skirt,Clothing,57,Minnesota,Fall
+51,Female,Jeans,Clothing,60,Ohio,Summer
+20,Female,Handbag,Accessories,32,Arizona,Spring
+27,Female,Handbag,Accessories,29,Kentucky,Fall
+67,Female,Coat,Outerwear,20,Minnesota,Spring
+21,Female,Jewelry,Accessories,98,Arkansas,Winter
+20,Female,Sweater,Clothing,27,Wyoming,Fall
+35,Female,Jacket,Outerwear,67,North Dakota,Spring
+58,Female,Shoes,Footwear,82,Alabama,Winter
+28,Female,T-shirt,Clothing,72,Mississippi,Fall
+27,Female,Sandals,Footwear,77,Illinois,Fall
+19,Female,Shoes,Footwear,74,Arkansas,Winter
+63,Female,Sandals,Footwear,39,Kansas,Winter
+69,Female,Shorts,Clothing,80,Rhode Island,Spring
+65,Female,Backpack,Accessories,59,Florida,Summer
+63,Female,Jacket,Outerwear,68,Missouri,Fall
+28,Female,Socks,Clothing,77,North Carolina,Fall
+67,Female,Jewelry,Accessories,50,Alabama,Winter
+51,Female,Pants,Clothing,45,Washington,Fall
+59,Female,Blouse,Clothing,71,Michigan,Summer
+25,Female,Socks,Clothing,52,Washington,Fall
+31,Female,Shoes,Footwear,50,Vermont,Winter
+62,Female,Handbag,Accessories,66,Illinois,Summer
+51,Female,Sandals,Footwear,81,New York,Fall
+32,Female,Socks,Clothing,28,Rhode Island,Summer
+35,Female,Handbag,Accessories,65,Washington,Winter
+70,Female,Hat,Accessories,80,Virginia,Winter
+19,Female,Jewelry,Accessories,94,Wisconsin,Spring
+32,Female,Backpack,Accessories,30,Michigan,Fall
+56,Female,Shirt,Clothing,45,Texas,Fall
+53,Female,Coat,Outerwear,91,Idaho,Summer
+22,Female,Sunglasses,Accessories,36,Iowa,Winter
+26,Female,Gloves,Accessories,73,Connecticut,Fall
+42,Female,Shirt,Clothing,60,Wyoming,Fall
+30,Female,Socks,Clothing,77,Mississippi,Winter
+29,Female,Skirt,Clothing,86,Pennsylvania,Spring
+47,Female,Shorts,Clothing,42,Tennessee,Summer
+59,Female,Sandals,Footwear,70,Louisiana,Spring
+34,Female,Shirt,Clothing,44,Arkansas,Summer
+52,Female,Sunglasses,Accessories,91,West Virginia,Spring
+47,Female,Jewelry,Accessories,30,South Carolina,Fall
+24,Female,Blouse,Clothing,23,Kansas,Fall
+63,Female,Sandals,Footwear,21,Michigan,Summer
+59,Female,Coat,Outerwear,34,Alabama,Spring
+66,Female,Blouse,Clothing,46,South Dakota,Summer
+45,Female,Sweater,Clothing,41,Rhode Island,Winter
+38,Female,Skirt,Clothing,33,Florida,Fall
+63,Female,Blouse,Clothing,48,Connecticut,Fall
+55,Female,Hoodie,Clothing,66,Pennsylvania,Winter
+25,Female,Skirt,Clothing,54,California,Spring
+51,Female,Backpack,Accessories,55,Oklahoma,Fall
+28,Female,Handbag,Accessories,84,North Dakota,Summer
+46,Female,Sandals,Footwear,66,New Mexico,Spring
+58,Female,Shoes,Footwear,65,South Carolina,Spring
+30,Female,Sandals,Footwear,83,Michigan,Fall
+68,Female,Sunglasses,Accessories,61,Missouri,Winter
+28,Female,Skirt,Clothing,65,Colorado,Summer
+26,Female,Sandals,Footwear,55,Kansas,Spring
+35,Female,Gloves,Accessories,79,Illinois,Fall
+40,Female,Hoodie,Clothing,96,South Carolina,Fall
+31,Female,Socks,Clothing,43,Utah,Fall
+60,Female,Jewelry,Accessories,40,Hawaii,Summer
+69,Female,Hat,Accessories,62,Texas,Fall
+51,Female,Blouse,Clothing,72,Oregon,Spring
+49,Female,Shoes,Footwear,87,Arizona,Spring
+18,Female,Hat,Accessories,31,New York,Winter
+63,Female,Sunglasses,Accessories,34,Nebraska,Fall
+57,Female,Shirt,Clothing,53,Vermont,Fall
+45,Female,T-shirt,Clothing,85,Maryland,Summer
+36,Female,Pants,Clothing,50,Tennessee,Fall
+20,Female,Pants,Clothing,91,Pennsylvania,Summer
+21,Female,Hat,Accessories,56,South Carolina,Fall
+62,Female,Coat,Outerwear,60,Connecticut,Fall
+23,Female,Jacket,Outerwear,34,Kentucky,Fall
+26,Female,Sandals,Footwear,30,Rhode Island,Spring
+30,Female,Gloves,Accessories,71,Colorado,Winter
+18,Female,Dress,Clothing,100,Oklahoma,Winter
+47,Female,Belt,Accessories,85,Idaho,Fall
+41,Female,Socks,Clothing,83,Maine,Summer
+62,Female,Jacket,Outerwear,31,Vermont,Winter
+28,Female,Boots,Footwear,82,Rhode Island,Spring
+46,Female,Shirt,Clothing,79,Florida,Summer
+54,Female,Hat,Accessories,62,West Virginia,Spring
+36,Female,Shoes,Footwear,92,Indiana,Spring
+25,Female,Socks,Clothing,58,Illinois,Fall
+38,Female,Hoodie,Clothing,88,California,Spring
+38,Female,Sandals,Footwear,44,Massachusetts,Spring
+42,Female,Jeans,Clothing,56,Idaho,Spring
+19,Female,Jewelry,Accessories,23,Kentucky,Winter
+34,Female,Shorts,Clothing,45,Delaware,Spring
+38,Female,Sunglasses,Accessories,31,Idaho,Fall
+42,Female,Pants,Clothing,96,Virginia,Summer
+58,Female,Shirt,Clothing,96,Arizona,Spring
+56,Female,Shirt,Clothing,80,Maryland,Fall
+62,Female,Pants,Clothing,28,Idaho,Fall
+24,Female,Hoodie,Clothing,51,New Jersey,Summer
+60,Female,Socks,Clothing,41,Washington,Spring
+53,Female,Coat,Outerwear,99,Idaho,Summer
+26,Female,Sweater,Clothing,53,Rhode Island,Spring
+34,Female,Backpack,Accessories,25,Delaware,Fall
+24,Female,Blouse,Clothing,95,Alaska,Winter
+42,Female,Hoodie,Clothing,88,Arizona,Fall
+36,Female,Jewelry,Accessories,97,Alabama,Fall
+24,Female,Coat,Outerwear,81,Washington,Winter
+39,Female,Sunglasses,Accessories,26,Louisiana,Winter
+46,Female,Shoes,Footwear,41,Nebraska,Summer
+64,Female,Skirt,Clothing,93,Pennsylvania,Fall
+64,Female,Skirt,Clothing,69,South Carolina,Spring
+61,Female,Skirt,Clothing,44,California,Fall
+61,Female,Sandals,Footwear,54,Indiana,Spring
+44,Female,Sneakers,Footwear,61,Missouri,Spring
+65,Female,Socks,Clothing,80,Connecticut,Fall
+60,Female,Backpack,Accessories,30,Nevada,Summer
+65,Female,Shorts,Clothing,94,New York,Fall
+27,Female,Shirt,Clothing,24,Oklahoma,Winter
+36,Female,Socks,Clothing,21,South Dakota,Fall
+22,Female,Jewelry,Accessories,52,Missouri,Summer
+62,Female,Handbag,Accessories,59,Texas,Fall
+59,Female,Shorts,Clothing,51,New York,Summer
+50,Female,Sweater,Clothing,35,Vermont,Winter
+51,Female,Gloves,Accessories,87,Arizona,Summer
+23,Female,Pants,Clothing,42,Montana,Summer
+21,Female,T-shirt,Clothing,86,Oklahoma,Winter
+44,Female,Pants,Clothing,26,New Hampshire,Fall
+25,Female,Sweater,Clothing,60,Wisconsin,Summer
+57,Female,Gloves,Accessories,83,Alaska,Winter
+41,Female,Belt,Accessories,63,South Dakota,Spring
+19,Female,Sneakers,Footwear,25,Alaska,Spring
+43,Female,Shorts,Clothing,65,Utah,Fall
+25,Female,Sneakers,Footwear,60,South Dakota,Fall
+60,Female,Jeans,Clothing,75,California,Spring
+54,Female,Sneakers,Footwear,57,Mississippi,Fall
+52,Female,Boots,Footwear,99,Tennessee,Winter
+40,Female,Jacket,Outerwear,45,Alabama,Spring
+39,Female,Gloves,Accessories,66,Maine,Summer
+54,Female,Socks,Clothing,53,Virginia,Winter
+64,Female,Jeans,Clothing,94,New Hampshire,Winter
+31,Female,Boots,Footwear,47,Tennessee,Fall
+37,Female,Blouse,Clothing,80,New York,Fall
+43,Female,Hat,Accessories,65,Kansas,Spring
+56,Female,Shirt,Clothing,75,North Dakota,Summer
+27,Female,Handbag,Accessories,45,Alaska,Summer
+40,Female,Sunglasses,Accessories,51,Texas,Spring
+43,Female,Scarf,Accessories,58,Massachusetts,Summer
+62,Female,Sunglasses,Accessories,20,Delaware,Fall
+44,Female,Scarf,Accessories,82,South Dakota,Summer
+45,Female,Gloves,Accessories,92,Arkansas,Spring
+40,Female,Shorts,Clothing,81,Utah,Fall
+68,Female,Sunglasses,Accessories,44,California,Summer
+63,Female,Jewelry,Accessories,72,Rhode Island,Winter
+60,Female,Jacket,Outerwear,26,Oklahoma,Winter
+19,Female,Sweater,Clothing,26,Vermont,Fall
+26,Female,Blouse,Clothing,84,Kentucky,Spring
+70,Female,Scarf,Accessories,72,Illinois,Spring
+48,Female,Handbag,Accessories,55,Connecticut,Spring
+37,Female,Hat,Accessories,77,Florida,Fall
+48,Female,Scarf,Accessories,57,New Jersey,Fall
+18,Female,Boots,Footwear,71,Missouri,Spring
+38,Female,Blouse,Clothing,39,Michigan,Spring
+33,Female,Socks,Clothing,28,Washington,Winter
+57,Female,Shoes,Footwear,33,New York,Winter
+46,Female,Skirt,Clothing,79,Wisconsin,Fall
+46,Female,Belt,Accessories,30,Idaho,Winter
+50,Female,Skirt,Clothing,75,Michigan,Spring
+61,Female,Pants,Clothing,89,Georgia,Summer
+45,Female,Dress,Clothing,95,Michigan,Winter
+32,Female,Hat,Accessories,44,Maine,Fall
+29,Female,Coat,Outerwear,86,Maryland,Summer
+66,Female,Scarf,Accessories,91,Missouri,Fall
+70,Female,Sneakers,Footwear,41,Oregon,Winter
+36,Female,Pants,Clothing,99,Arkansas,Spring
+34,Female,Belt,Accessories,65,New Hampshire,Winter
+20,Female,Sneakers,Footwear,48,Oregon,Summer
+70,Female,Hat,Accessories,41,Kansas,Spring
+50,Female,Shirt,Clothing,42,California,Summer
+54,Female,Shorts,Clothing,26,Georgia,Summer
+49,Female,Shorts,Clothing,35,Hawaii,Fall
+50,Female,Jacket,Outerwear,31,Montana,Summer
+62,Female,Jewelry,Accessories,73,Montana,Summer
+42,Female,Blouse,Clothing,82,Mississippi,Spring
+69,Female,Pants,Clothing,32,Washington,Spring
+22,Female,Hat,Accessories,27,Pennsylvania,Summer
+36,Female,Backpack,Accessories,86,Nevada,Spring
+64,Female,Boots,Footwear,38,Kansas,Winter
+44,Female,Jacket,Outerwear,93,Arizona,Summer
+43,Female,Hoodie,Clothing,59,Tennessee,Winter
+58,Female,Sandals,Footwear,58,Pennsylvania,Winter
+62,Female,Skirt,Clothing,84,Alaska,Spring
+45,Female,Hoodie,Clothing,100,New Mexico,Spring
+47,Female,Dress,Clothing,25,Rhode Island,Summer
+66,Female,Sandals,Footwear,29,Connecticut,Spring
+30,Female,Jeans,Clothing,42,Idaho,Spring
+68,Female,Jeans,Clothing,57,Mississippi,Fall
+35,Female,Jacket,Outerwear,84,Colorado,Winter
+64,Female,Hat,Accessories,71,Georgia,Winter
+30,Female,Shorts,Clothing,87,Montana,Fall
+58,Female,Sweater,Clothing,52,California,Winter
+57,Female,Blouse,Clothing,58,Pennsylvania,Summer
+60,Female,Sweater,Clothing,34,Delaware,Fall
+22,Female,Jewelry,Accessories,60,New Hampshire,Winter
+46,Female,Hoodie,Clothing,68,Florida,Winter
+27,Female,Jewelry,Accessories,74,Mississippi,Summer
+50,Female,Scarf,Accessories,83,Montana,Summer
+65,Female,Hat,Accessories,79,Mississippi,Fall
+61,Female,Sunglasses,Accessories,76,Tennessee,Fall
+57,Female,T-shirt,Clothing,20,Florida,Spring
+40,Female,Shirt,Clothing,61,Illinois,Summer
+39,Female,Sandals,Footwear,78,Virginia,Summer
+42,Female,Hat,Accessories,21,Texas,Summer
+30,Female,T-shirt,Clothing,77,Missouri,Winter
+65,Female,Shorts,Clothing,88,Mississippi,Fall
+57,Female,Sunglasses,Accessories,64,Pennsylvania,Summer
+64,Female,Jacket,Outerwear,57,Wyoming,Spring
+56,Female,Shirt,Clothing,49,Idaho,Winter
+40,Female,Scarf,Accessories,35,New Hampshire,Summer
+55,Female,T-shirt,Clothing,99,Wyoming,Winter
+25,Female,Shorts,Clothing,42,Nebraska,Spring
+58,Female,Hat,Accessories,32,Alaska,Winter
+46,Female,Jacket,Outerwear,21,Maryland,Summer
+18,Female,Dress,Clothing,29,Maryland,Winter
+26,Female,Coat,Outerwear,64,Arizona,Spring
+61,Female,Sandals,Footwear,46,Ohio,Fall
+55,Female,T-shirt,Clothing,97,Minnesota,Fall
+41,Female,Jacket,Outerwear,94,New Hampshire,Spring
+42,Female,Sandals,Footwear,43,Louisiana,Summer
+70,Female,Sweater,Clothing,54,Nevada,Summer
+63,Female,Hat,Accessories,51,New Hampshire,Winter
+60,Female,Shoes,Footwear,85,Wisconsin,Fall
+28,Female,Hoodie,Clothing,96,Nevada,Spring
+60,Female,Hat,Accessories,42,South Carolina,Summer
+26,Female,Skirt,Clothing,63,Florida,Winter
+42,Female,Shirt,Clothing,20,Massachusetts,Winter
+56,Female,Scarf,Accessories,25,Georgia,Spring
+35,Female,Pants,Clothing,95,North Dakota,Fall
+34,Female,Hat,Accessories,38,North Dakota,Fall
+47,Female,Sandals,Footwear,29,Maryland,Fall
+49,Female,Socks,Clothing,64,New Mexico,Winter
+37,Female,Jewelry,Accessories,92,Iowa,Summer
+40,Female,Shirt,Clothing,34,Kansas,Spring
+45,Female,Sneakers,Footwear,69,Virginia,Spring
+57,Female,Dress,Clothing,65,Alaska,Spring
+35,Female,Shirt,Clothing,81,Nebraska,Winter
+36,Female,Dress,Clothing,30,Colorado,Winter
+35,Female,Jewelry,Accessories,86,Michigan,Summer
+21,Female,Hat,Accessories,64,Massachusetts,Fall
+66,Female,Skirt,Clothing,78,Connecticut,Spring
+40,Female,Hoodie,Clothing,28,Virginia,Summer
+52,Female,Backpack,Accessories,49,Iowa,Spring
+46,Female,Belt,Accessories,33,New Jersey,Spring
+44,Female,Shoes,Footwear,77,Minnesota,Summer
+52,Female,Handbag,Accessories,81,California,Spring

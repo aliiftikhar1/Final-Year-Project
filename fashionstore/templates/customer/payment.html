@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkout Form</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-color: #f8f9fa;
+            padding-top: 50px;
+        }
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            font-weight: bold;
+        }
+        .btn-pay {
+            background-color: #ff9900;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .btn-pay:hover {
+            background-color: #ff8000;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="mb-4 text-center">Payment Method</h2>
+        <div class="form-group">
+            <label for="payment_method">Select Payment Method:</label>
+            <select class="form-control" id="payment_method">
+                <option value="credit_card">Credit Card</option>
+                <option value="cash_on_delivery">Cash on Delivery</option>
+            </select>
+        </div>
+
+        <!-- Credit Card Form -->
+        <form id="credit_card_form" class="payment-form" action="/orders" method="post">
+            <h3 class="mb-4 text-center">Credit Card Payment</h3>
+            <div class="form-group">
+                <label for="card_number">Card Number</label>
+                <input type="text" class="form-control" id="card_number" name="card_number" placeholder="Enter card number">
+            </div>
+            <div class="form-group">
+                <label for="expiry_date">Expiry Date</label>
+                <input type="text" class="form-control" id="expiry_date" name="expiry_date" placeholder="MM/YYYY">
+            </div>
+            <div class="form-group">
+                <label for="cvv">CVV</label>
+                <input type="text" class="form-control" id="cvv" name="cvv" placeholder="CVV">
+            </div>
+            <div class="form-group">
+                <label for="name">Cardholder's Name</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Full name">
+            </div>
+            <button type="submit" class="btn btn-pay btn-block">Pay Now</button>
+        </form>
+
+        <!-- Cash on Delivery Form -->
+        <form id="cash_on_delivery_form" class="payment-form hidden" action="/orders" method="post">
+            {% csrf_token %}
+            <h3 class="mb-4 text-center">Cash on Delivery</h3>
+            <h1>Products: {{selected_product_ids}}</h1>
+            <input type="hidden" name="payment_method" value="Cash on Delivery">
+            <input type="hidden" name="products" value="{{selected_product_ids}}">
+            <p>Please keep the exact amount ready for delivery.</p>
+            <button type="submit" class="btn btn-pay btn-block">Place Order</button>
+        </form>
+    </div>
+
+    <!-- Bootstrap JS and dependencies (jQuery, Popper.js) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script>
+        $(document).ready(function() {
+            // Function to toggle between payment methods
+            $('#payment_method').change(function() {
+                var selectedMethod = $(this).val();
+                $('.payment-form').addClass('hidden');
+                $('#' + selectedMethod + '_form').removeClass('hidden');
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mb-4">Shopping Cart of {{ user.first_name }} {{ user.last_name }}</h1>
+        <table class="table table-bordered table-striped">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Serial no.</th>
+                    <th>Product Name</th>
+                    <th>Product Price</th>
+                    <th>Product Quantity</th>
+                    <th>Total Price</th>
+                    <th>Product Image</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+                    <th>Select</th> <!-- Add new table header for checkbox -->
+                </tr>
+            </thead>
+            <tbody>
+            {% for item in products %}
+            <tr>
+                <form action="/payment" method="POST">
+                    {% csrf_token %}
+                    <td>{{ item.id }}</td>
+                    <td>{{ item.product.name }}</td>
+                    <td>{{ item.product.price }}</td>
+                    <td>
+                        <div class="input-group">
+                            <span class="input-group-prepend">
+                                <button type="button" class="btn btn-primary btn-sm" onclick="decreaseQuantity(this)">-</button>
+                            </span>
+                            <input type="number" class="form-control" name="quantity" value="{{ item.quantity }}" min="1">
+                            <span class="input-group-append">
+                                <button type="button" class="btn btn-primary btn-sm" onclick="increaseQuantity(this)">+</button>
+                            </span>
+                        </div>
+                    </td>
+                    <td>{{ item.subtotal }}</td>
+                    <td><img src="{{ item.product.image.url }}" class="img-fluid" width="100px" height="" alt="{{ item.product.name }}"></td>
+                    <td><button type="submit" class="btn btn-danger btn-sm">Update</button></td>
+                    <td><a href="#" class="btn btn-warning btn-sm">Delete</a></td>
+                    <td class="text-center">
+                        <input type="checkbox" class="form-check-input" name="selected_products" value="{{ item.product.id }}" onchange="calculateTotal()">
+                    </td>  
+                    
+                    <input type="hidden" name="product_id" value="{{ item.product.id }}">
+                
+            </tr>
+            {% endfor %}
+        </tbody>
+        </table>
+        <div class="d-flex justify-content-end mt-4 total-section">
+            <h3 class="mr-2">TOTAL</h3>
+            <h1 class="total-price text-danger" id="total-price">0</h1> <!-- Display total price here -->
+            <hr>
+            <div class="text-center mt-3">
+                
+                    {% csrf_token %}
+                    <!-- Form fields -->
+                    <button type="submit" class="btn btn-primary">Proceed to payment</button>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies (jQuery, Popper.js) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        // Function to increase quantity
+        function increaseQuantity(button) {
+            var input = button.parentNode.previousElementSibling;
+            input.value = parseInt(input.value) + 1;
+        }
+
+        // Function to decrease quantity
+        function decreaseQuantity(button) {
+            var input = button.parentNode.nextElementSibling;
+            var newValue = parseInt(input.value) - 1;
+            input.value = newValue > 0 ? newValue : 1;
+        }
+
+        // Function to calculate total price based on checked items
+        function calculateTotal() {
+            var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            var totalPrice = 0;
+            checkboxes.forEach(function(checkbox) {
+                if (checkbox.checked) {
+                    var row = checkbox.closest('tr');
+                    var priceCell = row.cells[2];
+                    var quantityCell = row.cells[3].querySelector('input[type="number"]');
+                    var totalPriceCell = row.cells[4];
+                    var price = parseFloat(priceCell.textContent);
+                    var quantity = parseInt(quantityCell.value);
+                    var subtotal = price * quantity;
+                    totalPrice += subtotal;
+                }
+            });
+            document.getElementById('total-price').textContent = totalPrice.toFixed(2);
+        }
+    </script>
+</body>
+</html>

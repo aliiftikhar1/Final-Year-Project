@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block title %}Products{% endblock title %}
+<style>
+  .container{
+    background-image: url('static/background/background_banner.png');
+    background-size: cover;
+    background-blend-mode: overlay ;
+  }
+</style>
+{% block content %}
+<div class="container">
+    <h1>Recommended Products </h1>
+    
+{% for product in recommendations %}
+<h1>{{ product }}</h1>
+{% endfor %} 
+
+{% comment %} {% for product in products %}
+<h1>{{ product }}</h1>
+{% endfor %} {% endcomment %}
+<div class="row">
+  {% for recproduct in recommendations %}
+      {% for product in products %}
+      {% if product.name == recproduct %}
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="{{ product.image.url}}" class="card-img-top" alt="{{ product.name }}" >
+            <div class="card-body">
+              <h5 class="card-title">{{ product.name }}</h5>
+              <p class="card-text">{{ product.description }}</p>
+              <p class="card-text">Price: ${{ product.price }}</p>
+              <p class="card-text">Discount Price: ${{ product.discount_price }}</p>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        {% endif %}
+      {% endfor %}
+      {% endfor %}
+    </div>
+  </div>
+{% endblock content %} 

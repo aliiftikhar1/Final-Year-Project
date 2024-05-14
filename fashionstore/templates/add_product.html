@@ -1,0 +1,171 @@
+{% extends "merchantpage.html" %}
+
+{% block title %}Add New Product{% endblock title %}
+
+
+{% block content %}
+<style>
+/*   
+  .textcenter {
+    
+    display: -ms-flexbox;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 10px;
+    background-image: url('static/background/background_banner.png');
+    background-position: left;
+    background-size: cover;
+    background-blend-mode:  ;
+    
+  }
+       */
+textarea{
+  width: 00%;
+}
+.form-addproduct input{
+  margin-top: 15px;
+  border-color: rgb(159, 159, 159);
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+    
+select{
+  margin-top: 15px;
+  height: 45px;
+  
+}
+
+.form-select{
+  color: rgb(117, 117, 117);
+}
+.form-select option{
+  color: rgb(0, 0, 0);
+}
+    .form-addproduct ,.form-group{
+      width: 100%;
+      max-width: 1000px;
+      margin: auto;
+    }
+    
+    .form-addproduct .form-control {
+      position: relative;
+      box-sizing: border-box;
+      height: auto;
+      padding: 10px;
+      font-size: 16px;
+    }
+    .form-addproduct .form-control:focus {
+      z-index: 2;
+    }
+</style>
+  <h2 class="my-4">Product Information Form</h2>
+  <form name="ProductForm" class="form-addproduct " id="productForm" method="post" action="/add_product" novalidate enctype="multipart/form-data">
+    {% csrf_token %}
+    
+  
+    <div class="form-group">
+    <div class="row">
+      <div class="col-6">
+        <div id="imagePreview">
+          {% load static %}
+          
+          <img id="previewImage" src="{% static "icons/upload icon.png" %}" width="400" height="400 alt="Image Preview">
+        </div>
+        <div class="custom-file mt-2">
+          <input type="file" name="getimage" class="custom-file-input" id="image" accept="image/*" required>
+      </div>
+    
+      </div>
+      <div class="col-6 ">
+        <div class="row">
+          <div class="col-12">
+            <input type="text" name="name" class="form-control" id="name" placeholder="Enter product name" required>
+            <div class="invalid-feedback">Please enter a product name.</div>
+          
+          </div>
+          
+          </div>
+          <div class="row">
+            <div class="col-12">
+            <select name="category" class="form-select  form-select-border-width form-select-border-color" style="border-width: 1px; border-color: rgb(159, 159, 159);" id="category" required>
+              <option value="">Select category</option>
+              <option value="Clothes">Clothes</option>
+              <option value="Shoes">Shoes</option>
+              <option value="Accessories">Accessories</option>
+            </div>
+          </div>
+          
+          
+              <div class="row">
+                <div class="col-12">
+                  <textarea name="description" class="form-control mt-3" id="description" rows="3" placeholder="Enter product description" style="border-width: 1px; border-color: rgb(159, 159, 159);" required></textarea>
+                  <div class="invalid-feedback">Please enter a product description.</div>
+                </div>
+              </div>
+              
+              <div class="row">
+                <div class="col-12">
+                  <input name="price" type="number" class="form-control" id="price" placeholder="Enter product price" required>
+                <div class="invalid-feedback">Please enter a valid price.</div>
+                </div>
+              </div>
+                
+              <div class="row">
+                <div class="col-12">
+                <select name="gender" class="form-select  form-select-border-width form-select-border-color" style="border-width: 1px; border-color: rgb(159, 159, 159);" id="gender" required>
+                  <option selected>Select Gender</option>
+                  <option value="1">Men</option>
+                  <option value="0">Women</option>
+                </div>
+              </div>
+            
+              <div class="row">
+                <div class="col-12">
+                <input name="discount_price" type="number" class="form-control" id="discount_price" placeholder="Enter Discount price" required>
+                <div class="invalid-feedback">Please enter a valid discount price.</div>
+              </div>
+              </div>
+              
+              <input type="hidden" value="{{user.id}}" name="seller">
+              <button type="submit" class="btn btn-primary mt-5">Submit</button>
+      </div>
+    </div>
+    
+    
+  </form>
+<script>
+  //image preview
+  document.getElementById('image').addEventListener('change', function () {
+    var file = this.files[0];
+    if (file) {
+      var reader = new FileReader();
+      reader.onload = function (event) {
+        document.getElementById('previewImage').setAttribute('src', event.target.result);
+      }
+      reader.readAsDataURL(file);
+    }
+  });
+
+  // JavaScript for form validation and custom file input label
+  document.getElementById('image').addEventListener('change', function (e) {
+    var fileName = document.getElementById("image").files[0].name;
+    var nextSibling = e.target.nextElementSibling
+    nextSibling.innerText = fileName
+  })
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+        form.classList.add('was-validated')
+      }, false)
+    })
+</script>
+  {% endblock content %}

@@ -1,0 +1,54 @@
+<!-- input_form.html -->
+{% extends "base.html" %}
+
+{% block title %}Input Form{% endblock title %}
+
+{% block content %}
+<style>
+    #outerdiv{
+        padding-top: 20px;
+        margin: auto;
+        position: relative;
+        max-width: 500px;
+    } 
+    #outerdiv input, select{
+        height: 50px;
+        margin-bottom: 20px;
+    }
+</style>
+<div id="outerdiv" class="text-center">
+    <div class="container">
+        <h1>Input Form</h1>
+        <form method="POST" action="/recommendations">
+            {% csrf_token %}
+            <div class="form-group">
+                
+                <input type="text" class="form-control" id="age" placeholder="Enter Age"  name="age" required>
+            </div>
+            <div class="form-group">
+                
+                <select class="form-control" id="gender" name="gender" aria-placeholder="Enter Gender" required>
+                    <option selected>Select Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+            <div class="form-group">
+                
+                <input type="text" class="form-control" id="location" placeholder="Enter Location" name="location" required>
+            </div>
+            <div class="form-group">
+                
+                <select class="form-control" id="season" name="season" required>
+                    <option selected>Select Season</option>
+                    <option value="Spring">Spring</option>
+                    <option value="Summer">Summer</option>
+                    <option value="Fall">Autumn</option>
+                    <option value="Winter">Winter</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Get Recommendations</button>
+        </form>
+    </div>
+</div>
+{% endblock content %}

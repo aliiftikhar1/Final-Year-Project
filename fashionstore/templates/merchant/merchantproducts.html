@@ -1,0 +1,69 @@
+{% extends "merchant/merchantbase.html" %}
+
+{% block title %}Products{% endblock title %}
+
+
+{% block content %}
+<style>
+  .container{
+    background-image: url('static/background/background_banner.png');
+    background-size: cover;
+    background-blend-mode: overlay ;
+  }
+  #previewImage{
+    object-fit: contain;
+  }
+  
+</style>
+<div class="offset-3">
+
+  <h1>Uploaded Products by {{request.user.first_name}}</h1>
+</div>
+<div class="container mt-3">
+    <div class="row">
+      {% for product in products %}
+      <div class="col-md-2 mb-4">
+        <form action="/updatemerchantproduct" method="post">
+          {% csrf_token %}  
+        <div class="card">
+          <input type="hidden" name="id" value={{product.id}}>
+          <img id="previewImage" src="{{ product.image.url}}" class="card-img-top" width="200" height="200 alt="{{ product.name }}" >
+          <div class="card-body">
+            <input class="form-control mt-2" type="text" name="name" value="{{product.name}}">
+            <textarea class="form-control mt-2 mb-2" name="description" id="description" rows="3"  style="border-width: 1px; border-color: rgb(159, 159, 159);" required>{{ product.description }}</textarea>
+            <label for="">Price</label>
+            <input class="form-control mt-2" style="text-decoration: line-through;" name="price" type="number" id="price" value="{{ product.price }}" required>
+            <input name="discount_price"  type="number" class="form-control mt-2 mb-2" id="price" value="{{ product.discount_price }}" required>
+            <input type="hidden" name="customproduct" value={{product}}>
+            <div class="row">
+            <button class="btn btn-primary btn-sm" type="submit">Update</button>
+          </div>
+          </form>
+            <form action="/delete_merchant_product" method="post">
+              {% csrf_token %}  
+              <input type="hidden" name="id" value="{{ product.id }}">
+              <div class="row">
+                <button class="btn btn-outline-danger btm-sm" type="submit">Delete</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    
+      {% endfor %}
+    </div>
+  </div>
+  <script>
+    //image preview
+    document.getElementById('image').addEventListener('change', function () {
+      var file = this.files[0];
+      if (file) {
+        var reader = new FileReader();
+        reader.onload = function (event) {
+          document.getElementById('previewImage').setAttribute('src', event.target.result);
+        }
+        reader.readAsDataURL(file);
+      }
+    });
+    </script>
+{% endblock content %}
