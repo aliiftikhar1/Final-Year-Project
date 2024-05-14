@@ -13,4 +13,8 @@ I got the synthetic dataset from Kaggle, which contains the data of 3 categories
   # Recommendation System
   1. I have done the dataset analysis and make a AI recommendation using ANN Algorithm, which take the age, location, gender and current season as an input, on the basis of which it recommends are personalized products to users.
   2. There is another recommendation system that recommends the product on the base of last clicked product.
-![main page](https://github.com/aliiftikhar1/Final-Year-Project/assets/116260556/5260103b-56d2-4228-b6cd-98cc50d1b403)
+      # Tutorial
+     
+
+https://github.com/aliiftikhar1/Final-Year-Project/assets/116260556/a33b9f01-9cc3-41a8-be0a-26f999971252
+
