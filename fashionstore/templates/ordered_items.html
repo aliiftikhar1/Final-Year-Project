@@ -12,35 +12,27 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <h1 class="text-center mb-4">Ordered Items</h1>
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>#</th>
-                            <th>Product</th>
-                            <th>Quantity</th>
-                            <th>Payment Method</th>
-                            <th>Billing Address</th>
-                            <!-- Add more columns if needed -->
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {% for order in item%}
-                        <tr>
-                            <td>{{ forloop.counter }}</td>
-                            <td>{{ order.product }}</td>
-                            <td>{{ order.quantity }}</td>
-                            <td>{{ order.payment_method }}</td>
-                            <td>{{ order.billing_address }}</td>
-                            <!-- Add more columns if needed -->
-                        </tr>
-                        {% endfor %}
-                    </tbody>
-                </table>
+                <div class="row">
+                    {% for order in item %}
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">Order #{{ forloop.counter }}</h5>
+                                <p class="card-text"><strong>Product:</strong> {{ order.product }}</p>
+                                <p class="card-text"><strong>Quantity:</strong> {{ order.quantity }}</p>
+                                <p class="card-text"><strong>Payment Method:</strong> {{ order.payment_method }}</p>
+                                <p class="card-text"><strong>Billing Address:</strong> {{ order.billing_address }}</p>
+                                <!-- Add more fields if needed -->
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                <div class="text-center mt-4">
+                    <p><strong>Total Price:</strong> {{ total_price }}</p>
+                </div>
             </div>
         </div>
-        
-        <p>{{total_price}}</p>
-
     </div>
     <!-- Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

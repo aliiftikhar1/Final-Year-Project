@@ -2,33 +2,46 @@
 
 {% block title %}Products{% endblock title %}
 
+
 {% block content %}
-  <div class="container">
-    {% if user == None %}
-      <div class="alert alert-primary" role="alert">
-        <p class="mb-0">Please <a href="/login">login</a> to buy products</p>
-      </div>
-    {% endif %}
-    <h1 class="mb-4 text-center">All Products: User: {{ user }}</h1>
-    <div class="row">
-      {% for product in products %}
-        <div class="col-md-4 mb-4">
-          <form action="/add_to_cart" method="post">
-            {% csrf_token %}
-            <div class="card">
-              <img src="{{ product.image.url }}" class="card-img-top" alt="{{ product.name }}">
-              <div class="card-body">
-                <h5 class="card-title">{{ product.name }}</h5>
-                <p class="card-text">{{ product.description }}</p>
-                <p class="card-text">Price: <span style="text-decoration: line-through;">{{ product.price }}Rs/-</span></p>
-                <p class="card-text">Discount Price: {{ product.discount_price }}Rs/-</p>
-                <input type="hidden" name="product" value="{{ product.id }}">
-                <button type="submit" class="btn btn-primary">Add to Cart</button>
-              </div>
-            </div>
-          </form>
+<style>
+  .product-image{
+    height: 200px;
+    object-fit: contain;
+  }
+  .card{
+    max-height: 400px;
+  }
+  .truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+</style>
+<div class="container">
+  <h1 class="mb-4 text-center">All Products: User: {{ user }}</h1>
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+    {% for product in products %}
+    <div class="col-md-4 col-lg-3"> <!-- Adjust the column size here -->
+      <form action="" method="post">
+        {% csrf_token %}
+        <div class="card shadow d-flex flex-column">
+          <a href="{% url 'product_detail' product.id %}">
+          <img src="{{ product.image.url }}" class="card-img-top product-image" alt="{{ product.name }}"></a>
+          <div class="card-body flex-grow-1">
+            <p class="card-title truncate">{{ product.name }}</p>
+            <label for="">Price</label>
+            <p style="text-decoration: line-through;" class="card-text">{{ product.price }}Rs/-</p>
+            <p class="card-text">{{ product.discount_price }}Rs/-</p>
+           
+          </div>
+          
         </div>
-      {% endfor %}
+      </form>
     </div>
+    {% endfor %}
   </div>
+</div>
+
 {% endblock content %}

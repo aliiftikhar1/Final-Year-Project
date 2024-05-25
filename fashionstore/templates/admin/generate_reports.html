@@ -1,0 +1,25 @@
+{% extends "admin/admin_base.html" %}
+
+{% block content %}
+<div class="container">
+    <h1>Download Data</h1>
+    <form id="downloadForm" method="post" action="">
+        {% csrf_token %}
+        <input type="hidden" name="download_type" value="" id="download_type">
+
+        <button type="button" class="btn btn-primary" onclick="downloadData('dataset')">Download Dataset</button>
+        <button type="button" class="btn btn-primary" onclick="downloadData('orders')">Download Orders</button>
+        <button type="button" class="btn btn-primary" onclick="downloadData('products')">Download Products</button>
+        <button type="button" class="btn btn-primary" onclick="downloadData('users')">Download Users</button>
+        <button type="button" class="btn btn-primary" onclick="downloadData('recommendations')">Download Recommendations</button>
+    </form>
+</div>
+
+<script>
+    function downloadData(type) {
+        document.getElementById('download_type').value = type;
+        document.getElementById('downloadForm').action = "{% url 'download_data' %}";
+        document.getElementById('downloadForm').submit();
+    }
+</script>
+{% endblock content %}

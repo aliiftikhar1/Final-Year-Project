@@ -1,19 +1,18 @@
-Copy code
 {% extends "customer/customerbase.html" %}
 
 {% block title %}Customer page{% endblock title %}
 {% block topbar %}
 <style>
-  nav {
+nav {
     &.primary-navigation {
-      background-color: black;
+        background-color: black;
       margin: 0 auto;
       display: block;
       padding-top: 20px; 
       padding-bottom: 10px;
       text-align: center;
       font-size: 16px;
-
+  
       ul li {
         list-style: none;
         margin: 0 auto;
@@ -25,29 +24,29 @@ Copy code
         text-align: center;
         font-family: arvo;
       }
-
+  
       li a {
         color: rgb(255, 255, 255);
       }
-
+  
       li a:hover {
         color: #ffffff;
       }
-
+  
       li:hover {
         cursor: pointer;
       }
-
+  
       ul li ul {
         visibility: hidden;
         opacity: 0;
         position: absolute;
-        padding-left: 0;
+  padding-left: 0;
         left: 0;
         display: none;
         background: rgb(0, 0, 0);
       }
-
+  
       ul li:hover > ul,
       ul li ul:hover {
         visibility: visible;
@@ -58,14 +57,14 @@ Copy code
         padding-top: 20px;
         box-shadow: 0px 3px 5px -1px #ccc;
       }
-
+  
       ul li ul li {
         clear: both;
         width: 100%;
         text-align: left;
         border-style: none;
       }
-
+  
       ul li ul li a:hover {
         font-weight: bold;
         color: #000000;
@@ -75,26 +74,30 @@ Copy code
       }
     }
   }
-
+  
   a {
-    text-decoration: none;
-
-    &:hover {
-      color: #000000;
-    }
+  
+      text-decoration: none;
+  
+      &:hover {
+        
+          color: #000000;
+      }
+   
   }
-
-  ul li ul li a { transition: all 0.5s ease; }
+  
+   ul li ul li a { transition: all 0.5s ease; }
+  
 </style>
 <nav role="navigation" class="primary-navigation">
   <ul>
     <li class="nav-item  dropdown">
-      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinkMen" role="button"
-        data-bs-toggle="dropdown" aria-expanded="false">
-        Men
-      </a>
-      <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkMen">
-        <li><a class="dropdown-item" href="{% url 'products_by_category' 'Blouse' %}">Blouse</a></li>
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinkMen" role="button"
+          data-bs-toggle="dropdown" aria-expanded="false">
+          Men
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkMen">
+          <li><a class="dropdown-item" href="{% url 'products_by_category' 'Blouse' %}">Blouse</a></li>
           <li><a class="dropdown-item" href="{% url 'products_by_category' 'Sweater' %}">Sweater</a></li>
           <li><a class="dropdown-item" href="{% url 'products_by_category' 'Shirt' %}">Shirt</a></li>
           <li><a class="dropdown-item" href="{% url 'products_by_category' 'T-Shirt' %}">T-Shirt</a></li>
@@ -171,7 +174,7 @@ Copy code
 <div class="text-center pt-3"> <h5>Welcome, {{ user.first_name }} {{ user.last_name }} </h5> </div>
 {% load static %}
 <!--Carousel-->
-<div style="padding: 10px;">
+<div >
 <div id="carouselExampleAutoplaying" style="height: 80%" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">

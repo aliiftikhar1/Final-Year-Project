@@ -1,7 +1,11 @@
 
-from django.http import HttpResponse, HttpResponseNotAllowed, HttpResponseNotFound, HttpResponseRedirect
+import json
+from django.http import HttpResponse, HttpResponseNotAllowed, HttpResponseNotFound, HttpResponseRedirect, JsonResponse
 from django.contrib.auth import logout
+import csv
 from datetime import datetime
+from django.views import View
+from django.db.models import Count
 import pandas as pd
 from django.shortcuts import get_object_or_404, render, redirect
 from django.contrib.auth import login
@@ -9,9 +13,21 @@ from django.contrib import messages
 import pandas as pd
 from django.contrib.auth import authenticate
 import joblib
-from .models import Orders, Users, Product, CartItem,Contact
+from django.views.decorators.http import require_POST
+from sklearn.compose import ColumnTransformer
+from sklearn.preprocessing import OneHotEncoder
+from .models import Dataset, Orders, Recommendations, Users, Product, CartItem,Contact, Notification
 from .models import CartItem, Product, lastclick
 from django.contrib.auth.models import AnonymousUser
+from rest_framework import generics
+from rest_framework import status
+
+from rest_framework.response import Response
+from rest_framework.decorators import api_view
+from rest_framework.views import APIView
+from rest_framework.response import Response
+from .serializers import NotificationSerializer
+from .serializers import OrdersSerializer
 
 
 def index(request):
@@ -24,7 +40,304 @@ def index(request):
                 # return render(request, 'customer/customerpage.html')
          elif user.role == 2:
              return redirect('merchantpage')
+         elif user.role == 3:
+             return redirect('logisticpage')
+         elif user.role == 0:
+             return redirect('adminpage')
          
+def customer_login (request):
+    # Log the user out
+    return render(request, 'customer/customer_login.html')
+
+def merchant_login (request):
+    # Log the user out
+    return render(request, 'merchant/merchant_login.html')
+
+def admin_login (request):
+    # Log the user out
+    return render(request, 'admin/admin_login.html')
+def logistic_login (request):
+    # Log the user out
+    return render(request, 'logistic/logistic_login.html')
+
+def admin(request):
+    return render(request, 'admin/dashboard.html')
+
+def home(request):
+    
+    total_users = Users.objects.count()
+    total_products = Product.objects.count()
+    total_new_orders = Orders.objects.filter(status='1').count()
+    total_processing_orders = Orders.objects.filter(status='2').count()
+    total_shipped_orders = Orders.objects.filter(status='3').count()
+    total_delivered_orders = Orders.objects.filter(status='4').count()
+
+    return render(request, 'admin/dashboard.html', {
+        'home': 'home page',
+        'view': 'home',
+        'total_users': total_users,
+        'total_products': total_products,
+        'total_new_orders': total_new_orders,
+        'total_processing_orders': total_processing_orders,
+        'total_shipped_orders': total_shipped_orders,
+        'total_delivered_orders': total_delivered_orders,
+    })
+
+def admin_recommendation_options(request):
+    Recommendation = Recommendations.objects.all()
+    return render(request, 'admin/admin_recommendation_system_page.html', {'recommendations': Recommendation, 'view': 'recommendations'})
+
+def get_recommendation_graph_data(request):
+    recommendations = Recommendations.objects.values('Recommendations')
+    product_counts = {}
+    for rec in recommendations:
+        products = rec['Recommendations'].split(', ')
+        for product in products:
+            if product in product_counts:
+                product_counts[product] += 1
+            else:
+                product_counts[product] = 1
+
+    labels = list(product_counts.keys())
+    counts = list(product_counts.values())
+
+    return render(request, 'admin/admin_recommendation_system_page.html', {
+        'graph_labels': labels,
+        'graph_counts': counts,
+        'view': 'recommendation_graph'
+    })
+
+def get_all_recommendations(request):
+    recommendations = Recommendations.objects.all()
+    return render(request, 'admin/admin_recommendation_system_page.html', {
+        'recommendations': recommendations,
+        'view': 'recommendations_table'
+    })
+
+def analytics(request):
+    orders = Orders.objects.all()
+    product_sales = {}
+    for order in orders:
+        product_name = order.label
+        quantity = order.quantity
+        if product_name in product_sales:
+            product_sales[product_name] += quantity
+        else:
+            product_sales[product_name] = quantity
+    
+    product_names = list(product_sales.keys())
+    quantities = list(product_sales.values())
+
+    print(product_names , quantities)
+    return render(request, 'admin/dashboard.html', {
+        'analytics': 'analytics page',
+        'view': 'analytics',
+        'product_names': product_names,
+        'quantities': quantities,
+    })
+
+def useranalytics(request):
+    
+    roles = {
+        'admin': 0,
+        'customer': 0,
+        'merchant': 0,
+        'logistic': 0
+    }
+
+    users = Users.objects.all()
+    for user in users:
+        if user.role == 0:
+            roles['admin'] += 1
+        elif user.role == 1:
+            roles['customer'] += 1
+        elif user.role == 2:
+            roles['merchant'] += 1
+        elif user.role == 3:
+            roles['logistic'] += 1
+
+    role_labels = ['Admin', 'Customer', 'Merchant', 'Logistic']
+    role_counts = [roles['admin'], roles['customer'], roles['merchant'], roles['logistic']]
+    
+    return render(request, 'admin/dashboard.html', {
+        'useranalytics': 'user Analytics page',
+        'view': 'useranalytics',
+        'status': 'User Roles',
+        'role_labels': role_labels,
+        'role_counts': role_counts,
+    })
+
+
+
+def graph_all_orders(request):
+    orders = Orders.objects.all()
+    product_sales = {}
+    for order in orders:
+        product_name = order.label
+        quantity = order.quantity
+        if product_name in product_sales:
+            product_sales[product_name] += quantity
+        else:
+            product_sales[product_name] = quantity
+    
+    product_names = list(product_sales.keys())
+    quantities = list(product_sales.values())
+
+   
+    return render(request, 'admin/dashboard.html', {
+        'analytics': 'analytics page',
+        'view': 'analytics',
+        'status': 'All Orders',
+        'product_names': product_names,
+        'quantities': quantities,
+    })
+    
+def graph_pending_orders(request):
+    orders = Orders.objects.filter(status = "1")
+    product_sales = {}
+    for order in orders:
+        product_name = order.label
+        quantity = order.quantity
+        if product_name in product_sales:
+            product_sales[product_name] += quantity
+        else:
+            product_sales[product_name] = quantity
+    
+    product_names = list(product_sales.keys())
+    quantities = list(product_sales.values())
+
+   
+    
+    return render(request, 'admin/dashboard.html', {
+        'analytics': 'analytics page',
+        'view': 'analytics',
+        'status': 'New Orders',
+        'product_names': product_names,
+        'quantities': quantities,
+    })
+
+def graph_processing_orders(request):
+    orders = Orders.objects.filter(status = "2")
+    product_sales = {}
+    for order in orders:
+        product_name = order.label
+        quantity = order.quantity
+        if product_name in product_sales:
+            product_sales[product_name] += quantity
+        else:
+            product_sales[product_name] = quantity
+    
+    product_names = list(product_sales.keys())
+    quantities = list(product_sales.values())
+
+    
+    return render(request, 'admin/dashboard.html', {
+        'analytics': 'analytics page',
+        'view': 'analytics',
+        'status': 'Processing Orders',
+        'product_names': product_names,
+        'quantities': quantities,
+    })
+
+def graph_shipped_orders(request):
+    orders = Orders.objects.filter(status = "3")
+    product_sales = {}
+    for order in orders:
+        product_name = order.label
+        quantity = order.quantity
+        if product_name in product_sales:
+            product_sales[product_name] += quantity
+        else:
+            product_sales[product_name] = quantity
+    
+    product_names = list(product_sales.keys())
+    quantities = list(product_sales.values())
+
+   
+    return render(request, 'admin/dashboard.html', {
+        'analytics': 'analytics page',
+        'view': 'analytics',
+        'status': 'Shipped Orders',
+        'product_names': product_names,
+        'quantities': quantities,
+    })
+
+def graph_delivered_orders(request):
+    orders = Orders.objects.filter(status = "4")
+    product_sales = {}
+    for order in orders:
+        product_name = order.label
+        quantity = order.quantity
+        if product_name in product_sales:
+            product_sales[product_name] += quantity
+        else:
+            product_sales[product_name] = quantity
+    
+    product_names = list(product_sales.keys())
+    quantities = list(product_sales.values())
+
+   
+    
+    return render(request, 'admin/dashboard.html', {
+        'analytics': 'analytics page',
+        'view': 'analytics',
+        'status': 'Delivered Orders',
+        'product_names': product_names,
+        'quantities': quantities,
+    })
+
+def all_users(request):
+    users = Users.objects.all()
+    return render(request, 'admin/dashboard.html', {'adminusers': users, 'view': 'users'})
+
+def all_products(request):
+    products = Product.objects.all()
+    return render(request, 'admin/dashboard.html', {'adminproducts': products, 'view': 'products'})
+def all_orders(request):
+    orders = Orders.objects.all()
+    return render(request, 'admin/dashboard.html', {'adminorders': orders, 'view': 'orders'})
+
+def generate_reports(request):
+    return render(request, 'admin/generate_reports.html')
+
+
+
+def download_data(request):
+    download_type = request.POST.get('download_type')
+    
+    if download_type == 'dataset':
+        queryset = Dataset.objects.all()
+        filename = 'dataset.csv'
+    elif download_type == 'orders':
+        queryset = Orders.objects.all()
+        filename = 'orders.csv'
+    elif download_type == 'products':
+        queryset = Product.objects.all()
+        filename = 'products.csv'
+    elif download_type == 'users':
+        queryset = Users.objects.all()
+        filename = 'users.csv'
+    elif download_type == 'recommendations':
+        queryset = Recommendations.objects.all()
+        filename = 'recommendations.csv'
+    else:
+        # Handle invalid download type
+        return HttpResponse("Invalid download type", status=400)
+    
+    response = HttpResponse(content_type='text/csv')
+    response['Content-Disposition'] = f'attachment; filename="{filename}"'
+    
+    # Create a CSV writer object
+    writer = csv.writer(response)
+    
+    # Write header row based on the model fields
+    writer.writerow([field.name for field in queryset.model._meta.fields])
+    
+    # Write data rows
+    for obj in queryset:
+        writer.writerow([getattr(obj, field.name) for field in queryset.model._meta.fields])
+    
+    return response
 
 
 def cart(request):
@@ -32,8 +345,8 @@ def cart(request):
      cuser = Users.objects.raw("SELECT * FROM store_users WHERE email = %s", [user])
      for i in cuser:
          requt = i.id
-     products = CartItem.objects.filter(user_id= requt)
-     return render(request, 'customer/customercart.html',{'products': products})
+     cart_items = CartItem.objects.filter(user_id= requt)
+     return render(request, 'customer/customercart.html',{'cart_items': cart_items})
 
 def contactus(request):
     return render(request, 'contactus.html')
@@ -68,7 +381,10 @@ def delete_merchant_product(request):
             print(product)
             product.delete_product(name=product)
             # Redirect to a success page or refresh the current page
-            return redirect('merchantproducts')
+            if request.user.role == 2:
+                return redirect('merchantproducts')
+            if request.user.role == 0:
+                return redirect('all_products')
         except Product.DoesNotExist:
             return HttpResponseNotFound('Product does not exist')
     else:
@@ -95,31 +411,94 @@ def merchantproducts(request):
 def merchantpage(request):
     return render(request, 'merchant/merchantpage.html')
 
-def getpersonalizedrecommendations(user):
-    age = user.age
-    gender = user.gender
-    if(gender== '1'):
-        gender = "Male"
-    if(gender== '0'):
-        gender = "Female"
-    location = user.city
-    season = "Fall"
-    print(user,age,gender,location,season)
-    new_input = pd.DataFrame({'Age': [age], 'Gender':[gender], 'Location': [location], 'Season': [season]})
-    # user_interest = request.POST.get('user_interest')
-    # Calculate recommended items based on user interest and preferences        
-    model= joblib.load('AI models/model.pkl') 
-    new_input_probs = model.predict_proba(new_input)
-    top_10_indices = new_input_probs.argsort()[0][-10:][::-1]
-    recommendations = model.classes_[top_10_indices]
-    products = Product.objects.all()
-    return recommendations, products
+def get_current_season():
+    month = datetime.now().month
+    day = datetime.now().day
+
+    if (month == 12 and day >= 21) or (month == 1) or (month == 2) or (month == 3 and day < 20):
+        return "Winter"
+    elif (month == 3 and day >= 20) or (month == 4) or (month == 5) or (month == 6 and day < 21):
+        return "Spring"
+    elif (month == 6 and day >= 21) or (month == 7) or (month == 8) or (month == 9 and day < 22):
+        return "Summer"
+    elif (month == 9 and day >= 22) or (month == 10) or (month == 11) or (month == 12 and day < 21):
+        return "Autumn"
+
+
+# def getpersonalizedrecommendations(user):
+#     age = user.age,
+#     gender = user.gender,
+#     if(gender== '1'):
+#         gender = "Male"
+#     if(gender== '0'):
+#         gender = "Female"
+#     location = user.city,
+#     season = get_current_season(),
+#     category = user.interest_in,
+    
+#     print(user,age,gender,location,category)
+    
+#     # user_interest = request.POST.get('user_interest')
+#     # Calculate recommended items based on user interest and preferences    
+
+#     if location in ['Kentucky', 'Maine', 'Massachusetts', 'Rhode Island', 'Oregon', 'Wyoming',
+#         'Montana', 'Louisiana', 'West Virginia', 'Missouri', 'Arkansas', 'Hawaii',
+#         'Delaware', 'New Hampshire', 'New York', 'Alabama', 'Mississippi',
+#         'North Carolina', 'California', 'Oklahoma', 'Florida', 'Texas', 'Nevada',
+#         'Kansas', 'Colorado', 'North Dakota', 'Illinois', 'Indiana', 'Arizona',
+#         'Alaska', 'Tennessee', 'Ohio', 'New Jersey', 'Maryland', 'Vermont',
+#         'New Mexico', 'South Carolina', 'Idaho', 'Pennsylvania', 'Connecticut', 'Utah',
+#         'Virginia', 'Georgia', 'Nebraska', 'Iowa', 'South Dakota', 'Minnesota',
+#         'Washington', 'Wisconsin', 'Michigan']:
+#         model = joblib.load('AI models/knn_personalzied_recommendation.pkl')
+#         data = pd.read_csv("AI models/your_dataset.csv") 
+#         data = pd.get_dummies(data, columns=['Gender', 'Category', 'Location', 'Season'])
+#         X = data.drop(columns=['Item Purchased']) 
+#         new_input = pd.DataFrame({'Age': [age], 'Gender_' + gender: [1], 'Category_' + category: [1],
+#                                'Location_' + location: [1], 'Season_' + season: [1]})
+#         new_input = new_input.reindex(columns=X.columns, fill_value=0)
+#         scaler = joblib.load('AI models/scaler.pkl')
+#     else:
+#         model = joblib.load('AI models/knn_personalzied_recommendation(no location).pkl')
+#         data = pd.read_csv("AI models/your_dataset.csv") 
+#         data = pd.get_dummies(data, columns=['Gender', 'Category', 'Season'])
+#         X = data.drop(columns=['Item Purchased','Location']) 
+#         print("x : ", X.columns)
+#         new_input = pd.DataFrame({'Age': [age], 'Gender_' + gender: [1], 'Category_' + category: [1],
+#                                    'Season_' + season: [1]})
+#         new_input = new_input.reindex(columns=X.columns, fill_value=0)
+#         print("NEW INPUT",new_input)
+#         scaler = joblib.load('AI models/scaler(nolocation).pkl')
+        
+    
+    
+#     new_input = scaler.transform(new_input)
+#     new_input_probs = model.predict_proba(new_input)
+#     top_10_indices = new_input_probs.argsort()[0][-10:][::-1]
+#     recommendations = model.classes_[top_10_indices]
+#     products = Product.objects.all()
+#     print(recommendations)
+
+#     # Save recommendations to the database
+#     recommendation_str = ", ".join(recommendations)  # Convert list of recommendations to a comma-separated string
+#     new_recommendation = Recommendations(
+#         Gender=gender,
+#         Age=age,
+#         Interest = category,
+#         Location=location,
+#         Recommendations=recommendation_str,
+#         Season= season,
+#         Date=datetime.today()
+#     )
+#     new_recommendation.save()
+    
+#     return recommendations, products
 
 
 # Function to get recommendations based on item name
 def get_click_recommendations(item_name):
     
-    df = pd.read_csv("AI models/dataset.csv")
+    df = pd.read_csv("AI models/your_dataset.csv")
     loaded_model = joblib.load('AI models/clickrecommendation.pkl')
     # Get the index of the item that matches the name
     idx = df[df['Item Purchased'] == item_name].index[0]
@@ -149,6 +528,10 @@ def get_click_recommendations(item_name):
 def customerpage(request):
     return render(request, 'customer/customerpage.html')
 
+def adminpage(request):
+    return render(request, 'admin/dashboard.html')
+def logisticpage(request):
+    return render(request, 'logistic/logisticpage.html')
 
 def updatemerchantproduct(request):
     if request.method == "POST":
@@ -159,7 +542,10 @@ def updatemerchantproduct(request):
         discount_price = request.POST.get('discount_price')
         product = Product.objects.get(pk=id)  # Assuming you have the product primary key or some other identifier
         product.update_product(name=name,description=description, price=price, discount_price=discount_price)
-        return redirect('merchantproducts')
+        if request.user.role == 2:
+            return redirect('merchantproducts')
+        if request.user.role == 0:
+            return redirect('all_products')
     return redirect('merchantproducts')
 
 
@@ -193,6 +579,10 @@ def Login(request):
                 # return render(request, 'customer/customerpage.html')
             elif user.role == 2:
                 return redirect('merchantpage')
+            elif user.role==3:
+                return redirect('logisticpage')
+            elif user.role==0:
+                return redirect('adminpage')
             # else:
             #     return render(request, 'adminpage.html')
             # return render(request, 'merchantpage.html')
@@ -221,7 +611,8 @@ def register(request):
                 first_name=first_name,
                 last_name=last_name,
                 role=role,
-                gender=gender,age=age,
+                gender=gender,
+                age=age,
                 location=country,
                 city=city,
                 phone_number=phone_number,
@@ -340,55 +731,63 @@ def add_to_cart(request):
             pass
 
 
+
 def orders(request):
     if request.method == 'POST':
-        # Extract form data
         user = request.user  # Assuming the user is logged in
-        selected_products = request.session.get('selected_products', [])
-        print("Products",selected_products)
-        # quantity = request.POST.get('quantity')
+        selected_products = request.session.get('selected_products')
+        print("Selected Products: ",selected_products)
         payment_method = request.POST.get('payment_method')
         card_number = request.POST.get('card_number')
         expiry_date = request.POST.get('expiry_date')
         cvv = request.POST.get('cvv')
         card_holder_name = request.POST.get('card_holder_name')
         billing_address = request.POST.get('billing_address')
-        for  iitem in selected_products:
-            print(iitem)
-            pquantity = CartItem.objects.get(product_id =iitem)
-            quantity = pquantity.quantity
-            iiitem = Product.objects.raw("SELECT * FROM store_product WHERE id = %s", [iitem])
-            for item in iiitem:
-                print("product:")
-                print(item)
-                
-                order = Orders(
-                    user=user,
-                    product=item.name,
-                    quantity=quantity,
-                    payment_method=payment_method,
-                    card_number=card_number,
-                    expiry_date=expiry_date,
-                    cvv=cvv,
-                    card_holder_name=card_holder_name,
-                    billing_address=billing_address
+        for product_id in selected_products:
+            cart_item = get_object_or_404(CartItem, user=user, product_id=product_id)
+            product = cart_item.product
+            order = Orders(
+                user=user,
+                product=product,
+                label=product.label,
+                quantity=cart_item.quantity,
+                payment_method=payment_method,
+                card_number=card_number,
+                expiry_date=expiry_date,
+                cvv=cvv,
+                card_holder_name=card_holder_name,
+                billing_address=billing_address,
+                status=1  # Assuming 1 means pending
                 )
             order.save()
-            pquantity.delete()
-        
-        
-        # Optionally, you can do additional processing or send confirmation emails here
+            cart_item.delete()
+            
+            
         item= Orders.objects.filter(user = user)
         return render(request, 'ordered_items.html',{'item': item})
     else:
         return render(request, 'customer/payment.html')
     
+def ordered_products(request):
+    user= request.user
+    item= Orders.objects.filter(user = user)
+    return render(request, 'ordered_items.html',{'item': item})
+
+
 def customerproducts(request):
     # Retrieve all products from the database
     products = Product.objects.all()
     
     # Pass the products queryset to the template context
     return render(request, 'customer/customerproducts.html', {'products': products})
+
+def customerorders(request):
+    # Retrieve all products from the database
+    products = Orders.objects.filter(user = request.user)
+    
+    # Pass the products queryset to the template context
+    return render(request, 'ordered_items.html', {'item': products})
+
 
 
 def add_to_cart(request):
@@ -455,3 +854,248 @@ def contactus(request):
         contact.save()
         messages.success(request, 'Your message has been sent!')
     return render(request, 'contact.html')
+
+
+
+#creating api 
+# views.py
+
+
+class PendingOrdersList(generics.ListAPIView):
+    serializer_class = OrdersSerializer
+
+    def get_queryset(self):
+        # order = Orders.objects.filter(status="1")
+        # order.product = order.product.name
+        # order.user = order.user.first_name , order.user.last_name
+        item = Orders.objects.filter(status="1")
+        data = [{'Product': item.product.name, 'image': item.product.image.url,'user': item.user.first_name + item.user.last_name ,'Product': item.product.name,} for notification in notifications]
+        return JsonResponse(data, safe=False)
+        return Orders.objects.filter(status="1")
+
+class ProcessingOrdersList(generics.ListAPIView):
+    serializer_class = OrdersSerializer
+
+    def get_queryset(self):
+        return Orders.objects.filter(status="2")
+    
+class ShippedOrdersList(generics.ListAPIView):
+    serializer_class = OrdersSerializer
+    
+    def get_queryset(self):
+        user = self.request.user
+
+        print(user.id)  # Debug statement to print user ID
+        print(user.role)
+        if user.role == 3:  # Logistic user
+            logisticuser = Orders.objects.filter(status="3", logistic=user.id)
+            print(logisticuser)
+            return logisticuser
+            
+        
+        elif user.role == 0:  # Admin user
+            return Orders.objects.filter(status="3")
+
+class DeliveredOrdersList(generics.ListAPIView):
+    serializer_class = OrdersSerializer
+    def get_queryset(self):
+        return Orders.objects.filter(status="4")
+    
+def save_notification(user, message, product_id,orderstatus):
+    newmessage = message
+    print(user)
+    product = product_id
+    newuser = get_object_or_404(Users, email=user)
+    print(newuser)
+    notification = Notification(user = newuser, product=product  , message=newmessage, status=orderstatus )
+    notification.save()
+    if not notification:
+        print("page opened but notification not saved")
+        return Response({"message": "Order approved successfully."}, status=status.HTTP_200_OK)
+
+def add_record_to_dataset(order):
+    gender = order.user.gender
+    if(gender== '1'):
+        gender = "Male"
+    if(gender== '0'):
+        gender = "Female"
+    age = order.user.age
+    location = order.user.city
+    item_purchased = order.product.label
+    category = order.product.category
+    season = get_current_season()
+    date = datetime.today()
+    print("dataset record : ", age, gender,location, item_purchased,season,date)
+    dataset = Dataset(
+        Gender=gender,
+        Age=age,
+        Location=location,
+        Item_Purchased=item_purchased,
+        Category = category,
+        Season=season,
+        Date=date
+    )
+    dataset.save()
+
+@api_view(['POST'])
+def approve_order(request, pk):
+    try:
+        order = Orders.objects.get(pk=pk)
+        print(order)
+        # Increment the status by 1
+        current_status = int(order.status)
+        new_status = current_status + 1
+        logistic = request.user.id
+        # Update the status
+        orderstatus =order.status
+        order.status = str(new_status)
+        order.logistic = logistic
+        order.save()
+
+        if new_status == 2:
+            message = f"Your order for '({order.product})' under id: '({order.id})' has been placed."
+            save_notification(order.user, message, order.product,orderstatus)
+        elif new_status == 3:
+            message = f"Your order for '({order.product})' under id: '({order.id})' has been shipped."
+            save_notification(order.user, message,order.product,orderstatus)
+        elif new_status == 4:
+            message = f"Your order for '({order.product})' under id: '({order.id})' has been delivered."
+            save_notification(order.user, message, order.product,orderstatus)
+            add_record_to_dataset(order)
+            
+        
+        return Response({"message": "Order approved successfully."}, status=status.HTTP_200_OK)
+    except Orders.DoesNotExist:
+        return Response({"message": "Order not found."}, status=status.HTTP_404_NOT_FOUND)
+
+@api_view(['DELETE'])
+def delete_order(request, pk):
+    try:
+        order = Orders.objects.get(pk=pk)
+        order.delete()
+        return Response({"message": "Order deleted successfully."}, status=status.HTTP_200_OK)
+    except Orders.DoesNotExist:
+        return Response({"message": "Order not found."}, status=status.HTTP_404_NOT_FOUND)
+    
+
+class NotificationAPIView(View):
+    def get(self, request, user_id, *args, **kwargs):
+        # Assume you have a Notification model with a message field
+        notifications = Notification.objects.filter(user_id=user_id)
+        data = [{'message': notification.message, 'image': notification.product.image.url} for notification in notifications]
+        return JsonResponse(data, safe=False)
+    
+
+def save_user_interest(request):
+    if request.method == 'POST':
+        data = json.loads(request.body)
+        interest = data.get('interest')
+        user = request.user
+        user.interest_in = interest
+        user.save()
+        return JsonResponse({'status': 'success'})
+    return JsonResponse({'status': 'failed'}, status=400)
+
+
+
+import joblib
+import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.metrics import accuracy_score
+import numpy as np
+from .models import Dataset
+
+import joblib
+import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.metrics import accuracy_score
+import numpy as np
+from .models import Dataset
+
+def getrecommendation(user):
+    # Load the dataset from the database
+    
+    data = pd.DataFrame(list(Dataset.objects.all().values('Age', 'Gender', 'Category', 'Location', 'Item_Purchased', 'Season')))
+
+    # Convert categorical variables into numerical using one-hot encoding
+    data = pd.get_dummies(data, columns=['Gender', 'Category', 'Location', 'Season'])
+
+    # Split features and target variable
+    X = data.drop(columns=['Item_Purchased'])
+    y = data['Item_Purchased']
+
+    # Split the dataset into training and testing sets
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.1, random_state=42)
+
+    # Scale the features
+    scaler = StandardScaler()
+    X_train_scaled = scaler.fit_transform(X_train)
+    X_test_scaled = scaler.transform(X_test)
+
+    # Train the KNN model
+    k = 5  # Number of neighbors
+    knn_model = KNeighborsClassifier(n_neighbors=k)
+    knn_model.fit(X_train_scaled, y_train)
+
+    # Make predictions on the testing data
+    y_pred = knn_model.predict(X_test_scaled)
+
+    # Evaluate the model's performance
+    accuracy = accuracy_score(y_test, y_pred)
+    print("Accuracy:", accuracy)
+
+    # Prepare user data for prediction
+    age = user.age
+    gender = user.gender
+    gender = "Male" if gender == '1' else "Female"
+    location = user.city
+    season = get_current_season()
+    category = user.interest_in
+
+    print(user, age, gender, location, category, season)
+
+    # Create a DataFrame for the new input with all possible columns
+    new_input = pd.DataFrame(columns=X.columns)
+
+    # Fill the new input DataFrame with the user's data
+    new_input.loc[0, 'Age'] = age
+    new_input.loc[0, f'Gender_{gender}'] = 1
+    new_input.loc[0, f'Category_{category}'] = 1
+    new_input.loc[0, f'Location_{location}'] = 1
+    new_input.loc[0, f'Season_{season}'] = 1
+
+    # Fill missing columns with 0
+    new_input = new_input.fillna(0)
+
+    # Ensure the order of columns matches the training data
+    new_input = new_input[X.columns]
+
+    # Scale the new input data
+    new_input_scaled = scaler.transform(new_input)
+
+    # Get probabilities for the new input
+    new_input_probs = knn_model.predict_proba(new_input_scaled)
+
+    # Get the top 10 recommendations
+    top_10_indices = new_input_probs.argsort()[0][-10:][::-1]
+    recommendations = knn_model.classes_[top_10_indices]
+    products = Product.objects.all()
+    print(recommendations)
+
+    recommendation_str = ", ".join(recommendations)  # Convert list of recommendations to a comma-separated string
+    new_recommendation = Recommendations(
+        Gender=gender,
+        Age=age,
+        Interest = category,
+        Location=location,
+        Recommendations=recommendation_str,
+        Season= season,
+        Date=datetime.today()
+    )
+    new_recommendation.save()
+
+    return recommendations,products

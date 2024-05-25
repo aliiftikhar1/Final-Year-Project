@@ -24,7 +24,7 @@ admin.site.site_header = "Fashion Store"
 admin.site.index_title = "Admin"
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    
     path('', include('store.urls')),
 ]
 if settings.DEBUG:

@@ -1,0 +1,16 @@
+<!-- recommendations/templates/recommendations/personalized_recommendations.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personalized Recommendations</title>
+</head>
+<body>
+    <h1>Personalized Recommendations</h1>
+    <ul>
+        {% for item in recommendations %}
+            <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

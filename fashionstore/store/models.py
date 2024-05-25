@@ -16,7 +16,7 @@ class Users(AbstractUser):
     role = models.IntegerField(default = 1, choices=ROLE_CHOICES )
     gender = models.CharField(max_length=6)
     age = models.IntegerField(null=True)
-    interests = models.CharField(max_length=100,null=True)
+    interest_in = models.CharField(max_length=100,null=True,blank=True)
     location = models.CharField(max_length=100,null=True)
     city = models.CharField(max_length=100,null=True)
     phone_number = models.CharField(max_length=15,null=True)
@@ -41,6 +41,8 @@ class Users(AbstractUser):
         for field, value in kwargs.items():
             setattr(self, field, value)
         self.save()
+
+
 
 
 class Product(models.Model):
@@ -98,16 +100,22 @@ class CartItem(models.Model):
         return self.product.price * self.quantity
     
 class Orders(models.Model):
-    user = models.CharField(max_length=100)
-    product =  models.CharField(max_length=200)
-    quantity = models.PositiveIntegerField(default=1,null=True)
+    user =  models.ForeignKey(Users, on_delete=models.CASCADE)
+    product =  models.ForeignKey(Product, on_delete=models.CASCADE)
+    logistic = models.CharField(max_length=200, blank=True)
+    label = models.CharField(max_length=200)
+    quantity = models.PositiveIntegerField(default=1, null=True)
     payment_method = models.CharField(max_length=20)
     card_number = models.CharField(max_length=16, blank=True, null=True)
     expiry_date = models.CharField(max_length=5, blank=True, null=True)
     cvv = models.CharField(max_length=4, blank=True, null=True)
     card_holder_name = models.CharField(max_length=100, blank=True, null=True)
     billing_address = models.TextField(null=True)
-
+    status = models.CharField(max_length=200)
+    # 1=pending
+    # 2=processing
+    # 3=shipped
+    # 4=delivered
 
 
 class Contact(models.Model):
@@ -119,3 +127,40 @@ class Contact(models.Model):
 
     def __str__(self):
      return self.name
+
+class Notification(models.Model):
+    user = models.ForeignKey(Users, on_delete=models.CASCADE)
+    message = models.TextField()
+    product =  models.ForeignKey(Product, on_delete=models.CASCADE, blank=True, related_name="notificationproduct")
+    date = models.DateField(default=datetime.today)  # Use datetime.today as the default value
+    STATUS_CHOICES = (
+        ('delivered', 'Delivered'),
+        ('opened', 'Opened'),
+    )
+    status = models.CharField(max_length=20, choices=STATUS_CHOICES)
+    def __str__(self):
+        return self.user.first_name
+    
+class Recommendations(models.Model):
+    Gender = models.CharField(max_length=6)
+    Age = models.IntegerField(null=True)
+    Interest = models.CharField(max_length=200)
+    Location = models.CharField(max_length=200)
+    Recommendations = models.TextField()
+    Season = models.CharField(max_length=20)
+    Date = models.DateField(default=datetime.today)
+
+    def __str__(self):
+        return self.Age
+    
+class Dataset(models.Model):
+    Gender = models.CharField(max_length=6)
+    Age = models.IntegerField(null=True)
+    Location = models.CharField(max_length=200)
+    Item_Purchased = models.CharField(max_length=200)
+    Category = models.CharField(max_length=200)
+    Season = models.CharField(max_length=20)
+    Date = models.DateField(default=datetime.today)
+
+    def __str__(self):
+        return self.Age

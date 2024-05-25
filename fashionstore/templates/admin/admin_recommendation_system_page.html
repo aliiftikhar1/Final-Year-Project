@@ -1,0 +1,81 @@
+{% extends 'admin/admin_base.html' %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <a href="{% url 'get_recommendation_graph_data' %}" class="btn btn-primary mr-2">View Recommendation Graph</a>
+            <a href="{% url 'get_all_recommendations' %}" class="btn btn-secondary">View All Recommendations</a>
+        </div>
+    </div>
+    {% if graph_labels %}
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-12">
+                <canvas id="recommendationGraph"></canvas>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const ctx = document.getElementById('recommendationGraph').getContext('2d');
+            new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: {{ graph_labels|safe }},
+                    datasets: [{
+                        label: 'Number of Recommendations',
+                        data: {{ graph_counts|safe }},
+                        backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                        borderColor: 'rgba(54, 162, 235, 1)',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+    {% endif %}
+{% if recommendations %}
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-12">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Gender</th>
+                            <th>Age</th>
+                            <th>Interest</th>
+                            <th>Location</th>
+                            <th>Recommendations</th>
+                            <th>Season</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for rec in recommendations %}
+                        <tr>
+                            <td>{{ rec.Gender }}</td>
+                            <td>{{ rec.Age }}</td>
+                            <td>{{ rec.Interest }}</td>
+                            <td>{{ rec.Location }}</td>
+                            <td>{{ rec.Recommendations }}</td>
+                            <td>{{ rec.Season }}</td>
+                            <td>{{ rec.Date }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+{% endblock content %}

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 01, 2024 at 09:38 AM
+-- Generation Time: May 20, 2024 at 11:32 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -105,7 +105,11 @@ INSERT INTO `auth_permission` (`id`, `name`, `content_type_id`, `codename`) VALU
 (41, 'Can add lastclick', 11, 'add_lastclick'),
 (42, 'Can change lastclick', 11, 'change_lastclick'),
 (43, 'Can delete lastclick', 11, 'delete_lastclick'),
-(44, 'Can view lastclick', 11, 'view_lastclick');
+(44, 'Can view lastclick', 11, 'view_lastclick'),
+(45, 'Can add notification', 12, 'add_notification'),
+(46, 'Can change notification', 12, 'change_notification'),
+(47, 'Can delete notification', 12, 'delete_notification'),
+(48, 'Can view notification', 12, 'view_notification');
 
 -- --------------------------------------------------------
 
@@ -149,6 +153,7 @@ INSERT INTO `django_content_type` (`id`, `app_label`, `model`) VALUES
 (5, 'store', 'cartitem'),
 (1, 'store', 'contact'),
 (11, 'store', 'lastclick'),
+(12, 'store', 'notification'),
 (2, 'store', 'orders'),
 (4, 'store', 'product'),
 (3, 'store', 'users');
@@ -197,7 +202,11 @@ INSERT INTO `django_migrations` (`id`, `app`, `name`, `applied`) VALUES
 (24, 'store', '0003_alter_orders_billing_address', '2024-04-15 16:46:09.936276'),
 (25, 'store', '0004_alter_product_id', '2024-04-15 17:36:46.820276'),
 (26, 'store', '0005_lastclick', '2024-04-29 13:08:02.790507'),
-(27, 'store', '0006_alter_users_gender', '2024-04-29 15:54:50.714117');
+(27, 'store', '0006_alter_users_gender', '2024-04-29 15:54:50.714117'),
+(28, 'store', '0007_orders_label', '2024-05-16 18:52:02.141809'),
+(29, 'store', '0002_orders_status', '2024-05-17 12:35:30.827432'),
+(30, 'store', '0003_notification', '2024-05-19 14:43:44.501002'),
+(31, 'store', '0004_orders_logistic', '2024-05-20 02:04:34.915223');
 
 -- --------------------------------------------------------
 
@@ -217,7 +226,13 @@ CREATE TABLE `django_session` (
 
 INSERT INTO `django_session` (`session_key`, `session_data`, `expire_date`) VALUES
 ('0n7otz7i07nuat63pyb9oyv83id1z6vs', '.eJxVjEEOwiAQRe_C2jQwYFu6dO8JjCHDMNiqKabQlfHu0qQL3f7333sLh2sZ3Zp5cVMQg9Di8Lt5pAfPGwh3nG-poTSXZfLNdml2mptzCvw87d-_wIh5rHYnoVeSrUHVQU8terYUI0irEY46BtMpMi17j5ZkCASKQGuoAoKPWKOZn0yFg3stKaxUshguAiow4vr5AhRYQd4:1rwQjw:IlWP5DPuZSqUoZ5T_T0gZKuNlPYkt9H5cGuYPvNddaQ', '2024-04-29 18:07:36.174275'),
-('cqi4jvf84yz9c0er6ajixkcmgr2le2gp', '.eJxVjMsOwiAQRf-FtSEjb1y67zeQYQCpGkhKuzL-uzbpQrf3nHNfLOC21rCNvIQ5sQsT7PS7RaRHbjtId2y3zqm3dZkj3xV-0MGnnvLzerh_BxVH_dY-EWlr0QoUXioHkJT22ulSClhhZZaZwJOSBs8ExogE0RcdlXHKCs_eH8s0NvY:1rwPlu:cxdTvWrZKoU4HIzkLOAkLBUydAlKfORWWs1D1pCw1Uo', '2024-04-29 17:05:34.687278');
+('12omg3znwbzwrczy24zo3y9q77y162be', '.eJxVjEEOwiAURO_C2hCgUPq7dN8TGEM-fLTVpphCV8a7S5MudDGLmTczb-ZwK6PbclzdRKxnmp1-M4_hGZcd0AOXe-IhLWWdPN8r_KCZD4nifD66fwcj5rGuBQavrYdoBFKjOm1bkErKW4tatt6j9qYTZExQJEEAWTDKkJBNtQChnuY4x1AiudeaaAsls_7CugqgyrLr5wvm9EFW:1s8jg4:VWpzGV3xbUvGJpxc0H13COcHi9l5xAPfthtKx-T3Ycs', '2024-06-02 16:46:28.387951'),
+('2ss5yw4fb98vc219kgvkrvd93ynmkdrj', '.eJxVjDsOwyAQBe9CHSE-C5iU6X0GtLAQnERYMnYV5e6xJRdJOzPvvVnAba1h63kJE7Erk4JdfmHE9MztMPTAdp95mtu6TJEfCT9t5-NM-XU727-Dir3ua6EdEIC12kmDKikUHq3PWLQTdmfCF0Ag1MVhNGSNAgU52cEgDEayzxfbZTcM:1s8X0O:vlYHLA7JkXq3VtK71F80z0ERPUleY48IFnD98uzLlEQ', '2024-06-02 03:14:36.717501'),
+('69rp8xviquqqqp5pbjdna17xtrt666qd', '.eJxVjEEOwiAQRe_C2pAy0DJ16d4zkGEGpGpoUtqV8e7apAvd_vfef6lA21rC1tISJlFnZdTpd4vEj1R3IHeqt1nzXNdlinpX9EGbvs6SnpfD_Tso1Mq3jhGzMQMIOOHoRxLuwHaA4jIySu-sQ8IBAZIHGck4TtGzt8aZ3mb1_gDl5Dee:1s8t45:LsfIgJ-HbJmsfxLXo1HvngJ9BFD2pOX2eojWK09NRtI', '2024-06-03 02:47:53.551714'),
+('cqi4jvf84yz9c0er6ajixkcmgr2le2gp', '.eJxVjMsOwiAQRf-FtSEjb1y67zeQYQCpGkhKuzL-uzbpQrf3nHNfLOC21rCNvIQ5sQsT7PS7RaRHbjtId2y3zqm3dZkj3xV-0MGnnvLzerh_BxVH_dY-EWlr0QoUXioHkJT22ulSClhhZZaZwJOSBs8ExogE0RcdlXHKCs_eH8s0NvY:1rwPlu:cxdTvWrZKoU4HIzkLOAkLBUydAlKfORWWs1D1pCw1Uo', '2024-04-29 17:05:34.687278'),
+('pprsbqk9t8xcq7ezvlb5zwj4xy13yxzi', '.eJxVjMEOwiAQRP9lz4YAZWnp0btfYAxZWLRVU0yhJ-O_2yY96HFm3rw3eFrq4JeSZj8y9GDg8NsFio80bQPfabplEfNU5zGIDRH7WsQpc3oed_ZPMFAZ1rekGEwbXEJJ3OjOtNYprdTVklE2BDIBO8mIUbNy0nHrUCNL1azRubhKS3qmWBP715x5ibVAfwa0cPl8ASTEQDk:1s7g8v:mQzjm1icvlKkTl5sTo2ZDKY2dynl4ZlJsngwgVgOuYM', '2024-05-30 18:47:53.970217'),
+('ve086m4svcwpw5ayky845ijfy3t1s3to', '.eJxVjM0OwiAQhN-FsyFA-el69O4zkF0WpWogKe3J-O62SQ96nPm-mbeIuC4lrj3PcWJxFlacfjvC9Mx1B_zAem8ytbrME8ldkQft8to4vy6H-3dQsJdtrTCRDQTZKeTBjDZ40Ebrm0erPRFacqNi55JhDQo4gDOOlR62CJDE5wvSOjcM:1s7SOb:-zNypdFhYUoDm7B9TYv2hJlKWspADJcHQ1bUoG8adJM', '2024-05-30 04:07:09.565731'),
+('xavztcpdy02b473zqt45lisyfq0lp58t', '.eJxVjMsOwiAQRf-FtSEjb1y67zeQYQCpGkhKuzL-uzbpQrf3nHNfLOC21rCNvIQ5sQsT7PS7RaRHbjtId2y3zqm3dZkj3xV-0MGnnvLzerh_BxVH_dY-EWlr0QoUXioHkJT22ulSClhhZZaZwJOSBs8ExogE0RcdlXHKCs_eH8s0NvY:1s77y2:titatYj4PwAjGDaUk3lVjNvjKyUMkXx9DR7n3zWlRlE', '2024-05-29 06:18:22.407874');
 
 -- --------------------------------------------------------
 
@@ -264,7 +279,36 @@ CREATE TABLE `store_lastclick` (
 --
 
 INSERT INTO `store_lastclick` (`id`, `product_clicked_id`, `user_id`) VALUES
-(3, 20, 4);
+(3, 29, 4),
+(5, 27, 8);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `store_notification`
+--
+
+CREATE TABLE `store_notification` (
+  `id` bigint(20) NOT NULL,
+  `message` longtext NOT NULL,
+  `date` date NOT NULL,
+  `status` varchar(20) NOT NULL,
+  `user_id` bigint(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `store_notification`
+--
+
+INSERT INTO `store_notification` (`id`, `message`, `date`, `status`, `user_id`) VALUES
+(4, 'Your order (172) has been placed.', '2024-05-19', 'delivered', 4),
+(5, 'Your order (169) has been shipped.', '2024-05-19', 'delivered', 4),
+(6, 'Your order (173) has been placed.', '2024-05-20', 'delivered', 4),
+(7, 'Your order (173) has been shipped.', '2024-05-20', 'delivered', 4),
+(8, 'Your order (173) has been delivered.', '2024-05-20', 'delivered', 4),
+(9, 'Your order (172) has been shipped.', '2024-05-20', 'delivered', 4),
+(10, 'Your order (172) has been delivered.', '2024-05-20', 'delivered', 4),
+(11, 'Your order (171) has been placed.', '2024-05-20', 'delivered', 4);
 
 -- --------------------------------------------------------
 
@@ -282,19 +326,71 @@ CREATE TABLE `store_orders` (
   `expiry_date` varchar(5) DEFAULT NULL,
   `cvv` varchar(4) DEFAULT NULL,
   `card_holder_name` varchar(100) DEFAULT NULL,
-  `billing_address` longtext DEFAULT NULL
+  `billing_address` longtext DEFAULT NULL,
+  `label` varchar(200) NOT NULL,
+  `status` varchar(200) NOT NULL,
+  `logistic_id` bigint(20) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `store_orders`
 --
 
-INSERT INTO `store_orders` (`id`, `user`, `product`, `quantity`, `payment_method`, `card_number`, `expiry_date`, `cvv`, `card_holder_name`, `billing_address`) VALUES
-(4, 'adil@adil.com', 'Dark Red Blouse', 1, 'Cash on Delivery', NULL, NULL, NULL, NULL, NULL),
-(5, 'adil@adil.com', 'Shoes', 2, 'Cash on Delivery', NULL, NULL, NULL, NULL, NULL),
-(6, 'adil@adil.com', 'White Blouse', 1, 'Cash on Delivery', NULL, NULL, NULL, NULL, NULL),
-(7, 'adil@adil.com', 'Red Blouse', 2, 'Cash on Delivery', NULL, NULL, NULL, NULL, NULL),
-(8, 'ali@ali.com', 'Gildan Women\'s Softstyle Cotton T-Shirt, Style G64000L, Multipack', 2, 'Cash on Delivery', NULL, NULL, NULL, NULL, NULL);
+INSERT INTO `store_orders` (`id`, `user`, `product`, `quantity`, `payment_method`, `card_number`, `expiry_date`, `cvv`, `card_holder_name`, `billing_address`, `label`, `status`, `logistic_id`) VALUES
+(116, 'user3', 'Hanes mens Ecosmart Fleece Full-zip Hoodie, Zip-up', 1, 'Credit Card', '3456789012345678', '02/26', '345', 'User Three', '9101 Main St, City, Country', 'Hoodie', '2', NULL),
+(118, 'user5', 'Men\'s Storm Liner', 1, 'Credit Card', '4567890123456789', '03/27', '456', 'User Four', '5678 Elm St, City, Country', 'Gloves', '2', NULL),
+(119, 'user6', 'Terramar Womens Ultra Merino GlovesAdult Jaquard G', 2, 'Credit Card', '5678901234567890', '04/28', '567', 'User Five', '9101 Elm St, City, Country', 'Gloves', '2', NULL),
+(120, 'user7', 'Nicole Miller womens Fashion Scarf and Shawl Wrap', 1, 'Credit Card', '6789012345678901', '05/29', '678', 'User Six', '1234 Oak St, City, Country', 'Scarf', '2', NULL),
+(121, 'user8', 'Alpine Swiss Mens Plaid Scarf Softer Than Cashmere', 1, 'Credit Card', '7890123456789012', '06/30', '789', 'User Seven', '5678 Oak St, City, Country', 'Scarf', '2', NULL),
+(125, 'user12', 'Men\'s Long-Sleeve Flannel Shirt (Available in Big', 1, 'Credit Card', '0123456789012345', '09/33', '012', 'User Ten', '9101 Pine St, City, Country', 'Shirt', '2', NULL),
+(126, 'user13', 'Gildan Men\'s V-Neck T-Shirts, Multipack, Style G11', 2, 'PayPal', NULL, NULL, NULL, NULL, '1234 Maple St, City, Country', 'T-shirt', '2', NULL),
+(127, 'user14', 'Gildan Women\'s Softstyle Cotton T-Shirt, Style G64', 1, 'Credit Card', '1234567890123456', '10/34', '123', 'User Eleven', '5678 Maple St, City, Country', 'T-shirt', '2', NULL),
+(128, 'user15', 'GRACE KARIN Women\'s 2024 Peplum Tops Dressy Wrap V', 1, 'Credit Card', '2345678901234567', '11/35', '234', 'User Twelve', '9101 Maple St, City, Country', 'Blouse', '2', NULL),
+(129, 'user16', 'Women\'s Heavyweight Long-Sleeve Hooded Puffer Coat', 1, 'Credit Card', '3456789012345678', '12/36', '345', 'User Thirteen', '1234 Birch St, City, Country', 'Coat', '2', NULL),
+(130, 'user17', 'Dockers Men\'s Henry Wool Blend Top Coat', 2, 'PayPal', NULL, NULL, NULL, NULL, '5678 Birch St, City, Country', 'Coat', '2', NULL),
+(131, 'user18', 'Allegra K Women\'s Winter Overcoat Mid-Long Stand C', 1, 'Credit Card', '4567890123456789', '01/37', '456', 'User Fourteen', '9101 Birch St, City, Country', 'Coat', '2', NULL),
+(132, 'user19', 'Nine West Women\'s Boxed Necklace/Pierced Earrings', 1, 'Credit Card', '5678901234567890', '02/38', '567', 'User Fifteen', '1234 Cedar St, City, Country', 'Jewelry', '2', NULL),
+(133, 'user20', 'Jewelry Set for Women Water Drop Cubic Zirconia Ar', 3, 'Credit Card', '6789012345678901', '03/39', '678', 'User Sixteen', '5678 Cedar St, City, Country', 'Jewelry', '2', NULL),
+(134, 'user21', 'Uloveido Natural Stone 8MM Beads Bracelet with Fai', 2, 'PayPal', NULL, NULL, NULL, NULL, '9101 Cedar St, City, Country', 'Jewelry', '2', NULL),
+(135, 'user22', 'COCIFER Purses and Handbags for Women Shoulder Tot', 1, 'Credit Card', '7890123456789012', '04/40', '789', 'User Seventeen', '1234 Spruce St, City, Country', 'Handbag', '3', NULL),
+(136, 'user23', 'Mens Wallet Long Purse Leather Clutch Large Busine', 1, 'Credit Card', '8901234567890123', '05/41', '890', 'User Eighteen', '5678 Spruce St, City, Country', 'Handbag', '2', NULL),
+(137, 'user24', 'Elina fashion Indian Pakistani Women\'s Readymade D', 1, 'Credit Card', '9012345678901234', '06/42', '901', 'User Nineteen', '9101 Spruce St, City, Country', 'Dress', '2', NULL),
+(138, 'user25', 'Elina fashion Men\'s Tunic Cotton Kurta Pajama Set', 2, 'PayPal', NULL, NULL, NULL, NULL, '1234 Willow St, City, Country', 'Dress', '2', NULL),
+(139, 'user26', 'Signature by Levi Strauss & Co. Gold Women\'s Moder', 1, 'Credit Card', '1122334455667788', '05/25', '101', 'User TwentySix', '2233 Elm St, City, Country', 'Jeans', '2', NULL),
+(140, 'user27', 'Lee Men\'s Extreme Motion Straight Taper Jean', 1, 'Credit Card', '2233445566778899', '06/26', '202', 'User TwentySeven', '3344 Oak St, City, Country', 'Jeans', '2', NULL),
+(141, 'user28', 'vineyard vines Women\'s Herringbone 5 Inch Every Da', 2, 'Credit Card', '3344556677889900', '07/27', '303', 'User TwentyEight', '4455 Pine St, City, Country', 'Shorts', '2', NULL),
+(142, 'user29', 'Volcom Men\'s Frickin Modern Stretch Chino', 1, 'Credit Card', '4455667788990011', '08/28', '404', 'User TwentyNine', '5566 Maple St, City, Country', 'Shorts', '4', NULL),
+(143, 'user30', 'Timberland Men\'s White Ledge Mid Waterproof Hiking', 1, 'Credit Card', '5566778899001122', '09/29', '505', 'User Thirty', '6677 Birch St, City, Country', 'Boots', '2', NULL),
+(144, 'user31', 'Women\'s Lace-Up Combat Boot', 2, 'PayPal', NULL, NULL, NULL, NULL, '7788 Cedar St, City, Country', 'Boots', '2', NULL),
+(145, 'user32', 'Teva Women\'s Original Universal Sandal', 1, 'Credit Card', '6677889900112233', '10/30', '606', 'User ThirtyOne', '8899 Spruce St, City, Country', 'Sandals', '2', NULL),
+(146, 'user33', 'Dockers Men’s Newpage Sporty Outdoor Sandal Shoe', 1, 'Credit Card', '7788990011223344', '11/31', '707', 'User ThirtyTwo', '9900 Willow St, City, Country', 'Sandals', '2', NULL),
+(147, 'user34', 'DUSHINE Polarized Sunglasses for Women Classic Ret', 2, 'Credit Card', '8899001122334455', '12/32', '808', 'User ThirtyThree', '1111 Palm St, City, Country', 'Sunglasses', '2', NULL),
+(148, 'user35', 'Ray-Ban Rb3025 Classic Polarized Aviator Sunglasse', 1, 'Credit Card', '9900112233445566', '01/33', '909', 'User ThirtyFour', '2222 Walnut St, City, Country', 'Sunglasses', '2', NULL),
+(149, 'user36', 'Calvin Klein Men\'s Embroidered Baseball Hat', 3, 'PayPal', NULL, NULL, NULL, NULL, '3333 Chestnut St, City, Country', 'Hat', '2', NULL),
+(150, 'user37', 'Carve Designs Women\'s Dundee Crushable', 1, 'Credit Card', '0011223344556677', '02/34', '010', 'User ThirtyFive', '4444 Sycamore St, City, Country', 'Hat', '2', NULL),
+(151, 'user38', 'Women\'s Fisherman Cable Turtleneck Sweater', 2, 'Credit Card', '1122334455667788', '03/35', '111', 'User ThirtySix', '5555 Poplar St, City, Country', 'Sweater', '3', 1),
+(152, 'user39', 'Men\'s Crewneck Sweater-Discontinued Colors', 1, 'Credit Card', '2233445566778899', '04/36', '212', 'User ThirtySeven', '6666 Fir St, City, Country', 'Sweater', '1', NULL),
+(153, 'user40', 'GUESS Women\'s Loven Sneaker', 1, 'Credit Card', '3344556677889900', '05/37', '313', 'User ThirtyEight', '7777 Beech St, City, Country', 'Sneakers', '1', NULL),
+(154, 'user41', 'Cole Haan Men\'s Grandpro Rally Canvas Court Sneake', 2, 'PayPal', NULL, NULL, NULL, NULL, '8888 Dogwood St, City, Country', 'Sneakers', '1', NULL),
+(155, 'user42', 'PUMA Men\'s 8 Pack Low Cut Socks', 1, 'Credit Card', '4455667788990011', '06/38', '414', 'User ThirtyNine', '9999 Hickory St, City, Country', 'Socks', '1', NULL),
+(156, 'user43', 'Womens Classic Turn Cuff Socks 6 Pack', 1, 'Credit Card', '5566778899001122', '07/39', '515', 'User Forty', '1010 Birch St, City, Country', 'Socks', '2', NULL),
+(157, 'user44', 'Levi\'s Women\'s Cotton Hooded Field Jacket', 3, 'PayPal', NULL, NULL, NULL, NULL, '2020 Elm St, City, Country', 'Jacket', '1', NULL),
+(158, 'user45', 'PUMA Men\'s Transeasonal Jacket', 1, 'Credit Card', '6677889900112233', '08/40', '616', 'User FortyOne', '3030 Oak St, City, Country', 'Jacket', '1', NULL),
+(159, 'user46', 'Under Armour Men\'s Surge 3 Running Shoe', 2, 'Credit Card', '7788990011223344', '09/41', '717', 'User FortyTwo', '4040 Pine St, City, Country', 'Shoes', '2', NULL),
+(160, 'user47', 'ASICS Women\'s Gel-Contend 8 Running Shoes', 1, 'Credit Card', '8899001122334455', '10/42', '818', 'User FortyThree', '5050 Maple St, City, Country', 'Shoes', '2', NULL),
+(161, 'user48', 'LOVEVOOK Laptop Backpack for Women, 15.6 Inch Work', 1, 'Credit Card', '9900112233445566', '11/43', '919', 'User FortyFour', '6060 Birch St, City, Country', 'Backpack', '2', NULL),
+(162, 'user49', 'Carhartt 21L Backpack, Durable Water-Resistant Pac', 2, 'PayPal', NULL, NULL, NULL, NULL, '7070 Cedar St, City, Country', 'Backpack', '1', NULL),
+(163, 'user50', 'Eddie Bauer Men\'s Casual Leather Belt with Metal B', 1, 'Credit Card', '0011223344556677', '12/44', '020', 'User FortyFive', '8080 Spruce St, City, Country', 'Belt', '2', NULL),
+(164, 'user51', 'Eddie Bauer Women\'s Casual Leather Belts, One Size', 1, 'Credit Card', '1122334455667788', '01/45', '121', 'User FortySix', '9090 Willow St, City, Country', 'Belt', '1', NULL),
+(165, 'ali@ali.com', 'DUSHINE Polarized Sunglasses for Women Classic Retro Style 100% UV Protection', 2, 'Cash on Delivery', NULL, NULL, NULL, NULL, NULL, 'Sunglasses', '2', NULL),
+(166, 'ali@ali.com', 'Men\'s Storm Liner', 1, 'Cash on Delivery', NULL, NULL, NULL, NULL, NULL, 'Gloves', '2', NULL),
+(167, 'ali@ali.com', 'MEROKEETY Women\'s Boho Leopard Print Skirt Pleated A-Line Swing Midi Skirts', 1, 'Cash on Delivery', NULL, NULL, NULL, NULL, NULL, 'Skirt', '2', NULL),
+(168, 'ali@ali.com', 'PUKAVT Women\'s Basic Casual Skirts A-Line Mini Flared Stretchy Skater Party Skirt', 1, 'Cash on Delivery', NULL, NULL, NULL, NULL, NULL, 'Skirt', '2', NULL),
+(169, 'ali@ali.com', 'Hanes mens Ecosmart Fleece Full-zip Hoodie, Zip-up Hooded Sweatshirt', 1, 'Cash on Delivery', NULL, NULL, NULL, NULL, NULL, 'Hoodie', '3', NULL),
+(170, 'ali@ali.com', 'Hanes mens Ecosmart Fleece Full-zip Hoodie, Zip-up Hooded Sweatshirt', 1, 'Cash on Delivery', NULL, NULL, NULL, NULL, NULL, 'Hoodie', '1', NULL),
+(171, 'ali@ali.com', 'Women\'s Rival Fleece Pull-Over Hoodie', 1, 'Cash on Delivery', NULL, NULL, NULL, NULL, NULL, 'Hoodie', '2', 1),
+(172, 'ali@ali.com', 'PUKAVT Women\'s Basic Casual Skirts A-Line Mini Flared Stretchy Skater Party Skirt', 1, 'Cash on Delivery', NULL, NULL, NULL, NULL, NULL, 'Skirt', '4', 10),
+(173, 'ali@ali.com', 'Mens Wallet Long Purse Leather Clutch Large Business Handbag Phone Card Holder Case Gift for Men Fat', 1, 'Cash on Delivery', NULL, NULL, NULL, NULL, NULL, 'Handbag', '4', 10);
 
 -- --------------------------------------------------------
 
@@ -326,7 +422,7 @@ INSERT INTO `store_product` (`id`, `name`, `gender`, `label`, `category`, `descr
 (9, 'Women\'s Rival Fleece Pull-Over Hoodie', '0', 'Hoodie', 'Clothes', 'Ultra-soft, mid-weight cotton-blend fleece with brushed interior for extra warmth\r\nCrossover hood with drawcord adjust\r\nFront kangaroo pocket\r\nRibbed cuffs & bottom hem\r\nRaglan sleeves', 9876.00, 4567.00, 'products/women_hoodie.jpg', 2),
 (10, 'Men\'s Storm Liner', '1', 'Gloves', 'Accessories', 'A Storm technology repels water without sacrificing breathability\r\nThin, fitted liner gloves can be worn on their own or as a first layer\r\nUltra-soft knit fabric with a smooth exterior & a plush interior for just the right amount of warmth\r\nTech Touch on thumbs & index fingers so you can use touch screen devices without taking your gloves off\r\nExtra soft Speedwipe fleece placed on back of index finger & thumb', 5672.00, 2222.00, 'products/mens_gloves.jpg', 2),
 (11, 'Terramar Womens Ultra Merino GlovesAdult Jaquard Gloves', '0', 'Gloves', 'Accessories', 'Comfortable: Made with 50% polyester, 35% merino wool and 15% nylon, these Ultra Merino women\'s gloves are the best Mother Nature has to offer for optimal performance and extra comfort.\r\nFunctional: Touch Tip Technology allows you to utilize your favorite devices, keeping your hands dry and warm while on the go.\r\nModern Style: These women\'s gloves feature a silicone palm grip, making them stylish and practical\r\nVariety: These Ultra Merino gloves come in a trio of colors; Charcoal Heather, Black Back Country and Rose Snow Dusting and a multitude of sizes; Small, Medium and Large. View the size chart for a more accurate fit!', 8889.00, 5678.00, 'products/womens_gloves.jpg', 2),
-(12, 'Nicole Miller womens Fashion Scarf and Shawl Wrap for Spring/Summer WinterScarves', '0', 'Scarf', 'Accessories', 'versized Shawl Elegance: Embrace style and comfort with our oversized shawl scarves, options measuring up to a generous 35\" x 72\" with delicate 1/2\" fringes. The perfect accessory for any outfit, providing a versatile and chic addition to your wardrobe.\r\nIdeal Gift for Any Occasion: These lightweight fashion scarves make for an ideal gift, combining practicality with fashion-forward design. Whether it\'s a birthday, anniversary, or just a thoughtful gesture, these scarves are sure to be cherished by any woman who loves to accessorize with flair.\r\nPremium Quality: Crafted from high-quality 100% polyester, these fashion scarves for women offer a luxurious feel against the skin while maintaining durability. The lightweight gauze fabric ensures breathability, making them perfect for year-round wear.', 3432.00, 2342.00, 'products/woemen_scarf.jpg', 2),
+(12, 'Nicole Miller womens Fashion Scarf and Shawl Wrap for Spring/Summer WinterScarves', '0', 'Scarf', 'Accessories', 'Versized Shawl Elegance: Embrace style and comfort with our oversized shawl scarves, options measuring up to a generous 35\" x 72\" with delicate 1/2\" fringes. The perfect accessory for any outfit, providing a versatile and chic addition to your wardrobe.\r\nIdeal Gift for Any Occasion: These lightweight fashion scarves make for an ideal gift, combining practicality with fashion-forward design. Whether it\'s a birthday, anniversary, or just a thoughtful gesture, these scarves are sure to be cherished by any woman who loves to accessorize with flair.\r\nPremium Quality: Crafted from high-quality 100% polyester, these fashion scarves for women offer a luxurious feel against the skin while maintaining durability. The lightweight gauze fabric ensures breathability, making them perfect for year-round wear.', 3432.00, 2342.00, 'products/woemen_scarf.jpg', 2),
 (13, 'Alpine Swiss Mens Plaid Scarf Softer Than Cashmere Scarves Winter Shawl', '1', 'Scarf', 'Accessories', 'STYLISH – Our selection features various solid, plaid, and striped designs to fit your personal style. The versatile prints and fringe ends elevate any casual, dressy, or professional outfit.\r\nFUNCTIONAL - Measures 12” W x 80” L and is long enough to wrap in multiple ways and can be worn by both men and women.\r\nEASY CARE – The material of this scarf is super soft, lightweight, and conveniently machine washable.', 5434.00, 3000.00, 'products/mens_scarf.jpg', 2),
 (14, 'Lee Men\'s Extreme Motion Flat Front Slim Straight Pant', '1', 'Pants', 'Clothes', 'SLIM FIT. With a slim fit through the hip and thigh, these men\'s pants sit at the natural waist with a flex waistband for comfort. These slim fit pants provide a modern look that keeps you comfortable all day long.\r\nEXTRA STORAGE. These straight fit pants are designed with four pockets with a timeless look, perfect for most occasions.\r\nLIVE IN COMFORT. The Extreme Comfort Pant offers work-to-play versatility. Athletic details like mesh pockets, a flex waistband and Active Comfort Fabric make these pants insanely comfortable and offer a modern look.\r\nA LIFETIME OF QUALITY. For over 100 years, Lee has produced quality apparel with durability and long-lasting construction in mind. Lee is committed to designing clothing that conforms to your body, allowing you to move through life freely.\r\nSPECIFICATIONS. Zipper fly with button closure, leg opening: 15\".\r\n', 5000.00, 4500.00, 'products/mens_pants.jpg', 2),
 (15, 'Women\'s Fleece Straight Leg Sweatpant', '0', 'Pants', 'Clothes', 'REGULAR FIT: Close but comfortable fit through hip and thigh. Mid rise, sits below the natural waist.\r\nCOZY BRUSHED BACK FLEECE: Buttery soft and comfy midweight cotton blend fleece with brushed interior.\r\nSTRAIGHT LEG SWEATPANT: Designed with a straight silhouette, this style offers ultimate ease and comfort whether you are on the go, at the gym, or lounging at home. Fits slim through the leg then eases up below the knee.', 6789.00, 4567.00, 'products/women_pants.jpg', 2),
@@ -404,11 +500,16 @@ CREATE TABLE `store_users` (
 --
 
 INSERT INTO `store_users` (`id`, `password`, `last_login`, `is_superuser`, `is_staff`, `is_active`, `date_joined`, `image`, `first_name`, `last_name`, `role`, `gender`, `age`, `interests`, `location`, `city`, `phone_number`, `email`) VALUES
-(1, 'pbkdf2_sha256$720000$XRVfMjdrAIat3oMaCyNkB4$KEe5/QJObq7l1izrE2T0vZbBleGUyUT/xEpJ2PUcxFY=', NULL, 1, 1, 1, '2024-04-15 02:05:11.296062', '', '', '', 1, '', NULL, NULL, NULL, NULL, NULL, 'admin@admin.com'),
-(2, 'pbkdf2_sha256$720000$kwOhgchLmLYOfogvMQyOyY$5jGNeaSyf6JSETW+ZjcOQL0h1a8HIJk4rk/n0NoHZ9c=', '2024-04-29 16:32:57.160443', 0, 0, 1, '2024-04-15 02:06:58.807440', 'profile_images/WhatsApp_Image_2024-03-27_at_15.14.00_c29d91d7_hbCuF6O.jpg', 'Danyal', 'Yousaf', 2, '1', 23, NULL, 'America', 'Arkansas', '03353959273', 'danyal@danyal.com'),
-(3, 'pbkdf2_sha256$720000$zAwtHpneJagu5JBzys2Mw5$i9TJOLcj446LS4oh7D/65vR3rhVaVXJIr6AS80LbhW0=', '2024-04-27 08:20:19.572569', 0, 0, 1, '2024-04-15 02:09:51.270286', 'profile_images/mediamodifier-ogmenj2NGho-unsplash_1_FuegUFd.jpg', 'Adil', 'Baig', 1, '1', 23, NULL, 'Pakistan', 'Lahore', '03347595674', 'adil@adil.com'),
-(4, 'pbkdf2_sha256$720000$wxRNJNGIObx1CuEiO84Zzj$OIYNbqR5KI0y5e7l5DTX2JkjjIbEYxDQy3SGw3KquPM=', '2024-04-30 18:54:44.920485', 0, 0, 1, '2024-04-27 08:23:07.518811', 'profile_images/IMG_5793_we3QZD6.png', 'Ali', 'Iftikhar', 1, '1', 40, NULL, 'America', 'Louisiana', '03353959273', 'ali@ali.com'),
-(5, 'pbkdf2_sha256$720000$CLSin4JchKkwSt6AS4c7OO$xPMzmOeFLn/8XG3vUyMO+FoYF8kRA+TSFhUWWr7iKI4=', '2024-04-30 17:19:22.025797', 0, 0, 1, '2024-04-28 11:20:10.829625', 'profile_images/profile.jpg', 'Abdul', 'Rafy', 2, '1', 25, NULL, 'America', 'Delaware', '0347585853', 'rafy@rafy.com');
+(1, 'pbkdf2_sha256$720000$XRVfMjdrAIat3oMaCyNkB4$KEe5/QJObq7l1izrE2T0vZbBleGUyUT/xEpJ2PUcxFY=', '2024-05-20 08:53:05.195877', 1, 1, 1, '2024-04-15 02:05:11.296062', 'profile_images/WhatsApp_Image_2024-03-27_at_15.14.00_c29d91d7_hbCuF6O.jpg', '', '', 0, '', NULL, NULL, NULL, NULL, NULL, 'admin@admin.com'),
+(2, 'pbkdf2_sha256$720000$kwOhgchLmLYOfogvMQyOyY$5jGNeaSyf6JSETW+ZjcOQL0h1a8HIJk4rk/n0NoHZ9c=', '2024-05-20 08:49:28.284421', 0, 0, 1, '2024-04-15 02:06:58.807440', 'profile_images/WhatsApp_Image_2024-03-27_at_15.14.00_c29d91d7_hbCuF6O.jpg', 'Danyal', 'Yousaf', 2, '1', 23, NULL, 'America', 'Arkansas', '03353959273', 'danyal@danyal.com'),
+(3, 'pbkdf2_sha256$720000$zAwtHpneJagu5JBzys2Mw5$i9TJOLcj446LS4oh7D/65vR3rhVaVXJIr6AS80LbhW0=', '2024-05-16 18:39:15.622944', 0, 0, 1, '2024-04-15 02:09:51.270286', 'profile_images/mediamodifier-ogmenj2NGho-unsplash_1_FuegUFd.jpg', 'Adil', 'Baig', 1, '1', 23, NULL, 'Pakistan', 'Lahore', '03347595674', 'adil@adil.com'),
+(4, 'pbkdf2_sha256$720000$wxRNJNGIObx1CuEiO84Zzj$OIYNbqR5KI0y5e7l5DTX2JkjjIbEYxDQy3SGw3KquPM=', '2024-05-20 08:51:45.917079', 0, 0, 1, '2024-04-27 08:23:07.518811', 'profile_images/IMG_5793_we3QZD6.png', 'Ali', 'Iftikhar', 1, '1', 40, NULL, 'America', 'Louisiana', '03353959273', 'ali@ali.com'),
+(5, 'pbkdf2_sha256$720000$CLSin4JchKkwSt6AS4c7OO$xPMzmOeFLn/8XG3vUyMO+FoYF8kRA+TSFhUWWr7iKI4=', '2024-04-30 17:19:22.025797', 0, 0, 1, '2024-04-28 11:20:10.829625', 'profile_images/profile.jpg', 'Abdul', 'Rafy', 2, '1', 25, NULL, 'America', 'Delaware', '0347585853', 'rafy@rafy.com'),
+(6, 'pbkdf2_sha256$720000$7mYcuDcdM0DnwZlOTMTTfY$Ll5Q1hmxNEx6/GbTX/nvVlZ/CrdcggJD5VS+zKJJXIo=', '2024-05-02 02:19:34.430938', 0, 0, 1, '2024-05-02 02:19:23.608243', 'profile_images/hassan.jpg', 'Hassan', 'Ahmad', 1, '1', 60, NULL, 'America', 'North Carolina', '09876567', 'hassan@hassan.com'),
+(7, 'pbkdf2_sha256$720000$Q2CWl4MPMVuDXKFfLYNIsg$xzXTusy6ZP19SQWp855WpKS6FDTwBVJvkZRmhNqElx0=', '2024-05-02 15:22:23.411683', 0, 0, 1, '2024-05-02 02:23:22.536751', 'profile_images/elena.jpeg', 'Elena', 'Gilbert', 1, '0', 30, NULL, 'America', 'Virginia', '0987654', 'elena@elena.com'),
+(8, 'pbkdf2_sha256$720000$RhluXZA0P9qx6u4o9vpDGU$wYlZu0uNJ+AI7pTUYg+qtsphMoID03Osd9b4Md0+zZg=', '2024-05-18 10:59:23.153647', 0, 0, 1, '2024-05-18 03:10:13.472171', 'profile_images/ACTOR_FEROZ_KHAN.jpeg', 'Feroz', 'Khan', 1, '1', 40, NULL, 'America', 'Washington', '03347595674', 'feroz@feroz.com'),
+(9, 'pbkdf2_sha256$720000$7lbWkwpjtVnS9QZYozt9Pt$f6vkfoVz9C0KfbBjj+k/W/5wxhvqxoodRXF+wXTuBdw=', '2024-05-18 10:59:39.812779', 0, 0, 1, '2024-05-18 03:14:55.157001', 'profile_images/.jpeg', 'Wahaj', 'Ali', 2, '1', 45, NULL, 'America', 'Texas', '03347595674', 'wahaj@wahaj.com'),
+(10, 'pbkdf2_sha256$720000$gBlOCAQ1R2AAD3asjvcaGd$jWVWtjZYq34kW+y0T9YlUJqyF6hFdr5uwLs9rep3RoI=', '2024-05-20 09:00:55.154567', 0, 0, 1, '2024-05-18 03:16:57.578334', 'profile_images/download_3.jpeg', 'Bilal', 'Abbas', 3, '1', 35, NULL, 'America', 'Delaware', '03469382767', 'bilal@bilal.com');
 
 -- --------------------------------------------------------
 
@@ -511,10 +612,18 @@ ALTER TABLE `store_lastclick`
   ADD KEY `store_lastclick_user_id_a212a71a_fk_store_users_id` (`user_id`);
 
 --
+-- Indexes for table `store_notification`
+--
+ALTER TABLE `store_notification`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `store_notification_user_id_19e577b8_fk_store_users_id` (`user_id`);
+
+--
 -- Indexes for table `store_orders`
 --
 ALTER TABLE `store_orders`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `store_orders_logistic_id_fb3ec7b6_fk_store_users_id` (`logistic_id`);
 
 --
 -- Indexes for table `store_product`
@@ -566,7 +675,7 @@ ALTER TABLE `auth_group_permissions`
 -- AUTO_INCREMENT for table `auth_permission`
 --
 ALTER TABLE `auth_permission`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=49;
 
 --
 -- AUTO_INCREMENT for table `django_admin_log`
@@ -578,19 +687,19 @@ ALTER TABLE `django_admin_log`
 -- AUTO_INCREMENT for table `django_content_type`
 --
 ALTER TABLE `django_content_type`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `django_migrations`
 --
 ALTER TABLE `django_migrations`
-  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
 
 --
 -- AUTO_INCREMENT for table `store_cartitem`
 --
 ALTER TABLE `store_cartitem`
-  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT for table `store_contact`
@@ -602,13 +711,19 @@ ALTER TABLE `store_contact`
 -- AUTO_INCREMENT for table `store_lastclick`
 --
 ALTER TABLE `store_lastclick`
-  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT for table `store_notification`
+--
+ALTER TABLE `store_notification`
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `store_orders`
 --
 ALTER TABLE `store_orders`
-  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=174;
 
 --
 -- AUTO_INCREMENT for table `store_product`
@@ -620,7 +735,7 @@ ALTER TABLE `store_product`
 -- AUTO_INCREMENT for table `store_users`
 --
 ALTER TABLE `store_users`
-  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `store_users_groups`
@@ -671,6 +786,18 @@ ALTER TABLE `store_cartitem`
 ALTER TABLE `store_lastclick`
   ADD CONSTRAINT `store_lastclick_product_clicked_id_00ed7eaf_fk_store_product_id` FOREIGN KEY (`product_clicked_id`) REFERENCES `store_product` (`id`),
   ADD CONSTRAINT `store_lastclick_user_id_a212a71a_fk_store_users_id` FOREIGN KEY (`user_id`) REFERENCES `store_users` (`id`);
+
+--
+-- Constraints for table `store_notification`
+--
+ALTER TABLE `store_notification`
+  ADD CONSTRAINT `store_notification_user_id_19e577b8_fk_store_users_id` FOREIGN KEY (`user_id`) REFERENCES `store_users` (`id`);
+
+--
+-- Constraints for table `store_orders`
+--
+ALTER TABLE `store_orders`
+  ADD CONSTRAINT `store_orders_logistic_id_fb3ec7b6_fk_store_users_id` FOREIGN KEY (`logistic_id`) REFERENCES `store_users` (`id`);
 
 --
 -- Constraints for table `store_product`

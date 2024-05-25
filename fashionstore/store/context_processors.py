@@ -1,31 +1,29 @@
-from .views import getpersonalizedrecommendations, get_click_recommendations
-from django.contrib.auth.decorators import login_required
+from .views import getrecommendation, get_click_recommendations, add_record_to_dataset
+
 from django.contrib.auth.models import AnonymousUser
+from .models import lastclick, Product, Orders
 
 def recommendations(request):
-    user = request.user
-    recommendations = []
-    products = []
-    if user.is_authenticated:
-        recommendations, products = getpersonalizedrecommendations(user)
-    return {'recommendations': recommendations, 'products': products}
-
-from .models import lastclick, Product
-
+    if request.user.is_authenticated and request.user.role == 1:
+        user = request.user
+        recommendations = []
+        products = []
+        
+        recommendations, products = getrecommendation(user)
+        return {'recommendations': recommendations, 'products': products}
+    else:
+        return {'recommendations': [], 'products': []}
 
 def clickrecommendations(request):
-    if isinstance(request.user, AnonymousUser):
+    if isinstance(request.user, AnonymousUser) or request.user.role != 1:
         return {'clickrecommendeds': []}
     else:
         try:
-            # Attempt to retrieve the lastclick object for the current user
             user = request.user
             item = lastclick.objects.get(user=user)
-            item_name = Product.objects.get(id = item.product_clicked.id)
+            item_name = Product.objects.get(id=item.product_clicked.id)
             item_name = item_name.label
         except lastclick.DoesNotExist:
-            # Handle the case where the lastclick object doesn't exist
             item_name = "Blouse"
         clickrecommendeds = get_click_recommendations(item_name)
         return {'clickrecommendeds': clickrecommendeds}
-

@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Orders, Users, Product, CartItem, Contact
+from .models import Dataset,  Orders, Recommendations, Users, Product, CartItem, Contact
 
 @admin.register(Users)
 class UserProfileAdmin(admin.ModelAdmin):
@@ -18,7 +18,7 @@ class UserProfileAdmin(admin.ModelAdmin):
 
 @admin.register(Orders)
 class UserProfileAdmin(admin.ModelAdmin):
-    list_display = ('user','product', 'quantity','payment_method','card_number','expiry_date','cvv','card_holder_name','billing_address')
+    list_display = ('user','product','label', 'quantity','payment_method','card_number','expiry_date','cvv','card_holder_name','billing_address')
     search_fields = ('user','product')
 
 
@@ -31,3 +31,16 @@ class UserProfileAdmin(admin.ModelAdmin):
 class UserProfileAdmin(admin.ModelAdmin):
     list_display = ('name', 'email', 'message')
     search_fields = ('name','email')
+
+
+
+@admin.register(Recommendations)
+class UserProfileAdmin(admin.ModelAdmin):
+    list_display = ('id', 'Age','Gender','Interest','Location','Recommendations','Season')
+    search_fields = ('id','Age','Gender', 'Location')
+
+
+@admin.register(Dataset)
+class UserProfileAdmin(admin.ModelAdmin):
+    list_display = ('id', 'Age','Gender','Location','Item_Purchased','Category','Season')
+    search_fields = ('id','Age','Gender', 'Location')

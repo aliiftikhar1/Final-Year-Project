@@ -10,6 +10,7 @@
 <body>
     <div class="container">
         <h1 class="mb-4">Shopping Cart of {{ user.first_name }} {{ user.last_name }}</h1>
+        {% if cart_items %}
         <table class="table table-bordered table-striped">
             <thead class="thead-dark">
                 <tr>
@@ -25,7 +26,7 @@
                 </tr>
             </thead>
             <tbody>
-            {% for item in products %}
+            {% for item in cart_items %}
             <tr>
                 <form action="/payment" method="POST">
                     {% csrf_token %}
@@ -57,6 +58,7 @@
             {% endfor %}
         </tbody>
         </table>
+        
         <div class="d-flex justify-content-end mt-4 total-section">
             <h3 class="mr-2">TOTAL</h3>
             <h1 class="total-price text-danger" id="total-price">0</h1> <!-- Display total price here -->
@@ -69,7 +71,13 @@
                 </form>
                 
             </div>
+
         </div>
+        {% else %}
+        <div class="alert alert-info" role="alert">
+            Your cart is empty. Please add some products to continue shopping.
+        </div>
+        {% endif %}
     </div>
 
     <!-- Bootstrap JS and dependencies (jQuery, Popper.js) -->
