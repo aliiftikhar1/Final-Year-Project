@@ -3,7 +3,18 @@
 <div class="dashboard-home">
 
   <div class="container">
-   
+    <style>
+      #salesChart {
+          width: 100%;  /* Adjust the width as needed, e.g., 100%, 80%, 50%, etc. */
+          max-height: 400px; /* Adjust the height as needed */
+          max-width: 1000px; /* Maximum width */
+      }
+      #usersChart {
+        width: 100%;  /* Adjust the width as needed, e.g., 100%, 80%, 50%, etc. */
+        max-height: 400px; /* Adjust the height as needed */
+        max-width: 1000px; /* Maximum width */
+    }
+  </style>
 
     {% comment %} Showing ordered products {% endcomment %}
 
@@ -403,8 +414,7 @@
                   <p class="card-text"><strong>Payment Method:</strong> ${order.payment_method}</p>
                   <p class="card-text"><strong>Billing Address:</strong> ${order.billing_address}</p>
                   <p class="card-text"><strong>Status:</strong> ${status}</p>
-                  <button class="btn btn-success btn-sm" onclick="approveOrder(${order.id})">Approve</button>
-                  <button class="btn btn-danger btn-sm" onclick="deleteOrder(${order.id})">Delete</button>
+                  
               </div>
           </div>
       </div>
@@ -432,58 +442,5 @@
   document.getElementById('view-shipments').addEventListener('click', () => fetchOrders('shipped', 'Shipped Orders'));
   document.getElementById('view-delivered').addEventListener('click', () => fetchOrders('delivered', 'Delivered Orders'));
 
-  function approveOrder(orderId) {
-      fetch(`/api/orders/approve/${orderId}/`, {
-          method: 'POST',
-          headers: {
-              'Content-Type': 'application/json',
-              'X-CSRFToken': getCookie('csrftoken')  // Function to get the CSRF token
-          }
-      })
-      .then(response => {
-          if (response.ok) {
-              alert('Order approved successfully.');
-              document.getElementById('view-ordered-products').click();
-          } else {
-              alert('Failed to approve the order.');
-          }
-      })
-      .catch(error => console.error('Error approving order:', error));
-  }
-
-  function deleteOrder(orderId) {
-      fetch(`/api/orders/delete/${orderId}/`, {
-          method: 'DELETE',
-          headers: {
-              'Content-Type': 'application/json',
-              'X-CSRFToken': getCookie('csrftoken')  // Function to get the CSRF token
-          }
-      })
-      .then(response => {
-          if (response.ok) {
-              alert('Order deleted successfully.');
-              document.getElementById('view-ordered-products').click();
-          } else {
-              alert('Failed to delete the order.');
-          }
-      })
-      .catch(error => console.error('Error deleting order:', error));
-  }
-
-  // Function to get the CSRF token from cookies
-  function getCookie(name) {
-      let cookieValue = null;
-      if (document.cookie && document.cookie !== '') {
-          const cookies = document.cookie.split(';');
-          for (let i = 0; i < cookies.length; i++) {
-              const cookie = cookies[i].trim();
-              if (cookie.substring(0, name.length + 1) === (name + '=')) {
-                  cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
-                  break;
-              }
-          }
-      }
-      return cookieValue;
-  }
 </script>
 {% endblock %}

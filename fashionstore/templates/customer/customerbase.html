@@ -109,14 +109,12 @@
           <li class="nav-item me-3">
             <a class="nav-link active" aria-current="page" href="/contactus">Contact Us</a>
           </li>
-          <li class="nav-item me-3">
-            <a class="nav-link active" aria-current="page" href="/Recommendation_system">Recommendation System</a>
-          </li>
+          
           <li class="nav-item me-3">
             <a class="nav-link active" aria-current="page" href="/customerorders">Orders</a>
           </li>
         </ul>
-        <form role="search">
+        
           <div class="d-flex justify-content-between">
             {% comment %} <!-- HTML code to display notifications --> {% endcomment %}
             <div class="dropdown float-right me-3 d-flex">
@@ -132,9 +130,10 @@
             </div>
 
             <div class="d-flex">
-              <input class="form-control form-control-sm w-50" type="search" placeholder="Search" aria-label="Search" />
-              <button class="btn btn-outline-success me-2" type="submit">Search</button>
-              <!-- Login Register Button and Search bar -->
+              <form id="searchForm" action="{% url 'search_results' %}" method="get">
+                <input type="text" name="query" id="searchInput" class="form-control" placeholder="Search for products..." required>
+                <button type="submit" class="btn btn-primary mt-2">Search</button>
+            </form>
             </div>
             
             <!-- User Icon -->
@@ -145,8 +144,8 @@
                 </button>
                 
                 <ul style="margin-left: -70px;" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <li><a class="dropdown-item" href="#">View Profile</a></li>
-                  <li><a class="dropdown-item" href="#">Update Profile</a></li>
+                  <li><a class="dropdown-item" href="/profile">View Profile</a></li>
+                  <li><a class="dropdown-item" href="/profile/update">Update Profile</a></li>
                   <li style="margin-left: 15px;"><a href="/logout"><button class="btn btn-outline-primary" type="button">Logout</button></a></li>
                 </ul>
               </div>
@@ -164,7 +163,7 @@
   <div class="d-flex">
     <div class="col-2 side-bar">
       <h5 class="text-center">Clicked Product Recommendations</h5>
-      <div class="row left-side-bar" style="overflow-y: auto; height: calc(100vh - 56px);">
+      <div class="row left-side-bar" style="overflow-y: auto; height: calc(90vh - 56px);">
         {% for clkproduct in clickrecommendeds %}
           {% for product in products %}
             {% if product.label == clkproduct %}
@@ -193,7 +192,7 @@
     <div class="col-8 " style="overflow-y: auto; height: calc(100vh - 70px);">
       {% block content %}{% endblock content %}
     </div>
-    <div class="col-2 side-bar">
+    <div class="col-2 side-bar ">
       <button onclick="showInterestModal()" class="btn">
         <h5 class="text-center modal-heading">Personalized Recommendations</h5>
       </button>
@@ -231,7 +230,7 @@
         </div>
       </div>
 
-      <div class="row right-side-bar" style="overflow-y: auto; height: calc(100vh - 56px);">
+      <div class="row right-side-bar" style="overflow-y: auto; height: calc(90vh - 56px);">
         {% for recproduct in recommendations %}
           {% for product in products %}
             {% if product.label == recproduct and product.gender == request.user.gender %}

@@ -111,7 +111,11 @@ class Orders(models.Model):
     cvv = models.CharField(max_length=4, blank=True, null=True)
     card_holder_name = models.CharField(max_length=100, blank=True, null=True)
     billing_address = models.TextField(null=True)
+    shipping_rate = models.DecimalField(max_digits=10, decimal_places=2)
+    total_price = models.DecimalField(max_digits=10, decimal_places=2)
     status = models.CharField(max_length=200)
+    date = models.DateField(default=datetime.today)  # Use datetime.today as the default value
+
     # 1=pending
     # 2=processing
     # 3=shipped

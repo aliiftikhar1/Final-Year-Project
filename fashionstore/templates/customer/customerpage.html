@@ -89,7 +89,7 @@ nav {
    ul li ul li a { transition: all 0.5s ease; }
   
 </style>
-<nav role="navigation" class="primary-navigation">
+<<nav role="navigation" class="primary-navigation">
   <ul>
     <li class="nav-item  dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinkMen" role="button"
@@ -117,18 +117,18 @@ nav {
           Women
         </a>
         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkWomen">
-          <li><a class="dropdown-item" href="#">Blouse</a></li>
-          <li><a class="dropdown-item" href="#">Sweater</a></li>
-          <li><a class="dropdown-item" href="#">Shirt</a></li>
-          <li><a class="dropdown-item" href="#">T-Shirt</a></li>
-          <li><a class="dropdown-item" href="#">Coat</a></li>
-          <li><a class="dropdown-item" href="#">Dress</a></li>
-          <li><a class="dropdown-item" href="#">Jacket</a></li>
-          <li><a class="dropdown-item" href="#">Hoodie</a></li>
-          <li><a class="dropdown-item" href="#">Jeans</a></li>
-          <li><a class="dropdown-item" href="#">Shorts</a></li>
-          <li><a class="dropdown-item" href="#">Skirt</a></li>
-          <li><a class="dropdown-item" href="#">Pants</a></li>
+          <li><a class="dropdown-item" href="{% url 'products_by_category' 'Blouse' %}">Blouse</a></li>
+          <li><a class="dropdown-item" href="{% url 'products_by_category' 'Sweater' %}">Sweater</a></li>
+          <li><a class="dropdown-item" href="{% url 'products_by_category' 'Shirt' %}">Shirt</a></li>
+          <li><a class="dropdown-item" href="{% url 'products_by_category' 'T-Shirt' %}">T-Shirt</a></li>
+          <li><a class="dropdown-item" href="{% url 'products_by_category' 'Coat' %}">Coat</a></li>
+          <li><a class="dropdown-item" href="{% url 'products_by_category' 'Dress' %}">Dress</a></li>
+          <li><a class="dropdown-item" href="{% url 'products_by_category' 'Jacket' %}">Jacket</a></li>
+          <li><a class="dropdown-item" href="{% url 'products_by_category' 'Hoodie' %}">Hoodie</a></li>
+          <li><a class="dropdown-item" href="{% url 'products_by_category' 'Jeans' %}">Jeans</a></li>
+          <li><a class="dropdown-item" href="{% url 'products_by_category' 'Shorts' %}">Shorts</a></li>
+          <li><a class="dropdown-item" href="{% url 'products_by_category' 'Skirt' %}">Skirt</a></li>
+          <li><a class="dropdown-item" href="{% url 'products_by_category' 'Pants' %}">Pants</a></li>
         </ul>
       </li>
       <li class="nav-item  dropdown">
@@ -137,10 +137,10 @@ nav {
           Footwears
         </a>
         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkFootwears">
-          <li><a class="dropdown-item" href="#">Sandals</a></li>
-          <li><a class="dropdown-item" href="#">Sneaker</a></li>
-          <li><a class="dropdown-item" href="#">Shoes</a></li>
-          <li><a class="dropdown-item" href="#">Boots</a></li>
+          <li><a class="dropdown-item" href="{% url 'products_by_category' 'Sandals' %}">Sandals</a></li>
+          <li><a class="dropdown-item" href="{% url 'products_by_category' 'Sneaker' %}">Sneaker</a></li>
+          <li><a class="dropdown-item" href="{% url 'products_by_category' 'Shoes' %}">Shoes</a></li>
+          <li><a class="dropdown-item" href="{% url 'products_by_category' 'Boots' %}">Boots</a></li>
         </ul>
       </li>
       <li class="nav-item  dropdown">
@@ -149,8 +149,8 @@ nav {
           Headwear
         </a>
         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkHeadwear">
-          <li><a class="dropdown-item" href="#">Scarf</a></li>
-          <li><a class="dropdown-item" href="#">Hat</a></li>
+          <li><a class="dropdown-item" href="{% url 'products_by_category' 'Scarf' %}">Scarf</a></li>
+          <li><a class="dropdown-item" href="{% url 'products_by_category' 'Hat' %}">Hat</a></li>
         </ul>
       </li>
       <li class="nav-item  dropdown">
@@ -159,16 +159,17 @@ nav {
           Accessories
         </a>
         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkAccessories">
-          <li><a class="dropdown-item" href="#">Sunglasses</a></li>
-          <li><a class="dropdown-item" href="#">Jewelry</a></li>
-          <li><a class="dropdown-item" href="#">Socks</a></li>
-          <li><a class="dropdown-item" href="#">Backpack</a></li>
-          <li><a class="dropdown-item" href="#">Belt</a></li>
-          <li><a class="dropdown-item" href="#">Gloves</a></li>
+          <li><a class="dropdown-item" href="{% url 'products_by_category' 'Sunglasses' %}">Sunglasses</a></li>
+          <li><a class="dropdown-item" href="{% url 'products_by_category' 'Jewelry' %}">Jewelry</a></li>
+          <li><a class="dropdown-item" href="{% url 'products_by_category' 'Socks' %}">Socks</a></li>
+          <li><a class="dropdown-item" href="{% url 'products_by_category' 'Backpack' %}">Backpack</a></li>
+          <li><a class="dropdown-item" href="{% url 'products_by_category' 'Belt' %}">Belt</a></li>
+          <li><a class="dropdown-item" href="{% url 'products_by_category' 'Gloves' %}">Gloves</a></li>
         </ul>
       </li>
   </ul>
 </nav>
+
 {% endblock topbar %}
 {% block content %}
 <div class="text-center pt-3"> <h5>Welcome, {{ user.first_name }} {{ user.last_name }} </h5> </div>

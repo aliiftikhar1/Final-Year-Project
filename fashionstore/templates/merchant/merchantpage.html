@@ -9,7 +9,7 @@
             <div class="card shadow-lg">
                 <div class="card-body">
                     <h2 class="card-title text-primary mb-4">Welcome, {{ user.first_name }} {{ user.last_name }}</h2>
-                    <div class="row row-cols-3 row-cols-md-5 g-4">
+                    <div class="row row-cols-3 row-cols-md-5 g-9 justify-content-between">
                         <div class="col">
                             <div class="card h-100">
                                 <div class="card-body d-flex flex-column justify-content-center align-items-center">
@@ -33,25 +33,17 @@
                                 <div class="card-body d-flex flex-column justify-content-center align-items-center">
                                     <i class="fas fa-chart-bar text-info mb-3 fs-2"></i>
                                     <h5 class="card-title mb-3">Sales Analytics</h5>
-                                    <a href="#" class="btn btn-info">View Analytics</a>
+                                    <a href="/graph_all_orders_merchant" class="btn btn-info">View Analytics</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
-                            <div class="card h-100">
-                                <div class="card-body d-flex flex-column justify-content-center align-items-center">
-                                    <i class="fas fa-money-bill-wave text-warning mb-3 fs-2"></i>
-                                    <h5 class="card-title mb-3">Payment Details</h5>
-                                    <a href="#" class="btn btn-warning">View Payments</a>
-                                </div>
-                            </div>
-                        </div>
+                        
                         <div class="col">
                             <div class="card h-100">
                                 <div class="card-body d-flex flex-column justify-content-center align-items-center">
                                     <i class="fas fa-shopping-cart text-success mb-3 fs-2"></i>
                                     <h5 class="card-title mb-3">Ordered Products</h5>
-                                    <a href="#" class="btn btn-success">View Orders</a>
+                                    <a href="/all_orders_merchant" class="btn btn-success">View Orders</a>
                                 </div>
                             </div>
                         </div>
@@ -60,5 +52,84 @@
             </div>
         </div>
     </div>
+
+    {% if analytics %}
+    <style>
+        #salesChart {
+            width: 100%;  /* Adjust the width as needed, e.g., 100%, 80%, 50%, etc. */
+            max-height: 400px; /* Adjust the height as needed */
+            max-width: 1000px; /* Maximum width */
+        }
+    </style>
+    <div class="row text-center">
+        <h4 id="order-status">{{status}}</h4>
+      <canvas id="salesChart" class="p-2" width="600" height="400"></canvas>
+      <script>
+        var ctx = document.getElementById('salesChart').getContext('2d');
+        if (salesChart) {
+          salesChart.destroy();
+        }
+        var salesChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: {{ product_names|safe }},
+                datasets: [{
+                    label: 'Quantity of Products Sold',
+                    data: {{ quantities| safe}},
+                    backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                    borderColor: 'rgba(54, 162, 235, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+        
+      </script>
+      </div>
+    {% endif %}
+
+    {% if all_orders %}
+    <h2 class="text-center">List of Orders</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>User</th>
+          <th>Product</th>
+          <th>Product Image</th>
+          <th>Quantity</th>
+          <th>Payment Method</th>
+          <th>Card Number</th>
+          <th>Expiry Date</th>
+          <th>CVV</th>
+          <th>Card Holder Name</th>
+          <th>Billing Address</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for order in orders %}
+        <tr>
+          <td>{{ order.user.first_name }} {{ order.user.last_name }}</td>
+          <td>{{ order.product.name }}</td>
+          <td>
+            <img src="{{order.product.image.url}}" style="object-fit: contain;" alt="image" width="50" height="50">
+          </td>
+          <td>{{ order.quantity }}</td>
+          <td>{{ order.payment_method }}</td>
+          <td>{{ order.card_number }}</td>
+          <td>{{ order.expiry_date }}</td>
+          <td>{{ order.cvv }}</td>
+          <td>{{ order.card_holder_name }}</td>
+          <td>{{ order.billing_address }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    {% endif %}
 </div>
 {% endblock content %}

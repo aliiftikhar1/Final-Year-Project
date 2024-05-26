@@ -47,8 +47,9 @@
 <body>
 
 <div class="container">
-    <div class="dashboard-heading">
-        <h1 class="display-4">Logistic User Dashboard</h1>
+    <div class="dashboard-heading text-center d-flex">
+        <h1 class="display-4 col-11">Logistic User Dashboard</h1>
+        <a href="/logout"><button style="height: fit-content; align-self: center;" class="btn btn-danger float-right" type="button">Logout</button></a>
     </div>
 
     <div class="row">
@@ -88,15 +89,7 @@
                 </div>
             </div>
         </div>
-        <div style="width:250px;" class="mb-4">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Generate Reports</h5>
-                    <p class="card-text">Generate and download reports.</p>
-                    <button id="view-reports" class="btn btn-primary">Generate Reports</button>
-                </div>
-            </div>
-        </div>
+        
     </div>
 
     <!-- Section to display ordered products -->
@@ -126,19 +119,28 @@
         status = "Delivered"; // This condition is redundant if "2" means "Delivered"
     }
 
+
+    // Hide approve and delete buttons if order status is 4 (Delivered)
+    let buttonsHTML = '';
+    if (order.status !== "4") {
+        buttonsHTML = `
+            <button class="btn btn-success btn-sm" onclick="approveOrder(${order.id})">Approve</button>
+            <button class="btn btn-danger btn-sm" onclick="deleteOrder(${order.id})">Delete</button>
+        `;
+    }
+
     return `
         <div class="col-md-4">
             <div class="card mb-4">
                 <div class="card-body">
                     <h4 class="card-title">${order.product.name}</h4>
-                    <p class="card-text"><strong>User:</strong> ${order.user.first_name +" " + order.user.last_name}</p>
+                    <p class="card-text"><strong>User:</strong> ${order.user.first_name} ${order.user.last_name}</p>
                     <p class="card-text"><strong>Label:</strong> ${order.label}</p>
                     <p class="card-text"><strong>Quantity:</strong> ${order.quantity}</p>
                     <p class="card-text"><strong>Payment Method:</strong> ${order.payment_method}</p>
                     <p class="card-text"><strong>Billing Address:</strong> ${order.billing_address}</p>
                     <p class="card-text"><strong>Status:</strong> ${status}</p>
-                    <button class="btn btn-success btn-sm" onclick="approveOrder(${order.id})">Approve</button>
-                    <button class="btn btn-danger btn-sm" onclick="deleteOrder(${order.id})">Delete</button>
+                    ${buttonsHTML} <!-- Include the buttons HTML here --
                 </div>
             </div>
         </div>

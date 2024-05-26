@@ -1,4 +1,5 @@
 
+from decimal import Decimal
 import json
 from django.http import HttpResponse, HttpResponseNotAllowed, HttpResponseNotFound, HttpResponseRedirect, JsonResponse
 from django.contrib.auth import logout
@@ -13,20 +14,16 @@ from django.contrib import messages
 import pandas as pd
 from django.contrib.auth import authenticate
 import joblib
-from django.views.decorators.http import require_POST
-from sklearn.compose import ColumnTransformer
-from sklearn.preprocessing import OneHotEncoder
 from .models import Dataset, Orders, Recommendations, Users, Product, CartItem,Contact, Notification
 from .models import CartItem, Product, lastclick
 from django.contrib.auth.models import AnonymousUser
 from rest_framework import generics
 from rest_framework import status
-
+from django.contrib.auth.decorators import login_required
+from .forms import UserUpdateForm
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
-from rest_framework.views import APIView
 from rest_framework.response import Response
-from .serializers import NotificationSerializer
 from .serializers import OrdersSerializer
 
 
@@ -36,8 +33,7 @@ def index(request):
      else:
          user= request.user
          if user.role == 1:
-                return redirect('customerpage')
-                # return render(request, 'customer/customerpage.html')
+             return redirect('customerpage')
          elif user.role == 2:
              return redirect('merchantpage')
          elif user.role == 3:
@@ -46,22 +42,52 @@ def index(request):
              return redirect('adminpage')
          
 def customer_login (request):
-    # Log the user out
+    
     return render(request, 'customer/customer_login.html')
 
 def merchant_login (request):
-    # Log the user out
+    
     return render(request, 'merchant/merchant_login.html')
 
 def admin_login (request):
-    # Log the user out
+    
     return render(request, 'admin/admin_login.html')
 def logistic_login (request):
-    # Log the user out
+    
     return render(request, 'logistic/logistic_login.html')
 
 def admin(request):
     return render(request, 'admin/dashboard.html')
+
+@login_required
+def view_profile(request):
+    user = request.user
+    return render(request, 'view_profile.html', {'user': user})
+
+@login_required
+def update_profile(request):
+    user = request.user
+    if request.method == 'POST':
+        form = UserUpdateForm(request.POST, request.FILES, instance=user)
+        if form.is_valid():
+            form.save()
+            return redirect('view-profile')
+    else:
+        form = UserUpdateForm(instance=user)
+    return render(request, 'update_profile.html', {'form': form})
+
+
+def search_results(request):
+    user = request.user
+    print("searrch page called")
+    query = request.GET.get('query', '')
+    products = []
+    if query:
+        products = Product.objects.filter(name__icontains=query) | Product.objects.filter(description__icontains=query)
+        if user.role == 0:
+            return render(request, 'admin/admin_search.html', {'search': products, 'query': query})
+        if user.role == 1:
+            return render(request, 'customer/customer_search.html', {'search': products, 'query': query})
 
 def home(request):
     
@@ -167,6 +193,39 @@ def useranalytics(request):
         'role_counts': role_counts,
     })
 
+def graph_all_orders_merchant(request):
+    orders = Orders.objects.all()
+    product_sales = {}
+    for order in orders:
+        product_name = order.label
+        quantity = order.quantity
+        if product_name in product_sales:
+            product_sales[product_name] += quantity
+        else:
+            product_sales[product_name] = quantity
+    
+    product_names = list(product_sales.keys())
+    quantities = list(product_sales.values())
+    print("products: ",product_names)
+    print("quantities: ",quantities)
+
+    return render(request, 'merchant/merchantpage.html', {
+        'analytics': 'analytics page',
+        'view': 'analytics',
+        'status': 'Sales Graph',
+        'product_names': product_names,
+        'quantities': quantities,
+    })
+
+def all_orders_merchant(request):
+    orders = Orders.objects.filter(product__seller = request.user)
+
+    return render(request, 'merchant/merchantpage.html', {
+        'all_orders': 'analytics page',
+        'view': 'analytics',
+        'status': 'All Orders',
+        'orders': orders,
+    })
 
 
 def graph_all_orders(request):
@@ -550,8 +609,8 @@ def updatemerchantproduct(request):
 
 
 
+
 def products_by_category(request, category):
-    # products = get_object_or_404(Product, label=category)
     categoryproducts = Product.objects.filter(label=category)
     return render(request,'customer/productbycategory.html', {'categoryproducts': categoryproducts})
 
@@ -576,18 +635,13 @@ def Login(request):
             print("Login successful")
             if user.role == 1:
                 return redirect('customerpage')
-                # return render(request, 'customer/customerpage.html')
             elif user.role == 2:
                 return redirect('merchantpage')
             elif user.role==3:
                 return redirect('logisticpage')
             elif user.role==0:
                 return redirect('adminpage')
-            # else:
-            #     return render(request, 'adminpage.html')
-            # return render(request, 'merchantpage.html')
         else:
-            # Handle invalid login credentials
             return render(request, 'login.html', {'error_message': 'Invalid email or password'})
     else:
         return render(request, 'login.html')
@@ -627,9 +681,6 @@ def register(request):
             print("image not uploaded")
             return render(request,"register.html")
     else:
-        
-        # If it's a GET request, render the registration form
-        
         return render(request, 'register.html')
 
 def add_product(request):
@@ -657,7 +708,6 @@ def add_product(request):
             product.save()
             products = Product.objects.all()
             return render(request, 'products.html', {'products': products})
-         # Redirect to products page after adding product
     else:
         return render(request, 'add_product.html')
     
@@ -741,37 +791,74 @@ def orders(request):
         card_number = request.POST.get('card_number')
         expiry_date = request.POST.get('expiry_date')
         cvv = request.POST.get('cvv')
+        shipping_rate = request.POST.get('shipping_charges')
         card_holder_name = request.POST.get('card_holder_name')
         billing_address = request.POST.get('billing_address')
+        shipping_rate = Decimal(shipping_rate)
+        
         for product_id in selected_products:
             cart_item = get_object_or_404(CartItem, user=user, product_id=product_id)
+            quantity = cart_item.quantity
             product = cart_item.product
+            total_price = quantity * product.price
             order = Orders(
                 user=user,
                 product=product,
                 label=product.label,
-                quantity=cart_item.quantity,
+                quantity=quantity,
                 payment_method=payment_method,
                 card_number=card_number,
                 expiry_date=expiry_date,
                 cvv=cvv,
                 card_holder_name=card_holder_name,
+                shipping_rate = shipping_rate  ,
+                total_price = total_price,
                 billing_address=billing_address,
                 status=1  # Assuming 1 means pending
                 )
             order.save()
             cart_item.delete()
             
-            
-        item= Orders.objects.filter(user = user)
-        return render(request, 'ordered_items.html',{'item': item})
+            return redirect('customer_receipt')
     else:
         return render(request, 'customer/payment.html')
     
 def ordered_products(request):
     user= request.user
     item= Orders.objects.filter(user = user)
+    
     return render(request, 'ordered_items.html',{'item': item})
+
+def customer_receipt(request):
+    user= request.user
+    item= Orders.objects.filter(user = user, status = 1)
+    
+    return render(request, 'customer/receipt.html', {'item': item,'user':user,'products': products})
+
+from django.template.loader import render_to_string
+from django.http import HttpResponse
+from xhtml2pdf import pisa
+
+def download_receipt(request):
+    user = request.user
+    items = Orders.objects.filter(user=user, status=1)
+    
+    # Render the HTML template with context
+    html_string = render_to_string('customer/receipt.html', {'user': user, 'items': items})
+    
+    # Create a HttpResponse object with PDF headers
+    response = HttpResponse(content_type='application/pdf')
+    response['Content-Disposition'] = 'attachment; filename="receipt.pdf"'
+    
+    # Convert HTML to PDF
+    pisa_status = pisa.CreatePDF(html_string, dest=response)
+    
+    # If there's an error, show what went wrong
+    if pisa_status.err:
+        return HttpResponse('We had some errors <pre>' + html_string + '</pre>')
+    
+    return response
+
 
 
 def customerproducts(request):
@@ -783,11 +870,9 @@ def customerproducts(request):
 
 def customerorders(request):
     # Retrieve all products from the database
-    products = Orders.objects.filter(user = request.user)
-    
-    # Pass the products queryset to the template context
-    return render(request, 'ordered_items.html', {'item': products})
-
+    orders = Orders.objects.filter(user = request.user)
+    return render(request, 'ordered_items.html', {'orders': orders})
+   
 
 
 def add_to_cart(request):
@@ -865,19 +950,30 @@ class PendingOrdersList(generics.ListAPIView):
     serializer_class = OrdersSerializer
 
     def get_queryset(self):
-        # order = Orders.objects.filter(status="1")
-        # order.product = order.product.name
-        # order.user = order.user.first_name , order.user.last_name
-        item = Orders.objects.filter(status="1")
-        data = [{'Product': item.product.name, 'image': item.product.image.url,'user': item.user.first_name + item.user.last_name ,'Product': item.product.name,} for notification in notifications]
-        return JsonResponse(data, safe=False)
+        # # order = Orders.objects.filter(status="1")
+        # # order.product = order.product.name
+        # # order.user = order.user.first_name , order.user.last_name
+        # item = Orders.objects.filter(status="1")
+        # data = [{'Product': item.product.name, 'image': item.product.image.url,'user': item.user.first_name + item.user.last_name ,'Product': item.product.name,} for notification in notifications]
+        # return JsonResponse(data, safe=False)
         return Orders.objects.filter(status="1")
 
 class ProcessingOrdersList(generics.ListAPIView):
     serializer_class = OrdersSerializer
 
     def get_queryset(self):
-        return Orders.objects.filter(status="2")
+        user = self.request.user
+
+        print(user.id)  # Debug statement to print user ID
+        print(user.role)
+        if user.role == 3:  # Logistic user
+            logisticuser = Orders.objects.filter(status="2", logistic=user.id)
+            print(logisticuser)
+            return logisticuser
+            
+        
+        elif user.role == 0:  # Admin user
+            return Orders.objects.filter(status="2")
     
 class ShippedOrdersList(generics.ListAPIView):
     serializer_class = OrdersSerializer
@@ -899,7 +995,18 @@ class ShippedOrdersList(generics.ListAPIView):
 class DeliveredOrdersList(generics.ListAPIView):
     serializer_class = OrdersSerializer
     def get_queryset(self):
-        return Orders.objects.filter(status="4")
+        user = self.request.user
+
+        print(user.id)  # Debug statement to print user ID
+        print(user.role)
+        if user.role == 3:  # Logistic user
+            logisticuser = Orders.objects.filter(status="4", logistic=user.id)
+            print(logisticuser)
+            return logisticuser
+            
+        
+        elif user.role == 0:  # Admin user
+            return Orders.objects.filter(status="4")
     
 def save_notification(user, message, product_id,orderstatus):
     newmessage = message
@@ -1055,6 +1162,8 @@ def getrecommendation(user):
     location = user.city
     season = get_current_season()
     category = user.interest_in
+    if not category:
+        category = "nothing"
 
     print(user, age, gender, location, category, season)
 

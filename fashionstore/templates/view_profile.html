@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View Profile</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="card">
+            <div class="card-header">
+                <h1>{{ user.first_name }}'s Profile</h1>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="{{ user.image.url }}" class="img-fluid rounded" alt="Profile Picture">
+                    </div>
+                    <div class="col-md-8">
+                        <p><strong>First Name:</strong> {{ user.first_name }}</p>
+                        <p><strong>Last Name:</strong> {{ user.last_name }}</p>
+                        <p><strong>Email:</strong> {{ user.email }}</p>
+                        <p><strong>Gender:</strong> {{ user.gender }}</p>
+                        <p><strong>Age:</strong> {{ user.age }}</p>
+                        <p><strong>Interest In:</strong> {{ user.interest_in }}</p>
+                        <p><strong>Location:</strong> {{ user.location }}</p>
+                        <p><strong>City:</strong> {{ user.city }}</p>
+                        <p><strong>Phone Number:</strong> {{ user.phone_number }}</p>
+                        <a href="{% url 'update-profile' %}" class="btn btn-primary">Edit Profile</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

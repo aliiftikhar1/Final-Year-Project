@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>checkout Form</title>
+    <title>Checkout Form</title>
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
@@ -56,6 +56,7 @@
 
         <!-- Credit Card Form -->
         <form id="credit_card_form" class="payment-form" action="/orders" method="post">
+            {% csrf_token %}
             <h3 class="mb-4 text-center">Credit Card Payment</h3>
             <div class="form-group">
                 <label for="card_number">Card Number</label>
@@ -73,6 +74,14 @@
                 <label for="name">Cardholder's Name</label>
                 <input type="text" class="form-control" id="name" name="name" placeholder="Full name">
             </div>
+            <div class="form-group">
+                <label for="billing_address_cc">Billing Address</label>
+                <input type="text" class="form-control" id="billing_address_cc" name="billing_address" placeholder="Enter billing address">
+            </div>
+            <div class="form-group">
+                <label for="shipping_charges_cc">Shipping Charges</label>
+                <input type="text" class="form-control" id="shipping_charges_cc" name="shipping_charges" readonly>
+            </div>
             <button type="submit" class="btn btn-pay btn-block">Pay Now</button>
         </form>
 
@@ -80,9 +89,16 @@
         <form id="cash_on_delivery_form" class="payment-form hidden" action="/orders" method="post">
             {% csrf_token %}
             <h3 class="mb-4 text-center">Cash on Delivery</h3>
-            <h1>Products: {{selected_product_ids}}</h1>
             <input type="hidden" name="payment_method" value="Cash on Delivery">
             <input type="hidden" name="products" value="{{selected_product_ids}}">
+            <div class="form-group">
+                <label for="billing_address_cod">Billing Address</label>
+                <input type="text" class="form-control" id="billing_address_cod" value="{{request.user.city}},{{request.user.location}}" name="billing_address" readonly>
+            </div>
+            <div class="form-group">
+                <label for="shipping_charges_cod">Shipping Charges</label>
+                <input type="text" class="form-control" id="shipping_charges_cod" name="shipping_charges" readonly>
+            </div>
             <p>Please keep the exact amount ready for delivery.</p>
             <button type="submit" class="btn btn-pay btn-block">Place Order</button>
         </form>
@@ -95,12 +111,37 @@
     <!-- Custom JavaScript -->
     <script>
         $(document).ready(function() {
+            function setShippingCharges(formType) {
+                var billingAddress = $('#billing_address_' + formType).val().toLowerCase();
+                var shippingCharges = billingAddress.includes('pakistan') ? 500 : 1000;
+                $('#shipping_charges_' + formType).val(shippingCharges);
+            }
+
             // Function to toggle between payment methods
             $('#payment_method').change(function() {
                 var selectedMethod = $(this).val();
                 $('.payment-form').addClass('hidden');
                 $('#' + selectedMethod + '_form').removeClass('hidden');
+                setShippingCharges(selectedMethod === 'credit_card' ? 'cc' : 'cod');
             });
+
+            // Set initial shipping charges based on default selected method
+            setShippingCharges('cc');
+
+            // Set shipping charges based on billing address for credit card
+            $('#billing_address_cc').on('input', function() {
+                setShippingCharges('cc');
+            });
+
+            // Set shipping charges based on billing address for cash on delivery
+            $('#billing_address_cod').on('input', function() {
+                setShippingCharges('cod');
+            });
+
+            // Initial shipping charges for COD if form is visible
+            if ($('#cash_on_delivery_form').is(':visible')) {
+                setShippingCharges('cod');
+            }
         });
     </script>
 </body>

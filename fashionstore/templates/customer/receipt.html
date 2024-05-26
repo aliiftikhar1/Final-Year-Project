@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receipt</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    {% load static %}
+</head>
+<body>
+    <style>
+        tr{
+            height: 50px;
+        }
+        th,td{
+            padding: 10px;
+        }
+    </style>
+    <div class="card" id="receipt-content">
+        <div class="card-body">
+            <div class="container mb-5 mt-3">
+                <div class="row d-flex align-items-baseline ">
+                    <div class="col-9">
+                        <h6 style="color: #000000; font-size: 20px;">Invoice <strong>ID: #123-123</strong></h6>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="col-md-12">
+                        <div class="text-center">
+                            <img src="{% static 'FS LOGO.png' %}" alt="Company Logo" style="max-width: 100px; margin:auto">
+                            <h4 class="pt-2">Fashion Store</h4>
+                        </div>
+                    </div>
+                    <div class="row d-flex">
+                        <div class="col-8">
+                            <ul class="list-unstyled">
+                                <h5 class="text-dark font-weight-bold">Billed To</h5>
+                                <li class="text-dark font-weight-bold">User name: <span style="color:#ff7900;">{{ user.get_full_name }}</span></li>
+                                <li class="text-dark font-weight-bold">Email: <span style="color:#ff7900;">{{ user.email }}</span></li>
+                                <li class="text-dark font-weight-bold">Address: <span style="color:#ff7900;">{{ user.city }}, {{ user.location }}</span></li>
+                            </ul>
+                        </div>
+                        <div class="col-4">
+                            <h5 class="text-primary font-weight-bold">Invoice</h5>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-circle" style="color:#8f8061;"></i> <span class="fw-bold">ID:</span>#123-456</li>
+                                <li><i class="fas fa-circle" style="color:#8f8061;"></i> <span class="fw-bold">Creation Date: </span>{{item.0.date}}</li>
+                                <li><i class="fas fa-circle" style="color:#8f8061;"></i> <span class="me-1 fw-bold">Status:</span><span class="badge bg-warning text-black fw-bold">Unpaid</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row my-2 mx-1 ">
+                        <div class="col-12 ">
+                            <h5>Product Information</h5>
+                            <div class="table-responsive">
+                                <table class="table-bordered ">
+                                    <thead class="bg-dark">
+                                        <tr>
+                                            <th scope="col" class="text-white">Order NO</th>
+                                            <th scope="col" class="text-white">Product</th>
+                                            <th scope="col" class="text-white">Quantity</th>
+                                            <th scope="col" class="text-white">Unit Price</th>
+                                            <th scope="col" class="text-white">Total</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {% for order in item %}
+                                        <tr class="order-row">
+                                            <td>{{ forloop.counter }}</td>
+                                            <td>{{ order.product.name }}</td>
+                                            <td>{{ order.quantity }}</td>
+                                            <td>{{ order.product.price }}</td>
+                                            <td>{{ order.total_price }}</td>
+                                        </tr>
+                                        {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div style="background-color: #232F3E; color: white; ">
+                        <div class="row p-4 d-flex">
+                            <div class="col-8">
+                                <h3 class="ms-3">Payment information</h3>
+                                <ul>
+                                    <li>Payment Method: <span style="color:#8f8061;">{{ item.0.payment_method }}</span></li>
+                                </ul>
+                            </div>
+                            <div class="col-3">
+                                <ul class="list-unstyled">
+                                    <li class="text ms-3">SubTotal: <span id="subtotal" style="color: white;" class="text-black me-4"> </span> Rs/-</li>
+                                    <li class="text ms-3 mt-2"><span style="color: white;" class="text-black me-4">Shipping: </span>500 Rs/-</li>
+                                </ul>
+                                <p class="text-black float-start"><span class="text-black me-3"> Total Amount: </span><span id="totalamount" style="font-size: 20px;"></span> Rs/-</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
+
+    <!-- Script to handle PDF generation -->
+    <script>
+       
+
+        // Function to calculate subtotal
+        function calculateSubtotal() {
+            var rows = document.getElementsByClassName("order-row");
+            var subtotal = 0;
+            // Loop through each row
+            for (var i = 0; i < rows.length; i++) {
+                var row = rows[i];
+                var quantity = parseInt(row.cells[2].innerText);
+                var unitPrice = parseFloat(row.cells[3].innerText);
+                var totalPriceCell = row.cells[4];
+
+                // Calculate subtotal for this item
+                var totalPrice = quantity * unitPrice;
+
+                // Update the total price cell in the row
+                totalPriceCell.innerText = totalPrice.toFixed(2);
+
+                // Accumulate to calculate total subtotal
+                subtotal += totalPrice;
+            }
+
+            // Update the total subtotal display
+            var totalamount = subtotal + 500;
+
+            document.getElementById("subtotal").innerText = subtotal.toFixed(2);
+            document.getElementById("totalamount").innerText = totalamount.toFixed(2);
+        }
+
+        // Call the function when the page loads
+        window.onload = calculateSubtotal;
+    </script>
+</body>
+</html>

@@ -1,6 +1,14 @@
 # forms.py
 from django import forms
-from .models import Product
+from .models import Users,Product
+
+class UserUpdateForm(forms.ModelForm):
+    class Meta:
+        model = Users
+        fields = [
+            'first_name', 'last_name', 'image', 'gender', 'age',
+            'interest_in', 'location', 'city', 'phone_number', 'email'
+        ]
 
 # class UserRegistrationForm(forms.ModelForm):
 #     password = forms.CharField(widget=forms.PasswordInput)
