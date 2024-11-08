@@ -54,8 +54,11 @@ a.	python manage.py runserver
 
 ### Existing credentials:
 Admin    	Username: admin@admin.com		Password: admin
+
 Merchant		Username: danyal@danyal.com 	Password: danyal
+
 Logistic 		Username: bilal@bilal.com		Password: bilal
+
 Customer		Username: ali@ali.com			Password: ali
 
 ### Project made by:
