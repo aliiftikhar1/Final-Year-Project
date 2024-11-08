@@ -53,13 +53,13 @@ b.	Click on import button and select the fashionstore.sql file from project dire
 a.	python manage.py runserver
 
 ### Existing credentials:
-Admin    	Username: admin@admin.com		Password: admin
+Admin    -->	Username: admin@admin.com		Password: admin
 
-Merchant		Username: danyal@danyal.com 	Password: danyal
+Merchant	-->	Username: danyal@danyal.com 	Password: danyal
 
-Logistic 		Username: bilal@bilal.com		Password: bilal
+Logistic 	-->	Username: bilal@bilal.com		Password: bilal
 
-Customer		Username: ali@ali.com			Password: ali
+Customer	-->	Username: ali@ali.com			Password: ali
 
 ### Project made by:
 1. Ali Iftikhar - (20011519-054) - 20011519-054@uog.edu.pk
